@@ -1,8 +1,121 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 10000.0,
-  "positions": {},
-  "trades": [],
-  "equity_history": []
+  "cash": 3050.9198684692383,
+  "positions": {
+    "MSFT": {
+      "qty": 5,
+      "avg_price": 487.32000732421875,
+      "stop_price": 467.9315102020138
+    },
+    "CRM": {
+      "qty": 9,
+      "avg_price": 209.28500366210938,
+      "stop_price": 194.14357430594308
+    },
+    "SNOW": {
+      "qty": 4,
+      "avg_price": 322.9800109863281,
+      "stop_price": 299.15443638392856
+    },
+    "PLTR": {
+      "qty": 5,
+      "avg_price": 175.97000122070312,
+      "stop_price": 161.06385367257255
+    },
+    "SMCI": {
+      "qty": 13,
+      "avg_price": 35.165000915527344,
+      "stop_price": 30.075001035417827
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-08-24T19:59:41.313597+00:00",
+      "symbol": "MSFT",
+      "action": "BUY",
+      "qty": 5,
+      "price": 487.32,
+      "stop_price": 467.93,
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (477.24) ve SMA50 (421.05) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %22.2 g\u00fc\u00e7l\u00fc. Stop: 467.93 (2xATR).",
+      "indicators": {
+        "price": 487.32,
+        "sma20": 477.24,
+        "sma50": 421.05,
+        "atr14": 9.69,
+        "relative_strength_20d": 0.2217
+      }
+    },
+    {
+      "date": "2026-08-24T20:01:41.672206+00:00",
+      "symbol": "CRM",
+      "action": "BUY",
+      "qty": 9,
+      "price": 209.29,
+      "stop_price": 194.14,
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (194.35) ve SMA50 (175.45) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %17.2 g\u00fc\u00e7l\u00fc. Stop: 194.14 (2xATR).",
+      "indicators": {
+        "price": 209.29,
+        "sma20": 194.35,
+        "sma50": 175.45,
+        "atr14": 7.57,
+        "relative_strength_20d": 0.1724
+      }
+    },
+    {
+      "date": "2026-08-24T20:03:42.096070+00:00",
+      "symbol": "SNOW",
+      "action": "BUY",
+      "qty": 4,
+      "price": 322.98,
+      "stop_price": 299.15,
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (317.96) ve SMA50 (280.3) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %15.0 g\u00fc\u00e7l\u00fc. Stop: 299.15 (2xATR).",
+      "indicators": {
+        "price": 322.98,
+        "sma20": 317.96,
+        "sma50": 280.3,
+        "atr14": 11.91,
+        "relative_strength_20d": 0.1503
+      }
+    },
+    {
+      "date": "2026-08-24T20:05:11.899982+00:00",
+      "symbol": "PLTR",
+      "action": "BUY",
+      "qty": 5,
+      "price": 175.97,
+      "stop_price": 161.06,
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (159.5) ve SMA50 (139.83) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %30.5 g\u00fc\u00e7l\u00fc. Stop: 161.06 (2xATR).",
+      "indicators": {
+        "price": 175.97,
+        "sma20": 159.5,
+        "sma50": 139.83,
+        "atr14": 7.45,
+        "relative_strength_20d": 0.3047
+      }
+    },
+    {
+      "date": "2026-08-24T20:05:12.291920+00:00",
+      "symbol": "SMCI",
+      "action": "BUY",
+      "qty": 13,
+      "price": 35.17,
+      "stop_price": 30.08,
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (33.11) ve SMA50 (30.55) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %14.7 g\u00fc\u00e7l\u00fc. Stop: 30.08 (2xATR).",
+      "indicators": {
+        "price": 35.17,
+        "sma20": 33.11,
+        "sma50": 30.55,
+        "atr14": 2.54,
+        "relative_strength_20d": 0.1465
+      }
+    }
+  ],
+  "equity_history": [
+    {
+      "date": "2026-08-24T20:05:12.657945+00:00",
+      "equity": 10000.0,
+      "cash": 3050.92
+    }
+  ]
 }

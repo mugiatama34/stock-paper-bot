@@ -59,26 +59,44 @@ def summarize(lg, since_dt):
 
 
 def plot_comparison(ledgers: dict, since_dt, mode: str) -> str:
-    plt.figure(figsize=(9, 5))
+    """
+    Plots % return (not raw dollars) relative to each strategy's $10K start.
+    Raw-dollar equity curves look dramatic with matplotlib's tight auto-scaling
+    and "+1e4" offset notation even for a $3 move — percentage return avoids
+    that distortion entirely and is the more meaningful comparison anyway.
+    """
+    fig, ax = plt.subplots(figsize=(9, 5))
+    all_returns = [0.0]  # ensure 0% baseline is always in view
+
     for name, lg in ledgers.items():
         hist = filter_since(lg["equity_history"], since_dt) or lg["equity_history"][-2:]
         if not hist:
             continue
+        starting_cash = lg["starting_cash"]
         dates = [parse_dt(h["date"]) for h in hist]
-        equities = [h["equity"] for h in hist]
-        plt.plot(dates, equities, marker="o", markersize=3, label=name)
+        returns_pct = [(h["equity"] / starting_cash - 1) * 100 for h in hist]
+        all_returns.extend(returns_pct)
+        ax.plot(dates, returns_pct, marker="o", markersize=3, label=name)
 
-    plt.axhline(y=10000, color="gray", linestyle="--", linewidth=1, label="Başlangıç ($10K)")
-    plt.title(f"Strateji Karşılaştırması — {mode}")
-    plt.ylabel("Portföy Değeri ($)")
-    plt.legend()
-    plt.gcf().autofmt_xdate()
-    plt.tight_layout()
+    ax.axhline(y=0, color="gray", linestyle="--", linewidth=1, label="Başlangıç (%0)")
+
+    # Pad the y-range so flat lines near 0% don't look like they're touching an edge,
+    # and so a single outlier doesn't crush the others into invisibility.
+    span = max(max(all_returns) - min(all_returns), 0.5)
+    pad = span * 0.25 + 0.25
+    ax.set_ylim(min(all_returns) - pad, max(all_returns) + pad)
+
+    ax.set_title(f"Strateji Karşılaştırması — {mode}")
+    ax.set_ylabel("Getiri (%)")
+    ax.yaxis.set_major_formatter(lambda val, pos: f"{val:+.1f}%")
+    ax.legend()
+    fig.autofmt_xdate()
+    fig.tight_layout()
 
     os.makedirs(REPORTS_DIR, exist_ok=True)
     path = os.path.join(REPORTS_DIR, f"comparison_{mode}.png")
-    plt.savefig(path, dpi=130)
-    plt.close()
+    fig.savefig(path, dpi=130)
+    plt.close(fig)
     return path
 
 

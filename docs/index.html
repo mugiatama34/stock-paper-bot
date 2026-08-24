@@ -1,6 +1,51 @@
 <!DOCTYPE html>
-<html lang="tr"><head><meta charset="utf-8"><title>Stock Paper Bot Dashboard</title></head>
-<body style="font-family:sans-serif;max-width:700px;margin:2rem auto;">
-<h1>📊 Stock Paper Bot</h1>
-<p>Henüz ilk trade_bot.py / generate_report.py çalışması gerçekleşmedi. İlk Actions çalışmasından sonra bu sayfa otomatik güncellenecek.</p>
+<html lang="tr"><head><meta charset="utf-8">
+<title>Stock Paper Bot Dashboard</title>
+<style>
+body { font-family: -apple-system, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+h1 { font-size: 1.4rem; } h2 { font-size: 1.1rem; border-bottom: 2px solid #ddd; padding-bottom: .3rem; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+th, td { text-align: left; padding: .4rem .5rem; border-bottom: 1px solid #eee; }
+img { max-width: 100%; }
+.updated { color: #888; font-size: 0.85rem; }
+</style></head>
+<body>
+<h1>📊 Stock Paper Bot — Canlı Portföy Durumu</h1>
+<p class="updated">Son güncelleme: 2026-08-24 20:14 UTC</p>
+<img src="../reports/comparison_daily.png" alt="Equity comparison" onerror="this.style.display='none'">
+
+        <section>
+          <h2>ai_momentum</h2>
+          <p>Güncel değer: <b>$10,000.00</b> (+0.00% toplam getiri)</p>
+          <table>
+            <thead><tr><th>Sembol</th><th>Adet</th><th>Ort. Maliyet</th><th>Giriş Tarihi</th><th>Gerekçe</th></tr></thead>
+            <tbody><tr>
+                <td>MSFT</td><td>5</td><td>$487.32</td>
+                <td>2026-08-24</td><td>Momentum girişi: fiyat SMA20 (477.24) ve SMA50 (421.05) üzerinde, SPY'a göre 20 günde %22.2 güçlü. Stop: 467.93 (2xATR).</td></tr><tr>
+                <td>CRM</td><td>9</td><td>$209.29</td>
+                <td>2026-08-24</td><td>Momentum girişi: fiyat SMA20 (194.35) ve SMA50 (175.45) üzerinde, SPY'a göre 20 günde %17.2 güçlü. Stop: 194.14 (2xATR).</td></tr><tr>
+                <td>SNOW</td><td>4</td><td>$322.98</td>
+                <td>2026-08-24</td><td>Momentum girişi: fiyat SMA20 (317.96) ve SMA50 (280.3) üzerinde, SPY'a göre 20 günde %15.0 güçlü. Stop: 299.15 (2xATR).</td></tr><tr>
+                <td>PLTR</td><td>5</td><td>$175.97</td>
+                <td>2026-08-24</td><td>Momentum girişi: fiyat SMA20 (159.5) ve SMA50 (139.83) üzerinde, SPY'a göre 20 günde %30.5 güçlü. Stop: 161.06 (2xATR).</td></tr><tr>
+                <td>SMCI</td><td>13</td><td>$35.17</td>
+                <td>2026-08-24</td><td>Momentum girişi: fiyat SMA20 (33.11) ve SMA50 (30.55) üzerinde, SPY'a göre 20 günde %14.7 güçlü. Stop: 30.08 (2xATR).</td></tr></tbody>
+          </table>
+        </section>
+        <section>
+          <h2>mean_reversion</h2>
+          <p>Güncel değer: <b>$10,000.00</b> (+0.00% toplam getiri)</p>
+          <table>
+            <thead><tr><th>Sembol</th><th>Adet</th><th>Ort. Maliyet</th><th>Giriş Tarihi</th><th>Gerekçe</th></tr></thead>
+            <tbody><tr><td colspan='5'>Açık pozisyon yok</td></tr></tbody>
+          </table>
+        </section>
+        <section>
+          <h2>balanced</h2>
+          <p>Güncel değer: <b>$10,000.00</b> (+0.00% toplam getiri)</p>
+          <table>
+            <thead><tr><th>Sembol</th><th>Adet</th><th>Ort. Maliyet</th><th>Giriş Tarihi</th><th>Gerekçe</th></tr></thead>
+            <tbody><tr><td colspan='5'>Açık pozisyon yok</td></tr></tbody>
+          </table>
+        </section>
 </body></html>

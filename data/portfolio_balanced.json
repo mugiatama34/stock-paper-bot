@@ -6,8 +6,8 @@
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 347.86714826311385,
-      "peak_price": 371.1700134277344,
+      "stop_price": 350.60714285714283,
+      "peak_price": 374.010009765625,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -22,7 +22,7 @@
     "CL": {
       "qty": 15,
       "avg_price": 92.55000305175781,
-      "stop_price": 88.91429247174945,
+      "stop_price": 89.09143393380302,
       "peak_price": 92.55000305175781,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -30,40 +30,40 @@
     "COF": {
       "qty": 5,
       "avg_price": 216.27000427246094,
-      "stop_price": 206.55639161691005,
-      "peak_price": 216.27000427246094,
+      "stop_price": 208.41776453044656,
+      "peak_price": 217.55999755859375,
       "sector": "Financials",
       "partial_taken": false
     },
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.106444218804207,
-      "peak_price": 13.930000305175781,
+      "stop_price": 13.18625006901518,
+      "peak_price": 13.987500190734863,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "KMI": {
       "qty": 20,
       "avg_price": 31.0,
-      "stop_price": 29.551428931100027,
-      "peak_price": 31.0,
+      "stop_price": 29.654286248343332,
+      "peak_price": 31.125,
       "sector": "Energy",
       "partial_taken": false
     },
     "NVDA": {
       "qty": 2,
       "avg_price": 208.47999572753906,
-      "stop_price": 196.70428466796875,
-      "peak_price": 208.47999572753906,
+      "stop_price": 201.2862309047154,
+      "peak_price": 212.48609924316406,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "TTWO": {
       "qty": 1,
       "avg_price": 233.5,
-      "stop_price": 214.9157235281808,
-      "peak_price": 233.5,
+      "stop_price": 216.48143005371094,
+      "peak_price": 234.0399932861328,
       "sector": "Communication Services",
       "partial_taken": false
     },
@@ -250,6 +250,11 @@
     {
       "date": "2026-08-25T09:50:55.200045+00:00",
       "equity": 10000.0,
+      "cash": 1008.16
+    },
+    {
+      "date": "2026-08-25T17:55:27.434665+00:00",
+      "equity": 9999.43,
       "cash": 1008.16
     }
   ]

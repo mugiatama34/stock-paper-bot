@@ -1,12 +1,12 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 3431.2098960876465,
+  "cash": 957.2899322509766,
   "positions": {
     "AMZN": {
       "qty": 9,
       "avg_price": 262.07000732421875,
-      "stop_price": 246.72894069126673,
+      "stop_price": 248.20538657052177,
       "peak_price": 262.07000732421875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -14,7 +14,7 @@
     "KIM": {
       "qty": 78,
       "avg_price": 24.219999313354492,
-      "stop_price": 23.227142606462753,
+      "stop_price": 23.285178456987655,
       "peak_price": 24.219999313354492,
       "sector": "Real Estate",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "UNH": {
       "qty": 3,
       "avg_price": 398.760009765625,
-      "stop_price": 374.8421412876674,
+      "stop_price": 377.5474973406111,
       "peak_price": 398.760009765625,
       "sector": "Health Care",
       "partial_taken": false
@@ -30,9 +30,49 @@
     "VTRS": {
       "qty": 68,
       "avg_price": 16.540000915527344,
-      "stop_price": 15.262821115496987,
-      "peak_price": 16.540000915527344,
+      "stop_price": 15.391667913007153,
+      "peak_price": 16.655000686645508,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "APH": {
+      "qty": 4,
+      "avg_price": 157.68499755859375,
+      "stop_price": 143.2885753086635,
+      "peak_price": 157.68499755859375,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "CDNS": {
+      "qty": 2,
+      "avg_price": 328.0899963378906,
+      "stop_price": 305.3774904523577,
+      "peak_price": 328.0899963378906,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "D": {
+      "qty": 8,
+      "avg_price": 66.95999908447266,
+      "stop_price": 64.27428191048759,
+      "peak_price": 66.95999908447266,
+      "sector": "Utilities",
+      "partial_taken": false
+    },
+    "GOOGL": {
+      "qty": 1,
+      "avg_price": 346.9599914550781,
+      "stop_price": 331.06534685407365,
+      "peak_price": 346.9599914550781,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "MGM": {
+      "qty": 7,
+      "avg_price": 43.47999954223633,
+      "stop_price": 41.70678588322231,
+      "peak_price": 43.47999954223633,
+      "sector": "Consumer Discretionary",
       "partial_taken": false
     }
   },
@@ -104,6 +144,91 @@
         "rsi14_prev": 28.74,
         "atr14": 0.51
       }
+    },
+    {
+      "date": "2026-08-25T17:55:24.310314+00:00",
+      "symbol": "APH",
+      "action": "BUY",
+      "qty": 4,
+      "price": 157.68,
+      "stop_price": 143.29,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 30.8 \u2192 32.81 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=144.48) \u00fczerinde. \u0130zleyen stop: 143.29.",
+      "indicators": {
+        "price": 157.68,
+        "sma200": 144.48,
+        "rsi14": 32.81,
+        "rsi14_prev": 30.8,
+        "atr14": 5.76
+      }
+    },
+    {
+      "date": "2026-08-25T17:55:24.733217+00:00",
+      "symbol": "CDNS",
+      "action": "BUY",
+      "qty": 2,
+      "price": 328.09,
+      "stop_price": 305.38,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 21.46 \u2192 41.35 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=326.99) \u00fczerinde. \u0130zleyen stop: 305.38.",
+      "indicators": {
+        "price": 328.09,
+        "sma200": 326.99,
+        "rsi14": 41.35,
+        "rsi14_prev": 21.46,
+        "atr14": 9.09
+      }
+    },
+    {
+      "date": "2026-08-25T17:55:25.112985+00:00",
+      "symbol": "D",
+      "action": "BUY",
+      "qty": 8,
+      "price": 66.96,
+      "stop_price": 64.27,
+      "sector": "Utilities",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.8 \u2192 40.03 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=63.17) \u00fczerinde. \u0130zleyen stop: 64.27.",
+      "indicators": {
+        "price": 66.96,
+        "sma200": 63.17,
+        "rsi14": 40.03,
+        "rsi14_prev": 31.8,
+        "atr14": 1.07
+      }
+    },
+    {
+      "date": "2026-08-25T17:55:25.530441+00:00",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 346.96,
+      "stop_price": 331.07,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 24.44 \u2192 32.33 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=333.44) \u00fczerinde. \u0130zleyen stop: 331.07.",
+      "indicators": {
+        "price": 346.96,
+        "sma200": 333.44,
+        "rsi14": 32.33,
+        "rsi14_prev": 24.44,
+        "atr14": 6.36
+      }
+    },
+    {
+      "date": "2026-08-25T17:55:25.976955+00:00",
+      "symbol": "MGM",
+      "action": "BUY",
+      "qty": 7,
+      "price": 43.48,
+      "stop_price": 41.71,
+      "sector": "Consumer Discretionary",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 30.96 \u2192 38.11 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=39.22) \u00fczerinde. \u0130zleyen stop: 41.71.",
+      "indicators": {
+        "price": 43.48,
+        "sma200": 39.22,
+        "rsi14": 38.11,
+        "rsi14_prev": 30.96,
+        "atr14": 0.71
+      }
     }
   ],
   "equity_history": [
@@ -126,6 +251,11 @@
       "date": "2026-08-25T09:50:51.020365+00:00",
       "equity": 10000.0,
       "cash": 3431.21
+    },
+    {
+      "date": "2026-08-25T17:55:26.584695+00:00",
+      "equity": 9982.08,
+      "cash": 957.29
     }
   ]
 }

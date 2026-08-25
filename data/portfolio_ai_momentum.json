@@ -6,9 +6,9 @@
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 467.9315102020138,
+      "stop_price": 471.49811995488454,
       "partial_taken": false,
-      "peak_price": 487.32000732421875,
+      "peak_price": 490.0199890136719,
       "sector": "Information Technology"
     },
     "CRM": {
@@ -28,7 +28,7 @@
     "PLTR": {
       "qty": 5,
       "avg_price": 175.97000122070312,
-      "stop_price": 161.06385367257255,
+      "stop_price": 161.1759970528739,
       "partial_taken": false,
       "peak_price": 175.97000122070312,
       "sector": "Information Technology"
@@ -36,15 +36,15 @@
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 30.079998288835796,
+      "stop_price": 32.95785576956613,
       "partial_taken": false,
-      "peak_price": 35.16999816894531,
+      "peak_price": 38.314998626708984,
       "sector": "Information Technology"
     },
     "ADP": {
       "qty": 2,
       "avg_price": 283.010009765625,
-      "stop_price": 270.5557294573103,
+      "stop_price": 271.202157156808,
       "peak_price": 283.010009765625,
       "sector": "Industrials",
       "partial_taken": false
@@ -52,39 +52,39 @@
     "BKNG": {
       "qty": 2,
       "avg_price": 213.36000061035156,
-      "stop_price": 199.49000113351005,
-      "peak_price": 213.36000061035156,
+      "stop_price": 201.81103515625,
+      "peak_price": 213.60000610351562,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "CHTR": {
       "qty": 2,
       "avg_price": 150.3000030517578,
-      "stop_price": 135.73429434640067,
-      "peak_price": 150.3000030517578,
+      "stop_price": 140.49429539271765,
+      "peak_price": 155.86500549316406,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "CMCSA": {
       "qty": 16,
       "avg_price": 27.020000457763672,
-      "stop_price": 25.842857088361466,
-      "peak_price": 27.020000457763672,
+      "stop_price": 26.064286095755442,
+      "peak_price": 27.2450008392334,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 30.861426489693777,
-      "peak_price": 33.2599983215332,
+      "stop_price": 30.891355514526367,
+      "peak_price": 33.279998779296875,
       "sector": "Industrials",
       "partial_taken": false
     },
     "CSGP": {
       "qty": 7,
       "avg_price": 32.84000015258789,
-      "stop_price": 29.91714314052037,
+      "stop_price": 29.94428607395717,
       "peak_price": 32.84000015258789,
       "sector": "Real Estate",
       "partial_taken": false
@@ -92,7 +92,7 @@
     "DXCM": {
       "qty": 2,
       "avg_price": 91.05999755859375,
-      "stop_price": 85.922853742327,
+      "stop_price": 86.43713923863002,
       "peak_price": 91.05999755859375,
       "sector": "Health Care",
       "partial_taken": false
@@ -100,15 +100,15 @@
     "GEHC": {
       "qty": 2,
       "avg_price": 74.19000244140625,
-      "stop_price": 71.03643035888672,
-      "peak_price": 74.19000244140625,
+      "stop_price": 71.16285814557757,
+      "peak_price": 74.29000091552734,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MDLZ": {
       "qty": 1,
       "avg_price": 64.69999694824219,
-      "stop_price": 62.23285402570452,
+      "stop_price": 62.248568943568635,
       "peak_price": 64.69999694824219,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -116,8 +116,8 @@
     "PYPL": {
       "qty": 1,
       "avg_price": 61.68000030517578,
-      "stop_price": 58.74171393258231,
-      "peak_price": 61.68000030517578,
+      "stop_price": 59.17814254760742,
+      "peak_price": 62.09000015258789,
       "sector": "Financials",
       "partial_taken": false
     }
@@ -403,6 +403,11 @@
     {
       "date": "2026-08-25T09:50:48.903230+00:00",
       "equity": 9996.79,
+      "cash": 339.16
+    },
+    {
+      "date": "2026-08-25T17:55:24.236298+00:00",
+      "equity": 9969.71,
       "cash": 339.16
     }
   ]

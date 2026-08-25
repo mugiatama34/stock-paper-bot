@@ -2,8 +2,12 @@ name: Trade Bot
 
 on:
   schedule:
-    # Every hour, Mon-Fri, 14:00-21:00 UTC (covers 9:30-16:00 ET incl. DST slack)
-    - cron: "0 14-21 * * 1-5"
+    # All three strategies read DAILY bars, so signals only change once the daily
+    # candle closes -- running hourly just recomputes the same numbers. Two passes:
+    #   17:30 UTC  mid-session, so trailing stops / stop-losses react intraday
+    #   20:45 UTC  just before the US close, when the day's bar is effectively set
+    - cron: "30 17 * * 1-5"
+    - cron: "45 20 * * 1-5"
   workflow_dispatch: {}
 
 jobs:

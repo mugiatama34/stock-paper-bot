@@ -6,9 +6,9 @@
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 471.49811995488454,
+      "stop_price": 472.94955340912566,
       "partial_taken": false,
-      "peak_price": 490.0199890136719,
+      "peak_price": 491.7099914550781,
       "sector": "Information Technology"
     },
     "CRM": {
@@ -36,9 +36,9 @@
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 32.95785576956613,
+      "stop_price": 33.09285627092634,
       "partial_taken": false,
-      "peak_price": 38.314998626708984,
+      "peak_price": 38.459999084472656,
       "sector": "Information Technology"
     },
     "ADP": {
@@ -52,8 +52,8 @@
     "BKNG": {
       "qty": 2,
       "avg_price": 213.36000061035156,
-      "stop_price": 201.81103515625,
-      "peak_price": 213.60000610351562,
+      "stop_price": 201.99102783203125,
+      "peak_price": 213.77999877929688,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -76,8 +76,8 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 30.891355514526367,
-      "peak_price": 33.279998779296875,
+      "stop_price": 30.9113586970738,
+      "peak_price": 33.33000183105469,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -116,8 +116,8 @@
     "PYPL": {
       "qty": 1,
       "avg_price": 61.68000030517578,
-      "stop_price": 59.17814254760742,
-      "peak_price": 62.09000015258789,
+      "stop_price": 59.3567145211356,
+      "peak_price": 62.27000045776367,
       "sector": "Financials",
       "partial_taken": false
     }
@@ -408,6 +408,11 @@
     {
       "date": "2026-08-25T17:55:24.236298+00:00",
       "equity": 9969.71,
+      "cash": 339.16
+    },
+    {
+      "date": "2026-08-25T21:09:26.408565+00:00",
+      "equity": 9998.67,
       "cash": 339.16
     }
   ]

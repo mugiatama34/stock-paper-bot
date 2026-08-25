@@ -1,32 +1,125 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 3050.9198684692383,
+  "cash": 339.15985107421875,
   "positions": {
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 467.9315102020138
+      "stop_price": 467.9315102020138,
+      "partial_taken": false,
+      "peak_price": 487.32000732421875,
+      "sector": "Information Technology"
     },
     "CRM": {
       "qty": 9,
       "avg_price": 209.28500366210938,
-      "stop_price": 194.14357430594308
+      "stop_price": 194.14357430594308,
+      "partial_taken": false,
+      "peak_price": 209.28500366210938
     },
     "SNOW": {
       "qty": 4,
       "avg_price": 322.9800109863281,
-      "stop_price": 299.15443638392856
+      "stop_price": 299.15443638392856,
+      "partial_taken": false,
+      "peak_price": 322.9800109863281
     },
     "PLTR": {
       "qty": 5,
       "avg_price": 175.97000122070312,
-      "stop_price": 161.06385367257255
+      "stop_price": 161.06385367257255,
+      "partial_taken": false,
+      "peak_price": 175.97000122070312,
+      "sector": "Information Technology"
     },
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 30.075001035417827
+      "stop_price": 30.079998288835796,
+      "partial_taken": false,
+      "peak_price": 35.16999816894531,
+      "sector": "Information Technology"
+    },
+    "ADP": {
+      "qty": 2,
+      "avg_price": 283.010009765625,
+      "stop_price": 270.5557294573103,
+      "peak_price": 283.010009765625,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "BKNG": {
+      "qty": 2,
+      "avg_price": 213.36000061035156,
+      "stop_price": 199.49000113351005,
+      "peak_price": 213.36000061035156,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "CHTR": {
+      "qty": 2,
+      "avg_price": 150.3000030517578,
+      "stop_price": 135.73429434640067,
+      "peak_price": 150.3000030517578,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "CMCSA": {
+      "qty": 16,
+      "avg_price": 27.020000457763672,
+      "stop_price": 25.842857088361466,
+      "peak_price": 27.020000457763672,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "CPRT": {
+      "qty": 9,
+      "avg_price": 33.2599983215332,
+      "stop_price": 30.861426489693777,
+      "peak_price": 33.2599983215332,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "CSGP": {
+      "qty": 7,
+      "avg_price": 32.84000015258789,
+      "stop_price": 29.91714314052037,
+      "peak_price": 32.84000015258789,
+      "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "DXCM": {
+      "qty": 2,
+      "avg_price": 91.05999755859375,
+      "stop_price": 85.922853742327,
+      "peak_price": 91.05999755859375,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "GEHC": {
+      "qty": 2,
+      "avg_price": 74.19000244140625,
+      "stop_price": 71.03643035888672,
+      "peak_price": 74.19000244140625,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "MDLZ": {
+      "qty": 1,
+      "avg_price": 64.69999694824219,
+      "stop_price": 62.23285402570452,
+      "peak_price": 64.69999694824219,
+      "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "PYPL": {
+      "qty": 1,
+      "avg_price": 61.68000030517578,
+      "stop_price": 58.74171393258231,
+      "peak_price": 61.68000030517578,
+      "sector": "Financials",
+      "partial_taken": false
     }
   },
   "trades": [
@@ -109,6 +202,186 @@
         "atr14": 2.54,
         "relative_strength_20d": 0.1465
       }
+    },
+    {
+      "date": "2026-08-25T09:50:45.173386+00:00",
+      "symbol": "ADP",
+      "action": "BUY",
+      "qty": 2,
+      "price": 283.01,
+      "stop_price": 270.56,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (272.1) ve SMA50 (250.63) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %7.7 g\u00fc\u00e7l\u00fc, RSI=63.22 (<75, tepe de\u011fil). \u0130zleyen stop: 270.56 (2xATR).",
+      "indicators": {
+        "price": 283.01,
+        "sma20": 272.1,
+        "sma50": 250.63,
+        "rsi14": 63.22,
+        "atr14": 6.23,
+        "relative_strength_20d": 0.0769
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:45.602601+00:00",
+      "symbol": "BKNG",
+      "action": "BUY",
+      "qty": 2,
+      "price": 213.36,
+      "stop_price": 199.49,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (206.24) ve SMA50 (189.05) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %10.9 g\u00fc\u00e7l\u00fc, RSI=70.17 (<75, tepe de\u011fil). \u0130zleyen stop: 199.49 (2xATR).",
+      "indicators": {
+        "price": 213.36,
+        "sma20": 206.24,
+        "sma50": 189.05,
+        "rsi14": 70.17,
+        "atr14": 6.93,
+        "relative_strength_20d": 0.1093
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:45.961680+00:00",
+      "symbol": "CHTR",
+      "action": "BUY",
+      "qty": 2,
+      "price": 150.3,
+      "stop_price": 135.73,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (149.88) ve SMA50 (139.99) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %10.9 g\u00fc\u00e7l\u00fc, RSI=47.54 (<75, tepe de\u011fil). \u0130zleyen stop: 135.73 (2xATR).",
+      "indicators": {
+        "price": 150.3,
+        "sma20": 149.88,
+        "sma50": 139.99,
+        "rsi14": 47.54,
+        "atr14": 7.28,
+        "relative_strength_20d": 0.109
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:46.321861+00:00",
+      "symbol": "CMCSA",
+      "action": "BUY",
+      "qty": 16,
+      "price": 27.02,
+      "stop_price": 25.84,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (25.43) ve SMA50 (24.11) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %15.2 g\u00fc\u00e7l\u00fc, RSI=72.28 (<75, tepe de\u011fil). \u0130zleyen stop: 25.84 (2xATR).",
+      "indicators": {
+        "price": 27.02,
+        "sma20": 25.43,
+        "sma50": 24.11,
+        "rsi14": 72.28,
+        "atr14": 0.59,
+        "relative_strength_20d": 0.1521
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:46.673170+00:00",
+      "symbol": "CPRT",
+      "action": "BUY",
+      "qty": 9,
+      "price": 33.26,
+      "stop_price": 30.86,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (30.7) ve SMA50 (29.57) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %8.3 g\u00fc\u00e7l\u00fc, RSI=72.18 (<75, tepe de\u011fil). \u0130zleyen stop: 30.86 (2xATR).",
+      "indicators": {
+        "price": 33.26,
+        "sma20": 30.7,
+        "sma50": 29.57,
+        "rsi14": 72.18,
+        "atr14": 1.2,
+        "relative_strength_20d": 0.0835
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:47.031333+00:00",
+      "symbol": "CSGP",
+      "action": "BUY",
+      "qty": 7,
+      "price": 32.84,
+      "stop_price": 29.92,
+      "sector": "Real Estate",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (31.03) ve SMA50 (30.07) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %9.3 g\u00fc\u00e7l\u00fc, RSI=62.0 (<75, tepe de\u011fil). \u0130zleyen stop: 29.92 (2xATR).",
+      "indicators": {
+        "price": 32.84,
+        "sma20": 31.03,
+        "sma50": 30.07,
+        "rsi14": 62.0,
+        "atr14": 1.46,
+        "relative_strength_20d": 0.0928
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:47.400600+00:00",
+      "symbol": "DXCM",
+      "action": "BUY",
+      "qty": 2,
+      "price": 91.06,
+      "stop_price": 85.92,
+      "sector": "Health Care",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (86.19) ve SMA50 (77.94) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %20.8 g\u00fc\u00e7l\u00fc, RSI=59.96 (<75, tepe de\u011fil). \u0130zleyen stop: 85.92 (2xATR).",
+      "indicators": {
+        "price": 91.06,
+        "sma20": 86.19,
+        "sma50": 77.94,
+        "rsi14": 59.96,
+        "atr14": 2.57,
+        "relative_strength_20d": 0.2081
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:47.762253+00:00",
+      "symbol": "GEHC",
+      "action": "BUY",
+      "qty": 2,
+      "price": 74.19,
+      "stop_price": 71.04,
+      "sector": "Health Care",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (71.72) ve SMA50 (66.83) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %18.1 g\u00fc\u00e7l\u00fc, RSI=68.7 (<75, tepe de\u011fil). \u0130zleyen stop: 71.04 (2xATR).",
+      "indicators": {
+        "price": 74.19,
+        "sma20": 71.72,
+        "sma50": 66.83,
+        "rsi14": 68.7,
+        "atr14": 1.58,
+        "relative_strength_20d": 0.1809
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:48.153352+00:00",
+      "symbol": "MDLZ",
+      "action": "BUY",
+      "qty": 1,
+      "price": 64.7,
+      "stop_price": 62.23,
+      "sector": "Consumer Staples",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (62.98) ve SMA50 (61.24) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %3.3 g\u00fc\u00e7l\u00fc, RSI=66.46 (<75, tepe de\u011fil). \u0130zleyen stop: 62.23 (2xATR).",
+      "indicators": {
+        "price": 64.7,
+        "sma20": 62.98,
+        "sma50": 61.24,
+        "rsi14": 66.46,
+        "atr14": 1.23,
+        "relative_strength_20d": 0.0334
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:48.541212+00:00",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 61.68,
+      "stop_price": 58.74,
+      "sector": "Financials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (59.6) ve SMA50 (52.43) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %6.7 g\u00fc\u00e7l\u00fc, RSI=65.89 (<75, tepe de\u011fil). \u0130zleyen stop: 58.74 (2xATR).",
+      "indicators": {
+        "price": 61.68,
+        "sma20": 59.6,
+        "sma50": 52.43,
+        "rsi14": 65.89,
+        "atr14": 1.47,
+        "relative_strength_20d": 0.0671
+      }
     }
   ],
   "equity_history": [
@@ -126,6 +399,11 @@
       "date": "2026-08-24T21:19:36.620582+00:00",
       "equity": 9996.79,
       "cash": 3050.92
+    },
+    {
+      "date": "2026-08-25T09:50:48.903230+00:00",
+      "equity": 9996.79,
+      "cash": 339.16
     }
   ]
 }

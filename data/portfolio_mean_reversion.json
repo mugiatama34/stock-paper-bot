@@ -1,9 +1,111 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 10000.0,
-  "positions": {},
-  "trades": [],
+  "cash": 3431.2098960876465,
+  "positions": {
+    "AMZN": {
+      "qty": 9,
+      "avg_price": 262.07000732421875,
+      "stop_price": 246.72894069126673,
+      "peak_price": 262.07000732421875,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "KIM": {
+      "qty": 78,
+      "avg_price": 24.219999313354492,
+      "stop_price": 23.227142606462753,
+      "peak_price": 24.219999313354492,
+      "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "UNH": {
+      "qty": 3,
+      "avg_price": 398.760009765625,
+      "stop_price": 374.8421412876674,
+      "peak_price": 398.760009765625,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "VTRS": {
+      "qty": 68,
+      "avg_price": 16.540000915527344,
+      "stop_price": 15.262821115496987,
+      "peak_price": 16.540000915527344,
+      "sector": "Health Care",
+      "partial_taken": false
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-08-25T09:50:48.949605+00:00",
+      "symbol": "AMZN",
+      "action": "BUY",
+      "qty": 9,
+      "price": 262.07,
+      "stop_price": 246.73,
+      "sector": "Consumer Discretionary",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 24.52 \u2192 33.55 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=238.39) \u00fczerinde. \u0130zleyen stop: 246.73.",
+      "indicators": {
+        "price": 262.07,
+        "sma200": 238.39,
+        "rsi14": 33.55,
+        "rsi14_prev": 24.52,
+        "atr14": 6.14
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:49.626539+00:00",
+      "symbol": "KIM",
+      "action": "BUY",
+      "qty": 78,
+      "price": 24.22,
+      "stop_price": 23.23,
+      "sector": "Real Estate",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 22.53 \u2192 33.05 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=22.59) \u00fczerinde. \u0130zleyen stop: 23.23.",
+      "indicators": {
+        "price": 24.22,
+        "sma200": 22.59,
+        "rsi14": 33.05,
+        "rsi14_prev": 22.53,
+        "atr14": 0.4
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:50.247894+00:00",
+      "symbol": "UNH",
+      "action": "BUY",
+      "qty": 3,
+      "price": 398.76,
+      "stop_price": 374.84,
+      "sector": "Health Care",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.39 \u2192 43.6 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=345.68) \u00fczerinde. \u0130zleyen stop: 374.84.",
+      "indicators": {
+        "price": 398.76,
+        "sma200": 345.68,
+        "rsi14": 43.6,
+        "rsi14_prev": 31.39,
+        "atr14": 9.57
+      }
+    },
+    {
+      "date": "2026-08-25T09:50:50.625148+00:00",
+      "symbol": "VTRS",
+      "action": "BUY",
+      "qty": 68,
+      "price": 16.54,
+      "stop_price": 15.26,
+      "sector": "Health Care",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.74 \u2192 32.41 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=14.22) \u00fczerinde. \u0130zleyen stop: 15.26.",
+      "indicators": {
+        "price": 16.54,
+        "sma200": 14.22,
+        "rsi14": 32.41,
+        "rsi14_prev": 28.74,
+        "atr14": 0.51
+      }
+    }
+  ],
   "equity_history": [
     {
       "date": "2026-08-24T20:05:19.394003+00:00",
@@ -19,6 +121,11 @@
       "date": "2026-08-24T21:19:42.761574+00:00",
       "equity": 10000.0,
       "cash": 10000.0
+    },
+    {
+      "date": "2026-08-25T09:50:51.020365+00:00",
+      "equity": 10000.0,
+      "cash": 3431.21
     }
   ]
 }

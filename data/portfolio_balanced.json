@@ -1,12 +1,12 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 349.5198516845703,
+  "cash": 275.8948497772217,
   "positions": {
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 350.60714285714283,
+      "stop_price": 351.44767107282365,
       "peak_price": 374.010009765625,
       "sector": "Information Technology",
       "partial_taken": false
@@ -14,7 +14,7 @@
     "AMCR": {
       "qty": 40,
       "avg_price": 47.90999984741211,
-      "stop_price": 45.51857049124582,
+      "stop_price": 45.54571369716099,
       "peak_price": 47.90999984741211,
       "sector": "Materials",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "CL": {
       "qty": 15,
       "avg_price": 92.55000305175781,
-      "stop_price": 89.09143393380302,
+      "stop_price": 89.19857788085938,
       "peak_price": 92.55000305175781,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -30,15 +30,15 @@
     "COF": {
       "qty": 5,
       "avg_price": 216.27000427246094,
-      "stop_price": 208.41776453044656,
-      "peak_price": 217.55999755859375,
+      "stop_price": 208.66320028975562,
+      "peak_price": 217.80999755859375,
       "sector": "Financials",
       "partial_taken": false
     },
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.18625006901518,
+      "stop_price": 13.217051128223398,
       "peak_price": 13.987500190734863,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -46,15 +46,15 @@
     "KMI": {
       "qty": 20,
       "avg_price": 31.0,
-      "stop_price": 29.654286248343332,
-      "peak_price": 31.125,
+      "stop_price": 30.363570622035436,
+      "peak_price": 31.959999084472656,
       "sector": "Energy",
       "partial_taken": false
     },
     "NVDA": {
       "qty": 2,
       "avg_price": 208.47999572753906,
-      "stop_price": 201.85013471330916,
+      "stop_price": 202.2071489606585,
       "peak_price": 213.0500030517578,
       "sector": "Information Technology",
       "partial_taken": false
@@ -62,15 +62,15 @@
     "TTWO": {
       "qty": 1,
       "avg_price": 233.5,
-      "stop_price": 216.48143005371094,
-      "peak_price": 234.0399932861328,
+      "stop_price": 217.52317592075892,
+      "peak_price": 234.3699951171875,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "VMRK": {
       "qty": 4,
       "avg_price": 68.13999938964844,
-      "stop_price": 65.05285535539899,
+      "stop_price": 65.20357077462333,
       "peak_price": 68.13999938964844,
       "sector": "Real Estate",
       "partial_taken": false
@@ -78,23 +78,23 @@
     "ARES": {
       "qty": 1,
       "avg_price": 142.75999450683594,
-      "stop_price": 133.32499258858817,
-      "peak_price": 142.75999450683594,
+      "stop_price": 133.7050018310547,
+      "peak_price": 143.0500030517578,
       "sector": "Financials",
       "partial_taken": false
     },
     "BBY": {
       "qty": 2,
       "avg_price": 85.29000091552734,
-      "stop_price": 79.63857160295758,
-      "peak_price": 85.29000091552734,
+      "stop_price": 81.54745919363839,
+      "peak_price": 87.05000305175781,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "BF-B": {
       "qty": 6,
       "avg_price": 28.18000030517578,
-      "stop_price": 26.669999531337194,
+      "stop_price": 26.734285354614258,
       "peak_price": 28.18000030517578,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -102,17 +102,25 @@
     "UPS": {
       "qty": 1,
       "avg_price": 105.13999938964844,
-      "stop_price": 101.11774080672748,
-      "peak_price": 105.13999938964844,
+      "stop_price": 101.97957171055164,
+      "peak_price": 105.72000122070312,
       "sector": "Industrials",
       "partial_taken": false
     },
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 67.08928680419922,
-      "peak_price": 71.08000183105469,
+      "stop_price": 69.84142957414899,
+      "peak_price": 74.18000030517578,
       "sector": "Energy",
+      "partial_taken": false
+    },
+    "AES": {
+      "qty": 5,
+      "avg_price": 14.725000381469727,
+      "stop_price": 14.635000365121025,
+      "peak_price": 14.725000381469727,
+      "sector": "Utilities",
       "partial_taken": false
     }
   },
@@ -354,6 +362,23 @@
         "atr14": 2.0,
         "volume_vs_avg20": 1.11
       }
+    },
+    {
+      "date": "2026-08-26T19:24:25.362262+00:00",
+      "symbol": "AES",
+      "action": "BUY",
+      "qty": 5,
+      "price": 14.73,
+      "stop_price": 14.64,
+      "sector": "Utilities",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=14.26), RSI14=54.24 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.19x \u00fczerinde. \u0130zleyen stop: 14.64.",
+      "indicators": {
+        "price": 14.73,
+        "sma200": 14.26,
+        "rsi14": 54.24,
+        "atr14": 0.05,
+        "volume_vs_avg20": 1.19
+      }
     }
   ],
   "equity_history": [
@@ -386,6 +411,11 @@
       "date": "2026-08-25T21:09:29.797553+00:00",
       "equity": 9977.38,
       "cash": 349.52
+    },
+    {
+      "date": "2026-08-26T19:24:27.421375+00:00",
+      "equity": 9998.05,
+      "cash": 275.89
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "generated": "2026-08-27T10:00:49.384470+00:00",
+  "years": 3,
+  "universe_size": 80,
+  "strategies": {
+    "ai_momentum": {
+      "final_equity": 15401.7,
+      "total_return_pct": 54.02,
+      "cagr_pct": 15.48,
+      "max_drawdown_pct": -13.31,
+      "sharpe": 1.09,
+      "closed_trades": 414,
+      "win_rate_pct": 40.1,
+      "avg_win": 84.66,
+      "avg_loss": -40.11,
+      "universe_size": 80
+    },
+    "mean_reversion": {
+      "final_equity": 17140.39,
+      "total_return_pct": 71.4,
+      "cagr_pct": 19.68,
+      "max_drawdown_pct": -8.95,
+      "sharpe": 1.82,
+      "closed_trades": 396,
+      "win_rate_pct": 64.1,
+      "avg_win": 69.69,
+      "avg_loss": -74.08,
+      "universe_size": 80
+    },
+    "balanced": {
+      "final_equity": 12712.78,
+      "total_return_pct": 27.13,
+      "cagr_pct": 8.33,
+      "max_drawdown_pct": -15.33,
+      "sharpe": 0.73,
+      "closed_trades": 748,
+      "win_rate_pct": 52.1,
+      "avg_win": 38.79,
+      "avg_loss": -35.33,
+      "universe_size": 80
+    }
+  },
+  "spy_benchmark": {
+    "final_equity": 18148.69,
+    "total_return_pct": 81.49,
+    "cagr_pct": 21.98,
+    "max_drawdown_pct": -18.76
+  }
+}

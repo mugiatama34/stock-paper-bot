@@ -6,9 +6,9 @@
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 477.93507206904394,
+      "stop_price": 478.17791351714664,
       "partial_taken": false,
-      "peak_price": 496.0899963378906,
+      "peak_price": 496.3699951171875,
       "sector": "Information Technology"
     },
     "CRM": {
@@ -418,6 +418,11 @@
     {
       "date": "2026-08-26T19:24:22.195542+00:00",
       "equity": 10015.39,
+      "cash": 339.16
+    },
+    {
+      "date": "2026-08-27T00:18:14.922358+00:00",
+      "equity": 9998.55,
       "cash": 339.16
     }
   ]

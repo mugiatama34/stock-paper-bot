@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 275.8948497772217,
+  "cash": 191.23484992980957,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -46,8 +46,8 @@
     "KMI": {
       "qty": 20,
       "avg_price": 31.0,
-      "stop_price": 30.363570622035436,
-      "peak_price": 31.959999084472656,
+      "stop_price": 30.42357199532645,
+      "peak_price": 32.02000045776367,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -86,8 +86,8 @@
     "BBY": {
       "qty": 2,
       "avg_price": 85.29000091552734,
-      "stop_price": 81.54745919363839,
-      "peak_price": 87.05000305175781,
+      "stop_price": 81.88888767787388,
+      "peak_price": 87.44000244140625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -110,17 +110,33 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 69.84142957414899,
-      "peak_price": 74.18000030517578,
+      "stop_price": 70.07143293108258,
+      "peak_price": 74.41000366210938,
       "sector": "Energy",
       "partial_taken": false
     },
     "AES": {
       "qty": 5,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.635000365121025,
-      "peak_price": 14.725000381469727,
+      "stop_price": 14.639999525887626,
+      "peak_price": 14.729999542236328,
       "sector": "Utilities",
+      "partial_taken": false
+    },
+    "FE": {
+      "qty": 1,
+      "avg_price": 46.72999954223633,
+      "stop_price": 45.157142639160156,
+      "peak_price": 46.72999954223633,
+      "sector": "Utilities",
+      "partial_taken": false
+    },
+    "UDR": {
+      "qty": 1,
+      "avg_price": 37.93000030517578,
+      "stop_price": 36.748492839617015,
+      "peak_price": 37.93000030517578,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -379,6 +395,40 @@
         "atr14": 0.05,
         "volume_vs_avg20": 1.19
       }
+    },
+    {
+      "date": "2026-08-27T00:18:16.089600+00:00",
+      "symbol": "FE",
+      "action": "BUY",
+      "qty": 1,
+      "price": 46.73,
+      "stop_price": 45.16,
+      "sector": "Utilities",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=46.67), RSI14=48.06 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.03x \u00fczerinde. \u0130zleyen stop: 45.16.",
+      "indicators": {
+        "price": 46.73,
+        "sma200": 46.67,
+        "rsi14": 48.06,
+        "atr14": 0.79,
+        "volume_vs_avg20": 1.03
+      }
+    },
+    {
+      "date": "2026-08-27T00:18:16.969857+00:00",
+      "symbol": "UDR",
+      "action": "BUY",
+      "qty": 1,
+      "price": 37.93,
+      "stop_price": 36.75,
+      "sector": "Real Estate",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=36.46), RSI14=49.3 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.2x \u00fczerinde. \u0130zleyen stop: 36.75.",
+      "indicators": {
+        "price": 37.93,
+        "sma200": 36.46,
+        "rsi14": 49.3,
+        "atr14": 0.59,
+        "volume_vs_avg20": 1.2
+      }
     }
   ],
   "equity_history": [
@@ -416,6 +466,11 @@
       "date": "2026-08-26T19:24:27.421375+00:00",
       "equity": 9998.05,
       "cash": 275.89
+    },
+    {
+      "date": "2026-08-27T00:18:17.458582+00:00",
+      "equity": 9993.12,
+      "cash": 191.23
     }
   ]
 }

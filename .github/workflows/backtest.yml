@@ -11,6 +11,12 @@ on:
         default: "3"
         type: choice
         options: ["1", "2", "3", "5"]
+      cost_bps:
+        description: "İşlem maliyeti (baz puan, tek yön). 0 = maliyetsiz, 10 = %0.10"
+        required: true
+        default: "0"
+        type: choice
+        options: ["0", "5", "10", "20"]
       universe_size:
         description: "Strateji başına hisse sayısı (büyük = daha gerçekçi, daha yavaş)"
         required: true
@@ -39,12 +45,13 @@ jobs:
         run: |
           python backtest.py \
             --years ${{ inputs.years }} \
-            --universe-size ${{ inputs.universe_size }}
+            --universe-size ${{ inputs.universe_size }} \
+            --cost-bps ${{ inputs.cost_bps }}
 
       - name: Commit results
         run: |
           git config user.name "stock-paper-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add reports/backtest.png reports/backtest.json
+          git add reports/backtest.png reports/backtest.json docs/backtest.html
           git diff --cached --quiet || git commit -m "Backtest ${{ inputs.years }}y [skip ci]"
           git push

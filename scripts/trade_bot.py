@@ -194,6 +194,19 @@ def main():
     for name in strategies:
         run_strategy(name, price_data, spy_df, universes, risk_on, regime_note)
 
+    # Refresh the dashboard with the post-trade book, using the prices we already
+    # have in hand, so holdings appear without waiting for the next report run.
+    try:
+        import generate_report as gr
+        ledgers = {n: ledger_mod.load_ledger(n) for n in ledger_mod.STRATEGIES}
+        held = gr.held_symbols(ledgers)
+        prices = {s: float(price_data[s]["Close"].iloc[-1])
+                  for s in held if s in price_data and not price_data[s].empty}
+        gr.build_dashboard_html(ledgers, prices)
+        print("[ok] dashboard yenilendi")
+    except Exception as e:
+        print(f"[warn] dashboard yenilenemedi: {e}")
+
 
 if __name__ == "__main__":
     main()

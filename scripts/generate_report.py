@@ -240,7 +240,7 @@ img {{ max-width: 100%; }}
 </style></head>
 <body>
 <h1>📊 Stock Paper Bot — Canlı Portföy Durumu</h1>
-<p class="updated">Son güncelleme: {now}</p>
+<p class="updated">Son güncelleme: {now} &nbsp;·&nbsp; <a href="backtest.html">🔬 Backtest raporu</a></p>
 <img src="../reports/comparison_daily.png" alt="Equity comparison" onerror="this.style.display='none'">
 {''.join(sections)}
 </body></html>"""

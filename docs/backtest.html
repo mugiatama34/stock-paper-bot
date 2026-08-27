@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backtest Raporu</title>
+<style>
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+       max-width:1000px;margin:2rem auto;padding:0 1rem;color:#222;line-height:1.5; }
+h1 { font-size:1.5rem; } h2 { font-size:1.15rem;border-bottom:2px solid #ddd;
+       padding-bottom:.3rem;margin-top:2.2rem; }
+h3 { font-size:1rem;margin:.2rem 0 .5rem; }
+table { width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem; }
+th,td { padding:.5rem .5rem;border-bottom:1px solid #eee;text-align:right; }
+th:first-child,td:first-child { text-align:left; }
+th { background:#fafafa;font-weight:600; }
+tr.bench td { background:#f6f8ff;border-top:2px solid #ccd; }
+.pos { color:#0a7d33;font-weight:600; } .neg { color:#c62828;font-weight:600; }
+img { max-width:100%;margin:1rem 0; }
+.cards { display:flex;flex-wrap:wrap;gap:1rem; }
+.card { flex:1 1 260px;border:1px solid #e5e5e5;border-radius:8px;padding:.8rem 1rem;font-size:.85rem; }
+.card ul { margin:0;padding-left:1.1rem; }
+dl dt { font-weight:600;margin-top:.7rem; } dl dd { margin:.15rem 0 0 0;color:#444;font-size:.9rem; }
+.warn { background:#fff8e1;border-left:4px solid #f0ad4e;padding:.8rem 1rem;font-size:.88rem;border-radius:4px; }
+.meta { color:#888;font-size:.85rem; }
+a.back { display:inline-block;margin-bottom:1rem;font-size:.9rem; }
+@media(max-width:640px) { table { font-size:.78rem; } th,td { padding:.35rem .25rem; } }
+</style></head><body>
+<a class="back" href="index.html">← Portföy paneline dön</a>
+<h1>🔬 Backtest Raporu — son 3 yıl</h1>
+<p class="meta">Üretim: 2026-08-27 10:26 UTC &nbsp;·&nbsp; strateji başına 80 hisse &nbsp;·&nbsp; <b>işlem maliyeti uygulanmadı (0)</b></p>
+
+<img src="../reports/backtest.png" alt="Backtest karşılaştırması" onerror="this.style.display='none'">
+
+<h2>Sonuçlar</h2>
+<table>
+<thead><tr><th>Strateji</th><th>Getiri</th><th>CAGR</th><th>Max DD</th><th>Sharpe</th>
+<th>Profit Factor</th><th>İşlem</th><th>Kazanma</th><th>Piyasada</th></tr></thead>
+<tbody><tr><td><b>ai_momentum</b></td><td class='pos'>+54.0%</td><td class='pos'>+15.5%</td><td class='pos'>-13.3%</td><td>1.09</td><td>1.41</td><td>414</td><td>40.1%</td><td>97%</td></tr><tr><td><b>mean_reversion</b></td><td class='pos'>+71.4%</td><td class='pos'>+19.7%</td><td class='pos'>-8.9%</td><td>1.82</td><td>1.68</td><td>396</td><td>64.1%</td><td>91%</td></tr><tr><td><b>balanced</b></td><td class='pos'>+27.1%</td><td class='pos'>+8.3%</td><td class='pos'>-15.3%</td><td>0.73</td><td>1.2</td><td>748</td><td>52.1%</td><td>97%</td></tr><tr class='bench'><td><b>SPY al-tut</b></td><td class='pos'>+81.5%</td><td class='pos'>+22.0%</td><td class='neg'>-18.8%</td><td>1.37</td><td>—</td><td>—</td><td>—</td><td>100%</td></tr></tbody>
+</table>
+
+<h2>Strateji detayları</h2>
+<div class="cards">
+        <div class="card">
+          <h3>ai_momentum</h3>
+          <ul>
+            <li>Son değer: <b>$15,401.70</b></li>
+            <li>Ortalama kâr: $84.65 &nbsp;·&nbsp; Ortalama zarar: $-40.11</li>
+            <li>En iyi işlem: $1,282.56 &nbsp;·&nbsp; En kötü: $-617.04</li>
+            <li>Evren: 80 hisse</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>mean_reversion</h3>
+          <ul>
+            <li>Son değer: <b>$17,140.39</b></li>
+            <li>Ortalama kâr: $69.69 &nbsp;·&nbsp; Ortalama zarar: $-74.08</li>
+            <li>En iyi işlem: $390.90 &nbsp;·&nbsp; En kötü: $-265.85</li>
+            <li>Evren: 80 hisse</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>balanced</h3>
+          <ul>
+            <li>Son değer: <b>$12,712.78</b></li>
+            <li>Ortalama kâr: $38.79 &nbsp;·&nbsp; Ortalama zarar: $-35.33</li>
+            <li>En iyi işlem: $428.70 &nbsp;·&nbsp; En kötü: $-317.43</li>
+            <li>Evren: 80 hisse</li>
+          </ul>
+        </div></div>
+
+<h2>Sütunlar ne anlama geliyor?</h2>
+<dl><dt>Getiri</dt><dd>3 yılın sonunda toplam yüzde değişim. Tek başına yanıltıcıdır — ne kadar risk alınarak elde edildiğini söylemez.</dd><dt>CAGR</dt><dd>Yıllık bileşik getiri. Farklı uzunluktaki dönemleri karşılaştırmak için.</dd><dt>Max DD</dt><dd>Maksimum düşüş: zirveden dibe en büyük kayıp. Gerçek hayatta stratejiyi terk edip etmeyeceğini belirleyen sayı budur.</dd><dt>Sharpe</dt><dd>Birim risk başına getiri. Kabaca: 1'in altı zayıf, 1-2 iyi, 2 üstü çok iyi. İki strateji aynı getiriyi verdiyse Sharpe'ı yüksek olan daha az sarsıntıyla vermiştir.</dd><dt>Profit Factor</dt><dd>Toplam kâr / toplam zarar. 1'in altı zarar eden sistem demek. 1.5+ sağlam sayılır.</dd><dt>Kazanma %</dt><dd>Kârla kapanan işlemlerin oranı. Tek başına anlamsızdır — küçük kârlar ve büyük zararlarla %70 kazanma oranı da mümkündür. Ortalama kâr/zarar ile birlikte oku.</dd><dt>Piyasada kalma</dt><dd>Portföyün en az bir pozisyon taşıdığı günlerin oranı. Düşükse strateji çok nakitte bekliyor demektir; boğa piyasasında endeksin gerisinde kalmasının sebebi budur.</dd></dl>
+
+<h2>Bu sonuçlar neden olduğundan iyi görünür</h2>
+<div class="warn">
+<p><b>Survivorship bias (en büyük çarpıtma):</b> Evren <i>bugünün</i> endeks üyeliği.
+İflas eden veya endeksten çıkarılan şirketler listede yok, dolayısıyla backtest onları
+hiç satın almıyor. Gerçek geçmişte bu şirketler alınabilirdi.</p>
+<p><b>Maliyet:</b> <b>işlem maliyeti uygulanmadı (0)</b>. Yüzlerce işlem yapan bir strateji, gerçek komisyon ve
+makas altında burada göründüğünden belirgin biçimde kötü performans gösterir.</p>
+<p><b>Emir dolumu:</b> Sinyalin oluştuğu günün kapanışından alım/satım yapılıyor.
+Canlı bot da kapanışa yakın çalıştığı için buna yakın, ama yine de iyimser.</p>
+<p><b>Dönem seçimi:</b> Tek bir geçmiş dönem tek bir senaryodur. Farklı yıl aralıkları
+farklı sıralama üretebilir; sonuçları bir tahmin değil, kuralların davranış testi olarak oku.</p>
+</div>
+</body></html>

@@ -4,7 +4,7 @@ name: Deploy Dashboard
 # commits carry "[skip ci]", which suppresses push-triggered runs entirely.
 on:
   workflow_run:
-    workflows: ["Trade Bot", "Daily Report", "Weekly Report", "Monthly Report", "Yearly Report"]
+    workflows: ["Trade Bot", "Daily Report", "Weekly Report", "Monthly Report", "Yearly Report", "Backtest"]
     types: [completed]
   workflow_dispatch: {}
 

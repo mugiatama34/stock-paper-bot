@@ -1,0 +1,50 @@
+name: Backtest
+
+# Manual only. This is an analysis run, not part of the trading loop -- it costs
+# several minutes of Actions time and never touches the live ledgers.
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Kaç yıllık geçmiş test edilsin"
+        required: true
+        default: "3"
+        type: choice
+        options: ["1", "2", "3", "5"]
+      universe_size:
+        description: "Strateji başına hisse sayısı (büyük = daha gerçekçi, daha yavaş)"
+        required: true
+        default: "80"
+        type: choice
+        options: ["40", "80", "150", "300"]
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run backtest
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        working-directory: scripts
+        run: |
+          python backtest.py \
+            --years ${{ inputs.years }} \
+            --universe-size ${{ inputs.universe_size }}
+
+      - name: Commit results
+        run: |
+          git config user.name "stock-paper-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add reports/backtest.png reports/backtest.json
+          git diff --cached --quiet || git commit -m "Backtest ${{ inputs.years }}y [skip ci]"
+          git push

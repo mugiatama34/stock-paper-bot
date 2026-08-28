@@ -6,31 +6,31 @@
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 478.17791351714664,
+      "stop_price": 485.44617988623907,
       "partial_taken": false,
-      "peak_price": 496.3699951171875,
+      "peak_price": 505.05999755859375,
       "sector": "Information Technology"
     },
     "CRM": {
       "qty": 9,
       "avg_price": 209.28500366210938,
-      "stop_price": 194.37216186523438,
+      "stop_price": 231.21857343401228,
       "partial_taken": false,
-      "peak_price": 209.28500366210938
+      "peak_price": 252.0500030517578
     },
     "SNOW": {
       "qty": 4,
       "avg_price": 322.9800109863281,
-      "stop_price": 299.15443638392856,
+      "stop_price": 304.3301217215402,
       "partial_taken": false,
-      "peak_price": 322.9800109863281
+      "peak_price": 329.1099853515625
     },
     "PLTR": {
       "qty": 5,
       "avg_price": 175.97000122070312,
-      "stop_price": 162.5924290248326,
+      "stop_price": 171.51527186802454,
       "partial_taken": false,
-      "peak_price": 177.99000549316406,
+      "peak_price": 185.92999267578125,
       "sector": "Information Technology"
     },
     "SMCI": {
@@ -44,8 +44,8 @@
     "ADP": {
       "qty": 2,
       "avg_price": 283.010009765625,
-      "stop_price": 271.3578665597098,
-      "peak_price": 283.010009765625,
+      "stop_price": 272.7614179338728,
+      "peak_price": 284.67999267578125,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -76,7 +76,7 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 30.9113586970738,
+      "stop_price": 30.964287894112722,
       "peak_price": 33.33000183105469,
       "sector": "Industrials",
       "partial_taken": false
@@ -84,7 +84,7 @@
     "CSGP": {
       "qty": 7,
       "avg_price": 32.84000015258789,
-      "stop_price": 29.94428607395717,
+      "stop_price": 30.040000370570592,
       "peak_price": 32.84000015258789,
       "sector": "Real Estate",
       "partial_taken": false
@@ -100,7 +100,7 @@
     "GEHC": {
       "qty": 2,
       "avg_price": 74.19000244140625,
-      "stop_price": 71.23714338030133,
+      "stop_price": 71.34642900739398,
       "peak_price": 74.29000091552734,
       "sector": "Health Care",
       "partial_taken": false
@@ -108,7 +108,7 @@
     "MDLZ": {
       "qty": 1,
       "avg_price": 64.69999694824219,
-      "stop_price": 62.29071153913225,
+      "stop_price": 62.314283098493306,
       "peak_price": 64.69999694824219,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -116,7 +116,7 @@
     "PYPL": {
       "qty": 1,
       "avg_price": 61.68000030517578,
-      "stop_price": 59.47814287458147,
+      "stop_price": 59.512428283691406,
       "peak_price": 62.27000045776367,
       "sector": "Financials",
       "partial_taken": false
@@ -433,6 +433,11 @@
     {
       "date": "2026-08-27T09:05:37.107349+00:00",
       "equity": 9998.55,
+      "cash": 339.16
+    },
+    {
+      "date": "2026-08-28T01:36:53.352734+00:00",
+      "equity": 10534.32,
       "cash": 339.16
     }
   ]

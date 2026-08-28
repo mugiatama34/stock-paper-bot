@@ -1,20 +1,20 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 191.23484992980957,
+  "cash": 197.60484886169434,
   "positions": {
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 351.44767107282365,
-      "peak_price": 374.010009765625,
+      "stop_price": 352.6442653111049,
+      "peak_price": 374.5199890136719,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "AMCR": {
       "qty": 40,
       "avg_price": 47.90999984741211,
-      "stop_price": 45.54571369716099,
+      "stop_price": 45.55785696847098,
       "peak_price": 47.90999984741211,
       "sector": "Materials",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "CL": {
       "qty": 15,
       "avg_price": 92.55000305175781,
-      "stop_price": 89.19857788085938,
+      "stop_price": 89.23874991280692,
       "peak_price": 92.55000305175781,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -38,7 +38,7 @@
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.217051128223398,
+      "stop_price": 13.227260283801023,
       "peak_price": 13.987500190734863,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -54,15 +54,15 @@
     "NVDA": {
       "qty": 2,
       "avg_price": 208.47999572753906,
-      "stop_price": 202.2071489606585,
-      "peak_price": 213.0500030517578,
+      "stop_price": 214.95428248814173,
+      "peak_price": 227.97999572753906,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "TTWO": {
       "qty": 1,
       "avg_price": 233.5,
-      "stop_price": 217.52317592075892,
+      "stop_price": 218.03857421875,
       "peak_price": 234.3699951171875,
       "sector": "Communication Services",
       "partial_taken": false
@@ -78,7 +78,7 @@
     "ARES": {
       "qty": 1,
       "avg_price": 142.75999450683594,
-      "stop_price": 133.7050018310547,
+      "stop_price": 133.77285984584265,
       "peak_price": 143.0500030517578,
       "sector": "Financials",
       "partial_taken": false
@@ -102,7 +102,7 @@
     "UPS": {
       "qty": 1,
       "avg_price": 105.13999938964844,
-      "stop_price": 101.97957171055164,
+      "stop_price": 102.08684295371471,
       "peak_price": 105.72000122070312,
       "sector": "Industrials",
       "partial_taken": false
@@ -118,16 +118,8 @@
     "AES": {
       "qty": 5,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.639999525887626,
-      "peak_price": 14.729999542236328,
-      "sector": "Utilities",
-      "partial_taken": false
-    },
-    "FE": {
-      "qty": 1,
-      "avg_price": 46.72999954223633,
-      "stop_price": 45.157142639160156,
-      "peak_price": 46.72999954223633,
+      "stop_price": 14.659999983651298,
+      "peak_price": 14.75,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -137,6 +129,14 @@
       "stop_price": 36.748492839617015,
       "peak_price": 37.93000030517578,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "IP": {
+      "qty": 1,
+      "avg_price": 39.880001068115234,
+      "stop_price": 37.749259007537916,
+      "peak_price": 39.880001068115234,
+      "sector": "Materials",
       "partial_taken": false
     }
   },
@@ -429,6 +429,41 @@
         "atr14": 0.59,
         "volume_vs_avg20": 1.2
       }
+    },
+    {
+      "date": "2026-08-28T01:36:54.927472+00:00",
+      "symbol": "FE",
+      "action": "SELL",
+      "qty": 1,
+      "price": 46.25,
+      "pnl": -0.48,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "Uzun vadeli trend (SMA200=46.67) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=36.2.",
+      "indicators": {
+        "price": 46.25,
+        "sma200": 46.67,
+        "rsi14": 36.2,
+        "atr14": 0.76,
+        "volume_vs_avg20": 0.86
+      }
+    },
+    {
+      "date": "2026-08-28T01:36:55.634957+00:00",
+      "symbol": "IP",
+      "action": "BUY",
+      "qty": 1,
+      "price": 39.88,
+      "stop_price": 37.75,
+      "sector": "Materials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=37.47), RSI14=41.66 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.05x \u00fczerinde. \u0130zleyen stop: 37.75.",
+      "indicators": {
+        "price": 39.88,
+        "sma200": 37.47,
+        "rsi14": 41.66,
+        "atr14": 1.07,
+        "volume_vs_avg20": 1.05
+      }
     }
   ],
   "equity_history": [
@@ -481,6 +516,11 @@
       "date": "2026-08-27T09:05:39.165354+00:00",
       "equity": 9993.12,
       "cash": 191.23
+    },
+    {
+      "date": "2026-08-28T01:36:56.372904+00:00",
+      "equity": 9975.82,
+      "cash": 197.6
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 828.9899368286133,
+  "cash": 1983.8698959350586,
   "positions": {
     "AMZN": {
       "qty": 9,
       "avg_price": 262.07000732421875,
-      "stop_price": 248.26643807547433,
+      "stop_price": 248.4075083051409,
       "peak_price": 262.07000732421875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -14,7 +14,7 @@
     "KIM": {
       "qty": 78,
       "avg_price": 24.219999313354492,
-      "stop_price": 23.40303557259696,
+      "stop_price": 23.450356892177037,
       "peak_price": 24.219999313354492,
       "sector": "Real Estate",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "UNH": {
       "qty": 3,
       "avg_price": 398.760009765625,
-      "stop_price": 381.6507012503488,
+      "stop_price": 382.13998522077287,
       "peak_price": 402.0899963378906,
       "sector": "Health Care",
       "partial_taken": false
@@ -30,23 +30,15 @@
     "APH": {
       "qty": 4,
       "avg_price": 157.68499755859375,
-      "stop_price": 148.6157237461635,
+      "stop_price": 149.1282228742327,
       "peak_price": 162.3300018310547,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "CDNS": {
-      "qty": 2,
-      "avg_price": 328.0899963378906,
-      "stop_price": 310.65677315848217,
-      "peak_price": 334.67999267578125,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "D": {
       "qty": 8,
       "avg_price": 66.95999908447266,
-      "stop_price": 64.63410323006767,
+      "stop_price": 64.75642422267369,
       "peak_price": 66.95999908447266,
       "sector": "Utilities",
       "partial_taken": false
@@ -54,7 +46,7 @@
     "GOOGL": {
       "qty": 1,
       "avg_price": 346.9599914550781,
-      "stop_price": 331.1457061767578,
+      "stop_price": 331.43856048583984,
       "peak_price": 346.9599914550781,
       "sector": "Communication Services",
       "partial_taken": false
@@ -67,18 +59,10 @@
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
-    "AIG": {
-      "qty": 6,
-      "avg_price": 77.1500015258789,
-      "stop_price": 73.84375027247837,
-      "peak_price": 77.1500015258789,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "CFG": {
       "qty": 5,
       "avg_price": 70.49500274658203,
-      "stop_price": 67.22839437212262,
+      "stop_price": 67.25607408796039,
       "peak_price": 70.49500274658203,
       "sector": "Financials",
       "partial_taken": false
@@ -86,7 +70,7 @@
     "HST": {
       "qty": 14,
       "avg_price": 22.485000610351562,
-      "stop_price": 21.327858516148158,
+      "stop_price": 21.350179604121617,
       "peak_price": 22.485000610351562,
       "sector": "Real Estate",
       "partial_taken": false
@@ -339,6 +323,42 @@
         "rsi14_prev": 27.84,
         "atr14": 3.7
       }
+    },
+    {
+      "date": "2026-08-28T01:36:53.371136+00:00",
+      "symbol": "CDNS",
+      "action": "SELL",
+      "qty": 2,
+      "price": 347.55,
+      "pnl": 38.92,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=56.01, fiyat=347.55.",
+      "indicators": {
+        "price": 347.55,
+        "sma200": 327.17,
+        "rsi14": 56.01,
+        "rsi14_prev": 46.73,
+        "atr14": 9.93
+      }
+    },
+    {
+      "date": "2026-08-28T01:36:53.798346+00:00",
+      "symbol": "AIG",
+      "action": "SELL",
+      "qty": 6,
+      "price": 76.63,
+      "pnl": -3.12,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=37.4, fiyat=76.63.",
+      "indicators": {
+        "price": 76.63,
+        "sma200": 76.78,
+        "rsi14": 37.4,
+        "rsi14_prev": 34.01,
+        "atr14": 1.28
+      }
     }
   ],
   "equity_history": [
@@ -391,6 +411,11 @@
       "date": "2026-08-27T09:05:38.113599+00:00",
       "equity": 10017.72,
       "cash": 828.99
+    },
+    {
+      "date": "2026-08-28T01:36:54.870939+00:00",
+      "equity": 9957.37,
+      "cash": 1983.87
     }
   ]
 }

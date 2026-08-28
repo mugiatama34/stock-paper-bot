@@ -31,6 +31,6 @@ Bunlar Actions tarafından üretilir. Tutarsız veya hatalı görünseler bile d
 
 ## Çalışma kuralları
 
-- Her değişiklik ayrı branch ve ayrı PR ile gönderilir. Tek PR tek iş.
+- Her değişiklik ayrı branch ve ayrı PR ile gönderilir; görev tamamlandığında PR ayrıca istemeden açılır. Tek PR tek iş.
 - Açıklamalar Türkçe yazılır.
 - main'e doğrudan commit atılmaz.

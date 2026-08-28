@@ -16,8 +16,17 @@ Bunlar Actions tarafından üretilir. Tutarsız veya hatalı görünseler bile d
 - `strategies/` altındaki herhangi bir dosya
 - Risk parametreleri (pozisyon başına risk, nakit oranı, sektör limiti, ATR stop, rejim filtresi)
 - `.github/workflows/` altındaki herhangi bir dosya
+
+## Strateji ve risk değişikliği prosedürü
+
 - Strateji ve risk değişikliklerinde: değişiklik backtest.py ile test edilir, öncesi ve sonrası sonuçları PR açıklamasında karşılaştırmalı olarak paylaşılır. Backtest çalıştırılmadan strateji değişikliği PR'a gönderilmez.
+
+## Sırlar
+
 - Sırlar: API anahtarı, token veya şifre koda yazılmaz. Ortam değişkeni (os.environ) ve GitHub Actions secrets üzerinden okunur.
+
+## Kırılgan altyapı
+
 - Kırılgan altyapı — dokunmadan önce sor: Rapor ve /trade workflow'ları commit'lerini `[skip ci]` ile atar ve `pages_deploy.yml` workflow_run ile tetiklenir. Bu yapı sonsuz döngüyü engellemek içindir.
 
 ## Çalışma kuralları
@@ -25,4 +34,3 @@ Bunlar Actions tarafından üretilir. Tutarsız veya hatalı görünseler bile d
 - Her değişiklik ayrı branch ve ayrı PR ile gönderilir. Tek PR tek iş.
 - Açıklamalar Türkçe yazılır.
 - main'e doğrudan commit atılmaz.
-- Başka hiçbir dosyaya dokunma.

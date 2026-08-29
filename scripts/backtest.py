@@ -223,9 +223,14 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                     continue
 
                 price = sig["price"]
+                stop_price = sig["stop_price"]
+                if np.isnan(price) or np.isnan(stop_price):
+                    print(f"[skip] {strategy_name} {sym} {day.date()}: price/stop_price NaN, pozisyon açılmıyor")
+                    continue
+
                 prices[sym] = price
                 sector = sector_map.get(sym, "Unknown")
-                qty, cost = ledger_mod.plan_position(lg, price, sig["stop_price"])
+                qty, cost = ledger_mod.plan_position(lg, price, stop_price)
                 if qty <= 0:
                     continue
                 allowed, _ = ledger_mod.sector_allows_entry(lg, prices, sector, cost)

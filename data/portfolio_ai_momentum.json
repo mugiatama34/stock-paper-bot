@@ -1,42 +1,42 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 339.15985107421875,
+  "cash": 455.1798515319824,
   "positions": {
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 485.44617988623907,
+      "stop_price": 494.02930436692054,
       "partial_taken": false,
-      "peak_price": 505.05999755859375,
+      "peak_price": 513.530029296875,
       "sector": "Information Technology"
     },
     "CRM": {
       "qty": 9,
       "avg_price": 209.28500366210938,
-      "stop_price": 231.21857343401228,
+      "stop_price": 234.2614266531808,
       "partial_taken": false,
-      "peak_price": 252.0500030517578
+      "peak_price": 256.0
     },
     "SNOW": {
       "qty": 4,
       "avg_price": 322.9800109863281,
-      "stop_price": 304.3301217215402,
+      "stop_price": 304.802978515625,
       "partial_taken": false,
       "peak_price": 329.1099853515625
     },
     "PLTR": {
       "qty": 5,
       "avg_price": 175.97000122070312,
-      "stop_price": 171.51527186802454,
+      "stop_price": 172.55099051339286,
       "partial_taken": false,
-      "peak_price": 185.92999267578125,
+      "peak_price": 186.2899932861328,
       "sector": "Information Technology"
     },
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 33.1485710144043,
+      "stop_price": 33.1528560093471,
       "partial_taken": false,
       "peak_price": 38.459999084472656,
       "sector": "Information Technology"
@@ -44,8 +44,8 @@
     "ADP": {
       "qty": 2,
       "avg_price": 283.010009765625,
-      "stop_price": 272.7614179338728,
-      "peak_price": 284.67999267578125,
+      "stop_price": 275.92286464146207,
+      "peak_price": 287.4800109863281,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -76,7 +76,7 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 30.964287894112722,
+      "stop_price": 30.99643053327288,
       "peak_price": 33.33000183105469,
       "sector": "Industrials",
       "partial_taken": false
@@ -84,7 +84,7 @@
     "CSGP": {
       "qty": 7,
       "avg_price": 32.84000015258789,
-      "stop_price": 30.040000370570592,
+      "stop_price": 30.068571635654994,
       "peak_price": 32.84000015258789,
       "sector": "Real Estate",
       "partial_taken": false
@@ -100,25 +100,9 @@
     "GEHC": {
       "qty": 2,
       "avg_price": 74.19000244140625,
-      "stop_price": 71.34642900739398,
+      "stop_price": 71.4564710344587,
       "peak_price": 74.29000091552734,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "MDLZ": {
-      "qty": 1,
-      "avg_price": 64.69999694824219,
-      "stop_price": 62.314283098493306,
-      "peak_price": 64.69999694824219,
-      "sector": "Consumer Staples",
-      "partial_taken": false
-    },
-    "PYPL": {
-      "qty": 1,
-      "avg_price": 61.68000030517578,
-      "stop_price": 59.512428283691406,
-      "peak_price": 62.27000045776367,
-      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -382,6 +366,34 @@
         "atr14": 1.47,
         "relative_strength_20d": 0.0671
       }
+    },
+    {
+      "date": "2026-08-29T01:06:04.990253+00:00",
+      "symbol": "MDLZ",
+      "action": "SELL",
+      "qty": 1,
+      "price": 62.36,
+      "pnl": -2.34,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "\u0130zleyen stop tetiklendi (62.37), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 62.37
+      }
+    },
+    {
+      "date": "2026-08-29T01:06:05.376950+00:00",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "qty": 1,
+      "price": 53.66,
+      "pnl": -8.02,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (59.51), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 59.51
+      }
     }
   ],
   "equity_history": [
@@ -444,6 +456,11 @@
       "date": "2026-08-28T04:32:20.955866+00:00",
       "equity": 10534.32,
       "cash": 339.16
+    },
+    {
+      "date": "2026-08-29T01:06:05.890105+00:00",
+      "equity": 10626.28,
+      "cash": 455.18
     }
   ]
 }

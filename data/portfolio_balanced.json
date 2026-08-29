@@ -14,7 +14,7 @@
     "AMCR": {
       "qty": 40,
       "avg_price": 47.90999984741211,
-      "stop_price": 45.55785696847098,
+      "stop_price": 45.60000010899135,
       "peak_price": 47.90999984741211,
       "sector": "Materials",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "CL": {
       "qty": 15,
       "avg_price": 92.55000305175781,
-      "stop_price": 89.23874991280692,
+      "stop_price": 89.2521503993443,
       "peak_price": 92.55000305175781,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -62,8 +62,8 @@
     "TTWO": {
       "qty": 1,
       "avg_price": 233.5,
-      "stop_price": 218.03857421875,
-      "peak_price": 234.3699951171875,
+      "stop_price": 219.25286429268974,
+      "peak_price": 235.38999938964844,
       "sector": "Communication Services",
       "partial_taken": false
     },
@@ -78,7 +78,7 @@
     "ARES": {
       "qty": 1,
       "avg_price": 142.75999450683594,
-      "stop_price": 133.77285984584265,
+      "stop_price": 133.9221474783761,
       "peak_price": 143.0500030517578,
       "sector": "Financials",
       "partial_taken": false
@@ -110,7 +110,7 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 70.07143293108258,
+      "stop_price": 70.07286180768695,
       "peak_price": 74.41000366210938,
       "sector": "Energy",
       "partial_taken": false
@@ -118,7 +118,7 @@
     "AES": {
       "qty": 5,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.659999983651298,
+      "stop_price": 14.662857191903251,
       "peak_price": 14.75,
       "sector": "Utilities",
       "partial_taken": false
@@ -126,7 +126,7 @@
     "UDR": {
       "qty": 1,
       "avg_price": 37.93000030517578,
-      "stop_price": 36.748492839617015,
+      "stop_price": 36.826147680724034,
       "peak_price": 37.93000030517578,
       "sector": "Real Estate",
       "partial_taken": false
@@ -525,6 +525,11 @@
     {
       "date": "2026-08-28T04:32:22.999114+00:00",
       "equity": 9975.82,
+      "cash": 197.6
+    },
+    {
+      "date": "2026-08-29T01:06:08.780813+00:00",
+      "equity": 9871.2,
       "cash": 197.6
     }
   ]

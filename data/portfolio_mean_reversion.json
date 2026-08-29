@@ -1,20 +1,20 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1983.8698959350586,
+  "cash": 924.2299118041992,
   "positions": {
     "AMZN": {
       "qty": 9,
       "avg_price": 262.07000732421875,
-      "stop_price": 248.4075083051409,
-      "peak_price": 262.07000732421875,
+      "stop_price": 251.9174973624093,
+      "peak_price": 266.42999267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "KIM": {
       "qty": 78,
       "avg_price": 24.219999313354492,
-      "stop_price": 23.450356892177037,
+      "stop_price": 23.502142769949778,
       "peak_price": 24.219999313354492,
       "sector": "Real Estate",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "UNH": {
       "qty": 3,
       "avg_price": 398.760009765625,
-      "stop_price": 382.13998522077287,
+      "stop_price": 382.5087411063058,
       "peak_price": 402.0899963378906,
       "sector": "Health Care",
       "partial_taken": false
@@ -70,7 +70,7 @@
     "HST": {
       "qty": 14,
       "avg_price": 22.485000610351562,
-      "stop_price": 21.351072311401367,
+      "stop_price": 21.437679563249862,
       "peak_price": 22.485000610351562,
       "sector": "Real Estate",
       "partial_taken": false
@@ -80,6 +80,30 @@
       "avg_price": 144.61500549316406,
       "stop_price": 135.36143548148019,
       "peak_price": 144.61500549316406,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "AFL": {
+      "qty": 4,
+      "avg_price": 116.5199966430664,
+      "stop_price": 111.93698916424137,
+      "peak_price": 116.5199966430664,
+      "sector": "Financials",
+      "partial_taken": false
+    },
+    "GOOG": {
+      "qty": 1,
+      "avg_price": 342.8800048828125,
+      "stop_price": 327.43982696533203,
+      "peak_price": 342.8800048828125,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "PCAR": {
+      "qty": 2,
+      "avg_price": 125.33999633789062,
+      "stop_price": 118.5302489417173,
+      "peak_price": 125.33999633789062,
       "sector": "Industrials",
       "partial_taken": false
     }
@@ -359,6 +383,57 @@
         "rsi14_prev": 34.01,
         "atr14": 1.28
       }
+    },
+    {
+      "date": "2026-08-29T01:06:05.975012+00:00",
+      "symbol": "AFL",
+      "action": "BUY",
+      "qty": 4,
+      "price": 116.52,
+      "stop_price": 111.94,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.39 \u2192 33.46 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=113.37) \u00fczerinde. \u0130zleyen stop: 111.94.",
+      "indicators": {
+        "price": 116.52,
+        "sma200": 113.37,
+        "rsi14": 33.46,
+        "rsi14_prev": 28.39,
+        "atr14": 1.83
+      }
+    },
+    {
+      "date": "2026-08-29T01:06:06.629842+00:00",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "qty": 1,
+      "price": 342.88,
+      "stop_price": 327.44,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.85 \u2192 33.82 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=333.27) \u00fczerinde. \u0130zleyen stop: 327.44.",
+      "indicators": {
+        "price": 342.88,
+        "sma200": 333.27,
+        "rsi14": 33.82,
+        "rsi14_prev": 28.85,
+        "atr14": 6.18
+      }
+    },
+    {
+      "date": "2026-08-29T01:06:07.196698+00:00",
+      "symbol": "PCAR",
+      "action": "BUY",
+      "qty": 2,
+      "price": 125.34,
+      "stop_price": 118.53,
+      "sector": "Industrials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 30.77 \u2192 32.09 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=118.37) \u00fczerinde. \u0130zleyen stop: 118.53.",
+      "indicators": {
+        "price": 125.34,
+        "sma200": 118.37,
+        "rsi14": 32.09,
+        "rsi14_prev": 30.77,
+        "atr14": 2.72
+      }
     }
   ],
   "equity_history": [
@@ -421,6 +496,11 @@
       "date": "2026-08-28T04:32:21.952497+00:00",
       "equity": 9957.37,
       "cash": 1983.87
+    },
+    {
+      "date": "2026-08-29T01:06:07.758090+00:00",
+      "equity": 10013.4,
+      "cash": 924.23
     }
   ]
 }

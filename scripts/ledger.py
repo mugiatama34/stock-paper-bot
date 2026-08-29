@@ -10,6 +10,7 @@ instead of round-tripping all the way to a moving-average exit.
 import json
 import math
 import os
+import tempfile
 from datetime import datetime, timezone
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
@@ -22,18 +23,44 @@ MAX_NAMES_PER_SECTOR = 2   # concentration cap: count of open names in one secto
 MAX_SECTOR_PCT = 0.30      # concentration cap: share of equity in one sector
 
 
+class LedgerError(Exception):
+    """Ledger dosyası okunamadı veya bozuk -- boş ledger'a sessizce düşülmez."""
+
+
 def ledger_path(strategy: str) -> str:
     return os.path.join(DATA_DIR, f"portfolio_{strategy}.json")
 
 
 def load_ledger(strategy: str) -> dict:
-    with open(ledger_path(strategy), "r") as f:
-        return json.load(f)
+    path = ledger_path(strategy)
+    try:
+        with open(path, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise LedgerError(f"Ledger dosyası bulunamadı: {path}") from None
+    except json.JSONDecodeError as e:
+        raise LedgerError(f"Ledger dosyası bozuk (JSON parse hatası): {path} ({e})") from e
 
 
 def save_ledger(strategy: str, ledger: dict) -> None:
-    with open(ledger_path(strategy), "w") as f:
-        json.dump(ledger, f, indent=2)
+    """Atomik yazma: geçici dosyaya yazıp fsync sonrası yerine taşır, böylece
+    yazma sırasında kesilen bir işlem portföy dosyasını yarım bırakmaz."""
+    path = ledger_path(strategy)
+    fd, tmp_path = tempfile.mkstemp(
+        dir=os.path.dirname(path), prefix=f".{os.path.basename(path)}.", suffix=".tmp"
+    )
+    try:
+        with os.fdopen(fd, "w") as f:
+            json.dump(ledger, f, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, path)
+    except BaseException:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
 
 
 def now_iso() -> str:

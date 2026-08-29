@@ -101,6 +101,7 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
             reasoning = f"İzleyen stop tetiklendi ({stop:.2f}), zirveden geri çekilme."
             qty = lg["positions"][symbol]["qty"]
             if ledger_mod.sell(lg, symbol, price, reasoning, {"stop_price": round(stop, 2)}):
+                ledger_mod.save_ledger(strategy_name, lg)
                 telegram_notify.notify_trade(strategy_name, "SELL", symbol, qty, price, reasoning)
             continue
 
@@ -115,6 +116,7 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
         if signal["action"] == "SELL":
             qty = lg["positions"][symbol]["qty"]
             if ledger_mod.sell(lg, symbol, price, signal["reasoning"], signal["indicators"]):
+                ledger_mod.save_ledger(strategy_name, lg)
                 telegram_notify.notify_trade(strategy_name, "SELL", symbol, qty, price,
                                              signal["reasoning"])
         elif signal["action"] == "SELL_PARTIAL":
@@ -122,6 +124,7 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
             if ledger_mod.sell(lg, symbol, price, signal["reasoning"], signal["indicators"], qty=qty):
                 if symbol in lg["positions"]:
                     lg["positions"][symbol]["partial_taken"] = True
+                ledger_mod.save_ledger(strategy_name, lg)
                 telegram_notify.notify_trade(strategy_name, "SELL", symbol, qty, price,
                                              signal["reasoning"])
 
@@ -164,6 +167,7 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
 
             if ledger_mod.buy(lg, symbol, price, signal["stop_price"], signal["reasoning"],
                               signal["indicators"], sector=sector):
+                ledger_mod.save_ledger(strategy_name, lg)
                 telegram_notify.notify_trade(strategy_name, "BUY", symbol,
                                              lg["positions"][symbol]["qty"], price,
                                              f"{signal['reasoning']} [{sector}]")
@@ -203,7 +207,10 @@ def main():
         return
 
     for name in strategies:
-        run_strategy(name, price_data, spy_df, universes, risk_on, regime_note)
+        try:
+            run_strategy(name, price_data, spy_df, universes, risk_on, regime_note)
+        except Exception as e:
+            print(f"[error] {name}: run_strategy başarısız oldu, diğer stratejilere devam ediliyor: {e}")
 
     # Refresh the dashboard with the post-trade book, using the prices we already
     # have in hand, so holdings appear without waiting for the next report run.

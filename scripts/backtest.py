@@ -187,7 +187,8 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
             spy_win = spy_df.loc[:day]
             try:
                 sig = module.evaluate(sym, window, spy_win, True, lg["positions"][sym])
-            except Exception:
+            except Exception as e:
+                print(f"[warn] {strategy_name} {sym}: evaluate() backtest'te hata verdi, atlanıyor: {e}")
                 sig = None
             if not sig:
                 continue

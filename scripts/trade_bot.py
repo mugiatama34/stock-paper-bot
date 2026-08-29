@@ -138,7 +138,8 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
 
             try:
                 signal = module.evaluate(symbol, df, spy_df, False, None)
-            except Exception:
+            except Exception as e:
+                print(f"[warn] {strategy_name} {symbol}: evaluate() Pass 2'de hata verdi, atlanıyor: {e}")
                 continue
             if not signal or signal["action"] != "BUY":
                 continue

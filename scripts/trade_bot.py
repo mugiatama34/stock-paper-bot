@@ -192,10 +192,17 @@ def main():
     universes = universe_mod.build_universe()
 
     needed = {SPY_TICKER}
+    healthy_strategies = []
     for name in strategies:
         module = STRATEGY_MODULES[name]
         needed |= set(universes[module.UNIVERSE_KEY].keys())
-        needed |= set(ledger_mod.load_ledger(name)["positions"].keys())
+        try:
+            lg = ledger_mod.load_ledger(name)
+        except ledger_mod.LedgerError as e:
+            print(f"[error] {name}: ledger yüklenemedi, bu turda atlanıyor: {e}")
+            continue
+        needed |= set(lg["positions"].keys())
+        healthy_strategies.append(name)
 
     price_data = fetch_bulk(needed)
     spy_df = price_data.get(SPY_TICKER)
@@ -206,7 +213,7 @@ def main():
         print("[error] SPY verisi yok, çıkılıyor")
         return
 
-    for name in strategies:
+    for name in healthy_strategies:
         try:
             run_strategy(name, price_data, spy_df, universes, risk_on, regime_note)
         except Exception as e:

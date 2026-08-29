@@ -8,6 +8,7 @@ Positions carry a trailing stop: `peak_price` ratchets up as the trade works, an
 instead of round-tripping all the way to a moving-average exit.
 """
 import json
+import math
 import os
 from datetime import datetime, timezone
 
@@ -85,6 +86,10 @@ def plan_position(ledger: dict, price: float, stop_price: float) -> tuple:
     (qty, cost) this trade would take, using the same sizing rule as buy().
     Split out so sector-concentration checks can run before anything is committed.
     """
+    if price is None or (isinstance(price, float) and math.isnan(price)) or price <= 0:
+        print(f"[skip] plan_position: geçersiz price ({price!r}), pozisyon planlanmadı")
+        return 0, 0.0
+
     risk_amount = ledger["cash"] * RISK_PER_TRADE
     per_share_risk = max(price - stop_price, price * 0.01)  # guard against ~0 distance
     qty = int(risk_amount / per_share_risk)

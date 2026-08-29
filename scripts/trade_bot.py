@@ -103,7 +103,11 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
                 telegram_notify.notify_trade(strategy_name, "SELL", symbol, qty, price, reasoning)
             continue
 
-        signal = module.evaluate(symbol, df, spy_df, True, lg["positions"][symbol])
+        try:
+            signal = module.evaluate(symbol, df, spy_df, True, lg["positions"][symbol])
+        except Exception as e:
+            print(f"[warn] {strategy_name} {symbol}: evaluate() Pass 1'de hata verdi, atlanıyor: {e}")
+            continue
         if not signal:
             continue
 

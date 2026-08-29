@@ -9,6 +9,7 @@ Order of operations each run:
   4. Per strategy: ratchet trailing stops, process exits, then process entries
      subject to liquidity and sector-concentration limits.
 """
+import math
 import sys
 import time
 
@@ -143,10 +144,15 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
                 continue
 
             price = signal["price"]
+            stop_price = signal["stop_price"]
+            if math.isnan(price) or math.isnan(stop_price):
+                print(f"[skip] {strategy_name} {symbol}: price/stop_price NaN, pozisyon açılmıyor")
+                continue
+
             current_prices[symbol] = price
             sector = sector_map.get(symbol, "Unknown")
 
-            qty, cost = ledger_mod.plan_position(lg, price, signal["stop_price"])
+            qty, cost = ledger_mod.plan_position(lg, price, stop_price)
             if qty <= 0:
                 continue
 

@@ -151,6 +151,10 @@ def classify_exit_reason(reasoning: str) -> str:
     if "İzleyen stop tetiklendi" in reasoning:
         return "trailing_stop"
     low = reasoning.lower()
+    # risk_on/rejim kontrolü run() içinde yalnızca YENİ girişleri engelliyor, açık
+    # pozisyonları kapatmıyor -- hiçbir strateji rejim gerekçesiyle SELL üretmiyor,
+    # dolayısıyla bu kova bugünkü kod tabanında hiç dolmaz. Motorun rejim
+    # filtresini yalnızca giriş tarafında uyguladığını doğru yansıtır, eksik değil.
     if "rejim" in low or "risk-off" in low or "risk off" in low:
         return "rejim_filtresi"
     return "sinyal_cikisi"
@@ -177,6 +181,11 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
         if ok:
             t = lg["trades"][-1]
             cost_bps = COST_BPS["value"]
+            # entry_price/t["price"] are already _fill()-shaded (post-cost), so this
+            # re-applies bps on top of a shaded number rather than the raw signal
+            # price -- a second-order (bps^2) overstatement at entry and understatement
+            # at exit, negligible at realistic bps but not bit-exact. Reporting-only;
+            # the ledger's actual cash/pnl already reflect the true cost via _fill().
             entry_cost = (entry_price * t["qty"] * cost_bps / 10000.0) if (entry_price and cost_bps) else 0.0
             exit_cost = (t["price"] * t["qty"] * cost_bps / 10000.0) if cost_bps else 0.0
             closed_trades_export.append({

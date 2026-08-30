@@ -12,6 +12,7 @@ from the position's average cost.
 """
 import argparse
 import os
+import shutil
 from collections import OrderedDict
 from datetime import datetime, timedelta, timezone
 
@@ -25,6 +26,7 @@ import ledger as ledger_mod
 import telegram_notify
 
 REPORTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "reports")
+ARCHIVE_DIR = os.path.join(REPORTS_DIR, "archive")
 DOCS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
 
 PERIOD_DAYS = {"daily": 1, "weekly": 7, "monthly": 30, "yearly": 365}
@@ -165,6 +167,14 @@ def plot_comparison(ledgers: dict, since_dt, mode: str, prices: dict) -> str:
     path = os.path.join(REPORTS_DIR, f"comparison_{mode}.png")
     fig.savefig(path, dpi=130)
     plt.close(fig)
+
+    # Dated copy so past reports survive the next run overwriting comparison_{mode}.png.
+    # Same-day reruns (e.g. workflow_dispatch) just overwrite that day's archive file.
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+    date_tag = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    archive_path = os.path.join(ARCHIVE_DIR, f"comparison_{mode}_{date_tag}.png")
+    shutil.copyfile(path, archive_path)
+
     return path
 
 

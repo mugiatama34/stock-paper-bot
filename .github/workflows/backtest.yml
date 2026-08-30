@@ -73,6 +73,6 @@ jobs:
           else
             LABEL="${{ inputs.years }}y"
           fi
-          git add reports/backtest.png reports/backtest.json reports/backtest_trades.json docs/backtest.html
+          git add reports/backtest.png reports/backtest.json reports/backtest_trades_*.json docs/backtest.html
           git diff --cached --quiet || git commit -m "Backtest $LABEL [skip ci]"
           git push

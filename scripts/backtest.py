@@ -631,9 +631,13 @@ def main():
         },
         "trades": all_trades_export,
     }
-    with open(os.path.join(REPORTS_DIR, "backtest_trades.json"), "w") as f:
+    if custom_range:
+        trades_filename = f"backtest_trades_{range_start.strftime('%Y-%m-%d')}_{range_end.strftime('%Y-%m-%d')}.json"
+    else:
+        trades_filename = f"backtest_trades_last{args.years}y.json"
+    with open(os.path.join(REPORTS_DIR, trades_filename), "w") as f:
         json.dump(trades_out, f, indent=2)
-    print(f"[ok] reports/backtest_trades.json yazıldı ({len(all_trades_export)} kapanan işlem)")
+    print(f"[ok] reports/{trades_filename} yazıldı ({len(all_trades_export)} kapanan işlem)")
 
     build_html(results, bench, period_title, args.universe_size, args.cost_bps,
                os.path.join(DOCS_DIR, "backtest.html"))

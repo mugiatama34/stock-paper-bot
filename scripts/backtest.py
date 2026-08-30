@@ -595,9 +595,9 @@ def main():
     for name, module in STRATEGY_MODULES.items():
         sector_map = universes[module.UNIVERSE_KEY]
         if universe_mode == "top_n":
-            syms = rank_by_dollar_volume(data, sector_map, args.universe_size)
+            syms = sorted(rank_by_dollar_volume(data, sector_map, args.universe_size))
         else:
-            syms = sorted(sector_map.keys())
+            syms = sorted(s for s in sector_map.keys() if s in data)
         print(f"[run] {name}: {len(syms)} hisse ({universe_mode})")
         _CACHE.clear()
         lg, curve, invested_pct, closed_trades = run(name, syms, data, spy_df, sector_map, dates)

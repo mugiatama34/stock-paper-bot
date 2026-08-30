@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stock Paper Bot Dashboard</title>
+<title>AI Momentum — Stock Paper Bot</title>
 <style>
 :root {
   --bg: #f5f5f7;
@@ -99,25 +99,24 @@ details[open] summary { margin-bottom: .3rem; }
 }
 </style></head>
 <body>
-<h1>Stock Paper Bot</h1>
-<p class="muted">Son güncelleme: 2026-08-30 19:45 UTC &nbsp;·&nbsp;
-  <a href="archive.html">Arşiv</a> &nbsp;·&nbsp; <a href="backtest.html">Backtest</a></p>
-<div class="cards"><a class="strategy-card" href="strategy_ai_momentum.html">
-          <h2>AI Momentum</h2>
-          <p class="big">$10,626.28</p>
-          <p class="pos">+6.26%</p>
-          <p class="muted">13 açık pozisyon</p>
-        </a><a class="strategy-card" href="strategy_mean_reversion.html">
-          <h2>Mean Reversion</h2>
-          <p class="big">$10,013.40</p>
-          <p class="pos">+0.13%</p>
-          <p class="muted">13 açık pozisyon</p>
-        </a><a class="strategy-card" href="strategy_balanced.html">
-          <h2>Balanced</h2>
-          <p class="big">$9,871.20</p>
-          <p class="neg">-1.29%</p>
-          <p class="muted">17 açık pozisyon</p>
-        </a></div>
-<h2 class="section-title">Karşılaştırma</h2>
-<div class="chart-tabs"><input type="radio" name="cmp-tab" id="tab-daily" checked><label for="tab-daily">Günlük</label><input type="radio" name="cmp-tab" id="tab-weekly"><label for="tab-weekly">Haftalık</label><input type="radio" name="cmp-tab" id="tab-monthly"><label for="tab-monthly">Aylık</label><div class="chart-card" id="panel-daily"><img src="../reports/comparison_daily.png" alt="Günlük karşılaştırma"></div><div class="chart-card" id="panel-weekly"><img src="../reports/comparison_weekly.png" alt="Haftalık karşılaştırma"></div><div class="chart-card" id="panel-monthly"><img src="../reports/comparison_monthly.png" alt="Aylık karşılaştırma"></div></div>
+<a class="back" href="index.html">← Ana sayfa</a>
+<h1>AI Momentum</h1>
+<div class="metrics">
+      <div><span class="muted">Güncel Değer</span><br><b class="big">$10,626.28</b></div>
+      <div><span class="muted">Toplam Getiri</span><br>
+        <b class="pos">+6.26% (+626.28$)</b></div>
+      <div><span class="muted">Kazanma Oranı</span><br>
+        <b>0%</b></div>
+      <div><span class="muted">İşlem Sayısı</span><br><b>2</b></div>
+      <div><span class="muted">Nakit</span><br><b>$455.18</b></div>
+    </div>
+<div class="chart-card"><img src="../reports/equity_ai_momentum.png" alt="Equity grafiği"></div>
+<h2 class="section-title">Açık Pozisyonlar</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Sembol</th><th>Giriş</th><th>Güncel</th><th>Stop</th><th>K/Z</th></tr></thead>
+<tbody><tr><td><b>MSFT</b></td><td>$487.32</td><td>$513.53</td><td>$494.03</td><td class='pos'>+5.38%</td></tr><tr><td><b>CRM</b></td><td>$209.29</td><td>$256.00</td><td>$234.26</td><td class='pos'>+22.32%</td></tr><tr><td><b>SNOW</b></td><td>$322.98</td><td>$328.00</td><td>$304.80</td><td class='pos'>+1.55%</td></tr><tr><td><b>PLTR</b></td><td>$175.97</td><td>$186.29</td><td>$172.55</td><td class='pos'>+5.86%</td></tr><tr><td><b>SMCI</b></td><td>$35.17</td><td>$37.08</td><td>$33.15</td><td class='pos'>+5.45%</td></tr><tr><td><b>ADP</b></td><td>$283.01</td><td>$287.48</td><td>$275.92</td><td class='pos'>+1.58%</td></tr><tr><td><b>BKNG</b></td><td>$213.36</td><td>$205.63</td><td>$201.99</td><td class='neg'>-3.62%</td></tr><tr><td><b>CHTR</b></td><td>$150.30</td><td>$153.62</td><td>$140.78</td><td class='pos'>+2.21%</td></tr><tr><td><b>CMCSA</b></td><td>$27.02</td><td>$27.06</td><td>$26.08</td><td class='pos'>+0.15%</td></tr><tr><td><b>CPRT</b></td><td>$33.26</td><td>$32.99</td><td>$31.00</td><td class='neg'>-0.81%</td></tr><tr><td><b>CSGP</b></td><td>$32.84</td><td>$32.22</td><td>$30.07</td><td class='neg'>-1.89%</td></tr><tr><td><b>DXCM</b></td><td>$91.06</td><td>$90.82</td><td>$86.44</td><td class='neg'>-0.26%</td></tr><tr><td><b>GEHC</b></td><td>$74.19</td><td>$71.72</td><td>$71.46</td><td class='neg'>-3.32%</td></tr></tbody></table></div>
+<h2 class="section-title">Kapanmış İşlemler</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Tarih</th><th>Sembol</th><th>Adet</th><th>Fiyat</th><th>K/Z</th><th>Gerekçe</th></tr></thead>
+<tbody><tr><td>2026-08-29</td><td><b>PYPL</b></td><td>1</td><td>$53.66</td><td class='neg'>-8.02$</td><td><details><summary>Gerekçe</summary>İzleyen stop tetiklendi (59.51), zirveden geri çekilme.</details></td></tr><tr><td>2026-08-29</td><td><b>MDLZ</b></td><td>1</td><td>$62.36</td><td class='neg'>-2.34$</td><td><details><summary>Gerekçe</summary>İzleyen stop tetiklendi (62.37), zirveden geri çekilme.</details></td></tr></tbody></table></div>
 </body></html>

@@ -31,13 +31,3 @@ jobs:
           git add reports/ docs/
           git diff --cached --quiet || git commit -m "Monthly report [skip ci]"
           git push
-
-      - name: Trigger Netlify deploy
-        env:
-          HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
-        run: |
-          if [ -n "$HOOK" ]; then
-            curl -fsS -X POST -d '{}' "$HOOK" && echo "Netlify deploy tetiklendi"
-          else
-            echo "NETLIFY_BUILD_HOOK secret tanimli degil, atlandi"
-          fi

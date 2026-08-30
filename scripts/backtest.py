@@ -140,14 +140,63 @@ def new_ledger(name):
             "positions": {}, "trades": [], "equity_history": []}
 
 
+def classify_exit_reason(reasoning: str) -> str:
+    """Bucket a SELL/SELL_PARTIAL's free-text reasoning into a fixed exit-reason
+    category for reports/backtest_trades.json. Matched against the exact literal
+    used for the centralized trailing stop; everything else falls back to
+    keyword matching or "diger" so an unrecognized future reasoning string
+    doesn't silently vanish from the export."""
+    if not reasoning:
+        return "diger"
+    if "İzleyen stop tetiklendi" in reasoning:
+        return "trailing_stop"
+    low = reasoning.lower()
+    if "rejim" in low or "risk-off" in low or "risk off" in low:
+        return "rejim_filtresi"
+    return "sinyal_cikisi"
+
+
 def run(strategy_name, symbols, data, spy_df, sector_map, dates):
     module = STRATEGY_MODULES[strategy_name]
     lg = new_ledger(strategy_name)
     curve = []
     invested = [0]
+    entry_dates = {}          # symbol -> date this open episode started (for export only)
+    closed_trades_export = [] # one row per SELL/SELL_PARTIAL, for reports/backtest_trades.json
 
     spy_close = spy_df["Close"]
     spy_sma200 = spy_close.rolling(200).mean()
+
+    def do_sell(sym, day, fill_price, reasoning, indicators, qty=None):
+        """Wraps ledger_mod.sell() to also emit a backtest_trades.json row.
+        Purely additive bookkeeping -- the trading decision itself is untouched."""
+        pos = lg["positions"].get(sym)
+        entry_price = pos["avg_price"] if pos else None
+        entry_date = entry_dates.get(sym)
+        ok = ledger_mod.sell(lg, sym, fill_price, reasoning, indicators, qty=qty)
+        if ok:
+            t = lg["trades"][-1]
+            cost_bps = COST_BPS["value"]
+            entry_cost = (entry_price * t["qty"] * cost_bps / 10000.0) if (entry_price and cost_bps) else 0.0
+            exit_cost = (t["price"] * t["qty"] * cost_bps / 10000.0) if cost_bps else 0.0
+            closed_trades_export.append({
+                "strategy": strategy_name,
+                "symbol": sym,
+                "sector": t.get("sector", "Unknown"),
+                "entry_date": entry_date.isoformat() if entry_date is not None else None,
+                "entry_price": round(entry_price, 2) if entry_price is not None else None,
+                "exit_date": pd.Timestamp(day).isoformat(),
+                "exit_price": t["price"],
+                "exit_reason": classify_exit_reason(reasoning),
+                "exit_reasoning": reasoning,
+                "qty": t["qty"],
+                "pnl": t["pnl"],
+                "cost_applied": round(entry_cost + exit_cost, 4),
+                "partial": t["partial"],
+            })
+            if sym not in lg["positions"]:
+                entry_dates.pop(sym, None)
+        return ok
 
     for day in dates:
         # Freeze the simulated clock so trade timestamps are historical, not "now".
@@ -180,7 +229,7 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
 
             stop = lg["positions"][sym].get("stop_price")
             if stop and price <= stop:
-                ledger_mod.sell(lg, sym, _fill(price, "sell"), "İzleyen stop tetiklendi.", {})
+                do_sell(sym, day, _fill(price, "sell"), "İzleyen stop tetiklendi.", {})
                 continue
 
             spy_win = spy_df.loc[:day]
@@ -192,10 +241,10 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
             if not sig:
                 continue
             if sig["action"] == "SELL":
-                ledger_mod.sell(lg, sym, _fill(price, "sell"), sig["reasoning"], sig["indicators"])
+                do_sell(sym, day, _fill(price, "sell"), sig["reasoning"], sig["indicators"])
             elif sig["action"] == "SELL_PARTIAL":
-                if ledger_mod.sell(lg, sym, _fill(price, "sell"), sig["reasoning"],
-                                   sig["indicators"], qty=sig["qty"]):
+                if do_sell(sym, day, _fill(price, "sell"), sig["reasoning"],
+                           sig["indicators"], qty=sig["qty"]):
                     if sym in lg["positions"]:
                         lg["positions"][sym]["partial_taken"] = True
 
@@ -237,8 +286,9 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                 allowed, _ = ledger_mod.sector_allows_entry(lg, prices, sector, cost)
                 if not allowed:
                     continue
-                ledger_mod.buy(lg, sym, fill_price, sig["stop_price"],
-                               sig["reasoning"], sig["indicators"], sector=sector)
+                if ledger_mod.buy(lg, sym, fill_price, sig["stop_price"],
+                                  sig["reasoning"], sig["indicators"], sector=sector):
+                    entry_dates[sym] = day
 
         for sym in lg["positions"]:
             if sym not in prices:
@@ -250,7 +300,7 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
             invested[0] += 1
 
     invested_pct = invested[0] / len(curve) * 100 if curve else 0.0
-    return lg, curve, invested_pct
+    return lg, curve, invested_pct, closed_trades_export
 
 
 # ---------------------------------------------------------------- metrics
@@ -532,15 +582,17 @@ def main():
     print(f"[run] {dates[0].date()} → {dates[-1].date()} ({len(dates)} işlem günü)")
 
     curves, results = {}, {}
+    all_trades_export = []
     for name, module in STRATEGY_MODULES.items():
         sector_map = universes[module.UNIVERSE_KEY]
         syms = rank_by_dollar_volume(data, sector_map, args.universe_size)
         print(f"[run] {name}: {len(syms)} hisse")
         _CACHE.clear()
-        lg, curve, invested_pct = run(name, syms, data, spy_df, sector_map, dates)
+        lg, curve, invested_pct, closed_trades = run(name, syms, data, spy_df, sector_map, dates)
         curves[name] = curve
         results[name] = metrics(curve, lg, years, invested_pct)
         results[name]["universe_size"] = len(syms)
+        all_trades_export.extend(closed_trades)
 
     bench = benchmark(spy_df, dates, years)
     chart = os.path.join(REPORTS_DIR, "backtest.png")
@@ -567,6 +619,21 @@ def main():
         out["end"] = range_end.strftime("%Y-%m-%d")
     with open(os.path.join(REPORTS_DIR, "backtest.json"), "w") as f:
         json.dump(out, f, indent=2)
+
+    trades_out = {
+        "generated": datetime.now(timezone.utc).isoformat(),
+        "run_params": {
+            "years": None if custom_range else years,
+            "start": range_start.strftime("%Y-%m-%d") if custom_range else None,
+            "end": range_end.strftime("%Y-%m-%d") if custom_range else None,
+            "cost_bps": args.cost_bps,
+            "universe_size": args.universe_size,
+        },
+        "trades": all_trades_export,
+    }
+    with open(os.path.join(REPORTS_DIR, "backtest_trades.json"), "w") as f:
+        json.dump(trades_out, f, indent=2)
+    print(f"[ok] reports/backtest_trades.json yazıldı ({len(all_trades_export)} kapanan işlem)")
 
     build_html(results, bench, period_title, args.universe_size, args.cost_bps,
                os.path.join(DOCS_DIR, "backtest.html"))

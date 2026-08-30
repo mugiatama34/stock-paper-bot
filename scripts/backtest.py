@@ -84,14 +84,13 @@ def install_fast_indicators():
 
 
 # ---------------------------------------------------------------- data
-def download(symbols, years):
+def download(symbols, start, end):
     symbols = sorted(set(symbols))
-    period = f"{years + 2}y"          # extra years cover the warm-up window
     out = {}
     for i in range(0, len(symbols), 100):
         chunk = symbols[i:i + 100]
         try:
-            raw = yf.download(chunk, period=period, group_by="ticker",
+            raw = yf.download(chunk, start=start, end=end, group_by="ticker",
                               auto_adjust=True, threads=True, progress=False)
         except Exception as e:
             print(f"[warn] chunk failed: {e}")
@@ -316,7 +315,7 @@ def benchmark(spy_df, dates, years):
     }
 
 
-def plot(curves, bench, years, path):
+def plot(curves, bench, period_title, path):
     fig, ax = plt.subplots(figsize=(11, 6))
     for name, curve in curves.items():
         ax.plot([d for d, _ in curve], [e for _, e in curve], label=name, linewidth=1.4)
@@ -324,7 +323,7 @@ def plot(curves, bench, years, path):
         ax.plot([d for d, _ in bench["curve"]], [e for _, e in bench["curve"]],
                 label="SPY al-tut", color="gray", linestyle="--", linewidth=1.2)
     ax.axhline(STARTING_CASH, color="black", linewidth=.8, alpha=.4)
-    ax.set_title(f"Backtest — son {years} yıl")
+    ax.set_title(f"Backtest — {period_title}")
     ax.set_ylabel("Portföy Değeri ($)")
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, p: f"${v:,.0f}"))
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%m.%y"))
@@ -357,7 +356,7 @@ METRIC_HELP = [
 ]
 
 
-def build_html(results, bench, years, universe_size, cost_bps, path):
+def build_html(results, bench, period_title, universe_size, cost_bps, path):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     def cell(v, good_high=True, suffix="", fmt="{:+.1f}"):
@@ -433,7 +432,7 @@ a.back {{ display:inline-block;margin-bottom:1rem;font-size:.9rem; }}
 @media(max-width:640px) {{ table {{ font-size:.78rem; }} th,td {{ padding:.35rem .25rem; }} }}
 </style></head><body>
 <a class="back" href="index.html">← Portföy paneline dön</a>
-<h1>🔬 Backtest Raporu — son {years} yıl</h1>
+<h1>🔬 Backtest Raporu — {period_title}</h1>
 <p class="meta">Üretim: {now} &nbsp;·&nbsp; strateji başına {universe_size} hisse &nbsp;·&nbsp; {cost_note}</p>
 
 <img src="../reports/backtest.png" alt="Backtest karşılaştırması" onerror="this.style.display='none'">
@@ -469,15 +468,46 @@ farklı sıralama üretebilir; sonuçları bir tahmin değil, kuralların davran
         f.write(html)
 
 
+def _date_arg(v):
+    try:
+        return datetime.strptime(v, "%Y-%m-%d")
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"'{v}' YYYY-MM-DD formatında olmalı")
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--years", type=int, default=3)
+    ap.add_argument("--years", type=int, default=3,
+                    help="Son N yıl test edilir. --start/--end verilirse yok sayılır.")
+    ap.add_argument("--start", type=_date_arg, default=None,
+                    help="Test aralığının başlangıcı (YYYY-MM-DD). --end ile birlikte verilmeli.")
+    ap.add_argument("--end", type=_date_arg, default=None,
+                    help="Test aralığının bitişi (YYYY-MM-DD). --start ile birlikte verilmeli.")
     ap.add_argument("--cost-bps", type=float, default=0.0,
                     help="Per-side transaction cost in basis points (10 = 0.10%%).")
     ap.add_argument("--universe-size", type=int, default=80,
                     help="Names per strategy universe, ranked by dollar volume. "
                          "Larger is more faithful but much slower.")
     args = ap.parse_args()
+
+    if bool(args.start) != bool(args.end):
+        ap.error("--start ve --end birlikte verilmeli")
+
+    custom_range = args.start is not None
+    if custom_range:
+        if args.start >= args.end:
+            ap.error("--start, --end tarihinden önce olmalı")
+        range_start, range_end = args.start, args.end
+        fetch_start = range_start - pd.DateOffset(years=2)   # indicator warm-up buffer
+        fetch_end = range_end + pd.DateOffset(days=1)         # yfinance end is exclusive
+        years = (range_end - range_start).days / 365.25
+        period_title = f"{range_start.date()} → {range_end.date()}"
+    else:
+        range_start, range_end = None, None
+        fetch_start = datetime.now() - pd.DateOffset(years=args.years + 2)
+        fetch_end = datetime.now() + pd.DateOffset(days=1)
+        years = args.years
+        period_title = f"son {years} yıl"
 
     COST_BPS["value"] = args.cost_bps
     install_fast_indicators()
@@ -487,7 +517,7 @@ def main():
     for m in STRATEGY_MODULES.values():
         wanted |= set(universes[m.UNIVERSE_KEY].keys())
 
-    data = download(wanted, args.years)
+    data = download(wanted, fetch_start, fetch_end)
     global _FULL
     _FULL = data
     spy_df = data.get(SPY)
@@ -495,7 +525,10 @@ def main():
         print("[error] SPY verisi yok")
         return
 
-    dates = spy_df.index[-(args.years * 252):]
+    if custom_range:
+        dates = spy_df.loc[range_start:range_end].index
+    else:
+        dates = spy_df.index[-(args.years * 252):]
     print(f"[run] {dates[0].date()} → {dates[-1].date()} ({len(dates)} işlem günü)")
 
     curves, results = {}, {}
@@ -506,12 +539,12 @@ def main():
         _CACHE.clear()
         lg, curve, invested_pct = run(name, syms, data, spy_df, sector_map, dates)
         curves[name] = curve
-        results[name] = metrics(curve, lg, args.years, invested_pct)
+        results[name] = metrics(curve, lg, years, invested_pct)
         results[name]["universe_size"] = len(syms)
 
-    bench = benchmark(spy_df, dates, args.years)
+    bench = benchmark(spy_df, dates, years)
     chart = os.path.join(REPORTS_DIR, "backtest.png")
-    plot(curves, bench, args.years, chart)
+    plot(curves, bench, period_title, chart)
 
     rows = [("Strateji", "Getiri", "CAGR", "Max DD", "Sharpe", "İşlem", "Kazanma")]
     for n, r in results.items():
@@ -526,19 +559,23 @@ def main():
     table = "\n".join("  ".join(c.ljust(w[i]) for i, c in enumerate(r)) for r in rows)
     print("\n" + table + "\n")
 
-    out = {"generated": datetime.now(timezone.utc).isoformat(), "years": args.years,
+    out = {"generated": datetime.now(timezone.utc).isoformat(), "years": years,
            "universe_size": args.universe_size, "strategies": results, "spy_benchmark":
            {k: v for k, v in bench.items() if k != "curve"}}
+    if custom_range:
+        out["start"] = range_start.strftime("%Y-%m-%d")
+        out["end"] = range_end.strftime("%Y-%m-%d")
     with open(os.path.join(REPORTS_DIR, "backtest.json"), "w") as f:
         json.dump(out, f, indent=2)
 
-    build_html(results, bench, args.years, args.universe_size, args.cost_bps,
+    build_html(results, bench, period_title, args.universe_size, args.cost_bps,
                os.path.join(DOCS_DIR, "backtest.html"))
     print("[ok] docs/backtest.html yazıldı")
 
     try:
         import telegram_notify
-        telegram_notify.send_photo(chart, caption=f"🔬 BACKTEST ({args.years} yıl)\n\n```\n{table}\n```")
+        telegram_caption = period_title if custom_range else f"{years} yıl"
+        telegram_notify.send_photo(chart, caption=f"🔬 BACKTEST ({telegram_caption})\n\n```\n{table}\n```")
     except Exception as e:
         print(f"[warn] telegram: {e}")
 

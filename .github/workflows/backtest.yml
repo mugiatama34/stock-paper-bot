@@ -23,6 +23,14 @@ on:
         default: "80"
         type: choice
         options: ["40", "80", "150", "300"]
+      start_date:
+        description: "Başlangıç tarihi (YYYY-MM-DD, opsiyonel). Verilirse end_date de verilmeli; 'years' yok sayılır."
+        required: false
+        default: ""
+      end_date:
+        description: "Bitiş tarihi (YYYY-MM-DD, opsiyonel). Verilirse start_date de verilmeli."
+        required: false
+        default: ""
 
 jobs:
   backtest:
@@ -43,15 +51,28 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         working-directory: scripts
         run: |
-          python backtest.py \
-            --years ${{ inputs.years }} \
-            --universe-size ${{ inputs.universe_size }} \
-            --cost-bps ${{ inputs.cost_bps }}
+          if [ -n "${{ inputs.start_date }}" ]; then
+            python backtest.py \
+              --start ${{ inputs.start_date }} \
+              --end ${{ inputs.end_date }} \
+              --universe-size ${{ inputs.universe_size }} \
+              --cost-bps ${{ inputs.cost_bps }}
+          else
+            python backtest.py \
+              --years ${{ inputs.years }} \
+              --universe-size ${{ inputs.universe_size }} \
+              --cost-bps ${{ inputs.cost_bps }}
+          fi
 
       - name: Commit results
         run: |
           git config user.name "stock-paper-bot"
           git config user.email "bot@users.noreply.github.com"
+          if [ -n "${{ inputs.start_date }}" ]; then
+            LABEL="${{ inputs.start_date }} -> ${{ inputs.end_date }}"
+          else
+            LABEL="${{ inputs.years }}y"
+          fi
           git add reports/backtest.png reports/backtest.json docs/backtest.html
-          git diff --cached --quiet || git commit -m "Backtest ${{ inputs.years }}y [skip ci]"
+          git diff --cached --quiet || git commit -m "Backtest $LABEL [skip ci]"
           git push

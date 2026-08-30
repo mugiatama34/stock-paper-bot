@@ -17,7 +17,9 @@ Known biases, stated plainly because they inflate results:
   * SURVIVORSHIP: the universe is today's index membership. Companies that were
     dropped or went bankrupt are absent, so the backtest never buys them.
   * No commissions, no slippage, no bid/ask spread.
-  * Ranking the universe by dollar volume uses present-day liquidity.
+  * Default universe is the full sector map (same candidates trade_bot.py scans
+    live); passing --universe-size caps it to the top N by dollar volume as an
+    optional speed shortcut, using present-day liquidity to rank.
 Treat the output as a sanity check on the rules, not as a return forecast.
 """
 import argparse
@@ -406,7 +408,7 @@ METRIC_HELP = [
 ]
 
 
-def build_html(results, bench, period_title, universe_size, cost_bps, path):
+def build_html(results, bench, period_title, universe_size, universe_mode, cost_bps, path):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     def cell(v, good_high=True, suffix="", fmt="{:+.1f}"):
@@ -447,13 +449,17 @@ def build_html(results, bench, period_title, universe_size, cost_bps, path):
             <li>Son değer: <b>${r['final_equity']:,.2f}</b></li>
             <li>Ortalama kâr: ${r['avg_win']:,.2f} &nbsp;·&nbsp; Ortalama zarar: ${r['avg_loss']:,.2f}</li>
             <li>En iyi işlem: ${r['best_trade']:,.2f} &nbsp;·&nbsp; En kötü: ${r['worst_trade']:,.2f}</li>
-            <li>Evren: {r['universe_size']} hisse</li>
+            <li>Evren: {r['universe_size']} hisse ({r['universe_key']}, {
+                'tam evren — canlı ile aynı' if r['universe_mode'] == 'full'
+                else 'en likit ilk N, dolar hacmine göre — hız kısıtı'})</li>
           </ul>
         </div>"""
 
     helps = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in METRIC_HELP)
     cost_note = (f"işlem başına %{cost_bps/100:.3f} maliyet uygulandı" if cost_bps
                  else "<b>işlem maliyeti uygulanmadı (0)</b>")
+    universe_note = ("tam S&P500/NDX evreni (canlı ile aynı)" if universe_mode == "full"
+                      else f"strateji başına en likit {universe_size} hisse (dolar hacmine göre, hız kısıtı)")
 
     html = f"""<!DOCTYPE html>
 <html lang="tr"><head><meta charset="utf-8">
@@ -483,7 +489,7 @@ a.back {{ display:inline-block;margin-bottom:1rem;font-size:.9rem; }}
 </style></head><body>
 <a class="back" href="index.html">← Portföy paneline dön</a>
 <h1>🔬 Backtest Raporu — {period_title}</h1>
-<p class="meta">Üretim: {now} &nbsp;·&nbsp; strateji başına {universe_size} hisse &nbsp;·&nbsp; {cost_note}</p>
+<p class="meta">Üretim: {now} &nbsp;·&nbsp; {universe_note} &nbsp;·&nbsp; {cost_note}</p>
 
 <img src="../reports/backtest.png" alt="Backtest karşılaştırması" onerror="this.style.display='none'">
 
@@ -535,9 +541,10 @@ def main():
                     help="Test aralığının bitişi (YYYY-MM-DD). --start ile birlikte verilmeli.")
     ap.add_argument("--cost-bps", type=float, default=0.0,
                     help="Per-side transaction cost in basis points (10 = 0.10%%).")
-    ap.add_argument("--universe-size", type=int, default=80,
-                    help="Names per strategy universe, ranked by dollar volume. "
-                         "Larger is more faithful but much slower.")
+    ap.add_argument("--universe-size", type=int, default=0,
+                    help="0 (default) = full sector-map universe per strategy, same "
+                         "candidates trade_bot.py scans live. A positive N caps it to "
+                         "the top N names by dollar volume as an optional speed shortcut.")
     args = ap.parse_args()
 
     if bool(args.start) != bool(args.end):
@@ -581,17 +588,24 @@ def main():
         dates = spy_df.index[-(args.years * 252):]
     print(f"[run] {dates[0].date()} → {dates[-1].date()} ({len(dates)} işlem günü)")
 
+    universe_mode = "top_n" if args.universe_size > 0 else "full"
+
     curves, results = {}, {}
     all_trades_export = []
     for name, module in STRATEGY_MODULES.items():
         sector_map = universes[module.UNIVERSE_KEY]
-        syms = rank_by_dollar_volume(data, sector_map, args.universe_size)
-        print(f"[run] {name}: {len(syms)} hisse")
+        if universe_mode == "top_n":
+            syms = rank_by_dollar_volume(data, sector_map, args.universe_size)
+        else:
+            syms = sorted(sector_map.keys())
+        print(f"[run] {name}: {len(syms)} hisse ({universe_mode})")
         _CACHE.clear()
         lg, curve, invested_pct, closed_trades = run(name, syms, data, spy_df, sector_map, dates)
         curves[name] = curve
         results[name] = metrics(curve, lg, years, invested_pct)
         results[name]["universe_size"] = len(syms)
+        results[name]["universe_mode"] = universe_mode
+        results[name]["universe_key"] = module.UNIVERSE_KEY
         all_trades_export.extend(closed_trades)
 
     bench = benchmark(spy_df, dates, years)
@@ -612,7 +626,8 @@ def main():
     print("\n" + table + "\n")
 
     out = {"generated": datetime.now(timezone.utc).isoformat(), "years": years,
-           "universe_size": args.universe_size, "strategies": results, "spy_benchmark":
+           "universe_size": args.universe_size, "universe_mode": universe_mode,
+           "strategies": results, "spy_benchmark":
            {k: v for k, v in bench.items() if k != "curve"}}
     if custom_range:
         out["start"] = range_start.strftime("%Y-%m-%d")
@@ -628,6 +643,7 @@ def main():
             "end": range_end.strftime("%Y-%m-%d") if custom_range else None,
             "cost_bps": args.cost_bps,
             "universe_size": args.universe_size,
+            "universe_mode": universe_mode,
         },
         "trades": all_trades_export,
     }
@@ -639,7 +655,7 @@ def main():
         json.dump(trades_out, f, indent=2)
     print(f"[ok] reports/{trades_filename} yazıldı ({len(all_trades_export)} kapanan işlem)")
 
-    build_html(results, bench, period_title, args.universe_size, args.cost_bps,
+    build_html(results, bench, period_title, args.universe_size, universe_mode, args.cost_bps,
                os.path.join(DOCS_DIR, "backtest.html"))
     print("[ok] docs/backtest.html yazıldı")
 

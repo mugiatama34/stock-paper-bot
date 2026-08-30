@@ -18,11 +18,11 @@ on:
         type: choice
         options: ["0", "5", "10", "20"]
       universe_size:
-        description: "Strateji başına hisse sayısı (büyük = daha gerçekçi, daha yavaş)"
+        description: "Evren kısıtı: 0 = tam evren (canlı ile aynı, varsayılan), N = en likit N hisse (dolar hacmine göre, hız kısıtı)"
         required: true
-        default: "80"
+        default: "0"
         type: choice
-        options: ["40", "80", "150", "300"]
+        options: ["0", "40", "80", "150", "300"]
       start_date:
         description: "Başlangıç tarihi (YYYY-MM-DD, opsiyonel). Verilirse end_date de verilmeli; 'years' yok sayılır."
         required: false

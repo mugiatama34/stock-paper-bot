@@ -111,3 +111,44 @@ Rejim filtresinin net etkisi, atıl nakdin getiriye etkisi ve tarama sıklığı
 fırsat maliyeti ölçülemedi. Ortak sebep: reddedilen alım sinyalleri ve nakit
 zaman serisi hiçbir yerde loglanmıyor. Bu konulara dönülecekse önce bu kayıtların
 eklenmesi gerekir.
+
+## Öğrenme günlüğü
+
+### 2026-08-30
+
+**Yapılanlar**
+- stock-paper-bot projesi Claude Code'a bağlandı; projeye özel CLAUDE.md yazıldı
+  (dokunulmaz dosyalar, onay gerektiren değişiklikler, backtest zorunluluğu).
+- kod-denetci ve strateji-arastirmaci sub-agent'ları kuruldu.
+- Ledger yazma güvenliği düzeltildi (atomik yazma, hata izolasyonu), backtest
+  ölçüm altyapısı eklendi (işlem bazlı çıktı, tarih aralığı parametresi).
+- Backtest ile canlı bot arasındaki evren tutarsızlığı bulundu ve düzeltildi.
+- Üç yeni strateji varyantı test edildi; dört hipotez çürütüldü.
+- Zamanlama, Telegram bildirimleri, rapor arşivi ve dashboard yeniden düzenlendi.
+
+**Öğrendiklerim**
+- Sub-agent'ın değeri kendi bağımsız bağlamında çalışmasıdır; denetim ve araştırma
+  gibi tarafsızlık gerektiren işler için ideal.
+- tools alanı teknik kilittir, metin talimatı yalnızca ricadır. Araç verilmemişse
+  ajan o işi yapamaz; metinde yasaklanmışsa yapmayabilir. Güvenlik kritik sınırlar
+  metne bırakılmamalı.
+- Bir hipotezi test etmeden önce çürütme koşulu yazılı olarak belirlenmelidir.
+  İnsan beyni çıkan sonuca göre değerlendirme yapmayı çok seviyor.
+- Ölçüm altyapısı analiz kadar önemlidir. Maliyet varsayımı, evren tanımı veya
+  çıkış mantığındaki en ufak değişiklik sonucu tersine çevirebiliyor.
+- Ölçüm aleti kalibre değilken yapılan tüm karşılaştırmalar geçersizdir. Backtest
+  evreni ile canlı evren farklıydı; bu bulunana kadar alınan sonuçların bir kısmı
+  yanlıştı.
+- Bir ajanın "ölçülemiyor" demesi iyi bir işarettir; tarafsızdır ve yönlendirici
+  değildir. Yerine bir şey uydursaydı yanıltıcı olurdu.
+- Dört hipotezin de benzer sonuç vermesinin sebebi tesadüf değil: hepsi giriş
+  kuralı veya stop mesafesi düzeyindeydi, mimarinin ortak parçaları (çıkış mantığı,
+  pozisyon boyutlandırma, rejim filtresi) hiç değişmedi.
+- Hata izolasyonu sistemi çökmekten korur ama sessiz başarısızlık üretebilir; bu
+  yüzden düzenli denetim şarttır. Dashboard yenileme fonksiyonu bir PR sonrası
+  çalışmayı bıraktı ve hata yutulduğu için fark edilmedi.
+
+**Açık sorular**
+- Botun mimarisinde (çıkış mekanizması, pozisyon boyutlandırma, rejim filtresi)
+  yapısal bir iyileştirme alanı var mı? Reddedilen sinyaller ve nakit serisi
+  loglanmadığı için bu ölçülemiyor.

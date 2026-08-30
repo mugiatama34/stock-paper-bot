@@ -66,3 +66,48 @@ python generate_report.py --mode daily
 - Yeni bir strateji eklemek için `scripts/strategies/` altına yeni bir modül + ledger JSON
 - Backtest modülü (geçmiş veri üzerinde stratejileri karşılaştırma) — bu kısım için
   Claude Desktop / Claude Code ile daha hızlı iterasyon yapılabilir.
+
+## Bulgular
+
+### 2026-08 — Backtest/canlı evren tutarsızlığı
+
+`backtest.py` evreni dolar-hacme göre en likit 80 isimle sınırlıyordu; `trade_bot.py`
+ise canlıda hiçbir top-N filtresi uygulamadan sektör haritasındaki tüm sembolleri
+tarıyordu. Yani backtest, canlı sistemi temsil etmiyordu. Düzeltildi: backtest artık
+canlı evren mantığını kullanıyor.
+
+Bu düzeltmeden önce yapılmış tüm strateji karşılaştırmaları geçersizdir. Daraltılmış
+evrende alınan sonuçlar, düzeltme sonrası bazı durumlarda tersine döndü.
+
+**Ölçülen sonuçlar (düzeltme sonrası, cost_bps=10, iki ayrık pencere)**
+- `ai_momentum` her iki pencerede de SPY al-tut'u geçti: 2021-06→2023-06 döneminde
+  +%18.1 (SPY +%3.6), 2023-06→2025-06 döneminde +%44.1 (SPY +%43.5), Sharpe 1.47
+  (SPY 1.19), Max DD -%11.2 (SPY -%18.8).
+- Diğer beş strateji her iki pencerede de SPY'ın gerisinde kaldı.
+- Düzeltme öncesi umut verici görünen `trend_donchian` üstünlüğü, tam evrende
+  ortadan kalktı.
+- Test dönemi teknoloji ağırlıklı bir yükseliş dönemidir; `ai_momentum`'un
+  Nasdaq-100 evreni bu dönemde yapısal olarak avantajlıydı. İki pencere
+  istatistiksel genelleme için yetersizdir.
+
+**Çürütülen hipotezler**
+
+Aşağıdaki alternatifler test edildi ve risk başına getiride anlamlı iyileşme
+sağlamadı: Bollinger alt bant girişi, rolling z-score girişi, Donchian kanal
+kırılımı girişi, geniş trailing stop (4.0×ATR). Not: ilk üçü daraltılmış evrende
+test edildi, sonuçları bu nedenle kesin değildir.
+
+**Açık bulgu — mean_reversion stop uyumsuzluğu**
+
+İşlem verisi analizi, `mean_reversion` stratejisinde trailing stop ile kapanan
+pozisyonların %97.7-100'ünün zararla kapandığını gösterdi; aynı stratejide sinyal
+bazlı çıkışlarda zarar oranı %7.6-14.6. Stop, bu stratejide kâr koruma değil
+yalnızca stop-loss işlevi görüyor. Stop mesafesini genişletmek (4.0×ATR) sorunu
+çözmedi. Mekanizma uyumsuzluğu olarak açık kalmıştır.
+
+**Ölçülemeyenler**
+
+Rejim filtresinin net etkisi, atıl nakdin getiriye etkisi ve tarama sıklığının
+fırsat maliyeti ölçülemedi. Ortak sebep: reddedilen alım sinyalleri ve nakit
+zaman serisi hiçbir yerde loglanmıyor. Bu konulara dönülecekse önce bu kayıtların
+eklenmesi gerekir.

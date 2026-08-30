@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T09:12:16.973103+00:00",
+  "generated": "2026-08-30T09:19:49.037444+00:00",
   "years": 2.001368925393566,
   "universe_size": 80,
   "strategies": {
@@ -36,18 +36,18 @@
       "universe_size": 80
     },
     "balanced": {
-      "final_equity": 15083.33,
-      "total_return_pct": 50.83,
-      "cagr_pct": 22.8,
-      "max_drawdown_pct": -14.55,
-      "sharpe": 1.73,
+      "final_equity": 15021.83,
+      "total_return_pct": 50.22,
+      "cagr_pct": 22.55,
+      "max_drawdown_pct": -14.65,
+      "sharpe": 1.7,
       "closed_trades": 505,
       "win_rate_pct": 57.6,
-      "avg_win": 44.0,
-      "avg_loss": -36.59,
-      "best_trade": 540.9,
+      "avg_win": 43.84,
+      "avg_loss": -36.64,
+      "best_trade": 569.37,
       "worst_trade": -387.7,
-      "profit_factor": 1.64,
+      "profit_factor": 1.63,
       "invested_days_pct": 95.0,
       "universe_size": 80
     },
@@ -84,18 +84,18 @@
       "universe_size": 80
     },
     "trend_donchian": {
-      "final_equity": 13505.79,
-      "total_return_pct": 35.06,
-      "cagr_pct": 16.2,
-      "max_drawdown_pct": -15.15,
-      "sharpe": 1.16,
-      "closed_trades": 248,
-      "win_rate_pct": 42.3,
-      "avg_win": 86.01,
-      "avg_loss": -42.28,
+      "final_equity": 13581.5,
+      "total_return_pct": 35.81,
+      "cagr_pct": 16.53,
+      "max_drawdown_pct": -14.73,
+      "sharpe": 1.18,
+      "closed_trades": 246,
+      "win_rate_pct": 42.7,
+      "avg_win": 86.13,
+      "avg_loss": -42.4,
       "best_trade": 452.17,
       "worst_trade": -263.39,
-      "profit_factor": 1.49,
+      "profit_factor": 1.51,
       "invested_days_pct": 93.8,
       "universe_size": 80
     }

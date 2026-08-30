@@ -1,6 +1,6 @@
 from . import (
     ai_momentum, mean_reversion, balanced,
-    mr_bollinger, mr_zscore, trend_donchian,
+    mr_bollinger, mr_zscore, trend_donchian, mr_wide_stop,
 )
 
 STRATEGY_MODULES = {
@@ -10,9 +10,10 @@ STRATEGY_MODULES = {
     "mr_bollinger": mr_bollinger,
     "mr_zscore": mr_zscore,
     "trend_donchian": trend_donchian,
+    "mr_wide_stop": mr_wide_stop,
 }
 
 # Yalnızca backtest.py üzerinden çalıştırılır. Canlı bot (trade_bot.py) ve
 # raporlama (generate_report.py) ledger.STRATEGIES sabit listesini kullanır
 # (bkz. ledger.py) ve bu isimleri hiç görmez -- bilerek buraya bağlanmıyor.
-BACKTEST_ONLY = {"mr_bollinger", "mr_zscore", "trend_donchian"}
+BACKTEST_ONLY = {"mr_bollinger", "mr_zscore", "trend_donchian", "mr_wide_stop"}

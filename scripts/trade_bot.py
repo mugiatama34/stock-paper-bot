@@ -84,8 +84,15 @@ def fetch_bulk(symbols):
 
 
 def market_is_risk_on(spy_df) -> tuple:
-    """SPY above its 200-day average = risk-on. Returns (bool, human-readable note)."""
-    if spy_df is None or len(spy_df) < 200:
+    """SPY above its 200-day average = risk-on. Returns (bool, human-readable note).
+
+    SPY verisi hiç çekilemediyse (spy_df None) güvenli tarafa geçilir: yeni alım
+    yapılmaz. Bu yalnızca yeni pozisyon açma kararını etkiler; mevcut pozisyonların
+    Pass 1 çıkış/stop kontrolü SPY'den bağımsız olarak her koşulda çalışır.
+    """
+    if spy_df is None:
+        return False, "SPY verisi alınamadı — rejim filtresi güvenli tarafa geçti (yeni alım yok)"
+    if len(spy_df) < 200:
         return True, "SPY verisi yetersiz, rejim filtresi atlandı"
     close = spy_df["Close"]
     sma200 = float(close.rolling(200).mean().iloc[-1])
@@ -257,8 +264,7 @@ def main():
     risk_on, regime_note = market_is_risk_on(spy_df)
     print(f"[regime] {regime_note}")
     if spy_df is None:
-        print("[error] SPY verisi yok, çıkılıyor")
-        return
+        print("[warn] SPY verisi yok — yeni alım devre dışı, Pass 1 (stop/trailing) her strateji için normal çalışacak")
 
     for name in healthy_strategies:
         try:

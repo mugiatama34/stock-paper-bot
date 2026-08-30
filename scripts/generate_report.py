@@ -15,6 +15,7 @@ import os
 import shutil
 from collections import OrderedDict
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import matplotlib
 matplotlib.use("Agg")
@@ -31,13 +32,26 @@ DOCS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__
 
 PERIOD_DAYS = {"daily": 1, "weekly": 7, "monthly": 30, "yearly": 365}
 
-# Smallest y-range the equity chart will show, as a fraction of starting capital.
-# Without a floor, matplotlib zooms onto a $3 move and draws it as a cliff.
-MIN_Y_SPAN_PCT = 0.02
+# Smallest y-range the equity chart will show, in percentage points.
+# Without a floor, matplotlib zooms onto a 0.03% move and draws it as a cliff.
+MIN_Y_SPAN_PCTPOINTS = 1.0
+
+NY_TZ = ZoneInfo("America/New_York")
 
 
 def parse_dt(s):
     return datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
+def exchange_day_start(now_utc: datetime) -> datetime:
+    """Start (midnight) of the current exchange calendar day, in UTC.
+
+    Used only for the daily chart's time window -- a plain `now - 24h` rolling
+    window has its boundary drift with run time, so it can slice a trading day
+    in half instead of showing one full session.
+    """
+    local_midnight = now_utc.astimezone(NY_TZ).replace(hour=0, minute=0, second=0, microsecond=0)
+    return local_midnight.astimezone(timezone.utc)
 
 
 def filter_since(items, since_dt, date_key="date"):
@@ -107,13 +121,13 @@ def _daily_points(hist):
 
 def plot_comparison(ledgers: dict, since_dt, mode: str, prices: dict) -> str:
     """
-    Dollar-denominated equity curves so the $10,000 starting line is directly readable.
+    Percent-change-from-start equity curves, drawn as step lines so a flat segment
+    between two snapshots reads as "no new data" instead of implying a smooth move.
     Intraday points are collapsed to one per day for every period except `daily`,
     where the intraday detail is the whole point.
     """
     fig, ax = plt.subplots(figsize=(9, 5))
-    all_values = []
-    starting_cash = 10000.0
+    all_pcts = [0.0]
 
     for name, lg in ledgers.items():
         starting_cash = lg["starting_cash"]
@@ -130,42 +144,33 @@ def plot_comparison(ledgers: dict, since_dt, mode: str, prices: dict) -> str:
             points = _daily_points([{"date": d.isoformat(), "equity": e} for d, e in points])
 
         dates = [p[0] for p in points]
-        values = [p[1] for p in points]
-        all_values.extend(values)
-        ax.plot(dates, values, marker="o", markersize=3, label=name)
+        pcts = [(equity / starting_cash - 1) * 100 for _, equity in points]
+        all_pcts.extend(pcts)
+        ax.plot(dates, pcts, marker="o", markersize=3, drawstyle="steps-post", label=name)
 
-    ax.axhline(y=starting_cash, color="gray", linestyle="--", linewidth=1,
-               label=f"Başlangıç (${starting_cash:,.0f})")
-    all_values.append(starting_cash)
+    ax.axhline(y=0, color="gray", linestyle="--", linewidth=1, label="Başlangıç (%0)")
 
-    lo, hi = min(all_values), max(all_values)
-    floor_span = starting_cash * MIN_Y_SPAN_PCT
-    if hi - lo < floor_span:
-        mid = (hi + lo) / 2
-        lo, hi = mid - floor_span / 2, mid + floor_span / 2
-    pad = (hi - lo) * 0.12
-    ax.set_ylim(lo - pad, hi + pad)
+    # Symmetric around 0% so a +2%/-1% spread doesn't look lopsided, with a floor
+    # span so matplotlib doesn't zoom a 0.03% move into a cliff.
+    bound = max(abs(min(all_pcts)), abs(max(all_pcts)), MIN_Y_SPAN_PCTPOINTS / 2)
+    pad = bound * 0.15
+    ax.set_ylim(-(bound + pad), bound + pad)
 
-    ax.set_title(f"Strateji Karşılaştırması — {mode}")
-    ax.set_ylabel("Portföy Değeri ($)")
-    # FuncFormatter writes each tick literally, so the "+1e4" offset notation that
-    # made a $3 move look like a collapse can't appear.
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, p: f"${v:,.0f}"))
+    ax.set_title(f"Strateji Karşılaştırması — {mode} (UTC)")
+    ax.set_xlabel("Zaman (UTC)")
+    ax.set_ylabel("Başlangıca Göre Değişim (%)")
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, p: f"{v:+.1f}%"))
 
-    if mode == "daily":
-        ax.xaxis.set_major_formatter(mdates.DateFormatter("%H:%M"))
-    else:
-        ax.xaxis.set_major_locator(mdates.AutoDateLocator(maxticks=10))
-        ax.xaxis.set_major_formatter(mdates.DateFormatter("%d.%m"))
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator(maxticks=10))
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%d.%m %H:%M"))
 
     ax.grid(alpha=0.25)
-    ax.legend()
+    ax.legend(loc="upper left", bbox_to_anchor=(1.02, 1), borderaxespad=0)
     fig.autofmt_xdate()
-    fig.tight_layout()
 
     os.makedirs(REPORTS_DIR, exist_ok=True)
     path = os.path.join(REPORTS_DIR, f"comparison_{mode}.png")
-    fig.savefig(path, dpi=130)
+    fig.savefig(path, dpi=130, bbox_inches="tight")
     plt.close(fig)
 
     # Dated copy so past reports survive the next run overwriting comparison_{mode}.png.
@@ -286,7 +291,11 @@ def main():
             f"{s['trades_in_period']} işlem, kazanma oranı {wr}"
         )
 
-    chart_path = plot_comparison(ledgers, since_dt, args.mode, prices)
+    # The daily chart uses its own window aligned to the exchange's calendar day
+    # boundary; the rolling `since_dt` above keeps driving the text summary stats
+    # unchanged (period_return_pct, trades_in_period, ...).
+    chart_since_dt = exchange_day_start(datetime.now(timezone.utc)) if args.mode == "daily" else since_dt
+    chart_path = plot_comparison(ledgers, chart_since_dt, args.mode, prices)
     build_dashboard_html(ledgers, prices)
     telegram_notify.send_photo(chart_path, caption="\n".join(lines))
 

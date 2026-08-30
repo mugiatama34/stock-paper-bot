@@ -465,6 +465,16 @@ def build_html(results, bench, period_title, universe_size, universe_mode, cost_
 <html lang="tr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Backtest Raporu</title>
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="alternate icon" href="icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0e0e10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Paper Bot">
 <style>
 body {{ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
        max-width:1000px;margin:2rem auto;padding:0 1rem;color:#222;line-height:1.5; }}

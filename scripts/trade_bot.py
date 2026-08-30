@@ -274,7 +274,7 @@ def main():
         held = gr.held_symbols(ledgers)
         prices = {s: float(price_data[s]["Close"].iloc[-1])
                   for s in held if s in price_data and not price_data[s].empty}
-        gr.build_dashboard_html(ledgers, prices)
+        gr.build_dashboard(ledgers, prices)
         print("[ok] dashboard yenilendi")
     except Exception as e:
         print(f"[warn] dashboard yenilenemedi: {e}")

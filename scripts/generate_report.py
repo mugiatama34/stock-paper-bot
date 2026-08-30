@@ -195,10 +195,15 @@ def plot_comparison(ledgers: dict, since_dt, mode: str, prices: dict) -> str:
 
     # Dated copy so past reports survive the next run overwriting comparison_{mode}.png.
     # Same-day reruns (e.g. workflow_dispatch) just overwrite that day's archive file.
-    os.makedirs(ARCHIVE_DIR, exist_ok=True)
-    date_tag = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    archive_path = os.path.join(ARCHIVE_DIR, f"comparison_{mode}_{date_tag}.png")
-    shutil.copyfile(path, archive_path)
+    # Archiving is best-effort: a disk/permission failure here must not take down
+    # report generation or the Telegram notification.
+    try:
+        os.makedirs(ARCHIVE_DIR, exist_ok=True)
+        date_tag = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        archive_path = os.path.join(ARCHIVE_DIR, f"comparison_{mode}_{date_tag}.png")
+        shutil.copyfile(path, archive_path)
+    except Exception as e:
+        print(f"[warn] archive copy failed: {e}")
 
     return path
 

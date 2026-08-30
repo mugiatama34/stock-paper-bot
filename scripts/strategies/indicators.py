@@ -40,3 +40,24 @@ def atr(df: pd.DataFrame, window: int = 14) -> pd.Series:
         (low - prev_close).abs(),
     ], axis=1).max(axis=1)
     return tr.rolling(window).mean()
+
+
+def bollinger(series: pd.Series, window: int = 20, num_std: float = 2.0):
+    mid = series.rolling(window).mean()
+    std = series.rolling(window).std()
+    upper = mid + num_std * std
+    lower = mid - num_std * std
+    return upper, mid, lower
+
+
+def zscore(series: pd.Series, window: int = 20) -> pd.Series:
+    mean = series.rolling(window).mean()
+    std = series.rolling(window).std()
+    return (series - mean) / std.replace(0, np.nan)
+
+
+def donchian(df: pd.DataFrame, window: int = 20):
+    """shift(1): bugünün barı kendi kırılım seviyesine dahil edilmez."""
+    upper = df["High"].rolling(window).max().shift(1)
+    lower = df["Low"].rolling(window).min().shift(1)
+    return upper, lower

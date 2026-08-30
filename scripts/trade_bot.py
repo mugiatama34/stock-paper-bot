@@ -12,6 +12,7 @@ Order of operations each run:
 import math
 import sys
 import time
+from datetime import datetime, timezone
 
 import yfinance as yf
 
@@ -23,6 +24,37 @@ from strategies import STRATEGY_MODULES
 SPY_TICKER = "SPY"
 CHUNK_SIZE = 100    # tickers per yfinance request
 HISTORY = "1y"      # enough for SMA200 plus warm-up
+
+
+def _position_opened_at(trades, symbol):
+    """Bildirim amaçlı: pozisyonun en son sıfırdan açıldığı ALIM tarihini, mevcut
+    trade geçmişinden (salt okunur) çıkarır. Ledger'a yeni bir alan eklemez.
+    Bulunamazsa None döner."""
+    running_qty = 0
+    episode_start = None
+    for t in trades:
+        if t.get("symbol") != symbol:
+            continue
+        if t.get("action") == "BUY":
+            if running_qty == 0:
+                episode_start = t.get("date")
+            running_qty += t.get("qty", 0)
+        elif t.get("action") == "SELL":
+            running_qty -= t.get("qty", 0)
+            if running_qty <= 0:
+                running_qty = 0
+    return episode_start
+
+
+def _held_days(trades, symbol):
+    opened_at = _position_opened_at(trades, symbol)
+    if not opened_at:
+        return None
+    try:
+        opened_dt = datetime.fromisoformat(opened_at)
+        return (datetime.now(timezone.utc) - opened_dt).days
+    except (ValueError, TypeError):
+        return None
 
 
 def fetch_bulk(symbols):
@@ -100,9 +132,14 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
         if stop and price <= stop:
             reasoning = f"İzleyen stop tetiklendi ({stop:.2f}), zirveden geri çekilme."
             qty = lg["positions"][symbol]["qty"]
+            avg_price = lg["positions"][symbol]["avg_price"]
+            held_days = _held_days(lg["trades"], symbol)
             if ledger_mod.sell(lg, symbol, price, reasoning, {"stop_price": round(stop, 2)}):
                 ledger_mod.save_ledger(strategy_name, lg)
-                telegram_notify.notify_trade(strategy_name, "SELL", symbol, qty, price, reasoning)
+                pnl = lg["trades"][-1].get("pnl")
+                pnl_pct = (pnl / (avg_price * qty) * 100) if avg_price else None
+                telegram_notify.notify_sell(strategy_name, symbol, qty, price, reasoning,
+                                            pnl=pnl, pnl_pct=pnl_pct, held_days=held_days)
             continue
 
         try:
@@ -115,18 +152,28 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
 
         if signal["action"] == "SELL":
             qty = lg["positions"][symbol]["qty"]
+            avg_price = lg["positions"][symbol]["avg_price"]
+            held_days = _held_days(lg["trades"], symbol)
             if ledger_mod.sell(lg, symbol, price, signal["reasoning"], signal["indicators"]):
                 ledger_mod.save_ledger(strategy_name, lg)
-                telegram_notify.notify_trade(strategy_name, "SELL", symbol, qty, price,
-                                             signal["reasoning"])
+                pnl = lg["trades"][-1].get("pnl")
+                pnl_pct = (pnl / (avg_price * qty) * 100) if avg_price else None
+                telegram_notify.notify_sell(strategy_name, symbol, qty, price,
+                                            signal["reasoning"], pnl=pnl, pnl_pct=pnl_pct,
+                                            held_days=held_days)
         elif signal["action"] == "SELL_PARTIAL":
             qty = signal["qty"]
+            avg_price = lg["positions"][symbol]["avg_price"]
+            held_days = _held_days(lg["trades"], symbol)
             if ledger_mod.sell(lg, symbol, price, signal["reasoning"], signal["indicators"], qty=qty):
                 if symbol in lg["positions"]:
                     lg["positions"][symbol]["partial_taken"] = True
                 ledger_mod.save_ledger(strategy_name, lg)
-                telegram_notify.notify_trade(strategy_name, "SELL", symbol, qty, price,
-                                             signal["reasoning"])
+                pnl = lg["trades"][-1].get("pnl")
+                pnl_pct = (pnl / (avg_price * qty) * 100) if avg_price else None
+                telegram_notify.notify_sell(strategy_name, symbol, qty, price,
+                                            signal["reasoning"], pnl=pnl, pnl_pct=pnl_pct,
+                                            held_days=held_days)
 
     # --- Pass 2: new entries (skipped entirely when the market regime is risk-off) ---
     if risk_on:
@@ -168,9 +215,9 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
             if ledger_mod.buy(lg, symbol, price, signal["stop_price"], signal["reasoning"],
                               signal["indicators"], sector=sector):
                 ledger_mod.save_ledger(strategy_name, lg)
-                telegram_notify.notify_trade(strategy_name, "BUY", symbol,
-                                             lg["positions"][symbol]["qty"], price,
-                                             f"{signal['reasoning']} [{sector}]")
+                telegram_notify.notify_buy(strategy_name, symbol,
+                                           lg["positions"][symbol]["qty"], price,
+                                           signal["stop_price"], signal["reasoning"])
     else:
         print(f"[regime] {strategy_name}: yeni alım yok — {regime_note}")
 

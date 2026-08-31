@@ -1,12 +1,12 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 455.1798515319824,
+  "cash": 371.1148567199707,
   "positions": {
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 494.02930436692054,
+      "stop_price": 494.0693421549214,
       "partial_taken": false,
       "peak_price": 513.530029296875,
       "sector": "Information Technology"
@@ -14,21 +14,21 @@
     "CRM": {
       "qty": 9,
       "avg_price": 209.28500366210938,
-      "stop_price": 234.2614266531808,
+      "stop_price": 238.41500854492188,
       "partial_taken": false,
-      "peak_price": 256.0
+      "peak_price": 260.635009765625
     },
     "SNOW": {
       "qty": 4,
       "avg_price": 322.9800109863281,
-      "stop_price": 304.802978515625,
+      "stop_price": 304.83441162109375,
       "partial_taken": false,
       "peak_price": 329.1099853515625
     },
     "PLTR": {
       "qty": 5,
       "avg_price": 175.97000122070312,
-      "stop_price": 172.55099051339286,
+      "stop_price": 172.70384652273995,
       "partial_taken": false,
       "peak_price": 186.2899932861328,
       "sector": "Information Technology"
@@ -44,23 +44,15 @@
     "ADP": {
       "qty": 2,
       "avg_price": 283.010009765625,
-      "stop_price": 275.92286464146207,
+      "stop_price": 276.15643310546875,
       "peak_price": 287.4800109863281,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "BKNG": {
-      "qty": 2,
-      "avg_price": 213.36000061035156,
-      "stop_price": 201.99102783203125,
-      "peak_price": 213.77999877929688,
-      "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "CHTR": {
       "qty": 2,
       "avg_price": 150.3000030517578,
-      "stop_price": 140.78072466169084,
+      "stop_price": 141.2828652518136,
       "peak_price": 155.86500549316406,
       "sector": "Communication Services",
       "partial_taken": false
@@ -84,7 +76,7 @@
     "CSGP": {
       "qty": 7,
       "avg_price": 32.84000015258789,
-      "stop_price": 30.068571635654994,
+      "stop_price": 30.080000468662806,
       "peak_price": 32.84000015258789,
       "sector": "Real Estate",
       "partial_taken": false
@@ -92,17 +84,41 @@
     "DXCM": {
       "qty": 2,
       "avg_price": 91.05999755859375,
-      "stop_price": 86.43713923863002,
+      "stop_price": 86.46571132114956,
       "peak_price": 91.05999755859375,
       "sector": "Health Care",
       "partial_taken": false
     },
-    "GEHC": {
-      "qty": 2,
-      "avg_price": 74.19000244140625,
-      "stop_price": 71.4564710344587,
-      "peak_price": 74.29000091552734,
+    "ABNB": {
+      "qty": 1,
+      "avg_price": 183.625,
+      "stop_price": 173.3142830984933,
+      "peak_price": 183.625,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "BKR": {
+      "qty": 3,
+      "avg_price": 63.36000061035156,
+      "stop_price": 60.362857818603516,
+      "peak_price": 63.36000061035156,
+      "sector": "Energy",
+      "partial_taken": false
+    },
+    "GILD": {
+      "qty": 1,
+      "avg_price": 146.67999267578125,
+      "stop_price": 139.47428022112166,
+      "peak_price": 146.67999267578125,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "SBUX": {
+      "qty": 1,
+      "avg_price": 106.45999908447266,
+      "stop_price": 101.56244664795747,
+      "peak_price": 106.45999908447266,
+      "sector": "Consumer Discretionary",
       "partial_taken": false
     }
   },
@@ -394,6 +410,106 @@
       "indicators": {
         "stop_price": 59.51
       }
+    },
+    {
+      "date": "2026-08-31T17:46:15.445176+00:00",
+      "symbol": "BKNG",
+      "action": "SELL",
+      "qty": 2,
+      "price": 200.1,
+      "pnl": -26.53,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "\u0130zleyen stop tetiklendi (201.99), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 201.99
+      }
+    },
+    {
+      "date": "2026-08-31T17:46:16.185180+00:00",
+      "symbol": "GEHC",
+      "action": "SELL",
+      "qty": 2,
+      "price": 71.29,
+      "pnl": -5.79,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (71.46), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 71.46
+      }
+    },
+    {
+      "date": "2026-08-31T17:46:16.624130+00:00",
+      "symbol": "ABNB",
+      "action": "BUY",
+      "qty": 1,
+      "price": 183.62,
+      "stop_price": 173.31,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (179.93) ve SMA50 (159.6) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %20.8 g\u00fc\u00e7l\u00fc, RSI=48.55 (<75, tepe de\u011fil). \u0130zleyen stop: 173.31 (2xATR).",
+      "indicators": {
+        "price": 183.62,
+        "sma20": 179.93,
+        "sma50": 159.6,
+        "rsi14": 48.55,
+        "atr14": 5.16,
+        "relative_strength_20d": 0.2076
+      }
+    },
+    {
+      "date": "2026-08-31T17:46:17.088947+00:00",
+      "symbol": "BKR",
+      "action": "BUY",
+      "qty": 3,
+      "price": 63.36,
+      "stop_price": 60.36,
+      "sector": "Energy",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (63.05) ve SMA50 (59.33) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %3.4 g\u00fc\u00e7l\u00fc, RSI=40.37 (<75, tepe de\u011fil). \u0130zleyen stop: 60.36 (2xATR).",
+      "indicators": {
+        "price": 63.36,
+        "sma20": 63.05,
+        "sma50": 59.33,
+        "rsi14": 40.37,
+        "atr14": 1.5,
+        "relative_strength_20d": 0.0344
+      }
+    },
+    {
+      "date": "2026-08-31T17:46:17.552708+00:00",
+      "symbol": "GILD",
+      "action": "BUY",
+      "qty": 1,
+      "price": 146.68,
+      "stop_price": 139.47,
+      "sector": "Health Care",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (140.83) ve SMA50 (134.55) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %10.7 g\u00fc\u00e7l\u00fc, RSI=70.24 (<75, tepe de\u011fil). \u0130zleyen stop: 139.47 (2xATR).",
+      "indicators": {
+        "price": 146.68,
+        "sma20": 140.83,
+        "sma50": 134.55,
+        "rsi14": 70.24,
+        "atr14": 3.6,
+        "relative_strength_20d": 0.1071
+      }
+    },
+    {
+      "date": "2026-08-31T17:46:18.063989+00:00",
+      "symbol": "SBUX",
+      "action": "BUY",
+      "qty": 1,
+      "price": 106.46,
+      "stop_price": 101.56,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (106.31) ve SMA50 (104.69) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %2.4 g\u00fc\u00e7l\u00fc, RSI=51.17 (<75, tepe de\u011fil). \u0130zleyen stop: 101.56 (2xATR).",
+      "indicators": {
+        "price": 106.46,
+        "sma20": 106.31,
+        "sma50": 104.69,
+        "rsi14": 51.17,
+        "atr14": 2.45,
+        "relative_strength_20d": 0.0245
+      }
     }
   ],
   "equity_history": [
@@ -466,6 +582,11 @@
       "date": "2026-08-29T02:55:52.154315+00:00",
       "equity": 10626.28,
       "cash": 455.18
+    },
+    {
+      "date": "2026-08-31T17:46:18.543211+00:00",
+      "equity": 10624.98,
+      "cash": 371.11
     }
   ]
 }

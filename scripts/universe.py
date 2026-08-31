@@ -16,6 +16,7 @@ import os
 
 import pandas as pd
 import requests
+import yfinance as yf
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 CACHE_PATH = os.path.join(DATA_DIR, "universe_cache.json")
@@ -70,6 +71,16 @@ def _fetch_sp500() -> pd.DataFrame:
     return df[["symbol", "sector"]]
 
 
+def _fetch_sector_live(symbol: str) -> str | None:
+    """Last-resort sector lookup for names NDX_ONLY_SECTORS hasn't caught up with yet
+    (index membership churns; the hardcoded dict will occasionally lag behind it)."""
+    try:
+        sector = yf.Ticker(symbol).info.get("sector")
+        return sector or None
+    except Exception:
+        return None
+
+
 def _fetch_ndx_symbols() -> list:
     try:
         r = requests.get(NDX_WIKI, headers=HEADERS, timeout=30)
@@ -101,7 +112,7 @@ def build_universe() -> dict:
     ndx_syms = _fetch_ndx_symbols()
     ndx_map = {}
     for s in ndx_syms:
-        sector = sp_map.get(s) or NDX_ONLY_SECTORS.get(s)
+        sector = sp_map.get(s) or NDX_ONLY_SECTORS.get(s) or _fetch_sector_live(s)
         if sector:
             ndx_map[s] = sector
         else:

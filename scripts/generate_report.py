@@ -41,11 +41,6 @@ DOCS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__
 
 PERIOD_DAYS = {"daily": 1, "weekly": 7, "monthly": 30, "yearly": 365}
 MODE_LABELS = {"daily": "Günlük", "weekly": "Haftalık", "monthly": "Aylık", "yearly": "Yıllık"}
-STRATEGY_LABELS = {
-    "ai_momentum": "AI Momentum",
-    "mean_reversion": "Mean Reversion",
-    "balanced": "Balanced",
-}
 
 # Closed-trade history is capped per strategy page so it can't grow without bound.
 CLOSED_TRADES_LIMIT = 100
@@ -213,7 +208,7 @@ def plot_comparison(ledgers: dict, since_dt, mode: str, prices: dict) -> str:
             pcts = [(equity / starting_cash - 1) * 100 for _, equity in points]
             all_pcts.extend(pcts)
             ax.plot(dates, pcts, marker="o", markersize=3, drawstyle="steps-post",
-                    label=STRATEGY_LABELS.get(name, name))
+                    label=ledger_mod.STRATEGY_LABELS.get(name, name))
 
         ax.axhline(y=0, color="#888", linestyle="--", linewidth=1, label="Başlangıç (%0)")
 
@@ -274,7 +269,7 @@ def plot_equity_curve(name: str, lg: dict) -> str:
         pad = bound * 0.15
         ax.set_ylim(-(bound + pad), bound + pad)
 
-        ax.set_title(f"{STRATEGY_LABELS.get(name, name)} — Başlangıca Göre Değişim (%)")
+        ax.set_title(f"{ledger_mod.STRATEGY_LABELS.get(name, name)} — Başlangıca Göre Değişim (%)")
         ax.yaxis.set_major_formatter(FuncFormatter(lambda v, p: f"{v:+.1f}%"))
         ax.xaxis.set_major_locator(mdates.AutoDateLocator(maxticks=8))
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%d.%m.%y"))
@@ -468,7 +463,7 @@ def render_index_html(ledgers: dict, prices: dict) -> None:
         total_return = (equity / lg["starting_cash"] - 1) * 100
         cls = "pos" if total_return >= 0 else "neg"
         cards.append(f"""<a class="strategy-card" href="strategy_{name}.html">
-          <h2>{STRATEGY_LABELS.get(name, name)}</h2>
+          <h2>{ledger_mod.STRATEGY_LABELS.get(name, name)}</h2>
           <p class="big">${equity:,.2f}</p>
           <p class="{cls}">{total_return:+.2f}%</p>
           <p class="muted">{len(lg['positions'])} açık pozisyon</p>
@@ -634,7 +629,7 @@ document.querySelectorAll('tr.row-click').forEach(function (row) {
 </script>"""
 
     body = f"""{nav_back()}
-<h1>{STRATEGY_LABELS.get(name, name)}</h1>
+<h1>{ledger_mod.STRATEGY_LABELS.get(name, name)}</h1>
 {metrics}
 {chart_html}
 <h2 class="section-title">Açık Pozisyonlar</h2>
@@ -648,7 +643,7 @@ document.querySelectorAll('tr.row-click').forEach(function (row) {
 {row_toggle_script}"""
 
     with open(os.path.join(DOCS_DIR, f"strategy_{name}.html"), "w") as f:
-        f.write(page_shell(f"{STRATEGY_LABELS.get(name, name)} — Stock Paper Bot", body))
+        f.write(page_shell(f"{ledger_mod.STRATEGY_LABELS.get(name, name)} — Stock Paper Bot", body))
 
 
 _ARCHIVE_FILE_RE = re.compile(r"^comparison_(daily|weekly|monthly|yearly)_(\d{4}-\d{2}-\d{2})\.png$")
@@ -717,7 +712,7 @@ def main():
         s = summarize(lg, since_dt, prices)
         wr = f"{s['win_rate']:.0f}%" if s["win_rate"] is not None else "n/a"
         lines.append(
-            f"*{name}*: ${s['current_equity']:,.2f} "
+            f"*{ledger_mod.STRATEGY_LABELS.get(name, name)}*: ${s['current_equity']:,.2f} "
             f"({s['total_pnl']:+,.2f}$ / {s['total_return_pct']:+.2f}%) "
             f"— dönem {s['period_return_pct']:+.2f}%, "
             f"{s['trades_in_period']} işlem, kazanma oranı {wr}"

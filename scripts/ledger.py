@@ -17,6 +17,15 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__
 
 STRATEGIES = ["ai_momentum", "mean_reversion", "balanced"]
 
+# Kullanıcıya gösterilen strateji adları. Strateji anahtarı (ör. "ai_momentum")
+# kod içinde, dosya adlarında ve ledger'da değişmez; yalnızca burası dashboard
+# ve Telegram bildirimlerinde görünen etiketi belirler.
+STRATEGY_LABELS = {
+    "ai_momentum": "Nasdaq-100 Momentum",
+    "mean_reversion": "Mean Reversion",
+    "balanced": "Balanced",
+}
+
 RISK_PER_TRADE = 0.02      # equity fraction risked per trade (via stop distance)
 MAX_POSITION_PCT = 0.25    # one name can't exceed this share of cash at entry
 MAX_NAMES_PER_SECTOR = 2   # concentration cap: count of open names in one sector

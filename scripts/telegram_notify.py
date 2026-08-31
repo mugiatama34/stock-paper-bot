@@ -4,6 +4,8 @@ import sys
 
 import requests
 
+import ledger as ledger_mod
+
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 TIMEOUT = 10  # saniye — ağ sorununda run'ın süresiz asılı kalmasını önler
@@ -78,7 +80,7 @@ def notify_buy(strategy: str, symbol: str, qty: int, price: float, stop_price: f
                reasoning: str) -> None:
     """Alım bildirimi. `reasoning` boş/None olsa da mesaj gönderilir, o satır atlanır."""
     lines = [
-        f"🟢 *ALIM* — {_md_escape(strategy)}",
+        f"🟢 *ALIM* — {_md_escape(ledger_mod.STRATEGY_LABELS.get(strategy, strategy))}",
         f"{_md_escape(symbol)}  x{qty} @ ${price:.2f}",
     ]
     if stop_price is not None:
@@ -96,7 +98,7 @@ def notify_sell(strategy: str, symbol: str, qty: int, price: float, reasoning: s
     """Satım bildirimi. Hesaplanamayan alanlar (K/Z, süre, gerekçe) sessizce atlanır;
     bildirim hiçbir koşulda başarısız olmaz."""
     lines = [
-        f"🔴 *SATIM* — {_md_escape(strategy)}",
+        f"🔴 *SATIM* — {_md_escape(ledger_mod.STRATEGY_LABELS.get(strategy, strategy))}",
         f"{_md_escape(symbol)}  x{qty} @ ${price:.2f}",
     ]
     if pnl is not None:

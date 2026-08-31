@@ -76,6 +76,53 @@ def filter_since(items, since_dt, date_key="date"):
     return [x for x in items if parse_dt(x[date_key]) >= since_dt]
 
 
+def format_dt(iso: str) -> str:
+    return parse_dt(iso).strftime("%d.%m.%Y %H:%M UTC")
+
+
+def format_duration(start_iso: str, end_dt: datetime) -> str:
+    delta = end_dt - parse_dt(start_iso)
+    days = delta.days
+    hours = delta.seconds // 3600
+    if days > 0:
+        return f"{days} gün" + (f" {hours} saat" if hours else "")
+    if hours > 0:
+        return f"{hours} saat"
+    return f"{max(delta.seconds // 60, 0)} dakika"
+
+
+def build_episodes(trades: list, symbol: str) -> list:
+    """
+    Splits one symbol's trade history into buy-to-flat episodes: each spans from
+    the BUY that opened a flat position through the SELL(s) that eventually
+    brought it back to zero. Positions in the ledger only carry a blended
+    avg_price -- no entry date or reasoning survives an add -- so this replay
+    of `trades` is how the report recovers "when/why was this opened" for both
+    the open-position detail panel and the closed-trade history.
+    """
+    episodes = []
+    current = None
+    running_qty = 0
+    for t in trades:
+        if t["symbol"] != symbol:
+            continue
+        if t["action"] == "BUY":
+            if running_qty <= 0:
+                current = {"entry_date": t["date"], "buys": [], "sells": [],
+                           "closed": False, "close_date": None}
+                episodes.append(current)
+            current["buys"].append(t)
+            running_qty += t["qty"]
+        elif current is not None:
+            current["sells"].append(t)
+            running_qty -= t["qty"]
+            if running_qty <= 0:
+                current["closed"] = True
+                current["close_date"] = t["date"]
+                running_qty = 0
+    return episodes
+
+
 def fetch_current_prices(symbols) -> dict:
     """Last close for each held symbol. Empty dict on failure -- callers fall back to cost."""
     symbols = sorted(set(symbols))
@@ -338,6 +385,25 @@ details[open] summary { margin-bottom: .3rem; }
   .strategy-card { flex: 1; }
   .metrics { grid-template-columns: repeat(5, 1fr); }
 }
+
+tr.row-click { cursor: pointer; }
+tr.row-click:hover { background: rgba(127, 127, 130, .08); }
+tr.row-click td.chevron-cell { width: 1.2rem; text-align: right; }
+.chevron { display: inline-block; color: var(--muted); font-size: .75rem; transition: transform .15s ease; }
+tr.row-click.open .chevron { transform: rotate(90deg); }
+tr.detail-row { display: none; }
+tr.detail-row.open { display: table-row; }
+tr.detail-row td { background: var(--bg); padding: .8rem .9rem 1rem; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 1rem; margin-bottom: .7rem; }
+.detail-grid > div { font-size: .82rem; }
+.detail-section-title { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--muted); margin: .7rem 0 .3rem; }
+.detail-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .5rem; }
+.detail-list li { font-size: .82rem; border-left: 2px solid var(--border); padding-left: .6rem; }
+.reasoning-text { color: var(--text); }
+@media (max-width: 480px) {
+  .detail-grid { grid-template-columns: 1fr; }
+}
 """
 
 
@@ -444,35 +510,128 @@ def render_strategy_html(name: str, lg: dict, prices: dict) -> None:
         if os.path.exists(chart_path) else ""
     )
 
+    # Positions don't store their own entry date/reasoning (only the blended
+    # avg_price survives an add), so both tables below replay `trades` per
+    # symbol into buy-to-flat episodes to recover that detail on click.
+    symbols_all = {t["symbol"] for t in lg["trades"]}
+    episodes_by_symbol = {}
+    sell_episode_lookup = {}
+    for sym in symbols_all:
+        eps = build_episodes(lg["trades"], sym)
+        episodes_by_symbol[sym] = eps
+        for ep in eps:
+            for s in ep["sells"]:
+                sell_episode_lookup[id(s)] = ep
+
+    now = datetime.now(timezone.utc)
+
     open_rows = ""
-    for symbol, pos in lg["positions"].items():
+    for i, (symbol, pos) in enumerate(lg["positions"].items()):
         avg = pos["avg_price"]
+        qty = pos["qty"]
+        stop = pos["stop_price"]
         cur = prices.get(symbol)
         if cur is None:
             cur_txt, pnl_txt, pnl_cls = "—", "—", ""
+            pnl_dollar_txt, stop_dist_txt = "—", "—"
         else:
             pnl_pct = (cur / avg - 1) * 100
             cur_txt = f"${cur:,.2f}"
             pnl_txt = f"{pnl_pct:+.2f}%"
             pnl_cls = "pos" if pnl_pct >= 0 else "neg"
+            pnl_dollar_txt = f"{(cur - avg) * qty:+,.2f}$"
+            stop_dist_txt = f"{(cur - stop) / cur * 100:.2f}%"
+
+        episodes = episodes_by_symbol.get(symbol, [])
+        cur_episode = episodes[-1] if episodes and not episodes[-1]["closed"] else None
+        prior_episodes = episodes[:-1] if cur_episode else episodes
+
+        entry_date_txt = format_dt(cur_episode["entry_date"]) if cur_episode else "-"
+        open_days_txt = format_duration(cur_episode["entry_date"], now) if cur_episode else "-"
+
+        buys_html = "".join(
+            f"<li><span class='muted'>{format_dt(b['date'])}</span> — {b['qty']} adet @ "
+            f"${b['price']:,.2f}<br><span class='reasoning-text'>{b.get('reasoning', '-')}</span></li>"
+            for b in (cur_episode["buys"] if cur_episode else [])
+        ) or "<li class='muted'>Alım kaydı bulunamadı.</li>"
+
+        history_items = []
+        for ep in prior_episodes:
+            total_pnl = sum(s.get("pnl", 0) for s in ep["sells"])
+            hist_cls = "pos" if total_pnl >= 0 else "neg"
+            last_reasoning = ep["sells"][-1].get("reasoning", "-") if ep["sells"] else "-"
+            history_items.append(
+                f"<li>{format_dt(ep['entry_date'])} → {format_dt(ep['close_date'])} "
+                f"(<span class='{hist_cls}'>{total_pnl:+,.2f}$</span>)<br>"
+                f"<span class='reasoning-text'>{last_reasoning}</span></li>"
+            )
+        history_html = "".join(history_items) or "<li class='muted'>Bu sembolde daha önce kapanmış işlem yok.</li>"
+
+        detail_id = f"d-open-{i}"
         open_rows += (
-            f"<tr><td><b>{symbol}</b></td><td>${avg:,.2f}</td><td>{cur_txt}</td>"
-            f"<td>${pos['stop_price']:,.2f}</td><td class='{pnl_cls}'>{pnl_txt}</td></tr>"
+            f"<tr class='row-click' data-target='{detail_id}'><td><b>{symbol}</b></td><td>${avg:,.2f}</td>"
+            f"<td>{cur_txt}</td><td>${stop:,.2f}</td><td class='{pnl_cls}'>{pnl_txt}</td>"
+            f"<td class='chevron-cell'><span class='chevron'>▸</span></td></tr>"
+            f"<tr class='detail-row' id='{detail_id}'><td colspan='6'>"
+            f"<div class='detail-grid'>"
+            f"<div><span class='muted'>Alım tarihi</span><br>{entry_date_txt}</div>"
+            f"<div><span class='muted'>Açık süre</span><br>{open_days_txt}</div>"
+            f"<div><span class='muted'>Adet</span><br>{qty}</div>"
+            f"<div><span class='muted'>Ortalama alım fiyatı</span><br>${avg:,.2f}</div>"
+            f"<div><span class='muted'>Pozisyon büyüklüğü (maliyet)</span><br>${qty * avg:,.2f}</div>"
+            f"<div><span class='muted'>Güncel fiyat</span><br>{cur_txt}</div>"
+            f"<div><span class='muted'>Güncel K/Z</span><br><span class='{pnl_cls}'>{pnl_dollar_txt} ({pnl_txt})</span></div>"
+            f"<div><span class='muted'>Stop seviyesi</span><br>${stop:,.2f}</div>"
+            f"<div><span class='muted'>Stop'a uzaklık</span><br>{stop_dist_txt}</div>"
+            f"</div>"
+            f"<div class='detail-section-title'>Alım gerekçesi</div>"
+            f"<ul class='detail-list'>{buys_html}</ul>"
+            f"<div class='detail-section-title'>Bu sembolde önceki kapanmış işlemler</div>"
+            f"<ul class='detail-list'>{history_html}</ul>"
+            f"</td></tr>"
         )
     if not open_rows:
-        open_rows = "<tr><td colspan='5' class='muted'>Açık pozisyon yok</td></tr>"
+        open_rows = "<tr><td colspan='6' class='muted'>Açık pozisyon yok</td></tr>"
 
     closed_rows = ""
-    for t in list(reversed(sells))[:CLOSED_TRADES_LIMIT]:
+    for i, t in enumerate(list(reversed(sells))[:CLOSED_TRADES_LIMIT]):
         pnl = t.get("pnl", 0)
         pnl_cls = "pos" if pnl >= 0 else "neg"
+        owning_episode = sell_episode_lookup.get(id(t))
+        entry_date_txt = format_dt(owning_episode["entry_date"]) if owning_episode else "-"
+        hold_txt = format_duration(owning_episode["entry_date"], parse_dt(t["date"])) if owning_episode else "-"
+
+        detail_id = f"d-closed-{i}"
         closed_rows += (
-            f"<tr><td>{t['date'][:10]}</td><td><b>{t['symbol']}</b></td><td>{t['qty']}</td>"
-            f"<td>${t['price']:,.2f}</td><td class='{pnl_cls}'>{pnl:+,.2f}$</td>"
-            f"<td><details><summary>Gerekçe</summary>{t.get('reasoning', '-')}</details></td></tr>"
+            f"<tr class='row-click' data-target='{detail_id}'><td>{t['date'][:10]}</td>"
+            f"<td><b>{t['symbol']}</b></td><td>{t['qty']}</td><td>${t['price']:,.2f}</td>"
+            f"<td class='{pnl_cls}'>{pnl:+,.2f}$</td>"
+            f"<td class='chevron-cell'><span class='chevron'>▸</span></td></tr>"
+            f"<tr class='detail-row' id='{detail_id}'><td colspan='6'>"
+            f"<div class='detail-grid'>"
+            f"<div><span class='muted'>Alım tarihi</span><br>{entry_date_txt}</div>"
+            f"<div><span class='muted'>Satım tarihi</span><br>{format_dt(t['date'])}</div>"
+            f"<div><span class='muted'>Tutulma süresi</span><br>{hold_txt}</div>"
+            f"<div><span class='muted'>K/Z</span><br><span class='{pnl_cls}'>{pnl:+,.2f}$</span></div>"
+            f"</div>"
+            f"<div class='detail-section-title'>Çıkış sebebi / gerekçe</div>"
+            f"<p class='reasoning-text'>{t.get('reasoning', '-')}</p>"
+            f"</td></tr>"
         )
     if not closed_rows:
         closed_rows = "<tr><td colspan='6' class='muted'>Henüz kapanmış işlem yok</td></tr>"
+
+    row_toggle_script = """<script>
+document.querySelectorAll('tr.row-click').forEach(function (row) {
+  row.addEventListener('click', function () {
+    var detail = document.getElementById(row.dataset.target);
+    if (!detail) return;
+    var opening = !detail.classList.contains('open');
+    detail.classList.toggle('open', opening);
+    row.classList.toggle('open', opening);
+  });
+});
+</script>"""
 
     body = f"""{nav_back()}
 <h1>{STRATEGY_LABELS.get(name, name)}</h1>
@@ -480,12 +639,13 @@ def render_strategy_html(name: str, lg: dict, prices: dict) -> None:
 {chart_html}
 <h2 class="section-title">Açık Pozisyonlar</h2>
 <div class="table-wrap"><table>
-<thead><tr><th>Sembol</th><th>Giriş</th><th>Güncel</th><th>Stop</th><th>K/Z</th></tr></thead>
+<thead><tr><th>Sembol</th><th>Giriş</th><th>Güncel</th><th>Stop</th><th>K/Z</th><th></th></tr></thead>
 <tbody>{open_rows}</tbody></table></div>
 <h2 class="section-title">Kapanmış İşlemler</h2>
 <div class="table-wrap"><table>
-<thead><tr><th>Tarih</th><th>Sembol</th><th>Adet</th><th>Fiyat</th><th>K/Z</th><th>Gerekçe</th></tr></thead>
-<tbody>{closed_rows}</tbody></table></div>"""
+<thead><tr><th>Tarih</th><th>Sembol</th><th>Adet</th><th>Fiyat</th><th>K/Z</th><th></th></tr></thead>
+<tbody>{closed_rows}</tbody></table></div>
+{row_toggle_script}"""
 
     with open(os.path.join(DOCS_DIR, f"strategy_{name}.html"), "w") as f:
         f.write(page_shell(f"{STRATEGY_LABELS.get(name, name)} — Stock Paper Bot", body))

@@ -46,8 +46,8 @@
     "KMI": {
       "qty": 20,
       "avg_price": 31.0,
-      "stop_price": 30.503572463989258,
-      "peak_price": 32.14500045776367,
+      "stop_price": 30.560715539114817,
+      "peak_price": 32.23500061035156,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -70,8 +70,8 @@
     "ARES": {
       "qty": 1,
       "avg_price": 142.75999450683594,
-      "stop_price": 134.79930332728796,
-      "peak_price": 143.1750030517578,
+      "stop_price": 135.20642743791853,
+      "peak_price": 143.6999969482422,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -566,6 +566,11 @@
     {
       "date": "2026-08-31T17:46:22.959005+00:00",
       "equity": 9838.46,
+      "cash": 739.72
+    },
+    {
+      "date": "2026-08-31T19:48:36.499900+00:00",
+      "equity": 9826.85,
       "cash": 739.72
     }
   ]

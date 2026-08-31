@@ -102,16 +102,16 @@
     "BAX": {
       "qty": 11,
       "avg_price": 26.104999542236328,
-      "stop_price": 24.459135630569882,
-      "peak_price": 26.104999542236328,
+      "stop_price": 24.509136774979062,
+      "peak_price": 26.155000686645508,
       "sector": "Health Care",
       "partial_taken": false
     },
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 102.76821953909737,
-      "peak_price": 110.62000274658203,
+      "stop_price": 103.16821343558175,
+      "peak_price": 111.0199966430664,
       "sector": "Information Technology",
       "partial_taken": false
     }
@@ -566,6 +566,11 @@
     {
       "date": "2026-08-31T17:46:20.532042+00:00",
       "equity": 9918.33,
+      "cash": 707.24
+    },
+    {
+      "date": "2026-08-31T19:48:35.488381+00:00",
+      "equity": 9906.56,
       "cash": 707.24
     }
   ]

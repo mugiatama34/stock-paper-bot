@@ -21,16 +21,16 @@
     "SNOW": {
       "qty": 4,
       "avg_price": 322.9800109863281,
-      "stop_price": 304.83441162109375,
+      "stop_price": 307.5144348144531,
       "partial_taken": false,
-      "peak_price": 329.1099853515625
+      "peak_price": 331.7900085449219
     },
     "PLTR": {
       "qty": 5,
       "avg_price": 175.97000122070312,
-      "stop_price": 172.70384652273995,
+      "stop_price": 173.54385811941964,
       "partial_taken": false,
-      "peak_price": 186.2899932861328,
+      "peak_price": 187.1300048828125,
       "sector": "Information Technology"
     },
     "SMCI": {
@@ -100,8 +100,8 @@
     "BKR": {
       "qty": 3,
       "avg_price": 63.36000061035156,
-      "stop_price": 60.362857818603516,
-      "peak_price": 63.36000061035156,
+      "stop_price": 60.48285675048828,
+      "peak_price": 63.47999954223633,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -586,6 +586,11 @@
     {
       "date": "2026-08-31T17:46:18.543211+00:00",
       "equity": 10624.98,
+      "cash": 371.11
+    },
+    {
+      "date": "2026-08-31T19:48:34.508805+00:00",
+      "equity": 10636.28,
       "cash": 371.11
     }
   ]

@@ -60,6 +60,18 @@ NDX_ONLY_SECTORS = {
     "ILMN": "Health Care",
 }
 
+# Third universe: "ai" key — a manually curated, fixed symbol list (not pulled
+# from any index). Edit this list directly to add/remove names.
+AI_UNIVERSE: list[str] = [
+    # TODO: semboller buraya eklenecek
+]
+
+# Manual sector overrides for AI_UNIVERSE names that aren't in the S&P 500 /
+# Nasdaq-100 sector maps above. Only needed for symbols outside both indexes.
+AI_SECTOR_OVERRIDES: dict[str, str] = {
+    # "SEMBOL": "Sektör Adı",
+}
+
 
 def _fetch_sp500() -> pd.DataFrame:
     r = requests.get(SP500_CSV, headers=HEADERS, timeout=30)
@@ -98,7 +110,8 @@ def _fetch_ndx_symbols() -> list:
 
 
 def build_universe() -> dict:
-    """Returns {'sp500': {symbol: sector}, 'ndx': {symbol: sector}}, cached to disk."""
+    """Returns {'sp500': {symbol: sector}, 'ndx': {symbol: sector}, 'ai': {symbol: sector}},
+    cached to disk."""
     try:
         sp = _fetch_sp500()
         sp_map = dict(zip(sp["symbol"], sp["sector"]))
@@ -120,11 +133,17 @@ def build_universe() -> dict:
             # treat it as its own bucket rather than silently grouping it.
             ndx_map[s] = "Unknown"
 
-    result = {"sp500": sp_map, "ndx": ndx_map}
+    ai_map = {}
+    for s in AI_UNIVERSE:
+        sector = sp_map.get(s) or ndx_map.get(s) or AI_SECTOR_OVERRIDES.get(s) or _fetch_sector_live(s)
+        ai_map[s] = sector or "Unknown"
+
+    result = {"sp500": sp_map, "ndx": ndx_map, "ai": ai_map}
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(CACHE_PATH, "w") as f:
         json.dump(result, f, indent=2)
-    print(f"[universe] S&P 500: {len(sp_map)} names, Nasdaq-100: {len(ndx_map)} names")
+    print(f"[universe] S&P 500: {len(sp_map)} names, Nasdaq-100: {len(ndx_map)} names, "
+          f"AI: {len(ai_map)} names")
     return result
 
 

@@ -34,3 +34,4 @@ Bunlar Actions tarafından üretilir. Tutarsız veya hatalı görünseler bile d
 - Her değişiklik ayrı branch ve ayrı PR ile gönderilir; görev tamamlandığında PR ayrıca istemeden açılır. Tek PR tek iş.
 - Açıklamalar Türkçe yazılır.
 - main'e doğrudan commit atılmaz.
+- Doğrulama amaçlı çalıştırılan backtest'lerin ürettiği reports/ ve docs/ altındaki çıktı dosyaları PR'a commit edilmez; sonuçlar yalnızca PR açıklamasında raporlanır. Bu dosyalar yalnızca main üzerinde zamanlanmış veya manuel workflow çalıştırmaları tarafından güncellenir.

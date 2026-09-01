@@ -44,6 +44,7 @@ import strategies.indicators as IND
 
 REPORTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "reports")
 SPY = "SPY"
+XLK = "XLK"   # teknoloji sektörü ETF'i -- ikinci al-tut karşılaştırma ölçütü
 WARMUP = 250          # bars needed before SMA200 + RSI are meaningful
 STARTING_CASH = 10000.0
 COST_BPS = {"value": 0.0}   # per-side cost in basis points; set from --cost-bps
@@ -493,13 +494,16 @@ def benchmark(spy_df, dates, years):
     }
 
 
-def plot(curves, bench, period_title, path):
+def plot(curves, bench, period_title, path, xlk_bench=None):
     fig, ax = plt.subplots(figsize=(11, 6))
     for name, curve in curves.items():
         ax.plot([d for d, _ in curve], [e for _, e in curve], label=name, linewidth=1.4)
     if bench.get("curve"):
         ax.plot([d for d, _ in bench["curve"]], [e for _, e in bench["curve"]],
                 label="SPY al-tut", color="gray", linestyle="--", linewidth=1.2)
+    if xlk_bench and xlk_bench.get("curve"):
+        ax.plot([d for d, _ in xlk_bench["curve"]], [e for _, e in xlk_bench["curve"]],
+                label="XLK al-tut", color="tab:orange", linestyle="--", linewidth=1.2)
     ax.axhline(STARTING_CASH, color="black", linewidth=.8, alpha=.4)
     ax.set_title(f"Backtest — {period_title}")
     ax.set_ylabel("Portföy Değeri ($)")
@@ -534,7 +538,7 @@ METRIC_HELP = [
 ]
 
 
-def build_html(results, bench, period_title, universe_size, universe_mode, cost_bps, path):
+def build_html(results, bench, period_title, universe_size, universe_mode, cost_bps, path, xlk_bench=None):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     def cell(v, good_high=True, suffix="", fmt="{:+.1f}"):
@@ -565,6 +569,14 @@ def build_html(results, bench, period_title, universe_size, universe_mode, cost_
         f"<td class='neg'>{bench['max_drawdown_pct']:.1f}%</td>"
         f"<td>{bench.get('sharpe', 0):.2f}</td><td>—</td><td>—</td><td>—</td><td>100%</td></tr>"
     )
+    if xlk_bench:
+        rows += (
+            f"<tr class='bench'><td><b>XLK al-tut</b></td>"
+            f"<td class='pos'>{xlk_bench['total_return_pct']:+.1f}%</td>"
+            f"<td class='pos'>{xlk_bench['cagr_pct']:+.1f}%</td>"
+            f"<td class='neg'>{xlk_bench['max_drawdown_pct']:.1f}%</td>"
+            f"<td>{xlk_bench.get('sharpe', 0):.2f}</td><td>—</td><td>—</td><td>—</td><td>100%</td></tr>"
+        )
 
     detail = ""
     for name, r in results.items():
@@ -706,7 +718,7 @@ def main():
     install_fast_indicators()
     universes = universe_mod.build_universe()
 
-    wanted = {SPY}
+    wanted = {SPY, XLK}
     for m in STRATEGY_MODULES.values():
         wanted |= set(universes[m.UNIVERSE_KEY].keys())
 
@@ -717,6 +729,9 @@ def main():
     if spy_df is None:
         print("[error] SPY verisi yok")
         return
+    xlk_df = data.get(XLK)
+    if xlk_df is None:
+        print("[warn] XLK verisi yok, XLK karşılaştırması atlanıyor")
 
     if custom_range:
         dates = spy_df.loc[range_start:range_end].index
@@ -750,8 +765,9 @@ def main():
         recovery_by_strategy[name] = compute_trailing_stop_recovery(closed_trades, data)
 
     bench = benchmark(spy_df, dates, years)
+    xlk_bench = benchmark(xlk_df, dates, years) if xlk_df is not None else {}
     chart = os.path.join(REPORTS_DIR, "backtest.png")
-    plot(curves, bench, period_title, chart)
+    plot(curves, bench, period_title, chart, xlk_bench=xlk_bench)
 
     rows = [("Strateji", "Getiri", "CAGR", "Max DD", "Sharpe", "İşlem", "Kazanma")]
     for n, r in results.items():
@@ -761,6 +777,9 @@ def main():
                      f"{r['win_rate_pct']}%" if r["win_rate_pct"] is not None else "n/a"))
     rows.append(("SPY al-tut", f"{bench['total_return_pct']:+.1f}%", f"{bench['cagr_pct']:+.1f}%",
                  f"{bench['max_drawdown_pct']:.1f}%", "-", "-", "-"))
+    if xlk_bench:
+        rows.append(("XLK al-tut", f"{xlk_bench['total_return_pct']:+.1f}%", f"{xlk_bench['cagr_pct']:+.1f}%",
+                     f"{xlk_bench['max_drawdown_pct']:.1f}%", "-", "-", "-"))
 
     w = [max(len(r[i]) for r in rows) for i in range(len(rows[0]))]
     table = "\n".join("  ".join(c.ljust(w[i]) for i, c in enumerate(r)) for r in rows)
@@ -769,7 +788,8 @@ def main():
     out = {"generated": datetime.now(timezone.utc).isoformat(), "years": years,
            "universe_size": args.universe_size, "universe_mode": universe_mode,
            "strategies": results, "spy_benchmark":
-           {k: v for k, v in bench.items() if k != "curve"}}
+           {k: v for k, v in bench.items() if k != "curve"}, "xlk_benchmark":
+           {k: v for k, v in xlk_bench.items() if k != "curve"}}
     if custom_range:
         out["start"] = range_start.strftime("%Y-%m-%d")
         out["end"] = range_end.strftime("%Y-%m-%d")
@@ -811,7 +831,7 @@ def main():
     print(f"[ok] reports/{capture_filename} yazıldı")
 
     build_html(results, bench, period_title, args.universe_size, universe_mode, args.cost_bps,
-               os.path.join(DOCS_DIR, "backtest.html"))
+               os.path.join(DOCS_DIR, "backtest.html"), xlk_bench=xlk_bench)
     print("[ok] docs/backtest.html yazıldı")
 
     try:

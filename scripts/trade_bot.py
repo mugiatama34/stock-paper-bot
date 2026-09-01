@@ -216,7 +216,9 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
             if qty <= 0:
                 continue
 
-            allowed, reason = ledger_mod.sector_allows_entry(lg, current_prices, sector, cost)
+            max_names_per_sector = getattr(module, "MAX_NAMES_PER_SECTOR", ledger_mod.MAX_NAMES_PER_SECTOR)
+            allowed, reason = ledger_mod.sector_allows_entry(lg, current_prices, sector, cost,
+                                                               max_names_per_sector=max_names_per_sector)
             if not allowed:
                 print(f"[skip] {strategy_name} {symbol}: {reason}")
                 continue

@@ -30,8 +30,8 @@
     "APH": {
       "qty": 4,
       "avg_price": 157.68499755859375,
-      "stop_price": 149.60857772827148,
-      "peak_price": 162.3300018310547,
+      "stop_price": 150.00357110159737,
+      "peak_price": 163.1649932861328,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -70,7 +70,7 @@
     "JCI": {
       "qty": 1,
       "avg_price": 144.61500549316406,
-      "stop_price": 135.69715336390905,
+      "stop_price": 136.07036972045898,
       "peak_price": 144.61500549316406,
       "sector": "Industrials",
       "partial_taken": false
@@ -596,6 +596,11 @@
     {
       "date": "2026-09-01T15:55:30.371003+00:00",
       "equity": 9891.89,
+      "cash": 1040.24
+    },
+    {
+      "date": "2026-09-01T20:03:34.460418+00:00",
+      "equity": 9915.1,
       "cash": 1040.24
     }
   ]

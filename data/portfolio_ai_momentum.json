@@ -52,7 +52,7 @@
     "CHTR": {
       "qty": 2,
       "avg_price": 150.3000030517578,
-      "stop_price": 141.2828652518136,
+      "stop_price": 141.36358206612724,
       "peak_price": 155.86500549316406,
       "sector": "Communication Services",
       "partial_taken": false
@@ -92,7 +92,7 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.625,
-      "stop_price": 173.51642717633928,
+      "stop_price": 173.72642735072546,
       "peak_price": 183.625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -108,15 +108,15 @@
     "GILD": {
       "qty": 1,
       "avg_price": 146.67999267578125,
-      "stop_price": 141.01356724330358,
-      "peak_price": 148.3249969482422,
+      "stop_price": 142.6671382359096,
+      "peak_price": 149.9199981689453,
       "sector": "Health Care",
       "partial_taken": false
     },
     "SBUX": {
       "qty": 1,
       "avg_price": 106.45999908447266,
-      "stop_price": 101.56244664795747,
+      "stop_price": 101.66739458865541,
       "peak_price": 106.45999908447266,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -606,6 +606,11 @@
     {
       "date": "2026-09-01T15:55:29.145470+00:00",
       "equity": 10506.33,
+      "cash": 371.11
+    },
+    {
+      "date": "2026-09-01T20:03:33.703261+00:00",
+      "equity": 10462.39,
       "cash": 371.11
     }
   ]

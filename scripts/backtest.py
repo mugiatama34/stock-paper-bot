@@ -165,7 +165,10 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
     curve = []
     invested = [0]
     entry_dates = {}          # symbol -> date this open episode started (for export only)
+    entry_context = {}        # symbol -> {qty, position_value, cash, equity} captured at entry, for export only
     closed_trades_export = [] # one row per SELL/SELL_PARTIAL, for reports/backtest_trades.json
+    capital_curve = []        # one row per simulated day, for reports/backtest_capital_*.json
+    rejected_export = []      # rejected BUY signals, for reports/backtest_rejected_*.json
 
     spy_close = spy_df["Close"]
     spy_sma200 = spy_close.rolling(200).mean()
@@ -176,6 +179,7 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
         pos = lg["positions"].get(sym)
         entry_price = pos["avg_price"] if pos else None
         entry_date = entry_dates.get(sym)
+        ctx = entry_context.get(sym, {})
         ok = ledger_mod.sell(lg, sym, fill_price, reasoning, indicators, qty=qty)
         if ok:
             t = lg["trades"][-1]
@@ -196,9 +200,14 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                 "pnl": t["pnl"],
                 "cost_applied": round(entry_cost + exit_cost, 4),
                 "partial": t["partial"],
+                "entry_qty": ctx.get("qty"),
+                "entry_position_value": ctx.get("position_value"),
+                "entry_cash": ctx.get("cash"),
+                "entry_equity": ctx.get("equity"),
             })
             if sym not in lg["positions"]:
                 entry_dates.pop(sym, None)
+                entry_context.pop(sym, None)
         return ok
 
     for day in dates:
@@ -286,25 +295,65 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                 sector = sector_map.get(sym, "Unknown")
                 qty, cost = ledger_mod.plan_position(lg, fill_price, stop_price)
                 if qty <= 0:
+                    rejected_export.append({
+                        "strategy": strategy_name, "symbol": sym,
+                        "date": pd.Timestamp(day).isoformat(),
+                        "reason": "yetersiz_nakit",
+                        "reason_detail": f"plan_position qty<=0 (cash={lg['cash']:.2f}, price={fill_price:.2f})",
+                    })
                     continue
-                allowed, _ = ledger_mod.sector_allows_entry(lg, prices, sector, cost)
+                allowed, sector_reason = ledger_mod.sector_allows_entry(lg, prices, sector, cost)
                 if not allowed:
+                    rejected_export.append({
+                        "strategy": strategy_name, "symbol": sym,
+                        "date": pd.Timestamp(day).isoformat(),
+                        "reason": "sektor_limiti",
+                        "reason_detail": sector_reason,
+                    })
                     continue
                 if ledger_mod.buy(lg, sym, fill_price, sig["stop_price"],
                                   sig["reasoning"], sig["indicators"], sector=sector):
                     entry_dates[sym] = day
+                    entry_context[sym] = {
+                        "qty": qty,
+                        "position_value": round(qty * fill_price, 2),
+                        "cash": round(lg["cash"], 2),
+                        "equity": round(ledger_mod.total_equity(lg, prices), 2),
+                    }
+                else:
+                    rejected_export.append({
+                        "strategy": strategy_name, "symbol": sym,
+                        "date": pd.Timestamp(day).isoformat(),
+                        "reason": "diger",
+                        "reason_detail": "buy() False döndü (beklenmeyen durum)",
+                    })
+        elif symbols:
+            rejected_export.append({
+                "strategy": strategy_name, "symbol": None,
+                "date": pd.Timestamp(day).isoformat(),
+                "reason": "rejim_filtresi",
+                "reason_detail": "SPY, SMA200 altında (risk-off) -- gün için yeni giriş değerlendirilmedi",
+            })
 
         for sym in lg["positions"]:
             if sym not in prices:
                 df = data.get(sym)
                 if df is not None and day in df.index:
                     prices[sym] = float(df["Close"].loc[day])
-        curve.append((day, ledger_mod.total_equity(lg, prices)))
+        equity_today = ledger_mod.total_equity(lg, prices)
+        curve.append((day, equity_today))
+        capital_curve.append({
+            "date": pd.Timestamp(day).isoformat(),
+            "equity": round(equity_today, 2),
+            "cash": round(lg["cash"], 2),
+            "invested": round(equity_today - lg["cash"], 2),
+        })
         if lg["positions"]:
             invested[0] += 1
 
     invested_pct = invested[0] / len(curve) * 100 if curve else 0.0
-    return lg, curve, invested_pct, closed_trades_export, entry_dates, prices
+    return (lg, curve, invested_pct, closed_trades_export, entry_dates, prices,
+            capital_curve, rejected_export)
 
 
 # ---------------------------------------------------------------- metrics
@@ -745,6 +794,7 @@ def main():
     curves, results = {}, {}
     all_trades_export = []
     capture_by_strategy, recovery_by_strategy = {}, {}
+    capital_by_strategy, rejected_by_strategy = {}, {}
     for name, module in STRATEGY_MODULES.items():
         sector_map = universes[module.UNIVERSE_KEY]
         if universe_mode == "top_n":
@@ -753,8 +803,8 @@ def main():
             syms = sorted(sector_map.keys())
         print(f"[run] {name}: {len(syms)} hisse ({universe_mode})")
         _CACHE.clear()
-        lg, curve, invested_pct, closed_trades, entry_dates, last_prices = run(
-            name, syms, data, spy_df, sector_map, dates)
+        (lg, curve, invested_pct, closed_trades, entry_dates, last_prices,
+         capital_curve, rejected) = run(name, syms, data, spy_df, sector_map, dates)
         curves[name] = curve
         results[name] = metrics(curve, lg, years, invested_pct)
         results[name]["universe_size"] = len(syms)
@@ -764,6 +814,8 @@ def main():
         capture_by_strategy[name] = compute_symbol_capture(
             closed_trades, lg, entry_dates, last_prices, data, dates)
         recovery_by_strategy[name] = compute_trailing_stop_recovery(closed_trades, data)
+        capital_by_strategy[name] = capital_curve
+        rejected_by_strategy[name] = rejected
 
     bench = benchmark(spy_df, dates, years)
     xlk_bench = benchmark(xlk_df, dates, years) if xlk_df is not None else {}
@@ -830,6 +882,33 @@ def main():
     with open(os.path.join(REPORTS_DIR, capture_filename), "w") as f:
         json.dump(capture_out, f, indent=2)
     print(f"[ok] reports/{capture_filename} yazıldı")
+
+    capital_out = {
+        "generated": datetime.now(timezone.utc).isoformat(),
+        "run_params": trades_out["run_params"],
+        "capital_by_strategy": capital_by_strategy,
+    }
+    if custom_range:
+        capital_filename = f"backtest_capital_{range_start.strftime('%Y-%m-%d')}_{range_end.strftime('%Y-%m-%d')}.json"
+    else:
+        capital_filename = f"backtest_capital_last{args.years}y.json"
+    with open(os.path.join(REPORTS_DIR, capital_filename), "w") as f:
+        json.dump(capital_out, f, indent=2)
+    print(f"[ok] reports/{capital_filename} yazıldı")
+
+    all_rejected = sum(len(v) for v in rejected_by_strategy.values())
+    rejected_out = {
+        "generated": datetime.now(timezone.utc).isoformat(),
+        "run_params": trades_out["run_params"],
+        "rejected_by_strategy": rejected_by_strategy,
+    }
+    if custom_range:
+        rejected_filename = f"backtest_rejected_{range_start.strftime('%Y-%m-%d')}_{range_end.strftime('%Y-%m-%d')}.json"
+    else:
+        rejected_filename = f"backtest_rejected_last{args.years}y.json"
+    with open(os.path.join(REPORTS_DIR, rejected_filename), "w") as f:
+        json.dump(rejected_out, f, indent=2)
+    print(f"[ok] reports/{rejected_filename} yazıldı ({all_rejected} reddedilen sinyal)")
 
     build_html(results, bench, period_title, args.universe_size, universe_mode, args.cost_bps,
                os.path.join(DOCS_DIR, "backtest.html"), xlk_bench=xlk_bench)

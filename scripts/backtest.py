@@ -304,7 +304,9 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                         "reason_detail": f"plan_position qty<=0 (cash={lg['cash']:.2f}, price={fill_price:.2f})",
                     })
                     continue
-                allowed, sector_reason = ledger_mod.sector_allows_entry(lg, prices, sector, cost)
+                max_names_per_sector = getattr(module, "MAX_NAMES_PER_SECTOR", ledger_mod.MAX_NAMES_PER_SECTOR)
+                allowed, sector_reason = ledger_mod.sector_allows_entry(lg, prices, sector, cost,
+                                                                         max_names_per_sector=max_names_per_sector)
                 if not allowed:
                     rejected_export.append({
                         "strategy": strategy_name, "symbol": sym,

@@ -36,6 +36,10 @@ MAX_SECTOR_PCT = 0.30      # concentration cap: share of equity in one sector
 # değere göre RISK_PER_TRADE ve MAX_POSITION_PCT'yi kalan nakit yerine toplam
 # equity (cash + açık pozisyonların piyasa değeri) üzerinden hesaplar. Formülün
 # kendisi değişmez, yalnızca tabanı değişir; nakit yetersizse buy() zaten reddeder.
+#
+# Aynı şekilde strateji modülleri isteğe bağlı olarak MAX_NAMES_PER_SECTOR
+# tanımlayarak sektör başına izin verilen açık pozisyon sayısını override
+# edebilir; tanımlanmazsa aşağıdaki varsayılan (2) kullanılır.
 
 
 class LedgerError(Exception):
@@ -106,14 +110,20 @@ def sector_exposure(ledger: dict, prices: dict) -> dict:
     return out
 
 
-def sector_allows_entry(ledger: dict, prices: dict, sector: str, intended_cost: float) -> tuple:
+def sector_allows_entry(ledger: dict, prices: dict, sector: str, intended_cost: float,
+                         max_names_per_sector: int = None) -> tuple:
     """
     Returns (allowed: bool, reason: str). Blocks an entry that would push a sector
     past either the name-count cap or the equity-share cap.
+
+    max_names_per_sector=None (default): uses module-level MAX_NAMES_PER_SECTOR (2) --
+    unchanged behavior. Pass a strategy's own MAX_NAMES_PER_SECTOR override to use that
+    instead, same pattern as SIZING_BASE above.
     """
+    names_cap = MAX_NAMES_PER_SECTOR if max_names_per_sector is None else max_names_per_sector
     exposure = sector_exposure(ledger, prices).get(sector, {"names": 0, "value": 0.0})
-    if exposure["names"] >= MAX_NAMES_PER_SECTOR:
-        return False, f"{sector} sektöründe zaten {exposure['names']} pozisyon var (limit {MAX_NAMES_PER_SECTOR})"
+    if exposure["names"] >= names_cap:
+        return False, f"{sector} sektöründe zaten {exposure['names']} pozisyon var (limit {names_cap})"
 
     equity = total_equity(ledger, prices)
     if equity > 0 and (exposure["value"] + intended_cost) / equity > MAX_SECTOR_PCT:

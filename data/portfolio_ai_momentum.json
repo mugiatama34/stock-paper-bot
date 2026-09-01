@@ -6,7 +6,7 @@
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 494.0693421549214,
+      "stop_price": 494.1889011799144,
       "partial_taken": false,
       "peak_price": 513.530029296875,
       "sector": "Information Technology"
@@ -28,7 +28,7 @@
     "PLTR": {
       "qty": 5,
       "avg_price": 175.97000122070312,
-      "stop_price": 173.54385811941964,
+      "stop_price": 173.75814383370536,
       "partial_taken": false,
       "peak_price": 187.1300048828125,
       "sector": "Information Technology"
@@ -36,7 +36,7 @@
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 33.1528560093471,
+      "stop_price": 33.86142785208566,
       "partial_taken": false,
       "peak_price": 38.459999084472656,
       "sector": "Information Technology"
@@ -44,7 +44,7 @@
     "ADP": {
       "qty": 2,
       "avg_price": 283.010009765625,
-      "stop_price": 276.15643310546875,
+      "stop_price": 276.31859043666293,
       "peak_price": 287.4800109863281,
       "sector": "Industrials",
       "partial_taken": false
@@ -60,7 +60,7 @@
     "CMCSA": {
       "qty": 16,
       "avg_price": 27.020000457763672,
-      "stop_price": 26.080000468662806,
+      "stop_price": 26.08500017438616,
       "peak_price": 27.2450008392334,
       "sector": "Communication Services",
       "partial_taken": false
@@ -76,7 +76,7 @@
     "CSGP": {
       "qty": 7,
       "avg_price": 32.84000015258789,
-      "stop_price": 30.080000468662806,
+      "stop_price": 30.095000403267996,
       "peak_price": 32.84000015258789,
       "sector": "Real Estate",
       "partial_taken": false
@@ -92,7 +92,7 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.625,
-      "stop_price": 173.3142830984933,
+      "stop_price": 173.51642717633928,
       "peak_price": 183.625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -100,16 +100,16 @@
     "BKR": {
       "qty": 3,
       "avg_price": 63.36000061035156,
-      "stop_price": 60.5528564453125,
-      "peak_price": 63.54999923706055,
+      "stop_price": 60.902859279087615,
+      "peak_price": 63.970001220703125,
       "sector": "Energy",
       "partial_taken": false
     },
     "GILD": {
       "qty": 1,
       "avg_price": 146.67999267578125,
-      "stop_price": 139.47428022112166,
-      "peak_price": 146.67999267578125,
+      "stop_price": 141.01356724330358,
+      "peak_price": 148.3249969482422,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -601,6 +601,11 @@
     {
       "date": "2026-08-31T23:24:43.578807+00:00",
       "equity": 10600.78,
+      "cash": 371.11
+    },
+    {
+      "date": "2026-09-01T15:55:29.145470+00:00",
+      "equity": 10506.33,
       "cash": 371.11
     }
   ]

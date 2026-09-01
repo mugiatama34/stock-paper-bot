@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 707.2449188232422,
+  "cash": 1040.2449188232422,
   "positions": {
     "AMZN": {
       "qty": 9,
@@ -83,18 +83,10 @@
       "sector": "Financials",
       "partial_taken": false
     },
-    "GOOG": {
-      "qty": 1,
-      "avg_price": 342.8800048828125,
-      "stop_price": 328.12196568080356,
-      "peak_price": 342.8800048828125,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
     "PCAR": {
       "qty": 2,
       "avg_price": 125.33999633789062,
-      "stop_price": 118.5302489417173,
+      "stop_price": 118.7024953024728,
       "peak_price": 125.33999633789062,
       "sector": "Industrials",
       "partial_taken": false
@@ -110,7 +102,7 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 103.16821343558175,
+      "stop_price": 103.20571327209473,
       "peak_price": 111.0199966430664,
       "sector": "Information Technology",
       "partial_taken": false
@@ -490,6 +482,24 @@
         "rsi14_prev": 28.31,
         "atr14": 3.14
       }
+    },
+    {
+      "date": "2026-09-01T15:55:29.185085+00:00",
+      "symbol": "GOOG",
+      "action": "SELL",
+      "qty": 1,
+      "price": 333.0,
+      "pnl": -9.88,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=37.15, fiyat=333.0.",
+      "indicators": {
+        "price": 333.0,
+        "sma200": 333.72,
+        "rsi14": 37.15,
+        "rsi14_prev": 39.06,
+        "atr14": 5.93
+      }
     }
   ],
   "equity_history": [
@@ -582,6 +592,11 @@
       "date": "2026-08-31T23:24:44.581976+00:00",
       "equity": 9908.07,
       "cash": 707.24
+    },
+    {
+      "date": "2026-09-01T15:55:30.371003+00:00",
+      "equity": 9891.89,
+      "cash": 1040.24
     }
   ]
 }

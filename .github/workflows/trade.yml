@@ -34,5 +34,21 @@ jobs:
           git config user.name "stock-paper-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/ docs/ reports/
-          git diff --cached --quiet || git commit -m "Update ledgers [skip ci]"
-          git push
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update ledgers [skip ci]"
+
+          attempt=1
+          max_attempts=5
+          until git push origin HEAD:${{ github.ref_name }}; do
+            if [ "$attempt" -ge "$max_attempts" ]; then
+              echo "::error::git push $max_attempts denemeden sonra başarısız oldu."
+              exit 1
+            fi
+            echo "Push reddedildi (deneme $attempt/$max_attempts), uzak değişiklikler alınıp tekrar denenecek..."
+            git fetch origin ${{ github.ref_name }}
+            git rebase origin/${{ github.ref_name }} || { echo "::error::rebase başarısız, çakışma var."; exit 1; }
+            attempt=$((attempt + 1))
+            sleep $((attempt * 3))
+          done

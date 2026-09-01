@@ -78,16 +78,16 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 70.69714464460101,
-      "peak_price": 75.22000122070312,
+      "stop_price": 70.70714678083148,
+      "peak_price": 75.2300033569336,
       "sector": "Energy",
       "partial_taken": false
     },
     "AES": {
       "qty": 5,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.67642879486084,
-      "peak_price": 14.765000343322754,
+      "stop_price": 14.677143233163017,
+      "peak_price": 14.770000457763672,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -753,6 +753,11 @@
     {
       "date": "2026-09-01T20:03:35.259894+00:00",
       "equity": 9731.32,
+      "cash": 314.24
+    },
+    {
+      "date": "2026-09-01T20:25:53.836835+00:00",
+      "equity": 9732.01,
       "cash": 314.24
     }
   ]

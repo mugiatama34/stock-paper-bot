@@ -1,9 +1,17 @@
 """
 AI Infra Momentum Strategy  (backtest-only, manual universe)
 --------------------------------------------------------------
-Universe: manually curated AI_UNIVERSE list (see universe.py), filtered to
-names with >=2M average daily volume. Same rules as ai_momentum, applied to
-a hand-picked "ai" universe instead of Nasdaq-100.
+Universe: manually curated AI_UNIVERSE_BACKTEST list (see universe.py),
+filtered to names with >=2M average daily volume. Same rules as ai_momentum,
+applied to a hand-picked "ai" universe instead of Nasdaq-100.
+
+Uses the "ai_backtest" universe key (not "ai"): the live AI universe includes
+five names that IPO'd/started separate trading after 2022 (ALAB, CRWV, NBIS,
+GEV, CRDO), which would create survivorship bias in a multi-year backtest.
+"ai_backtest" is the same list with those five excluded. This strategy is
+backtest-only for now (see BACKTEST_ONLY in strategies/__init__.py); if it's
+ever promoted to live trading, its UNIVERSE_KEY should switch to "ai" so it
+trades the full, current universe.
 
 Entry (all must hold):
   - price > SMA20 > SMA50            trend is up on both horizons
@@ -20,7 +28,7 @@ give it all back before it ever touches SMA50, so the stop follows the peak up.
 from .indicators import sma, rsi, atr
 
 NAME = "ai_infra"
-UNIVERSE_KEY = "ai"
+UNIVERSE_KEY = "ai_backtest"
 ATR_MULT = 2.0          # trailing stop distance
 RS_THRESHOLD = 0.02     # must beat SPY by this much over 20 sessions
 RSI_MAX_ENTRY = 75      # overbought filter

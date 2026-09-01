@@ -5,6 +5,9 @@ Sources, in order of preference:
   - S&P 500: a versioned CSV on GitHub that carries the GICS Sector column.
   - Nasdaq-100: Wikipedia at runtime; falls back to a baked-in list if that fails,
     so a blocked request or a table-layout change can never break the bot.
+  - AI: a manually curated, fixed symbol list (see AI_UNIVERSE_LIVE below), not
+    pulled from any index. Has a live variant and a backtest variant (fewer
+    names, to avoid survivorship bias) -- see build_universe()'s docstring.
 
 Sector labels matter because trade_bot enforces concentration limits (max N names
 and max X% of equity per sector) — without them the momentum book would happily
@@ -62,14 +65,36 @@ NDX_ONLY_SECTORS = {
 
 # Third universe: "ai" key — a manually curated, fixed symbol list (not pulled
 # from any index). Edit this list directly to add/remove names.
-AI_UNIVERSE: list[str] = [
-    # TODO: semboller buraya eklenecek
+AI_UNIVERSE_LIVE: list[str] = [
+    "NVDA", "AVGO", "AMD", "TSM", "ASML", "AMKR", "MU", "ANET", "SMCI", "DELL",
+    "VRT", "ETN", "PWR", "CEG", "VST", "NEE", "EQIX", "DLR", "MSFT", "GOOGL",
+    "AMZN", "ALAB", "CRWV", "NBIS", "GEV", "CRDO", "ORCL", "GLW",
 ]
 
-# Manual sector overrides for AI_UNIVERSE names that aren't in the S&P 500 /
-# Nasdaq-100 sector maps above. Only needed for symbols outside both indexes.
+# backtest.py bu listeyi kullanır: AI_UNIVERSE_LIVE'dan, 2022'den sonra halka
+# açılan/spin-off ile ayrı işlem görmeye başlayan isimler çıkarılmış hali.
+# Bu beş sembolün geçmişi backtest penceresinin (birkaç yıl) tamamını
+# kapsamıyor; dahil edilirlerse yalnızca "hayatta kalan ve zaten yükselmiş"
+# şirketler test edilmiş olur (survivorship bias) ve sonuçlar olduğundan
+# iyimser çıkar. Canlı bot (trade_bot.py) için bu kısıtlama geçerli değil,
+# o yüzden AI_UNIVERSE_LIVE tam listeyi kullanır.
+AI_UNIVERSE_RECENT_IPO_EXCLUDE = {"ALAB", "CRWV", "NBIS", "GEV", "CRDO"}
+AI_UNIVERSE_BACKTEST: list[str] = [
+    s for s in AI_UNIVERSE_LIVE if s not in AI_UNIVERSE_RECENT_IPO_EXCLUDE
+]
+
+# Manual sector overrides for AI universe names that aren't in the S&P 500 /
+# Nasdaq-100 sector maps above. Only needed for symbols outside both indexes
+# (foreign ADRs, small/mid caps, or names too recently listed to appear there).
 AI_SECTOR_OVERRIDES: dict[str, str] = {
-    # "SEMBOL": "Sektör Adı",
+    "TSM": "Information Technology",    # Taiwan Semiconductor - NYSE ADR, S&P500/NDX dışı
+    "ASML": "Information Technology",   # ASML Holding - Nasdaq ADR, endeks haritalarında olmayabilir
+    "AMKR": "Information Technology",   # Amkor Technology - Nasdaq, S&P500/NDX dışı
+    "ALAB": "Information Technology",   # Astera Labs - 2024 IPO, henüz endekslerde yok
+    "CRWV": "Information Technology",   # CoreWeave - 2025 IPO, henüz endekslerde yok
+    "NBIS": "Information Technology",   # Nebius Group - 2024'te yeniden listelendi, endekslerde yok
+    "CRDO": "Information Technology",   # Credo Technology - küçük ölçekli, S&P500/NDX dışı
+    "GEV": "Industrials",               # GE Vernova - 2024 spin-off, harita güncellemesi gecikebilir (yedek)
 }
 
 
@@ -110,8 +135,10 @@ def _fetch_ndx_symbols() -> list:
 
 
 def build_universe() -> dict:
-    """Returns {'sp500': {symbol: sector}, 'ndx': {symbol: sector}, 'ai': {symbol: sector}},
-    cached to disk."""
+    """Returns {'sp500': {...}, 'ndx': {...}, 'ai': {...}, 'ai_backtest': {...}}
+    (symbol -> sector maps), cached to disk. 'ai' is the live (trade_bot.py)
+    AI universe; 'ai_backtest' is the survivorship-bias-adjusted subset that
+    backtest.py uses (see AI_UNIVERSE_RECENT_IPO_EXCLUDE above)."""
     try:
         sp = _fetch_sp500()
         sp_map = dict(zip(sp["symbol"], sp["sector"]))
@@ -134,16 +161,17 @@ def build_universe() -> dict:
             ndx_map[s] = "Unknown"
 
     ai_map = {}
-    for s in AI_UNIVERSE:
+    for s in AI_UNIVERSE_LIVE:
         sector = sp_map.get(s) or ndx_map.get(s) or AI_SECTOR_OVERRIDES.get(s) or _fetch_sector_live(s)
         ai_map[s] = sector or "Unknown"
+    ai_backtest_map = {s: ai_map[s] for s in AI_UNIVERSE_BACKTEST}
 
-    result = {"sp500": sp_map, "ndx": ndx_map, "ai": ai_map}
+    result = {"sp500": sp_map, "ndx": ndx_map, "ai": ai_map, "ai_backtest": ai_backtest_map}
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(CACHE_PATH, "w") as f:
         json.dump(result, f, indent=2)
     print(f"[universe] S&P 500: {len(sp_map)} names, Nasdaq-100: {len(ndx_map)} names, "
-          f"AI: {len(ai_map)} names")
+          f"AI (live): {len(ai_map)} names, AI (backtest): {len(ai_backtest_map)} names")
     return result
 
 

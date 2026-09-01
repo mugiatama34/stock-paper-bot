@@ -31,6 +31,12 @@ MAX_POSITION_PCT = 0.25    # one name can't exceed this share of cash at entry
 MAX_NAMES_PER_SECTOR = 2   # concentration cap: count of open names in one sector
 MAX_SECTOR_PCT = 0.30      # concentration cap: share of equity in one sector
 
+# Strateji modülleri isteğe bağlı olarak SIZING_BASE = "cash" (varsayılan, mevcut
+# davranış) veya SIZING_BASE = "equity" tanımlayabilir. plan_position()/buy() bu
+# değere göre RISK_PER_TRADE ve MAX_POSITION_PCT'yi kalan nakit yerine toplam
+# equity (cash + açık pozisyonların piyasa değeri) üzerinden hesaplar. Formülün
+# kendisi değişmez, yalnızca tabanı değişir; nakit yetersizse buy() zaten reddeder.
+
 
 class LedgerError(Exception):
     """Ledger dosyası okunamadı veya bozuk -- boş ledger'a sessizce düşülmez."""
@@ -117,27 +123,35 @@ def sector_allows_entry(ledger: dict, prices: dict, sector: str, intended_cost: 
     return True, ""
 
 
-def plan_position(ledger: dict, price: float, stop_price: float) -> tuple:
+def plan_position(ledger: dict, price: float, stop_price: float,
+                   sizing_base: str = "cash", prices: dict = None) -> tuple:
     """
     (qty, cost) this trade would take, using the same sizing rule as buy().
     Split out so sector-concentration checks can run before anything is committed.
+
+    sizing_base="cash" (default): risk_amount and the position cap are a fraction
+    of remaining cash -- unchanged behavior. sizing_base="equity": the same
+    formula runs against total_equity(ledger, prices) instead, so the base
+    doesn't shrink as cash gets committed to earlier positions in the same run.
     """
     if price is None or (isinstance(price, float) and math.isnan(price)) or price <= 0:
         print(f"[skip] plan_position: geçersiz price ({price!r}), pozisyon planlanmadı")
         return 0, 0.0
 
-    risk_amount = ledger["cash"] * RISK_PER_TRADE
+    base = total_equity(ledger, prices or {}) if sizing_base == "equity" else ledger["cash"]
+    risk_amount = base * RISK_PER_TRADE
     per_share_risk = max(price - stop_price, price * 0.01)  # guard against ~0 distance
     qty = int(risk_amount / per_share_risk)
-    max_qty_by_cash = int((ledger["cash"] * MAX_POSITION_PCT) / price)
-    qty = max(0, min(qty, max_qty_by_cash))
+    max_qty_by_base = int((base * MAX_POSITION_PCT) / price)
+    qty = max(0, min(qty, max_qty_by_base))
     return qty, qty * price
 
 
 def buy(ledger: dict, symbol: str, price: float, stop_price: float, reasoning: str,
-        indicators: dict, sector: str = "Unknown") -> bool:
-    """Size by risk: risk_amount = cash * RISK_PER_TRADE, qty = risk_amount / stop distance."""
-    qty, cost = plan_position(ledger, price, stop_price)
+        indicators: dict, sector: str = "Unknown", sizing_base: str = "cash",
+        prices: dict = None) -> bool:
+    """Size by risk: risk_amount = base * RISK_PER_TRADE, qty = risk_amount / stop distance."""
+    qty, cost = plan_position(ledger, price, stop_price, sizing_base=sizing_base, prices=prices)
     if qty <= 0 or cost > ledger["cash"]:
         return False
 

@@ -210,7 +210,9 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
             current_prices[symbol] = price
             sector = sector_map.get(symbol, "Unknown")
 
-            qty, cost = ledger_mod.plan_position(lg, price, stop_price)
+            sizing_base = getattr(module, "SIZING_BASE", "cash")
+            qty, cost = ledger_mod.plan_position(lg, price, stop_price,
+                                                  sizing_base=sizing_base, prices=current_prices)
             if qty <= 0:
                 continue
 
@@ -220,7 +222,8 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
                 continue
 
             if ledger_mod.buy(lg, symbol, price, signal["stop_price"], signal["reasoning"],
-                              signal["indicators"], sector=sector):
+                              signal["indicators"], sector=sector,
+                              sizing_base=sizing_base, prices=current_prices):
                 ledger_mod.save_ledger(strategy_name, lg)
                 telegram_notify.notify_buy(strategy_name, symbol,
                                            lg["positions"][symbol]["qty"], price,

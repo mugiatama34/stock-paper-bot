@@ -293,7 +293,9 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                 fill_price = _fill(price, "buy")
                 prices[sym] = price
                 sector = sector_map.get(sym, "Unknown")
-                qty, cost = ledger_mod.plan_position(lg, fill_price, stop_price)
+                sizing_base = getattr(module, "SIZING_BASE", "cash")
+                qty, cost = ledger_mod.plan_position(lg, fill_price, stop_price,
+                                                      sizing_base=sizing_base, prices=prices)
                 if qty <= 0:
                     rejected_export.append({
                         "strategy": strategy_name, "symbol": sym,
@@ -312,7 +314,8 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                     })
                     continue
                 if ledger_mod.buy(lg, sym, fill_price, sig["stop_price"],
-                                  sig["reasoning"], sig["indicators"], sector=sector):
+                                  sig["reasoning"], sig["indicators"], sector=sector,
+                                  sizing_base=sizing_base, prices=prices):
                     entry_dates[sym] = day
                     entry_context[sym] = {
                         "qty": qty,

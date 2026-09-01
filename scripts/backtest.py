@@ -302,7 +302,7 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
             invested[0] += 1
 
     invested_pct = invested[0] / len(curve) * 100 if curve else 0.0
-    return lg, curve, invested_pct, closed_trades_export
+    return lg, curve, invested_pct, closed_trades_export, entry_dates, prices
 
 
 # ---------------------------------------------------------------- metrics
@@ -346,6 +346,132 @@ def metrics(curve, lg, years, invested_pct=0.0):
         "profit_factor": round(float(profit_factor), 2) if profit_factor else None,
         "invested_days_pct": round(invested_pct, 1),
     }
+
+
+def compute_symbol_capture(closed_trades, lg, entry_dates, last_prices, data, dates):
+    """
+    Per-symbol comparison: what the bot's round trips in a name compounded to,
+    price-only (cost already baked into the fill prices in closed_trades), versus
+    buying and holding that same name across the whole backtest window.
+    Purely a post-hoc read of closed_trades_export and the final ledger state --
+    no trading decision is touched.
+    """
+    by_symbol = {}
+    for t in closed_trades:
+        by_symbol.setdefault(t["symbol"], []).append(t)
+    for sym in lg["positions"]:
+        by_symbol.setdefault(sym, [])
+
+    period_start, period_end = dates[0], dates[-1]
+    out = []
+    for sym, rows in by_symbol.items():
+        # Group closed rows into episodes (partial + final sell of one round trip
+        # share the same entry_date, since the engine never re-enters a symbol
+        # while a position is already open -- see run()'s entry loop).
+        closed_episodes = []
+        cur_entry_date, cur_rows = None, []
+        for t in rows:
+            if t["entry_date"] != cur_entry_date:
+                if cur_rows:
+                    closed_episodes.append(cur_rows)
+                cur_entry_date, cur_rows = t["entry_date"], []
+            cur_rows.append(t)
+        if cur_rows:
+            closed_episodes.append(cur_rows)
+
+        # episodes: chronological list of (entry_date, entry_price, weighted_exit_price, exit_date_or_None)
+        episodes = []
+        for ep_rows in closed_episodes:
+            entry_price = ep_rows[0]["entry_price"]
+            entry_date_iso = ep_rows[0]["entry_date"]
+            if entry_price is None or entry_date_iso is None:
+                continue
+            total_qty = sum(r["qty"] for r in ep_rows)
+            weighted_exit = sum(r["qty"] * r["exit_price"] for r in ep_rows) / total_qty
+            episodes.append((pd.Timestamp(entry_date_iso), entry_price, weighted_exit,
+                             pd.Timestamp(ep_rows[-1]["exit_date"])))
+
+        open_at_period_end = sym in lg["positions"]
+        if open_at_period_end:
+            pos = lg["positions"][sym]
+            entry_date_raw = entry_dates.get(sym)
+            last_price = last_prices.get(sym)
+            if entry_date_raw is not None and last_price is not None and pos["avg_price"]:
+                episodes.append((pd.Timestamp(entry_date_raw), pos["avg_price"], last_price, None))
+
+        if not episodes:
+            continue
+
+        episode_returns, gap_days_total, prev_exit_date = [], 0, None
+        for entry_date, entry_price, weighted_exit, exit_date in episodes:
+            if prev_exit_date is not None:
+                gap_days_total += (entry_date - prev_exit_date).days
+            episode_returns.append(weighted_exit / entry_price - 1)
+            prev_exit_date = exit_date
+
+        bot_return = 1.0
+        for r in episode_returns:
+            bot_return *= (1 + r)
+        bot_return_pct = (bot_return - 1) * 100
+
+        df = data.get(sym)
+        buyhold_return_pct, partial_period = None, False
+        if df is not None:
+            closes = df["Close"].reindex(dates).dropna()
+            if len(closes) >= 2:
+                buyhold_return_pct = float(closes.iloc[-1] / closes.iloc[0] - 1) * 100
+                partial_period = bool(closes.index[0] > period_start or closes.index[-1] < period_end)
+
+        out.append({
+            "symbol": sym,
+            "bot_return_pct": round(bot_return_pct, 2),
+            "buyhold_return_pct": round(buyhold_return_pct, 2) if buyhold_return_pct is not None else None,
+            "diff_pct": round(bot_return_pct - buyhold_return_pct, 2) if buyhold_return_pct is not None else None,
+            "trade_count": len(episodes),
+            "gap_days_total": gap_days_total,
+            "open_at_period_end": open_at_period_end,
+            "partial_period": partial_period,
+        })
+    out.sort(key=lambda r: r["symbol"])
+    return out
+
+
+def compute_trailing_stop_recovery(closed_trades, data, window_days=30):
+    """
+    For every trailing-stop exit: did the price close above the exit level again
+    within window_days calendar days? A "no" caused by simply running out of
+    data at the edge of the backtest period is flagged via window_truncated
+    instead of being reported as a real non-recovery.
+    """
+    out = []
+    for t in closed_trades:
+        if t["exit_reason"] != "trailing_stop":
+            continue
+        sym = t["symbol"]
+        df = data.get(sym)
+        if df is None:
+            continue
+        exit_date = pd.Timestamp(t["exit_date"])
+        exit_price = t["exit_price"]
+        window_end = exit_date + pd.Timedelta(days=window_days)
+        window = df.loc[(df.index > exit_date) & (df.index <= window_end), "Close"]
+        recovered_mask = window > exit_price
+        recovered = bool(recovered_mask.any())
+        days_to_recover = None
+        if recovered:
+            first_date = window.index[recovered_mask][0]
+            days_to_recover = (first_date - exit_date).days
+        last_available = df.index[-1] if len(df.index) else None
+        window_truncated = bool(not recovered and last_available is not None and last_available < window_end)
+        out.append({
+            "symbol": sym,
+            "exit_date": t["exit_date"],
+            "exit_price": exit_price,
+            "recovered_within_30d": recovered,
+            "days_to_recover": days_to_recover,
+            "window_truncated": window_truncated,
+        })
+    return out
 
 
 def benchmark(spy_df, dates, years):
@@ -602,6 +728,7 @@ def main():
 
     curves, results = {}, {}
     all_trades_export = []
+    capture_by_strategy, recovery_by_strategy = {}, {}
     for name, module in STRATEGY_MODULES.items():
         sector_map = universes[module.UNIVERSE_KEY]
         if universe_mode == "top_n":
@@ -610,13 +737,17 @@ def main():
             syms = sorted(sector_map.keys())
         print(f"[run] {name}: {len(syms)} hisse ({universe_mode})")
         _CACHE.clear()
-        lg, curve, invested_pct, closed_trades = run(name, syms, data, spy_df, sector_map, dates)
+        lg, curve, invested_pct, closed_trades, entry_dates, last_prices = run(
+            name, syms, data, spy_df, sector_map, dates)
         curves[name] = curve
         results[name] = metrics(curve, lg, years, invested_pct)
         results[name]["universe_size"] = len(syms)
         results[name]["universe_mode"] = universe_mode
         results[name]["universe_key"] = module.UNIVERSE_KEY
         all_trades_export.extend(closed_trades)
+        capture_by_strategy[name] = compute_symbol_capture(
+            closed_trades, lg, entry_dates, last_prices, data, dates)
+        recovery_by_strategy[name] = compute_trailing_stop_recovery(closed_trades, data)
 
     bench = benchmark(spy_df, dates, years)
     chart = os.path.join(REPORTS_DIR, "backtest.png")
@@ -664,6 +795,20 @@ def main():
     with open(os.path.join(REPORTS_DIR, trades_filename), "w") as f:
         json.dump(trades_out, f, indent=2)
     print(f"[ok] reports/{trades_filename} yazıldı ({len(all_trades_export)} kapanan işlem)")
+
+    capture_out = {
+        "generated": datetime.now(timezone.utc).isoformat(),
+        "run_params": trades_out["run_params"],
+        "symbol_capture": capture_by_strategy,
+        "trailing_stop_recovery": recovery_by_strategy,
+    }
+    if custom_range:
+        capture_filename = f"backtest_capture_{range_start.strftime('%Y-%m-%d')}_{range_end.strftime('%Y-%m-%d')}.json"
+    else:
+        capture_filename = f"backtest_capture_last{args.years}y.json"
+    with open(os.path.join(REPORTS_DIR, capture_filename), "w") as f:
+        json.dump(capture_out, f, indent=2)
+    print(f"[ok] reports/{capture_filename} yazıldı")
 
     build_html(results, bench, period_title, args.universe_size, universe_mode, args.cost_bps,
                os.path.join(DOCS_DIR, "backtest.html"))

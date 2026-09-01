@@ -223,17 +223,18 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
             prices[sym] = price
             _CTX["ticker"] = sym
 
-            try:
-                atr_val = float(_atr(window, 14).iloc[-1])
-            except Exception:
-                atr_val = 0.0
-            ledger_mod.update_trailing_stop(lg, sym, price, atr_val,
-                                            atr_mult=getattr(module, "ATR_MULT", 2.0))
+            if not getattr(module, "DISABLE_TRAILING_STOP", False):
+                try:
+                    atr_val = float(_atr(window, 14).iloc[-1])
+                except Exception:
+                    atr_val = 0.0
+                ledger_mod.update_trailing_stop(lg, sym, price, atr_val,
+                                                atr_mult=getattr(module, "ATR_MULT", 2.0))
 
-            stop = lg["positions"][sym].get("stop_price")
-            if stop and price <= stop:
-                do_sell(sym, day, _fill(price, "sell"), "İzleyen stop tetiklendi.", {})
-                continue
+                stop = lg["positions"][sym].get("stop_price")
+                if stop and price <= stop:
+                    do_sell(sym, day, _fill(price, "sell"), "İzleyen stop tetiklendi.", {})
+                    continue
 
             spy_win = spy_df.loc[:day]
             try:

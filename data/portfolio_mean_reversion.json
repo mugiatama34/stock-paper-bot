@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 809.0649261474609,
+  "cash": 1194.5849304199219,
   "positions": {
     "AMZN": {
       "qty": 9,
@@ -25,14 +25,6 @@
       "stop_price": 383.2471357073103,
       "peak_price": 402.0899963378906,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "APH": {
-      "qty": 4,
-      "avg_price": 157.68499755859375,
-      "stop_price": 150.00357110159737,
-      "peak_price": 163.17999267578125,
-      "sector": "Information Technology",
       "partial_taken": false
     },
     "D": {
@@ -78,8 +70,8 @@
     "AFL": {
       "qty": 4,
       "avg_price": 116.5199966430664,
-      "stop_price": 112.54774794465445,
-      "peak_price": 117.19999694824219,
+      "stop_price": 112.58774886018179,
+      "peak_price": 117.23999786376953,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -113,6 +105,14 @@
       "stop_price": 214.4889155796596,
       "peak_price": 231.17999267578125,
       "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "TXN": {
+      "qty": 1,
+      "avg_price": 254.8000030517578,
+      "stop_price": 234.82679585048132,
+      "peak_price": 254.8000030517578,
+      "sector": "Information Technology",
       "partial_taken": false
     }
   },
@@ -525,6 +525,41 @@
         "rsi14_prev": 30.39,
         "atr14": 6.68
       }
+    },
+    {
+      "date": "2026-09-02T21:59:58.044722+00:00",
+      "symbol": "APH",
+      "action": "SELL",
+      "qty": 4,
+      "price": 160.08,
+      "pnl": 9.58,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=86.75, fiyat=160.08.",
+      "indicators": {
+        "price": 160.08,
+        "sma200": 72.73,
+        "rsi14": 86.75,
+        "rsi14_prev": 40.45,
+        "atr14": 8.33
+      }
+    },
+    {
+      "date": "2026-09-02T21:59:59.137143+00:00",
+      "symbol": "TXN",
+      "action": "BUY",
+      "qty": 1,
+      "price": 254.8,
+      "stop_price": 234.83,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.23 \u2192 34.54 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=236.46) \u00fczerinde. \u0130zleyen stop: 234.83.",
+      "indicators": {
+        "price": 254.8,
+        "sma200": 236.46,
+        "rsi14": 34.54,
+        "rsi14_prev": 31.23,
+        "atr14": 7.99
+      }
     }
   ],
   "equity_history": [
@@ -652,6 +687,11 @@
       "date": "2026-09-02T20:00:31.696803+00:00",
       "equity": 9927.98,
       "cash": 809.06
+    },
+    {
+      "date": "2026-09-02T21:59:59.657484+00:00",
+      "equity": 9930.31,
+      "cash": 1194.58
     }
   ]
 }

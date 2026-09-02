@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 350.89486503601074,
+  "cash": 278.6548652648926,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -134,9 +134,17 @@
     "KVUE": {
       "qty": 4,
       "avg_price": 18.8799991607666,
-      "stop_price": 18.464429310389928,
-      "peak_price": 19.110000610351562,
+      "stop_price": 18.482856478009904,
+      "peak_price": 19.1299991607666,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "KIM": {
+      "qty": 3,
+      "avg_price": 24.079999923706055,
+      "stop_price": 23.48428589957101,
+      "peak_price": 24.079999923706055,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -658,6 +666,23 @@
       "indicators": {
         "stop_price": 36.83
       }
+    },
+    {
+      "date": "2026-09-02T22:00:00.037117+00:00",
+      "symbol": "KIM",
+      "action": "BUY",
+      "qty": 3,
+      "price": 24.08,
+      "stop_price": 23.48,
+      "sector": "Real Estate",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=22.74), RSI14=41.24 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.1x \u00fczerinde. \u0130zleyen stop: 23.48.",
+      "indicators": {
+        "price": 24.08,
+        "sma200": 22.74,
+        "rsi14": 41.24,
+        "atr14": 0.3,
+        "volume_vs_avg20": 1.1
+      }
     }
   ],
   "equity_history": [
@@ -785,6 +810,11 @@
       "date": "2026-09-02T20:00:32.374283+00:00",
       "equity": 9843.05,
       "cash": 350.89
+    },
+    {
+      "date": "2026-09-02T22:00:00.888346+00:00",
+      "equity": 9844.64,
+      "cash": 278.65
     }
   ]
 }

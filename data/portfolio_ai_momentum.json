@@ -1,12 +1,12 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 371.1148567199707,
+  "cash": 789.6048927307129,
   "positions": {
     "MSFT": {
       "qty": 5,
       "avg_price": 487.32000732421875,
-      "stop_price": 494.1889011799144,
+      "stop_price": 494.6422240970704,
       "partial_taken": false,
       "peak_price": 513.530029296875,
       "sector": "Information Technology"
@@ -25,18 +25,10 @@
       "partial_taken": false,
       "peak_price": 331.7900085449219
     },
-    "PLTR": {
-      "qty": 5,
-      "avg_price": 175.97000122070312,
-      "stop_price": 173.75814383370536,
-      "partial_taken": false,
-      "peak_price": 187.1300048828125,
-      "sector": "Information Technology"
-    },
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 33.86142785208566,
+      "stop_price": 34.21142796107701,
       "partial_taken": false,
       "peak_price": 38.459999084472656,
       "sector": "Information Technology"
@@ -44,7 +36,7 @@
     "ADP": {
       "qty": 2,
       "avg_price": 283.010009765625,
-      "stop_price": 276.31859043666293,
+      "stop_price": 276.5657174246652,
       "peak_price": 287.4800109863281,
       "sector": "Industrials",
       "partial_taken": false
@@ -92,7 +84,7 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.625,
-      "stop_price": 173.72642735072546,
+      "stop_price": 173.88928440638952,
       "peak_price": 183.625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -100,8 +92,8 @@
     "BKR": {
       "qty": 3,
       "avg_price": 63.36000061035156,
-      "stop_price": 60.902859279087615,
-      "peak_price": 63.970001220703125,
+      "stop_price": 61.75989968436105,
+      "peak_price": 64.84989929199219,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -116,9 +108,25 @@
     "SBUX": {
       "qty": 1,
       "avg_price": 106.45999908447266,
-      "stop_price": 101.66739458865541,
-      "peak_price": 106.45999908447266,
+      "stop_price": 102.76096693275419,
+      "peak_price": 107.6500015258789,
       "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "CEG": {
+      "qty": 1,
+      "avg_price": 282.0199890136719,
+      "stop_price": 264.68033747630335,
+      "peak_price": 282.0199890136719,
+      "sector": "Utilities",
+      "partial_taken": false
+    },
+    "PEP": {
+      "qty": 1,
+      "avg_price": 141.38999938964844,
+      "stop_price": 136.86571611676897,
+      "peak_price": 141.38999938964844,
+      "sector": "Consumer Staples",
       "partial_taken": false
     }
   },
@@ -510,6 +518,56 @@
         "atr14": 2.45,
         "relative_strength_20d": 0.0245
       }
+    },
+    {
+      "date": "2026-09-02T15:32:47.829865+00:00",
+      "symbol": "PLTR",
+      "action": "SELL",
+      "qty": 5,
+      "price": 168.38,
+      "pnl": -37.95,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (173.76), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 173.76
+      }
+    },
+    {
+      "date": "2026-09-02T15:32:48.372423+00:00",
+      "symbol": "CEG",
+      "action": "BUY",
+      "qty": 1,
+      "price": 282.02,
+      "stop_price": 264.68,
+      "sector": "Utilities",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (275.44) ve SMA50 (265.01) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %7.0 g\u00fc\u00e7l\u00fc, RSI=53.65 (<75, tepe de\u011fil). \u0130zleyen stop: 264.68 (2xATR).",
+      "indicators": {
+        "price": 282.02,
+        "sma20": 275.44,
+        "sma50": 265.01,
+        "rsi14": 53.65,
+        "atr14": 8.67,
+        "relative_strength_20d": 0.07
+      }
+    },
+    {
+      "date": "2026-09-02T15:32:48.896423+00:00",
+      "symbol": "PEP",
+      "action": "BUY",
+      "qty": 1,
+      "price": 141.39,
+      "stop_price": 136.87,
+      "sector": "Consumer Staples",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (140.47) ve SMA50 (139.77) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %2.1 g\u00fc\u00e7l\u00fc, RSI=56.8 (<75, tepe de\u011fil). \u0130zleyen stop: 136.87 (2xATR).",
+      "indicators": {
+        "price": 141.39,
+        "sma20": 140.47,
+        "sma50": 139.77,
+        "rsi14": 56.8,
+        "atr14": 2.26,
+        "relative_strength_20d": 0.0211
+      }
     }
   ],
   "equity_history": [
@@ -622,6 +680,11 @@
       "date": "2026-09-01T22:03:20.672075+00:00",
       "equity": 10461.3,
       "cash": 371.11
+    },
+    {
+      "date": "2026-09-02T15:32:49.337925+00:00",
+      "equity": 10331.77,
+      "cash": 789.6
     }
   ]
 }

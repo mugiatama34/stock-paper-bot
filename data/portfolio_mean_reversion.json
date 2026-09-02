@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1040.2449188232422,
+  "cash": 809.0649261474609,
   "positions": {
     "AMZN": {
       "qty": 9,
@@ -70,7 +70,7 @@
     "JCI": {
       "qty": 1,
       "avg_price": 144.61500549316406,
-      "stop_price": 136.07036972045898,
+      "stop_price": 136.2453716823033,
       "peak_price": 144.61500549316406,
       "sector": "Industrials",
       "partial_taken": false
@@ -78,15 +78,15 @@
     "AFL": {
       "qty": 4,
       "avg_price": 116.5199966430664,
-      "stop_price": 111.99947669424841,
-      "peak_price": 116.5199966430664,
+      "stop_price": 112.27667691935102,
+      "peak_price": 116.91999816894531,
       "sector": "Financials",
       "partial_taken": false
     },
     "PCAR": {
       "qty": 2,
       "avg_price": 125.33999633789062,
-      "stop_price": 118.7024953024728,
+      "stop_price": 118.93285397120884,
       "peak_price": 125.33999633789062,
       "sector": "Industrials",
       "partial_taken": false
@@ -102,9 +102,17 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 103.20571327209473,
+      "stop_price": 103.57714080810547,
       "peak_price": 111.0199966430664,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "ROST": {
+      "qty": 1,
+      "avg_price": 231.17999267578125,
+      "stop_price": 214.4889155796596,
+      "peak_price": 231.17999267578125,
+      "sector": "Consumer Discretionary",
       "partial_taken": false
     }
   },
@@ -500,6 +508,23 @@
         "rsi14_prev": 39.06,
         "atr14": 5.93
       }
+    },
+    {
+      "date": "2026-09-02T15:32:50.095999+00:00",
+      "symbol": "ROST",
+      "action": "BUY",
+      "qty": 1,
+      "price": 231.18,
+      "stop_price": 214.49,
+      "sector": "Consumer Discretionary",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 30.39 \u2192 35.38 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=211.44) \u00fczerinde. \u0130zleyen stop: 214.49.",
+      "indicators": {
+        "price": 231.18,
+        "sma200": 211.44,
+        "rsi14": 35.38,
+        "rsi14_prev": 30.39,
+        "atr14": 6.68
+      }
     }
   ],
   "equity_history": [
@@ -612,6 +637,11 @@
       "date": "2026-09-01T22:03:21.434096+00:00",
       "equity": 9915.31,
       "cash": 1040.24
+    },
+    {
+      "date": "2026-09-02T15:32:50.656926+00:00",
+      "equity": 9934.99,
+      "cash": 809.06
     }
   ]
 }

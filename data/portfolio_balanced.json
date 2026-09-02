@@ -1,12 +1,12 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 314.23986625671387,
+  "cash": 350.89486503601074,
   "positions": {
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 352.7185581752232,
+      "stop_price": 352.8781698645642,
       "peak_price": 374.5199890136719,
       "sector": "Information Technology",
       "partial_taken": false
@@ -14,7 +14,7 @@
     "AMCR": {
       "qty": 40,
       "avg_price": 47.90999984741211,
-      "stop_price": 45.652857644217356,
+      "stop_price": 45.884286063058035,
       "peak_price": 47.90999984741211,
       "sector": "Materials",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "CL": {
       "qty": 15,
       "avg_price": 92.55000305175781,
-      "stop_price": 89.30643572126117,
+      "stop_price": 89.34429059709821,
       "peak_price": 92.55000305175781,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -31,7 +31,7 @@
       "qty": 5,
       "avg_price": 216.27000427246094,
       "stop_price": 208.66320028975562,
-      "peak_price": 217.80999755859375,
+      "peak_price": 217.85499572753906,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -62,7 +62,7 @@
     "ARES": {
       "qty": 1,
       "avg_price": 142.75999450683594,
-      "stop_price": 135.20642743791853,
+      "stop_price": 135.50837053571428,
       "peak_price": 143.6999969482422,
       "sector": "Financials",
       "partial_taken": false
@@ -78,7 +78,7 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 70.70714678083148,
+      "stop_price": 70.71857561383929,
       "peak_price": 75.2300033569336,
       "sector": "Energy",
       "partial_taken": false
@@ -86,23 +86,15 @@
     "AES": {
       "qty": 5,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.677143233163017,
-      "peak_price": 14.770000457763672,
+      "stop_price": 14.700714247567314,
+      "peak_price": 14.795000076293945,
       "sector": "Utilities",
-      "partial_taken": false
-    },
-    "UDR": {
-      "qty": 1,
-      "avg_price": 37.93000030517578,
-      "stop_price": 36.827352705828815,
-      "peak_price": 37.93000030517578,
-      "sector": "Real Estate",
       "partial_taken": false
     },
     "ABNB": {
       "qty": 1,
       "avg_price": 183.22000122070312,
-      "stop_price": 173.32142857142858,
+      "stop_price": 173.48428562709265,
       "peak_price": 183.22000122070312,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -110,15 +102,15 @@
     "ABT": {
       "qty": 1,
       "avg_price": 110.36000061035156,
-      "stop_price": 105.6500004359654,
-      "peak_price": 110.36000061035156,
+      "stop_price": 106.922853742327,
+      "peak_price": 112.0199966430664,
       "sector": "Health Care",
       "partial_taken": false
     },
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 132.9171404157366,
+      "stop_price": 132.94428144182478,
       "peak_price": 138.22999572753906,
       "sector": "Utilities",
       "partial_taken": false
@@ -126,15 +118,15 @@
     "CNC": {
       "qty": 2,
       "avg_price": 64.33999633789062,
-      "stop_price": 62.21071188790457,
-      "peak_price": 65.82499694824219,
+      "stop_price": 63.14000374930246,
+      "peak_price": 66.66000366210938,
       "sector": "Health Care",
       "partial_taken": false
     },
     "INVH": {
       "qty": 3,
       "avg_price": 29.139999389648438,
-      "stop_price": 28.297142846243723,
+      "stop_price": 28.31785719735282,
       "peak_price": 29.149999618530273,
       "sector": "Real Estate",
       "partial_taken": false
@@ -142,7 +134,7 @@
     "KVUE": {
       "qty": 4,
       "avg_price": 18.8799991607666,
-      "stop_price": 18.258672169276647,
+      "stop_price": 18.28081512451172,
       "peak_price": 18.900100708007812,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -652,6 +644,20 @@
       "indicators": {
         "stop_price": 37.75
       }
+    },
+    {
+      "date": "2026-09-02T15:32:50.706749+00:00",
+      "symbol": "UDR",
+      "action": "SELL",
+      "qty": 1,
+      "price": 36.65,
+      "pnl": -1.28,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "\u0130zleyen stop tetiklendi (36.83), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 36.83
+      }
     }
   ],
   "equity_history": [
@@ -764,6 +770,11 @@
       "date": "2026-09-01T22:03:22.224558+00:00",
       "equity": 9732.01,
       "cash": 314.24
+    },
+    {
+      "date": "2026-09-02T15:32:52.006403+00:00",
+      "equity": 9848.76,
+      "cash": 350.89
     }
   ]
 }

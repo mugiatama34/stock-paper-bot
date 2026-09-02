@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 789.6048927307129,
+  "cash": 2014.864902496338,
   "positions": {
     "MSFT": {
       "qty": 5,
@@ -17,13 +17,6 @@
       "stop_price": 238.41500854492188,
       "partial_taken": false,
       "peak_price": 260.635009765625
-    },
-    "SNOW": {
-      "qty": 4,
-      "avg_price": 322.9800109863281,
-      "stop_price": 307.5144348144531,
-      "partial_taken": false,
-      "peak_price": 331.7900085449219
     },
     "SMCI": {
       "qty": 13,
@@ -44,7 +37,7 @@
     "CHTR": {
       "qty": 2,
       "avg_price": 150.3000030517578,
-      "stop_price": 143.3014395577567,
+      "stop_price": 143.5542951311384,
       "peak_price": 159.02000427246094,
       "sector": "Communication Services",
       "partial_taken": false
@@ -68,7 +61,7 @@
     "CSGP": {
       "qty": 7,
       "avg_price": 32.84000015258789,
-      "stop_price": 30.095000403267996,
+      "stop_price": 30.224572045462473,
       "peak_price": 32.84000015258789,
       "sector": "Real Estate",
       "partial_taken": false
@@ -108,7 +101,7 @@
     "SBUX": {
       "qty": 1,
       "avg_price": 106.45999908447266,
-      "stop_price": 102.76096693275419,
+      "stop_price": 102.82500239780971,
       "peak_price": 107.6500015258789,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -116,15 +109,15 @@
     "CEG": {
       "qty": 1,
       "avg_price": 282.0199890136719,
-      "stop_price": 271.7338262238384,
-      "peak_price": 289.6600036621094,
+      "stop_price": 272.01392948244177,
+      "peak_price": 289.94500732421875,
       "sector": "Utilities",
       "partial_taken": false
     },
     "PEP": {
       "qty": 1,
       "avg_price": 141.38999938964844,
-      "stop_price": 136.86571611676897,
+      "stop_price": 136.92047337123327,
       "peak_price": 141.38999938964844,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -568,6 +561,20 @@
         "atr14": 2.26,
         "relative_strength_20d": 0.0211
       }
+    },
+    {
+      "date": "2026-09-02T20:00:30.198936+00:00",
+      "symbol": "SNOW",
+      "action": "SELL",
+      "qty": 4,
+      "price": 306.32,
+      "pnl": -66.66,
+      "partial": false,
+      "sector": "Unknown",
+      "reasoning": "\u0130zleyen stop tetiklendi (307.51), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 307.51
+      }
     }
   ],
   "equity_history": [
@@ -690,6 +697,11 @@
       "date": "2026-09-02T19:34:05.596600+00:00",
       "equity": 10373.07,
       "cash": 789.6
+    },
+    {
+      "date": "2026-09-02T20:00:31.028569+00:00",
+      "equity": 10350.87,
+      "cash": 2014.86
     }
   ]
 }

@@ -86,8 +86,8 @@
     "AES": {
       "qty": 5,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.700714247567314,
-      "peak_price": 14.795000076293945,
+      "stop_price": 14.709285872323173,
+      "peak_price": 14.805000305175781,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -110,15 +110,15 @@
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 132.94428144182478,
-      "peak_price": 138.39500427246094,
+      "stop_price": 133.9414302280971,
+      "peak_price": 139.5,
       "sector": "Utilities",
       "partial_taken": false
     },
     "CNC": {
       "qty": 2,
       "avg_price": 64.33999633789062,
-      "stop_price": 63.93500191824777,
+      "stop_price": 64.02928706577846,
       "peak_price": 67.72000122070312,
       "sector": "Health Care",
       "partial_taken": false
@@ -134,8 +134,8 @@
     "KVUE": {
       "qty": 4,
       "avg_price": 18.8799991607666,
-      "stop_price": 18.424285616193497,
-      "peak_price": 19.079999923706055,
+      "stop_price": 18.464429310389928,
+      "peak_price": 19.110000610351562,
       "sector": "Consumer Staples",
       "partial_taken": false
     }
@@ -779,6 +779,11 @@
     {
       "date": "2026-09-02T19:34:07.164361+00:00",
       "equity": 9846.3,
+      "cash": 350.89
+    },
+    {
+      "date": "2026-09-02T20:00:32.374283+00:00",
+      "equity": 9843.05,
       "cash": 350.89
     }
   ]

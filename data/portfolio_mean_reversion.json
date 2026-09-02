@@ -78,8 +78,8 @@
     "AFL": {
       "qty": 4,
       "avg_price": 116.5199966430664,
-      "stop_price": 112.32974337465527,
-      "peak_price": 117.11399841308594,
+      "stop_price": 112.54774794465445,
+      "peak_price": 117.19999694824219,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -102,7 +102,7 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 103.57714080810547,
+      "stop_price": 105.40022959027972,
       "peak_price": 111.0199966430664,
       "sector": "Information Technology",
       "partial_taken": false
@@ -646,6 +646,11 @@
     {
       "date": "2026-09-02T19:34:06.364268+00:00",
       "equity": 9923.29,
+      "cash": 809.06
+    },
+    {
+      "date": "2026-09-02T20:00:31.696803+00:00",
+      "equity": 9927.98,
       "cash": 809.06
     }
   ]

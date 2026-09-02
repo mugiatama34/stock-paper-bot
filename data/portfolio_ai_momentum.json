@@ -44,8 +44,8 @@
     "CHTR": {
       "qty": 2,
       "avg_price": 150.3000030517578,
-      "stop_price": 141.36358206612724,
-      "peak_price": 155.86500549316406,
+      "stop_price": 143.3014395577567,
+      "peak_price": 159.02000427246094,
       "sector": "Communication Services",
       "partial_taken": false
     },
@@ -84,7 +84,7 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.625,
-      "stop_price": 173.88928440638952,
+      "stop_price": 174.057856968471,
       "peak_price": 183.625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -116,8 +116,8 @@
     "CEG": {
       "qty": 1,
       "avg_price": 282.0199890136719,
-      "stop_price": 264.68033747630335,
-      "peak_price": 282.0199890136719,
+      "stop_price": 271.7338262238384,
+      "peak_price": 289.6600036621094,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -684,6 +684,11 @@
     {
       "date": "2026-09-02T15:32:49.337925+00:00",
       "equity": 10331.77,
+      "cash": 789.6
+    },
+    {
+      "date": "2026-09-02T19:34:05.596600+00:00",
+      "equity": 10373.07,
       "cash": 789.6
     }
   ]

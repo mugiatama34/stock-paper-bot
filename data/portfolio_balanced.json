@@ -38,8 +38,8 @@
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.241785730634417,
-      "peak_price": 13.987500190734863,
+      "stop_price": 13.3628568649292,
+      "peak_price": 14.15999984741211,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -94,15 +94,15 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.22000122070312,
-      "stop_price": 173.48428562709265,
-      "peak_price": 183.22000122070312,
+      "stop_price": 173.96786063058036,
+      "peak_price": 183.53500366210938,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "ABT": {
       "qty": 1,
       "avg_price": 110.36000061035156,
-      "stop_price": 106.922853742327,
+      "stop_price": 106.98856789725167,
       "peak_price": 112.0199966430664,
       "sector": "Health Care",
       "partial_taken": false
@@ -111,15 +111,15 @@
       "qty": 1,
       "avg_price": 138.22999572753906,
       "stop_price": 132.94428144182478,
-      "peak_price": 138.22999572753906,
+      "peak_price": 138.39500427246094,
       "sector": "Utilities",
       "partial_taken": false
     },
     "CNC": {
       "qty": 2,
       "avg_price": 64.33999633789062,
-      "stop_price": 63.14000374930246,
-      "peak_price": 66.66000366210938,
+      "stop_price": 63.93500191824777,
+      "peak_price": 67.72000122070312,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -134,8 +134,8 @@
     "KVUE": {
       "qty": 4,
       "avg_price": 18.8799991607666,
-      "stop_price": 18.28081512451172,
-      "peak_price": 18.900100708007812,
+      "stop_price": 18.424285616193497,
+      "peak_price": 19.079999923706055,
       "sector": "Consumer Staples",
       "partial_taken": false
     }
@@ -774,6 +774,11 @@
     {
       "date": "2026-09-02T15:32:52.006403+00:00",
       "equity": 9848.76,
+      "cash": 350.89
+    },
+    {
+      "date": "2026-09-02T19:34:07.164361+00:00",
+      "equity": 9846.3,
       "cash": 350.89
     }
   ]

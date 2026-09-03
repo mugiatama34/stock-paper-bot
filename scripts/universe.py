@@ -29,7 +29,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; stock-paper-bot/1.0)"}
 SP500_CSV = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
 NDX_WIKI = "https://en.wikipedia.org/wiki/Nasdaq-100"
 
-MIN_AVG_VOLUME = 2_000_000  # 20-day average shares/day — user-set liquidity floor
+MIN_AVG_DOLLAR_VOLUME = 50_000_000  # 20-day average $ volume (Close x Volume) — user-set liquidity floor
 
 # Fallback only. Index membership churns a few names a year; a stale entry just
 # means one ticker yfinance can't price, which is handled gracefully upstream.
@@ -176,8 +176,8 @@ def build_universe() -> dict:
 
 
 def passes_liquidity(df) -> bool:
-    """20-day average volume must clear MIN_AVG_VOLUME."""
-    if df is None or len(df) < 20 or "Volume" not in df:
+    """20-day average dollar volume (Close x Volume) must clear MIN_AVG_DOLLAR_VOLUME."""
+    if df is None or len(df) < 20 or "Volume" not in df or "Close" not in df:
         return False
-    avg_vol = df["Volume"].tail(20).mean()
-    return bool(avg_vol >= MIN_AVG_VOLUME)
+    avg_dollar_vol = (df["Close"] * df["Volume"]).tail(20).mean()
+    return bool(avg_dollar_vol >= MIN_AVG_DOLLAR_VOLUME)

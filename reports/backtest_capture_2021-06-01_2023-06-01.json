@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T17:48:35.709234+00:00",
+  "generated": "2026-09-03T10:09:10.046316+00:00",
   "run_params": {
     "years": null,
     "start": "2021-06-01",
@@ -42,7 +42,7 @@
       },
       {
         "symbol": "ADI",
-        "bot_return_pct": -0.68,
+        "bot_return_pct": -0.67,
         "buyhold_return_pct": 13.73,
         "diff_pct": -14.41,
         "trade_count": 3,
@@ -134,7 +134,7 @@
         "symbol": "BKNG",
         "bot_return_pct": -11.62,
         "buyhold_return_pct": 9.52,
-        "diff_pct": -21.15,
+        "diff_pct": -21.14,
         "trade_count": 8,
         "gap_days_total": 471,
         "open_at_period_end": false,
@@ -204,7 +204,7 @@
         "symbol": "CSCO",
         "bot_return_pct": -2.16,
         "buyhold_return_pct": 0.37,
-        "diff_pct": -2.54,
+        "diff_pct": -2.53,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -694,7 +694,7 @@
       },
       {
         "symbol": "ADI",
-        "bot_return_pct": 2.58,
+        "bot_return_pct": 2.57,
         "buyhold_return_pct": 13.73,
         "diff_pct": -11.16,
         "trade_count": 2,
@@ -714,9 +714,9 @@
       },
       {
         "symbol": "AEP",
-        "bot_return_pct": -3.5,
+        "bot_return_pct": -3.49,
         "buyhold_return_pct": 3.33,
-        "diff_pct": -6.83,
+        "diff_pct": -6.82,
         "trade_count": 2,
         "gap_days_total": 3,
         "open_at_period_end": false,
@@ -1124,9 +1124,9 @@
       },
       {
         "symbol": "CTVA",
-        "bot_return_pct": -3.54,
+        "bot_return_pct": -3.55,
         "buyhold_return_pct": 19.67,
-        "diff_pct": -23.21,
+        "diff_pct": -23.22,
         "trade_count": 3,
         "gap_days_total": 151,
         "open_at_period_end": false,
@@ -1584,9 +1584,9 @@
       },
       {
         "symbol": "HAL",
-        "bot_return_pct": -10.15,
+        "bot_return_pct": -10.17,
         "buyhold_return_pct": 31.43,
-        "diff_pct": -41.58,
+        "diff_pct": -41.6,
         "trade_count": 2,
         "gap_days_total": 1,
         "open_at_period_end": false,
@@ -1614,9 +1614,9 @@
       },
       {
         "symbol": "HLT",
-        "bot_return_pct": 7.94,
+        "bot_return_pct": 7.95,
         "buyhold_return_pct": 9.33,
-        "diff_pct": -1.39,
+        "diff_pct": -1.38,
         "trade_count": 3,
         "gap_days_total": 139,
         "open_at_period_end": false,
@@ -2144,7 +2144,7 @@
       },
       {
         "symbol": "NKE",
-        "bot_return_pct": -5.68,
+        "bot_return_pct": -5.67,
         "buyhold_return_pct": -21.64,
         "diff_pct": 15.96,
         "trade_count": 3,
@@ -2424,9 +2424,9 @@
       },
       {
         "symbol": "SLB",
-        "bot_return_pct": 2.03,
+        "bot_return_pct": 2.01,
         "buyhold_return_pct": 40.49,
-        "diff_pct": -38.47,
+        "diff_pct": -38.49,
         "trade_count": 2,
         "gap_days_total": 627,
         "open_at_period_end": false,
@@ -2564,9 +2564,9 @@
       },
       {
         "symbol": "TSN",
-        "bot_return_pct": 0.71,
+        "bot_return_pct": 0.7,
         "buyhold_return_pct": -33.46,
-        "diff_pct": 34.17,
+        "diff_pct": 34.16,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -2586,7 +2586,7 @@
         "symbol": "TXN",
         "bot_return_pct": -0.24,
         "buyhold_return_pct": -1.78,
-        "diff_pct": 1.55,
+        "diff_pct": 1.54,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -2654,12 +2654,12 @@
       },
       {
         "symbol": "V",
-        "bot_return_pct": -1.76,
+        "bot_return_pct": -1.86,
         "buyhold_return_pct": 1.41,
-        "diff_pct": -3.17,
-        "trade_count": 2,
-        "gap_days_total": 595,
-        "open_at_period_end": false,
+        "diff_pct": -3.27,
+        "trade_count": 3,
+        "gap_days_total": 612,
+        "open_at_period_end": true,
         "partial_period": false
       },
       {
@@ -2806,9 +2806,9 @@
       },
       {
         "symbol": "ABBV",
-        "bot_return_pct": 26.5,
+        "bot_return_pct": 25.76,
         "buyhold_return_pct": 28.82,
-        "diff_pct": -2.32,
+        "diff_pct": -3.06,
         "trade_count": 3,
         "gap_days_total": 277,
         "open_at_period_end": false,
@@ -2826,9 +2826,9 @@
       },
       {
         "symbol": "ACGL",
-        "bot_return_pct": 2.99,
+        "bot_return_pct": 3.0,
         "buyhold_return_pct": 74.79,
-        "diff_pct": -71.8,
+        "diff_pct": -71.79,
         "trade_count": 3,
         "gap_days_total": 327,
         "open_at_period_end": false,
@@ -2846,9 +2846,9 @@
       },
       {
         "symbol": "ADI",
-        "bot_return_pct": 1.53,
+        "bot_return_pct": 1.51,
         "buyhold_return_pct": 13.73,
-        "diff_pct": -12.21,
+        "diff_pct": -12.22,
         "trade_count": 6,
         "gap_days_total": 533,
         "open_at_period_end": true,
@@ -2886,9 +2886,9 @@
       },
       {
         "symbol": "AES",
-        "bot_return_pct": -10.22,
+        "bot_return_pct": -10.39,
         "buyhold_return_pct": -18.18,
-        "diff_pct": 7.96,
+        "diff_pct": 7.79,
         "trade_count": 3,
         "gap_days_total": 549,
         "open_at_period_end": false,
@@ -2966,11 +2966,11 @@
       },
       {
         "symbol": "APH",
-        "bot_return_pct": 14.39,
-        "buyhold_return_pct": 14.51,
-        "diff_pct": -0.12,
+        "bot_return_pct": 14.63,
+        "buyhold_return_pct": 16.89,
+        "diff_pct": -2.26,
         "trade_count": 4,
-        "gap_days_total": 548,
+        "gap_days_total": 547,
         "open_at_period_end": false,
         "partial_period": false
       },
@@ -3086,9 +3086,9 @@
       },
       {
         "symbol": "BKR",
-        "bot_return_pct": 16.53,
+        "bot_return_pct": 17.32,
         "buyhold_return_pct": 18.4,
-        "diff_pct": -1.87,
+        "diff_pct": -1.07,
         "trade_count": 6,
         "gap_days_total": 386,
         "open_at_period_end": false,
@@ -3276,9 +3276,9 @@
       },
       {
         "symbol": "CNP",
-        "bot_return_pct": 9.67,
+        "bot_return_pct": 9.81,
         "buyhold_return_pct": 18.69,
-        "diff_pct": -9.02,
+        "diff_pct": -8.87,
         "trade_count": 6,
         "gap_days_total": 387,
         "open_at_period_end": false,
@@ -3626,9 +3626,9 @@
       },
       {
         "symbol": "F",
-        "bot_return_pct": -2.85,
+        "bot_return_pct": -3.0,
         "buyhold_return_pct": -8.66,
-        "diff_pct": 5.82,
+        "diff_pct": 5.66,
         "trade_count": 4,
         "gap_days_total": 134,
         "open_at_period_end": false,
@@ -3676,9 +3676,9 @@
       },
       {
         "symbol": "FITB",
-        "bot_return_pct": 15.35,
+        "bot_return_pct": 15.43,
         "buyhold_return_pct": -37.31,
-        "diff_pct": 52.66,
+        "diff_pct": 52.74,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -3686,9 +3686,9 @@
       },
       {
         "symbol": "FOXA",
-        "bot_return_pct": 1.34,
+        "bot_return_pct": 1.32,
         "buyhold_return_pct": -13.84,
-        "diff_pct": 15.18,
+        "diff_pct": 15.17,
         "trade_count": 6,
         "gap_days_total": 160,
         "open_at_period_end": false,
@@ -3866,9 +3866,9 @@
       },
       {
         "symbol": "IBKR",
-        "bot_return_pct": -17.25,
+        "bot_return_pct": -16.8,
         "buyhold_return_pct": 17.23,
-        "diff_pct": -34.48,
+        "diff_pct": -34.02,
         "trade_count": 5,
         "gap_days_total": 696,
         "open_at_period_end": true,
@@ -3976,9 +3976,9 @@
       },
       {
         "symbol": "KEY",
-        "bot_return_pct": -4.38,
+        "bot_return_pct": -4.37,
         "buyhold_return_pct": -54.59,
-        "diff_pct": 50.21,
+        "diff_pct": 50.22,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -4036,9 +4036,9 @@
       },
       {
         "symbol": "KR",
-        "bot_return_pct": 21.18,
+        "bot_return_pct": 21.32,
         "buyhold_return_pct": 24.74,
-        "diff_pct": -3.57,
+        "diff_pct": -3.42,
         "trade_count": 3,
         "gap_days_total": 571,
         "open_at_period_end": false,
@@ -4146,7 +4146,7 @@
       },
       {
         "symbol": "MCD",
-        "bot_return_pct": -1.79,
+        "bot_return_pct": -1.78,
         "buyhold_return_pct": 28.32,
         "diff_pct": -30.1,
         "trade_count": 6,
@@ -4306,7 +4306,7 @@
       },
       {
         "symbol": "NKE",
-        "bot_return_pct": 3.98,
+        "bot_return_pct": 3.99,
         "buyhold_return_pct": -21.64,
         "diff_pct": 25.62,
         "trade_count": 1,
@@ -4518,7 +4518,7 @@
         "symbol": "SLB",
         "bot_return_pct": -7.46,
         "buyhold_return_pct": 40.49,
-        "diff_pct": -47.96,
+        "diff_pct": -47.95,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -4706,9 +4706,9 @@
       },
       {
         "symbol": "WELL",
-        "bot_return_pct": -3.23,
+        "bot_return_pct": -3.72,
         "buyhold_return_pct": 3.41,
-        "diff_pct": -6.64,
+        "diff_pct": -7.12,
         "trade_count": 3,
         "gap_days_total": 451,
         "open_at_period_end": false,
@@ -4798,9 +4798,9 @@
       },
       {
         "symbol": "ADI",
-        "bot_return_pct": 6.0,
+        "bot_return_pct": 6.01,
         "buyhold_return_pct": 13.73,
-        "diff_pct": -7.73,
+        "diff_pct": -7.72,
         "trade_count": 3,
         "gap_days_total": 622,
         "open_at_period_end": true,
@@ -4818,9 +4818,9 @@
       },
       {
         "symbol": "AEP",
-        "bot_return_pct": -5.15,
+        "bot_return_pct": -5.14,
         "buyhold_return_pct": 3.33,
-        "diff_pct": -8.49,
+        "diff_pct": -8.47,
         "trade_count": 2,
         "gap_days_total": 224,
         "open_at_period_end": false,
@@ -4918,9 +4918,9 @@
       },
       {
         "symbol": "APH",
-        "bot_return_pct": 10.06,
-        "buyhold_return_pct": 14.51,
-        "diff_pct": -4.44,
+        "bot_return_pct": 10.32,
+        "buyhold_return_pct": 16.89,
+        "diff_pct": -6.57,
         "trade_count": 4,
         "gap_days_total": 451,
         "open_at_period_end": false,
@@ -4978,9 +4978,9 @@
       },
       {
         "symbol": "BALL",
-        "bot_return_pct": 5.8,
+        "bot_return_pct": 5.81,
         "buyhold_return_pct": -35.7,
-        "diff_pct": 41.5,
+        "diff_pct": 41.51,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -5338,9 +5338,9 @@
       },
       {
         "symbol": "CTVA",
-        "bot_return_pct": 3.79,
+        "bot_return_pct": 3.77,
         "buyhold_return_pct": 19.67,
-        "diff_pct": -15.88,
+        "diff_pct": -15.9,
         "trade_count": 7,
         "gap_days_total": 529,
         "open_at_period_end": false,
@@ -5838,9 +5838,9 @@
       },
       {
         "symbol": "HAL",
-        "bot_return_pct": -7.58,
+        "bot_return_pct": -7.59,
         "buyhold_return_pct": 31.43,
-        "diff_pct": -39.01,
+        "diff_pct": -39.02,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -6328,7 +6328,7 @@
       },
       {
         "symbol": "MTB",
-        "bot_return_pct": 6.29,
+        "bot_return_pct": 6.3,
         "buyhold_return_pct": -20.37,
         "diff_pct": 26.66,
         "trade_count": 1,
@@ -6528,11 +6528,11 @@
       },
       {
         "symbol": "PEP",
-        "bot_return_pct": -4.92,
+        "bot_return_pct": -1.69,
         "buyhold_return_pct": 31.16,
-        "diff_pct": -36.09,
-        "trade_count": 1,
-        "gap_days_total": 0,
+        "diff_pct": -32.86,
+        "trade_count": 2,
+        "gap_days_total": 461,
         "open_at_period_end": false,
         "partial_period": false
       },
@@ -6588,11 +6588,11 @@
       },
       {
         "symbol": "PM",
-        "bot_return_pct": -15.89,
+        "bot_return_pct": -16.53,
         "buyhold_return_pct": 3.37,
-        "diff_pct": -19.26,
-        "trade_count": 8,
-        "gap_days_total": 638,
+        "diff_pct": -19.9,
+        "trade_count": 7,
+        "gap_days_total": 657,
         "open_at_period_end": false,
         "partial_period": false
       },
@@ -6848,9 +6848,9 @@
       },
       {
         "symbol": "TXN",
-        "bot_return_pct": 2.77,
+        "bot_return_pct": 2.76,
         "buyhold_return_pct": -1.78,
-        "diff_pct": 4.55,
+        "diff_pct": 4.54,
         "trade_count": 2,
         "gap_days_total": 85,
         "open_at_period_end": false,
@@ -7170,9 +7170,9 @@
       },
       {
         "symbol": "AEP",
-        "bot_return_pct": -3.5,
+        "bot_return_pct": -3.49,
         "buyhold_return_pct": 3.33,
-        "diff_pct": -6.83,
+        "diff_pct": -6.82,
         "trade_count": 2,
         "gap_days_total": 3,
         "open_at_period_end": false,
@@ -7250,9 +7250,9 @@
       },
       {
         "symbol": "APH",
-        "bot_return_pct": 5.42,
-        "buyhold_return_pct": 14.51,
-        "diff_pct": -9.09,
+        "bot_return_pct": 5.69,
+        "buyhold_return_pct": 16.89,
+        "diff_pct": -11.2,
         "trade_count": 2,
         "gap_days_total": 379,
         "open_at_period_end": false,
@@ -7300,9 +7300,9 @@
       },
       {
         "symbol": "BALL",
-        "bot_return_pct": 5.8,
+        "bot_return_pct": 5.81,
         "buyhold_return_pct": -35.7,
-        "diff_pct": 41.5,
+        "diff_pct": 41.51,
         "trade_count": 1,
         "gap_days_total": 0,
         "open_at_period_end": false,
@@ -7602,7 +7602,7 @@
         "symbol": "CTVA",
         "bot_return_pct": 0.04,
         "buyhold_return_pct": 19.67,
-        "diff_pct": -19.63,
+        "diff_pct": -19.64,
         "trade_count": 4,
         "gap_days_total": 500,
         "open_at_period_end": false,
@@ -7940,9 +7940,9 @@
       },
       {
         "symbol": "FOXA",
-        "bot_return_pct": -7.05,
+        "bot_return_pct": -7.0,
         "buyhold_return_pct": -13.84,
-        "diff_pct": 6.79,
+        "diff_pct": 6.84,
         "trade_count": 6,
         "gap_days_total": 587,
         "open_at_period_end": false,
@@ -8040,9 +8040,9 @@
       },
       {
         "symbol": "HAL",
-        "bot_return_pct": -16.64,
+        "bot_return_pct": -16.65,
         "buyhold_return_pct": 31.43,
-        "diff_pct": -48.07,
+        "diff_pct": -48.08,
         "trade_count": 3,
         "gap_days_total": 435,
         "open_at_period_end": false,
@@ -8110,9 +8110,9 @@
       },
       {
         "symbol": "IBKR",
-        "bot_return_pct": -9.31,
+        "bot_return_pct": -9.32,
         "buyhold_return_pct": 17.23,
-        "diff_pct": -26.54,
+        "diff_pct": -26.55,
         "trade_count": 2,
         "gap_days_total": 2,
         "open_at_period_end": false,
@@ -8450,7 +8450,7 @@
       },
       {
         "symbol": "MTB",
-        "bot_return_pct": 6.29,
+        "bot_return_pct": 6.3,
         "buyhold_return_pct": -20.37,
         "diff_pct": 26.66,
         "trade_count": 1,
@@ -9392,9 +9392,9 @@
       },
       {
         "symbol": "FAST",
-        "bot_return_pct": 5.53,
+        "bot_return_pct": 5.89,
         "buyhold_return_pct": 7.59,
-        "diff_pct": -2.06,
+        "diff_pct": -1.7,
         "trade_count": 4,
         "gap_days_total": 463,
         "open_at_period_end": false,
@@ -9422,7 +9422,7 @@
       },
       {
         "symbol": "GOOG",
-        "bot_return_pct": 4.17,
+        "bot_return_pct": 4.16,
         "buyhold_return_pct": 2.37,
         "diff_pct": 1.79,
         "trade_count": 7,
@@ -9934,9 +9934,9 @@
       },
       {
         "symbol": "ORCL",
-        "bot_return_pct": -3.67,
+        "bot_return_pct": -3.66,
         "buyhold_return_pct": 37.57,
-        "diff_pct": -41.25,
+        "diff_pct": -41.24,
         "trade_count": 3,
         "gap_days_total": 519,
         "open_at_period_end": false,
@@ -10040,7 +10040,7 @@
         "symbol": "ADI",
         "bot_return_pct": -0.92,
         "buyhold_return_pct": 13.73,
-        "diff_pct": -14.65,
+        "diff_pct": -14.66,
         "trade_count": 2,
         "gap_days_total": 509,
         "open_at_period_end": false,
@@ -10722,7 +10722,7 @@
         "symbol": "AMGN",
         "bot_return_pct": -13.44,
         "buyhold_return_pct": -2.07,
-        "diff_pct": -11.36,
+        "diff_pct": -11.37,
         "trade_count": 5,
         "gap_days_total": 246,
         "open_at_period_end": false,
@@ -11663,7 +11663,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2021-09-28T00:00:00",
-        "exit_price": 157.89,
+        "exit_price": 157.41,
         "recovered_within_30d": true,
         "days_to_recover": 17,
         "window_truncated": false
@@ -12631,7 +12631,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2023-04-06T00:00:00",
-        "exit_price": 177.28,
+        "exit_price": 176.75,
         "recovered_within_30d": true,
         "days_to_recover": 4,
         "window_truncated": false
@@ -12905,7 +12905,7 @@
       {
         "symbol": "SLB",
         "exit_date": "2021-07-08T00:00:00",
-        "exit_price": 27.33,
+        "exit_price": 27.19,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -13281,7 +13281,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2021-12-20T00:00:00",
-        "exit_price": 42.61,
+        "exit_price": 42.52,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -13297,7 +13297,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2022-01-07T00:00:00",
-        "exit_price": 156.22,
+        "exit_price": 155.75,
         "recovered_within_30d": true,
         "days_to_recover": 3,
         "window_truncated": false
@@ -13305,7 +13305,7 @@
       {
         "symbol": "NKE",
         "exit_date": "2022-01-07T00:00:00",
-        "exit_price": 144.86,
+        "exit_price": 143.34,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -13409,7 +13409,7 @@
       {
         "symbol": "HAL",
         "exit_date": "2023-02-22T00:00:00",
-        "exit_price": 33.02,
+        "exit_price": 32.87,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -13425,7 +13425,7 @@
       {
         "symbol": "NKE",
         "exit_date": "2023-02-22T00:00:00",
-        "exit_price": 111.84,
+        "exit_price": 110.67,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -13489,7 +13489,7 @@
       {
         "symbol": "HAL",
         "exit_date": "2023-03-09T00:00:00",
-        "exit_price": 33.04,
+        "exit_price": 32.88,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -13627,7 +13627,7 @@
       {
         "symbol": "IBKR",
         "exit_date": "2021-06-09T00:00:00",
-        "exit_price": 15.86,
+        "exit_price": 15.84,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -13707,7 +13707,7 @@
       {
         "symbol": "HIG",
         "exit_date": "2021-06-17T00:00:00",
-        "exit_price": 56.8,
+        "exit_price": 56.55,
         "recovered_within_30d": true,
         "days_to_recover": 8,
         "window_truncated": false
@@ -13731,7 +13731,7 @@
       {
         "symbol": "MCD",
         "exit_date": "2021-06-18T00:00:00",
-        "exit_price": 204.5,
+        "exit_price": 203.06,
         "recovered_within_30d": true,
         "days_to_recover": 3,
         "window_truncated": false
@@ -13843,7 +13843,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2021-07-06T00:00:00",
-        "exit_price": 34.4,
+        "exit_price": 34.25,
         "recovered_within_30d": true,
         "days_to_recover": 6,
         "window_truncated": false
@@ -13875,7 +13875,7 @@
       {
         "symbol": "GS",
         "exit_date": "2021-07-08T00:00:00",
-        "exit_price": 317.67,
+        "exit_price": 316.12,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -13939,7 +13939,7 @@
       {
         "symbol": "APH",
         "exit_date": "2021-07-16T00:00:00",
-        "exit_price": 32.48,
+        "exit_price": 15.52,
         "recovered_within_30d": true,
         "days_to_recover": 4,
         "window_truncated": false
@@ -13987,7 +13987,7 @@
       {
         "symbol": "MCD",
         "exit_date": "2021-07-19T00:00:00",
-        "exit_price": 204.18,
+        "exit_price": 202.74,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -14195,7 +14195,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2021-09-08T00:00:00",
-        "exit_price": 33.9,
+        "exit_price": 33.75,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -14235,7 +14235,7 @@
       {
         "symbol": "APH",
         "exit_date": "2021-09-09T00:00:00",
-        "exit_price": 35.91,
+        "exit_price": 17.16,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -14411,7 +14411,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2021-09-28T00:00:00",
-        "exit_price": 157.89,
+        "exit_price": 157.41,
         "recovered_within_30d": true,
         "days_to_recover": 17,
         "window_truncated": false
@@ -14547,7 +14547,7 @@
       {
         "symbol": "MCD",
         "exit_date": "2021-10-25T00:00:00",
-        "exit_price": 212.53,
+        "exit_price": 211.03,
         "recovered_within_30d": true,
         "days_to_recover": 2,
         "window_truncated": false
@@ -14555,7 +14555,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2021-10-27T00:00:00",
-        "exit_price": 37.9,
+        "exit_price": 37.73,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -14667,7 +14667,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2021-11-19T00:00:00",
-        "exit_price": 36.76,
+        "exit_price": 36.6,
         "recovered_within_30d": true,
         "days_to_recover": 4,
         "window_truncated": false
@@ -14731,7 +14731,7 @@
       {
         "symbol": "KEY",
         "exit_date": "2021-11-26T00:00:00",
-        "exit_price": 18.1,
+        "exit_price": 17.93,
         "recovered_within_30d": true,
         "days_to_recover": 3,
         "window_truncated": false
@@ -14867,7 +14867,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2021-12-14T00:00:00",
-        "exit_price": 163.11,
+        "exit_price": 162.61,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -14931,7 +14931,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2021-12-20T00:00:00",
-        "exit_price": 155.74,
+        "exit_price": 155.27,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -14963,7 +14963,7 @@
       {
         "symbol": "BALL",
         "exit_date": "2022-01-04T00:00:00",
-        "exit_price": 84.57,
+        "exit_price": 84.3,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -15083,7 +15083,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2022-01-18T00:00:00",
-        "exit_price": 154.06,
+        "exit_price": 153.59,
         "recovered_within_30d": true,
         "days_to_recover": 15,
         "window_truncated": false
@@ -15427,7 +15427,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2022-04-05T00:00:00",
-        "exit_price": 36.66,
+        "exit_price": 36.5,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -15499,7 +15499,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2022-04-22T00:00:00",
-        "exit_price": 55.06,
+        "exit_price": 54.95,
         "recovered_within_30d": true,
         "days_to_recover": 6,
         "window_truncated": false
@@ -15643,7 +15643,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2022-12-06T00:00:00",
-        "exit_price": 61.22,
+        "exit_price": 61.09,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -15675,7 +15675,7 @@
       {
         "symbol": "IBKR",
         "exit_date": "2022-12-12T00:00:00",
-        "exit_price": 18.19,
+        "exit_price": 18.18,
         "recovered_within_30d": true,
         "days_to_recover": 28,
         "window_truncated": false
@@ -15715,7 +15715,7 @@
       {
         "symbol": "MCD",
         "exit_date": "2022-12-16T00:00:00",
-        "exit_price": 244.99,
+        "exit_price": 243.26,
         "recovered_within_30d": true,
         "days_to_recover": 4,
         "window_truncated": false
@@ -15819,7 +15819,7 @@
       {
         "symbol": "MCD",
         "exit_date": "2023-01-18T00:00:00",
-        "exit_price": 244.92,
+        "exit_price": 243.19,
         "recovered_within_30d": true,
         "days_to_recover": 2,
         "window_truncated": false
@@ -16019,7 +16019,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2023-02-21T00:00:00",
-        "exit_price": 175.33,
+        "exit_price": 174.8,
         "recovered_within_30d": true,
         "days_to_recover": 10,
         "window_truncated": false
@@ -16043,7 +16043,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2023-02-21T00:00:00",
-        "exit_price": 57.76,
+        "exit_price": 57.63,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -16155,7 +16155,7 @@
       {
         "symbol": "GS",
         "exit_date": "2023-03-01T00:00:00",
-        "exit_price": 319.98,
+        "exit_price": 318.42,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -16203,7 +16203,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2023-03-09T00:00:00",
-        "exit_price": 57.76,
+        "exit_price": 57.64,
         "recovered_within_30d": true,
         "days_to_recover": 20,
         "window_truncated": false
@@ -16291,7 +16291,7 @@
       {
         "symbol": "IBKR",
         "exit_date": "2023-03-10T00:00:00",
-        "exit_price": 19.71,
+        "exit_price": 19.69,
         "recovered_within_30d": true,
         "days_to_recover": 11,
         "window_truncated": false
@@ -16371,7 +16371,7 @@
       {
         "symbol": "APH",
         "exit_date": "2023-04-05T00:00:00",
-        "exit_price": 37.96,
+        "exit_price": 18.47,
         "recovered_within_30d": true,
         "days_to_recover": 5,
         "window_truncated": false
@@ -16499,7 +16499,7 @@
       {
         "symbol": "SLB",
         "exit_date": "2023-05-02T00:00:00",
-        "exit_price": 42.52,
+        "exit_price": 42.3,
         "recovered_within_30d": true,
         "days_to_recover": 6,
         "window_truncated": false
@@ -16507,7 +16507,7 @@
       {
         "symbol": "IBKR",
         "exit_date": "2023-05-02T00:00:00",
-        "exit_price": 18.2,
+        "exit_price": 18.18,
         "recovered_within_30d": true,
         "days_to_recover": 3,
         "window_truncated": false
@@ -16547,7 +16547,7 @@
       {
         "symbol": "NKE",
         "exit_date": "2023-05-04T00:00:00",
-        "exit_price": 115.68,
+        "exit_price": 114.47,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -17141,7 +17141,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2021-11-19T00:00:00",
-        "exit_price": 36.76,
+        "exit_price": 36.6,
         "recovered_within_30d": true,
         "days_to_recover": 4,
         "window_truncated": false
@@ -17269,7 +17269,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2021-12-20T00:00:00",
-        "exit_price": 42.61,
+        "exit_price": 42.52,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -17293,7 +17293,7 @@
       {
         "symbol": "NKE",
         "exit_date": "2022-01-07T00:00:00",
-        "exit_price": 144.86,
+        "exit_price": 143.34,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -17421,7 +17421,7 @@
       {
         "symbol": "GS",
         "exit_date": "2022-12-16T00:00:00",
-        "exit_price": 317.81,
+        "exit_price": 316.26,
         "recovered_within_30d": true,
         "days_to_recover": 5,
         "window_truncated": false
@@ -17437,7 +17437,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2022-12-19T00:00:00",
-        "exit_price": 56.07,
+        "exit_price": 55.95,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -17589,7 +17589,7 @@
       {
         "symbol": "HAL",
         "exit_date": "2023-03-09T00:00:00",
-        "exit_price": 33.04,
+        "exit_price": 32.88,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -17653,7 +17653,7 @@
       {
         "symbol": "GS",
         "exit_date": "2023-03-10T00:00:00",
-        "exit_price": 302.82,
+        "exit_price": 301.35,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -17757,7 +17757,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2023-05-04T00:00:00",
-        "exit_price": 29.97,
+        "exit_price": 29.84,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -18159,7 +18159,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2021-11-19T00:00:00",
-        "exit_price": 36.76,
+        "exit_price": 36.6,
         "recovered_within_30d": true,
         "days_to_recover": 4,
         "window_truncated": false
@@ -18183,7 +18183,7 @@
       {
         "symbol": "HAL",
         "exit_date": "2021-11-26T00:00:00",
-        "exit_price": 19.71,
+        "exit_price": 19.62,
         "recovered_within_30d": true,
         "days_to_recover": 3,
         "window_truncated": false
@@ -18287,7 +18287,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2021-12-20T00:00:00",
-        "exit_price": 42.61,
+        "exit_price": 42.52,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -18311,7 +18311,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2022-01-07T00:00:00",
-        "exit_price": 156.22,
+        "exit_price": 155.75,
         "recovered_within_30d": true,
         "days_to_recover": 3,
         "window_truncated": false
@@ -18319,7 +18319,7 @@
       {
         "symbol": "NKE",
         "exit_date": "2022-01-07T00:00:00",
-        "exit_price": 144.86,
+        "exit_price": 143.34,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -18399,7 +18399,7 @@
       {
         "symbol": "CTVA",
         "exit_date": "2022-12-19T00:00:00",
-        "exit_price": 56.07,
+        "exit_price": 55.95,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -18431,7 +18431,7 @@
       {
         "symbol": "HAL",
         "exit_date": "2023-02-22T00:00:00",
-        "exit_price": 33.02,
+        "exit_price": 32.87,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -18439,7 +18439,7 @@
       {
         "symbol": "NKE",
         "exit_date": "2023-02-22T00:00:00",
-        "exit_price": 111.84,
+        "exit_price": 110.67,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -18479,7 +18479,7 @@
       {
         "symbol": "HAL",
         "exit_date": "2023-03-09T00:00:00",
-        "exit_price": 33.04,
+        "exit_price": 32.88,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -18527,7 +18527,7 @@
       {
         "symbol": "GS",
         "exit_date": "2023-03-10T00:00:00",
-        "exit_price": 302.82,
+        "exit_price": 301.35,
         "recovered_within_30d": false,
         "days_to_recover": null,
         "window_truncated": false
@@ -18583,7 +18583,7 @@
       {
         "symbol": "IBKR",
         "exit_date": "2023-05-03T00:00:00",
-        "exit_price": 17.81,
+        "exit_price": 17.79,
         "recovered_within_30d": true,
         "days_to_recover": 2,
         "window_truncated": false
@@ -18591,7 +18591,7 @@
       {
         "symbol": "FOXA",
         "exit_date": "2023-05-04T00:00:00",
-        "exit_price": 29.97,
+        "exit_price": 29.84,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false
@@ -18985,7 +18985,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2021-09-28T00:00:00",
-        "exit_price": 157.89,
+        "exit_price": 157.41,
         "recovered_within_30d": true,
         "days_to_recover": 17,
         "window_truncated": false
@@ -19129,7 +19129,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2021-11-26T00:00:00",
-        "exit_price": 164.07,
+        "exit_price": 163.57,
         "recovered_within_30d": true,
         "days_to_recover": 3,
         "window_truncated": false
@@ -19753,7 +19753,7 @@
       {
         "symbol": "ADI",
         "exit_date": "2022-12-15T00:00:00",
-        "exit_price": 156.59,
+        "exit_price": 156.11,
         "recovered_within_30d": true,
         "days_to_recover": 1,
         "window_truncated": false

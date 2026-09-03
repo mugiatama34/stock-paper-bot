@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 229.66486358642578,
+  "cash": 176.36486434936523,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -153,6 +153,14 @@
       "stop_price": 46.89643574698799,
       "peak_price": 48.9900016784668,
       "sector": "Industrials",
+      "partial_taken": false
+    },
+    "CMCSA": {
+      "qty": 2,
+      "avg_price": 26.649999618530273,
+      "stop_price": 25.412856238228933,
+      "peak_price": 26.649999618530273,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -708,6 +716,23 @@
         "atr14": 1.05,
         "volume_vs_avg20": 1.01
       }
+    },
+    {
+      "date": "2026-09-03T21:53:41.889402+00:00",
+      "symbol": "CMCSA",
+      "action": "BUY",
+      "qty": 2,
+      "price": 26.65,
+      "stop_price": 25.41,
+      "sector": "Communication Services",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=26.42), RSI14=54.31 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.07x \u00fczerinde. \u0130zleyen stop: 25.41.",
+      "indicators": {
+        "price": 26.65,
+        "sma200": 26.42,
+        "rsi14": 54.31,
+        "atr14": 0.62,
+        "volume_vs_avg20": 1.07
+      }
     }
   ],
   "equity_history": [
@@ -855,6 +880,11 @@
       "date": "2026-09-03T20:02:26.602871+00:00",
       "equity": 9857.47,
       "cash": 229.66
+    },
+    {
+      "date": "2026-09-03T21:53:42.505890+00:00",
+      "equity": 9857.45,
+      "cash": 176.36
     }
   ]
 }

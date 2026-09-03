@@ -12,6 +12,9 @@ Exit:
   - price closes below SMA50         trend break
   - trailing stop hit                handled centrally in trade_bot (peak - 2*ATR)
 
+Signal score (BUY only): relative_strength (20d stock return - 20d SPY return).
+Higher relative strength ranks first when cash is limited across candidates.
+
 The trailing stop is the important change here: a parabolic mover can run 30% and
 give it all back before it ever touches SMA50, so the stop follows the peak up.
 """
@@ -61,7 +64,8 @@ def evaluate(symbol: str, df, spy_df, has_position: bool, position=None):
                 f"tepe değil). İzleyen stop: {stop_price:.2f} (2xATR)."
             )
             return {"action": "BUY", "price": price, "stop_price": stop_price,
-                    "reasoning": reasoning, "indicators": indicators}
+                    "reasoning": reasoning, "indicators": indicators,
+                    "score": relative_strength}
         return None
 
     if price < s50.iloc[-1]:

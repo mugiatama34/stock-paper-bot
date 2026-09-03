@@ -184,6 +184,8 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
 
     # --- Pass 2: new entries (skipped entirely when the market regime is risk-off) ---
     if risk_on:
+        # Pass 2a: evaluate every non-held candidate once, collect BUY signals with score.
+        buy_signals = []
         for symbol in sorted(candidates):
             if symbol in lg["positions"]:
                 continue
@@ -206,6 +208,16 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
             if math.isnan(price) or math.isnan(stop_price):
                 print(f"[skip] {strategy_name} {symbol}: price/stop_price NaN, pozisyon açılmıyor")
                 continue
+
+            buy_signals.append({"symbol": symbol, "signal": signal, "score": signal.get("score")})
+
+        # Pass 2b: strongest signal first, so a cash-starved late entry loses to a
+        # stronger candidate rather than to alphabetical position.
+        for candidate in ledger_mod.rank_buy_candidates(buy_signals):
+            symbol = candidate["symbol"]
+            signal = candidate["signal"]
+            price = signal["price"]
+            stop_price = signal["stop_price"]
 
             current_prices[symbol] = price
             sector = sector_map.get(symbol, "Unknown")

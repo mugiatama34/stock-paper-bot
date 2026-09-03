@@ -263,6 +263,8 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
 
         # --- entries ---
         if risk_on:
+            # Evaluate every non-held candidate once, collect BUY signals with score.
+            buy_signals = []
             for sym in symbols:
                 if sym in lg["positions"]:
                     continue
@@ -289,6 +291,16 @@ def run(strategy_name, symbols, data, spy_df, sector_map, dates):
                 if np.isnan(price) or np.isnan(stop_price):
                     print(f"[skip] {strategy_name} {sym} {day.date()}: price/stop_price NaN, pozisyon açılmıyor")
                     continue
+
+                buy_signals.append({"symbol": sym, "signal": sig, "score": sig.get("score")})
+
+            # Strongest signal first, so a cash-starved late entry loses to a stronger
+            # candidate rather than to alphabetical position.
+            for candidate in ledger_mod.rank_buy_candidates(buy_signals):
+                sym = candidate["symbol"]
+                sig = candidate["signal"]
+                price = sig["price"]
+                stop_price = sig["stop_price"]
 
                 fill_price = _fill(price, "buy")
                 prices[sym] = price

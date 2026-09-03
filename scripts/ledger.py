@@ -133,6 +133,21 @@ def sector_allows_entry(ledger: dict, prices: dict, sector: str, intended_cost: 
     return True, ""
 
 
+def rank_buy_candidates(candidates: list) -> list:
+    """
+    Sorts BUY adaylarını sinyal skoruna göre güçlüden zayıfa sıralar. Her öge en az
+    {'symbol': str, 'score': float|None} içermeli.
+
+    Skor tanımlamayan (score=None) adaylar sona düşer ve kendi aralarında alfabetik
+    kalır -- bir strateji hiç skor döndürmüyorsa (tüm adaylarda score=None) bu,
+    eskisiyle birebir aynı alfabetik sıralamaya denk gelir (geriye dönük uyumluluk).
+    """
+    return sorted(
+        candidates,
+        key=lambda c: (0, -c["score"]) if c.get("score") is not None else (1, c["symbol"]),
+    )
+
+
 def plan_position(ledger: dict, price: float, stop_price: float,
                    sizing_base: str = "cash", prices: dict = None) -> tuple:
     """

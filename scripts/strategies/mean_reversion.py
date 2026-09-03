@@ -15,6 +15,10 @@ Exit:
   - RSI(14) > 55                     reversion played out
   - price closes below SMA200        trend failed
   - trailing stop hit                handled centrally (peak - 2.5*ATR)
+
+Signal score (BUY only): RSI_OVERSOLD - rsi_prev (how far below the oversold
+threshold RSI dipped before crossing back up -- depth of the dip). Deeper dips
+rank first when cash is limited across candidates.
 """
 from .indicators import sma, rsi, atr
 
@@ -57,7 +61,8 @@ def evaluate(symbol: str, df, spy_df, has_position: bool, position=None):
                 f"(SMA200={indicators['sma200']}) üzerinde. İzleyen stop: {stop_price:.2f}."
             )
             return {"action": "BUY", "price": price, "stop_price": stop_price,
-                    "reasoning": reasoning, "indicators": indicators}
+                    "reasoning": reasoning, "indicators": indicators,
+                    "score": RSI_OVERSOLD - rsi_prev}
         return None
 
     reverted = rsi_now > RSI_EXIT

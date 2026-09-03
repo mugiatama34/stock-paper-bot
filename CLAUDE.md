@@ -20,6 +20,7 @@ Bunlar Actions tarafından üretilir. Tutarsız veya hatalı görünseler bile d
 ## Strateji ve risk değişikliği prosedürü
 
 - Strateji ve risk değişikliklerinde: değişiklik backtest.py ile test edilir, öncesi ve sonrası sonuçları PR açıklamasında karşılaştırmalı olarak paylaşılır. Backtest çalıştırılmadan strateji değişikliği PR'a gönderilmez.
+- Claude Code oturumlarında Yahoo Finance'e ağ erişimi yoktur; gerçek veriyle backtest çalıştırmak için backtest.yml workflow'u ilgili branch üzerinde workflow_dispatch ile manuel tetiklenir. Bu, oturum içinden yapılabilir.
 
 ## Sırlar
 

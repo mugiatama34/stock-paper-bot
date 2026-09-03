@@ -214,6 +214,7 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
             qty, cost = ledger_mod.plan_position(lg, price, stop_price,
                                                   sizing_base=sizing_base, prices=current_prices)
             if qty <= 0:
+                print(f"[skip] {strategy_name} {symbol}: pozisyon büyüklüğü sıfır (qty<=0)")
                 continue
 
             max_names_per_sector = getattr(module, "MAX_NAMES_PER_SECTOR", ledger_mod.MAX_NAMES_PER_SECTOR)
@@ -230,6 +231,8 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
                 telegram_notify.notify_buy(strategy_name, symbol,
                                            lg["positions"][symbol]["qty"], price,
                                            signal["stop_price"], signal["reasoning"])
+            else:
+                print(f"[skip] {strategy_name} {symbol}: yetersiz nakit (cost={cost:.2f}, cash={lg['cash']:.2f})")
     else:
         print(f"[regime] {strategy_name}: yeni alım yok — {regime_note}")
 

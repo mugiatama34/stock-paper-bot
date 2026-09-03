@@ -53,8 +53,8 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 31.1257141658238,
-      "peak_price": 33.45000076293945,
+      "stop_price": 31.255715233939036,
+      "peak_price": 33.58000183105469,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -93,8 +93,8 @@
     "GILD": {
       "qty": 1,
       "avg_price": 146.67999267578125,
-      "stop_price": 143.4528525216239,
-      "peak_price": 150.9199981689453,
+      "stop_price": 143.70428466796875,
+      "peak_price": 151.22000122070312,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -768,6 +768,11 @@
     {
       "date": "2026-09-03T19:33:14.415412+00:00",
       "equity": 10506.41,
+      "cash": 1317.68
+    },
+    {
+      "date": "2026-09-03T20:02:23.504836+00:00",
+      "equity": 10494.41,
       "cash": 1317.68
     }
   ]

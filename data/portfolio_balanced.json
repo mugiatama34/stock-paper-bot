@@ -6,7 +6,7 @@
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 352.8781698645642,
+      "stop_price": 352.96159340998616,
       "peak_price": 374.5199890136719,
       "sector": "Information Technology",
       "partial_taken": false
@@ -30,23 +30,23 @@
     "COF": {
       "qty": 5,
       "avg_price": 216.27000427246094,
-      "stop_price": 208.66320028975562,
-      "peak_price": 217.85499572753906,
+      "stop_price": 209.19500732421875,
+      "peak_price": 219.41000366210938,
       "sector": "Financials",
       "partial_taken": false
     },
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.3628568649292,
-      "peak_price": 14.15999984741211,
+      "stop_price": 13.63142830984933,
+      "peak_price": 14.40999984741211,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "KMI": {
       "qty": 20,
       "avg_price": 31.0,
-      "stop_price": 30.56571660723005,
+      "stop_price": 30.616430282592773,
       "peak_price": 32.2400016784668,
       "sector": "Energy",
       "partial_taken": false
@@ -62,7 +62,7 @@
     "ARES": {
       "qty": 1,
       "avg_price": 142.75999450683594,
-      "stop_price": 135.50837053571428,
+      "stop_price": 135.605712890625,
       "peak_price": 143.6999969482422,
       "sector": "Financials",
       "partial_taken": false
@@ -78,7 +78,7 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 70.71857561383929,
+      "stop_price": 70.81125967843192,
       "peak_price": 75.2300033569336,
       "sector": "Energy",
       "partial_taken": false
@@ -94,8 +94,8 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.22000122070312,
-      "stop_price": 173.96786063058036,
-      "peak_price": 183.53500366210938,
+      "stop_price": 177.0884050641741,
+      "peak_price": 186.9600067138672,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -110,16 +110,16 @@
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 133.9414302280971,
-      "peak_price": 139.5,
+      "stop_price": 134.57000078473772,
+      "peak_price": 140.5,
       "sector": "Utilities",
       "partial_taken": false
     },
     "CNC": {
       "qty": 2,
       "avg_price": 64.33999633789062,
-      "stop_price": 64.02928706577846,
-      "peak_price": 67.72000122070312,
+      "stop_price": 64.62999943324498,
+      "peak_price": 68.3499984741211,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -814,6 +814,11 @@
     {
       "date": "2026-09-02T22:00:00.888346+00:00",
       "equity": 9844.64,
+      "cash": 278.65
+    },
+    {
+      "date": "2026-09-03T16:22:58.087764+00:00",
+      "equity": 9866.12,
       "cash": 278.65
     }
   ]

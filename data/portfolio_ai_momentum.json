@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 2014.864902496338,
+  "cash": 1317.6798782348633,
   "positions": {
     "MSFT": {
       "qty": 5,
@@ -14,9 +14,9 @@
     "CRM": {
       "qty": 9,
       "avg_price": 209.28500366210938,
-      "stop_price": 238.41500854492188,
+      "stop_price": 243.4150129045759,
       "partial_taken": false,
-      "peak_price": 260.635009765625
+      "peak_price": 266.2950134277344
     },
     "SMCI": {
       "qty": 13,
@@ -53,8 +53,8 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 30.99643053327288,
-      "peak_price": 33.33000183105469,
+      "stop_price": 31.10571370806013,
+      "peak_price": 33.43000030517578,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -77,15 +77,15 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.625,
-      "stop_price": 174.057856968471,
-      "peak_price": 183.625,
+      "stop_price": 177.0884050641741,
+      "peak_price": 186.9600067138672,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "BKR": {
       "qty": 3,
       "avg_price": 63.36000061035156,
-      "stop_price": 61.75989968436105,
+      "stop_price": 61.78347178867885,
       "peak_price": 64.84989929199219,
       "sector": "Energy",
       "partial_taken": false
@@ -93,8 +93,8 @@
     "GILD": {
       "qty": 1,
       "avg_price": 146.67999267578125,
-      "stop_price": 142.6671382359096,
-      "peak_price": 149.9199981689453,
+      "stop_price": 142.9914289202009,
+      "peak_price": 150.41000366210938,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -120,6 +120,22 @@
       "stop_price": 136.92047337123327,
       "peak_price": 141.38999938964844,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "KDP": {
+      "qty": 15,
+      "avg_price": 32.935001373291016,
+      "stop_price": 31.442858832223074,
+      "peak_price": 32.935001373291016,
+      "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "FANG": {
+      "qty": 1,
+      "avg_price": 203.16000366210938,
+      "stop_price": 192.30142865862166,
+      "peak_price": 203.16000366210938,
+      "sector": "Energy",
       "partial_taken": false
     }
   },
@@ -575,6 +591,42 @@
       "indicators": {
         "stop_price": 307.51
       }
+    },
+    {
+      "date": "2026-09-03T16:22:52.705995+00:00",
+      "symbol": "KDP",
+      "action": "BUY",
+      "qty": 15,
+      "price": 32.94,
+      "stop_price": 31.44,
+      "sector": "Consumer Staples",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (31.32) ve SMA50 (31.29) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %7.9 g\u00fc\u00e7l\u00fc, RSI=61.58 (<75, tepe de\u011fil). \u0130zleyen stop: 31.44 (2xATR).",
+      "indicators": {
+        "price": 32.94,
+        "sma20": 31.32,
+        "sma50": 31.29,
+        "rsi14": 61.58,
+        "atr14": 0.75,
+        "relative_strength_20d": 0.0791
+      }
+    },
+    {
+      "date": "2026-09-03T16:22:53.259353+00:00",
+      "symbol": "FANG",
+      "action": "BUY",
+      "qty": 1,
+      "price": 203.16,
+      "stop_price": 192.3,
+      "sector": "Energy",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (202.38) ve SMA50 (194.12) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %7.2 g\u00fc\u00e7l\u00fc, RSI=51.07 (<75, tepe de\u011fil). \u0130zleyen stop: 192.30 (2xATR).",
+      "indicators": {
+        "price": 203.16,
+        "sma20": 202.38,
+        "sma50": 194.12,
+        "rsi14": 51.07,
+        "atr14": 5.43,
+        "relative_strength_20d": 0.0719
+      }
     }
   ],
   "equity_history": [
@@ -707,6 +759,11 @@
       "date": "2026-09-02T21:59:58.027427+00:00",
       "equity": 10353.23,
       "cash": 2014.86
+    },
+    {
+      "date": "2026-09-03T16:22:53.756906+00:00",
+      "equity": 10521.78,
+      "cash": 1317.68
     }
   ]
 }

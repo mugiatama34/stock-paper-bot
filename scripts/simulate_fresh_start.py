@@ -52,6 +52,8 @@ def simulate(strategy_name: str) -> dict:
     if not risk_on:
         print(f"[regime] {strategy_name}: rejim risk-off, yeni alım simüle edilmiyor — {regime_note}")
     else:
+        # Evaluate every candidate once, collect BUY signals with score.
+        buy_signals = []
         for symbol in sorted(sector_map.keys()):
             df = price_data.get(symbol)
             if df is None or df.empty:
@@ -74,6 +76,16 @@ def simulate(strategy_name: str) -> dict:
             if price != price or stop_price != stop_price:  # NaN kontrolü
                 rejected.append({"symbol": symbol, "reason": "price/stop_price NaN"})
                 continue
+
+            buy_signals.append({"symbol": symbol, "signal": signal, "score": signal.get("score")})
+
+        # Strongest signal first, so a cash-starved late entry loses to a stronger
+        # candidate rather than to alphabetical position.
+        for candidate in ledger_mod.rank_buy_candidates(buy_signals):
+            symbol = candidate["symbol"]
+            signal = candidate["signal"]
+            price = signal["price"]
+            stop_price = signal["stop_price"]
 
             sector = sector_map.get(symbol, "Unknown")
             current_prices = {s: p["avg_price"] for s, p in fake_ledger["positions"].items()}

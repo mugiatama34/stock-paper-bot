@@ -1,0 +1,349 @@
+{
+  "strategy": "ai_momentum",
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T10:39:27.131561+00:00",
+  "regime": "SPY 765.16 >= SMA200 708.78 (risk-on)",
+  "risk_on": true,
+  "starting_cash": 10000.0,
+  "buys": [
+    {
+      "symbol": "MRNA",
+      "qty": 4,
+      "price": 150.81,
+      "cost": 603.24,
+      "stop_price": 107.45,
+      "sector": "Health Care",
+      "reasoning": "Momentum girişi: fiyat SMA20 (108.89) ve SMA50 (82.01) üzerinde, SPY'a göre 20 günde %168.7 güçlü, RSI=68.62 (<75, tepe değil). İzleyen stop: 107.45 (2xATR).",
+      "indicators": {
+        "price": 150.81,
+        "sma20": 108.89,
+        "sma50": 82.01,
+        "rsi14": 68.62,
+        "atr14": 21.68,
+        "relative_strength_20d": 1.6868
+      }
+    },
+    {
+      "symbol": "TEAM",
+      "qty": 10,
+      "price": 186.44,
+      "cost": 1864.4,
+      "stop_price": 168.53,
+      "sector": "Information Technology",
+      "reasoning": "Momentum girişi: fiyat SMA20 (167.04) ve SMA50 (121.35) üzerinde, SPY'a göre 20 günde %65.1 güçlü, RSI=65.04 (<75, tepe değil). İzleyen stop: 168.53 (2xATR).",
+      "indicators": {
+        "price": 186.44,
+        "sma20": 167.04,
+        "sma50": 121.35,
+        "rsi14": 65.04,
+        "atr14": 8.95,
+        "relative_strength_20d": 0.6513
+      }
+    },
+    {
+      "symbol": "MSTR",
+      "qty": 8,
+      "price": 123.19,
+      "cost": 985.52,
+      "stop_price": 105.68,
+      "sector": "Information Technology",
+      "reasoning": "Momentum girişi: fiyat SMA20 (110.99) ve SMA50 (101.34) üzerinde, SPY'a göre 20 günde %25.8 güçlü, RSI=64.26 (<75, tepe değil). İzleyen stop: 105.68 (2xATR).",
+      "indicators": {
+        "price": 123.19,
+        "sma20": 110.99,
+        "sma50": 101.34,
+        "rsi14": 64.26,
+        "atr14": 8.75,
+        "relative_strength_20d": 0.2583
+      }
+    },
+    {
+      "symbol": "ABNB",
+      "qty": 8,
+      "price": 183.26,
+      "cost": 1466.08,
+      "stop_price": 173.48,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum girişi: fiyat SMA20 (183.08) ve SMA50 (161.34) üzerinde, SPY'a göre 20 günde %20.8 güçlü, RSI=47.58 (<75, tepe değil). İzleyen stop: 173.48 (2xATR).",
+      "indicators": {
+        "price": 183.26,
+        "sma20": 183.08,
+        "sma50": 161.34,
+        "rsi14": 47.58,
+        "atr14": 4.89,
+        "relative_strength_20d": 0.2078
+      }
+    },
+    {
+      "symbol": "AMGN",
+      "qty": 2,
+      "price": 442.84,
+      "cost": 885.68,
+      "stop_price": 424.09,
+      "sector": "Health Care",
+      "reasoning": "Momentum girişi: fiyat SMA20 (425.47) ve SMA50 (389.94) üzerinde, SPY'a göre 20 günde %14.8 güçlü, RSI=68.31 (<75, tepe değil). İzleyen stop: 424.09 (2xATR).",
+      "indicators": {
+        "price": 442.84,
+        "sma20": 425.47,
+        "sma50": 389.94,
+        "rsi14": 68.31,
+        "atr14": 9.38,
+        "relative_strength_20d": 0.1481
+      }
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 12,
+      "price": 82.73,
+      "cost": 992.76,
+      "stop_price": 78.41,
+      "sector": "Communication Services",
+      "reasoning": "Momentum girişi: fiyat SMA20 (78.66) ve SMA50 (75.08) üzerinde, SPY'a göre 20 günde %12.1 güçlü, RSI=63.37 (<75, tepe değil). İzleyen stop: 78.41 (2xATR).",
+      "indicators": {
+        "price": 82.73,
+        "sma20": 78.66,
+        "sma50": 75.08,
+        "rsi14": 63.37,
+        "atr14": 2.16,
+        "relative_strength_20d": 0.121
+      }
+    },
+    {
+      "symbol": "CPRT",
+      "qty": 24,
+      "price": 32.16,
+      "cost": 771.84,
+      "stop_price": 29.82,
+      "sector": "Industrials",
+      "reasoning": "Momentum girişi: fiyat SMA20 (31.77) ve SMA50 (29.95) üzerinde, SPY'a göre 20 günde %11.8 güçlü, RSI=66.75 (<75, tepe değil). İzleyen stop: 29.82 (2xATR).",
+      "indicators": {
+        "price": 32.16,
+        "sma20": 31.77,
+        "sma50": 29.95,
+        "rsi14": 66.75,
+        "atr14": 1.17,
+        "relative_strength_20d": 0.1184
+      }
+    },
+    {
+      "symbol": "WBD",
+      "qty": 21,
+      "price": 28.39,
+      "cost": 596.19,
+      "stop_price": 27.64,
+      "sector": "Communication Services",
+      "reasoning": "Momentum girişi: fiyat SMA20 (27.93) ve SMA50 (27.01) üzerinde, SPY'a göre 20 günde %10.7 güçlü, RSI=62.85 (<75, tepe değil). İzleyen stop: 27.64 (2xATR).",
+      "indicators": {
+        "price": 28.39,
+        "sma20": 27.93,
+        "sma50": 27.01,
+        "rsi14": 62.85,
+        "atr14": 0.37,
+        "relative_strength_20d": 0.1068
+      }
+    },
+    {
+      "symbol": "CEG",
+      "qty": 1,
+      "price": 290.04,
+      "cost": 290.04,
+      "stop_price": 272.11,
+      "sector": "Utilities",
+      "reasoning": "Momentum girişi: fiyat SMA20 (275.84) ve SMA50 (265.17) üzerinde, SPY'a göre 20 günde %10.2 güçlü, RSI=59.83 (<75, tepe değil). İzleyen stop: 272.11 (2xATR).",
+      "indicators": {
+        "price": 290.04,
+        "sma20": 275.84,
+        "sma50": 265.17,
+        "rsi14": 59.83,
+        "atr14": 8.97,
+        "relative_strength_20d": 0.1017
+      }
+    },
+    {
+      "symbol": "DASH",
+      "qty": 1,
+      "price": 226.24,
+      "cost": 226.24,
+      "stop_price": 211.48,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum girişi: fiyat SMA20 (222.2) ve SMA50 (202.05) üzerinde, SPY'a göre 20 günde %9.8 güçlü, RSI=59.82 (<75, tepe değil). İzleyen stop: 211.48 (2xATR).",
+      "indicators": {
+        "price": 226.24,
+        "sma20": 222.2,
+        "sma50": 202.05,
+        "rsi14": 59.82,
+        "atr14": 7.38,
+        "relative_strength_20d": 0.0975
+      }
+    },
+    {
+      "symbol": "BKR",
+      "qty": 5,
+      "price": 64.63,
+      "cost": 323.15,
+      "stop_price": 61.48,
+      "sector": "Energy",
+      "reasoning": "Momentum girişi: fiyat SMA20 (63.33) ve SMA50 (59.55) üzerinde, SPY'a göre 20 günde %5.8 güçlü, RSI=58.01 (<75, tepe değil). İzleyen stop: 61.48 (2xATR).",
+      "indicators": {
+        "price": 64.63,
+        "sma20": 63.33,
+        "sma50": 59.55,
+        "rsi14": 58.01,
+        "atr14": 1.57,
+        "relative_strength_20d": 0.0579
+      }
+    },
+    {
+      "symbol": "PAYX",
+      "qty": 2,
+      "price": 124.0,
+      "cost": 248.0,
+      "stop_price": 118.3,
+      "sector": "Industrials",
+      "reasoning": "Momentum girişi: fiyat SMA20 (123.26) ve SMA50 (114.79) üzerinde, SPY'a göre 20 günde %5.4 güçlü, RSI=46.71 (<75, tepe değil). İzleyen stop: 118.30 (2xATR).",
+      "indicators": {
+        "price": 124.0,
+        "sma20": 123.26,
+        "sma50": 114.79,
+        "rsi14": 46.71,
+        "atr14": 2.85,
+        "relative_strength_20d": 0.0545
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "symbol": "ADSK",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "ANSS",
+      "reason": "fiyat verisi alınamadı"
+    },
+    {
+      "symbol": "AXON",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "BIIB",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "CDW",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "COST",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "CTAS",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "EA",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "FANG",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "IDXX",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "ILMN",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "MAR",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "MELI",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "MPWR",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "ODFL",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "REGN",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "ROP",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "SNPS",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "VRSK",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "VRTX",
+      "reason": "likidite filtresini geçemedi (20g ort. hacim)"
+    },
+    {
+      "symbol": "ZS",
+      "reason": "fiyat verisi alınamadı"
+    },
+    {
+      "symbol": "SMCI",
+      "reason": "Information Technology sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "WDAY",
+      "reason": "Information Technology sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "CTSH",
+      "reason": "Information Technology sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "GILD",
+      "reason": "Health Care sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "ADBE",
+      "reason": "Information Technology sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "DXCM",
+      "reason": "Health Care sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "CMCSA",
+      "reason": "Communication Services sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "ADP",
+      "reason": "yetersiz nakit / pozisyon büyüklüğü sıfır"
+    },
+    {
+      "symbol": "CHTR",
+      "reason": "yetersiz nakit / pozisyon büyüklüğü sıfır"
+    },
+    {
+      "symbol": "NVDA",
+      "reason": "yetersiz nakit / pozisyon büyüklüğü sıfır"
+    },
+    {
+      "symbol": "SBUX",
+      "reason": "Consumer Discretionary sektöründe zaten 2 pozisyon var (limit 2)"
+    },
+    {
+      "symbol": "MSFT",
+      "reason": "yetersiz nakit / pozisyon büyüklüğü sıfır"
+    }
+  ],
+  "remaining_cash": 746.86
+}

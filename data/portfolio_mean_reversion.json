@@ -63,7 +63,7 @@
       "qty": 1,
       "avg_price": 144.61500549316406,
       "stop_price": 136.2453716823033,
-      "peak_price": 144.61500549316406,
+      "peak_price": 144.63999938964844,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -126,8 +126,8 @@
     "SW": {
       "qty": 5,
       "avg_price": 45.415000915527344,
-      "stop_price": 42.335357666015625,
-      "peak_price": 45.83000183105469,
+      "stop_price": 42.43250029427664,
+      "peak_price": 45.970001220703125,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -791,6 +791,11 @@
     {
       "date": "2026-09-04T15:07:37.670926+00:00",
       "equity": 9949.47,
+      "cash": 619.87
+    },
+    {
+      "date": "2026-09-04T19:07:06.945439+00:00",
+      "equity": 9940.92,
       "cash": 619.87
     }
   ]

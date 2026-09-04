@@ -1,0 +1,276 @@
+{
+  "strategy": "hold_never",
+  "starting_cash": 10000.0,
+  "cash": 845.5698680877686,
+  "positions": {
+    "ADP": {
+      "qty": 8,
+      "avg_price": 278.7650146484375,
+      "stop_price": 267.7778625488281,
+      "peak_price": 278.7650146484375,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "AMGN": {
+      "qty": 4,
+      "avg_price": 436.6199951171875,
+      "stop_price": 418.0747378604873,
+      "peak_price": 436.6199951171875,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "CDW": {
+      "qty": 9,
+      "avg_price": 152.5850067138672,
+      "stop_price": 139.39742372888054,
+      "peak_price": 152.5850067138672,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "CEG": {
+      "qty": 3,
+      "avg_price": 296.80999755859375,
+      "stop_price": 277.94285801478793,
+      "peak_price": 296.80999755859375,
+      "sector": "Utilities",
+      "partial_taken": false
+    },
+    "CMCSA": {
+      "qty": 35,
+      "avg_price": 26.510000228881836,
+      "stop_price": 25.32071386064802,
+      "peak_price": 26.510000228881836,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "CPRT": {
+      "qty": 20,
+      "avg_price": 33.81999969482422,
+      "stop_price": 31.490713391985214,
+      "peak_price": 33.81999969482422,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "CTSH": {
+      "qty": 8,
+      "avg_price": 62.619998931884766,
+      "stop_price": 58.4599985395159,
+      "peak_price": 62.619998931884766,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "GILD": {
+      "qty": 2,
+      "avg_price": 150.3800048828125,
+      "stop_price": 142.9885733468192,
+      "peak_price": 150.3800048828125,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "KDP": {
+      "qty": 10,
+      "avg_price": 32.599998474121094,
+      "stop_price": 31.233570916312082,
+      "peak_price": 32.599998474121094,
+      "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "TMUS": {
+      "qty": 1,
+      "avg_price": 182.1649932861328,
+      "stop_price": 173.99488242689011,
+      "peak_price": 182.1649932861328,
+      "sector": "Communication Services",
+      "partial_taken": false
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-09-04T19:07:08.891955+00:00",
+      "symbol": "ADP",
+      "action": "BUY",
+      "qty": 8,
+      "price": 278.77,
+      "stop_price": 267.78,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (278.42) ve SMA50 (262.02) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %3.2 g\u00fc\u00e7l\u00fc, RSI=66.67 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 278.77,
+        "sma20": 278.42,
+        "sma50": 262.02,
+        "rsi14": 66.67,
+        "atr14": 5.49,
+        "relative_strength_20d": 0.0321
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:09.261456+00:00",
+      "symbol": "AMGN",
+      "action": "BUY",
+      "qty": 4,
+      "price": 436.62,
+      "stop_price": 418.07,
+      "sector": "Health Care",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (430.31) ve SMA50 (395.3) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %7.3 g\u00fc\u00e7l\u00fc, RSI=62.34 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 436.62,
+        "sma20": 430.31,
+        "sma50": 395.3,
+        "rsi14": 62.34,
+        "atr14": 9.27,
+        "relative_strength_20d": 0.0733
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:09.592297+00:00",
+      "symbol": "CDW",
+      "action": "BUY",
+      "qty": 9,
+      "price": 152.59,
+      "stop_price": 139.4,
+      "sector": "Information Technology",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (141.54) ve SMA50 (139.42) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %13.4 g\u00fc\u00e7l\u00fc, RSI=68.83 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 152.59,
+        "sma20": 141.54,
+        "sma50": 139.42,
+        "rsi14": 68.83,
+        "atr14": 6.59,
+        "relative_strength_20d": 0.1335
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:09.923608+00:00",
+      "symbol": "CEG",
+      "action": "BUY",
+      "qty": 3,
+      "price": 296.81,
+      "stop_price": 277.94,
+      "sector": "Utilities",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (278.43) ve SMA50 (266.09) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %10.6 g\u00fc\u00e7l\u00fc, RSI=63.84 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 296.81,
+        "sma20": 278.43,
+        "sma50": 266.09,
+        "rsi14": 63.84,
+        "atr14": 9.43,
+        "relative_strength_20d": 0.1061
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:10.257581+00:00",
+      "symbol": "CMCSA",
+      "action": "BUY",
+      "qty": 35,
+      "price": 26.51,
+      "stop_price": 25.32,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (26.4) ve SMA50 (24.83) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %5.0 g\u00fc\u00e7l\u00fc, RSI=59.44 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 26.51,
+        "sma20": 26.4,
+        "sma50": 24.83,
+        "rsi14": 59.44,
+        "atr14": 0.59,
+        "relative_strength_20d": 0.05
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:10.648010+00:00",
+      "symbol": "CPRT",
+      "action": "BUY",
+      "qty": 20,
+      "price": 33.82,
+      "stop_price": 31.49,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (32.21) ve SMA50 (30.08) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %14.5 g\u00fc\u00e7l\u00fc, RSI=63.91 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 33.82,
+        "sma20": 32.21,
+        "sma50": 30.08,
+        "rsi14": 63.91,
+        "atr14": 1.16,
+        "relative_strength_20d": 0.1449
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:11.009047+00:00",
+      "symbol": "CTSH",
+      "action": "BUY",
+      "qty": 8,
+      "price": 62.62,
+      "stop_price": 58.46,
+      "sector": "Information Technology",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (61.15) ve SMA50 (52.26) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %9.7 g\u00fc\u00e7l\u00fc, RSI=71.54 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 62.62,
+        "sma20": 61.15,
+        "sma50": 52.26,
+        "rsi14": 71.54,
+        "atr14": 2.08,
+        "relative_strength_20d": 0.0968
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:11.345447+00:00",
+      "symbol": "GILD",
+      "action": "BUY",
+      "qty": 2,
+      "price": 150.38,
+      "stop_price": 142.99,
+      "sector": "Health Care",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (144.32) ve SMA50 (136.59) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %13.4 g\u00fc\u00e7l\u00fc, RSI=69.23 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 150.38,
+        "sma20": 144.32,
+        "sma50": 136.59,
+        "rsi14": 69.23,
+        "atr14": 3.7,
+        "relative_strength_20d": 0.1335
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:11.743900+00:00",
+      "symbol": "KDP",
+      "action": "BUY",
+      "qty": 10,
+      "price": 32.6,
+      "stop_price": 31.23,
+      "sector": "Consumer Staples",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (31.44) ve SMA50 (31.29) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %9.1 g\u00fc\u00e7l\u00fc, RSI=71.01 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 32.6,
+        "sma20": 31.44,
+        "sma50": 31.29,
+        "rsi14": 71.01,
+        "atr14": 0.68,
+        "relative_strength_20d": 0.0909
+      }
+    },
+    {
+      "date": "2026-09-04T19:07:12.110855+00:00",
+      "symbol": "TMUS",
+      "action": "BUY",
+      "qty": 1,
+      "price": 182.16,
+      "stop_price": 173.99,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (180.9) ve SMA50 (180.52) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %3.9 g\u00fc\u00e7l\u00fc, RSI=55.1 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 182.16,
+        "sma20": 180.9,
+        "sma50": 180.52,
+        "rsi14": 55.1,
+        "atr14": 4.09,
+        "relative_strength_20d": 0.0387
+      }
+    }
+  ],
+  "equity_history": [
+    {
+      "date": "2026-09-04T19:07:12.525206+00:00",
+      "equity": 10000.0,
+      "cash": 845.57
+    }
+  ]
+}

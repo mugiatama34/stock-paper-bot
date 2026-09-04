@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1456.5898818969727,
+  "cash": 1561.6298828125,
   "positions": {
     "MSFT": {
       "qty": 5,
@@ -53,8 +53,8 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 31.29714366367885,
-      "peak_price": 33.58000183105469,
+      "stop_price": 31.490713391985214,
+      "peak_price": 33.81999969482422,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -98,19 +98,11 @@
       "sector": "Health Care",
       "partial_taken": false
     },
-    "SBUX": {
-      "qty": 1,
-      "avg_price": 106.45999908447266,
-      "stop_price": 102.82500239780971,
-      "peak_price": 107.6500015258789,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
     "CEG": {
       "qty": 1,
       "avg_price": 282.0199890136719,
-      "stop_price": 272.6214294433594,
-      "peak_price": 290.7799987792969,
+      "stop_price": 277.94285801478793,
+      "peak_price": 296.80999755859375,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -638,6 +630,25 @@
         "atr14": 2.27,
         "relative_strength_20d": 0.0039
       }
+    },
+    {
+      "date": "2026-09-04T19:07:04.958501+00:00",
+      "symbol": "SBUX",
+      "action": "SELL",
+      "qty": 1,
+      "price": 105.04,
+      "pnl": -1.42,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Trend k\u0131r\u0131ld\u0131: fiyat (105.04) SMA50 (105.04) alt\u0131na indi.",
+      "indicators": {
+        "price": 105.04,
+        "sma20": 106.52,
+        "sma50": 105.04,
+        "rsi14": 41.85,
+        "atr14": 2.45,
+        "relative_strength_20d": 0.0052
+      }
     }
   ],
   "equity_history": [
@@ -795,6 +806,11 @@
       "date": "2026-09-04T15:07:36.014890+00:00",
       "equity": 10382.9,
       "cash": 1456.59
+    },
+    {
+      "date": "2026-09-04T19:07:05.619688+00:00",
+      "equity": 10417.92,
+      "cash": 1561.63
     }
   ]
 }

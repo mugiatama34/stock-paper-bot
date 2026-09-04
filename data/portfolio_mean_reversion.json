@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 717.9699249267578,
+  "cash": 619.8699264526367,
   "positions": {
     "AMZN": {
       "qty": 9,
@@ -22,7 +22,7 @@
     "UNH": {
       "qty": 3,
       "avg_price": 398.760009765625,
-      "stop_price": 384.21121869768416,
+      "stop_price": 385.00130789620533,
       "peak_price": 403.82720947265625,
       "sector": "Health Care",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "CFG": {
       "qty": 5,
       "avg_price": 70.49500274658203,
-      "stop_price": 67.25607408796039,
+      "stop_price": 67.30196108136859,
       "peak_price": 71.08999633789062,
       "sector": "Financials",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "HST": {
       "qty": 14,
       "avg_price": 22.485000610351562,
-      "stop_price": 21.46624994277954,
+      "stop_price": 21.477856840406144,
       "peak_price": 22.485000610351562,
       "sector": "Real Estate",
       "partial_taken": false
@@ -70,7 +70,7 @@
     "AFL": {
       "qty": 4,
       "avg_price": 116.5199966430664,
-      "stop_price": 113.78590461733101,
+      "stop_price": 113.88536592414582,
       "peak_price": 118.58999633789062,
       "sector": "Financials",
       "partial_taken": false
@@ -94,7 +94,7 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 105.69499805995396,
+      "stop_price": 105.9092845916748,
       "peak_price": 111.0199966430664,
       "sector": "Information Technology",
       "partial_taken": false
@@ -102,7 +102,7 @@
     "ROST": {
       "qty": 1,
       "avg_price": 231.17999267578125,
-      "stop_price": 215.20177895682198,
+      "stop_price": 216.47499411446708,
       "peak_price": 232.0,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -110,8 +110,8 @@
     "TXN": {
       "qty": 1,
       "avg_price": 254.8000030517578,
-      "stop_price": 235.02322278703963,
-      "peak_price": 254.8000030517578,
+      "stop_price": 238.87678582327706,
+      "peak_price": 258.6499938964844,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -126,9 +126,17 @@
     "SW": {
       "qty": 5,
       "avg_price": 45.415000915527344,
-      "stop_price": 41.797142710004536,
-      "peak_price": 45.415000915527344,
+      "stop_price": 42.335357666015625,
+      "peak_price": 45.83000183105469,
       "sector": "Materials",
+      "partial_taken": false
+    },
+    "PNW": {
+      "qty": 1,
+      "avg_price": 98.0999984741211,
+      "stop_price": 94.47142710004535,
+      "peak_price": 98.0999984741211,
+      "sector": "Utilities",
       "partial_taken": false
     }
   },
@@ -610,6 +618,23 @@
         "rsi14_prev": 31.16,
         "atr14": 1.45
       }
+    },
+    {
+      "date": "2026-09-04T15:07:37.330865+00:00",
+      "symbol": "PNW",
+      "action": "BUY",
+      "qty": 1,
+      "price": 98.1,
+      "stop_price": 94.47,
+      "sector": "Utilities",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 26.8 \u2192 32.31 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=97.05) \u00fczerinde. \u0130zleyen stop: 94.47.",
+      "indicators": {
+        "price": 98.1,
+        "sma200": 97.05,
+        "rsi14": 32.31,
+        "rsi14_prev": 26.8,
+        "atr14": 1.45
+      }
     }
   ],
   "equity_history": [
@@ -762,6 +787,11 @@
       "date": "2026-09-03T21:53:40.196127+00:00",
       "equity": 9984.63,
       "cash": 717.97
+    },
+    {
+      "date": "2026-09-04T15:07:37.670926+00:00",
+      "equity": 9949.47,
+      "cash": 619.87
     }
   ]
 }

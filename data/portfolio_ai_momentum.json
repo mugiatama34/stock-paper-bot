@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1317.6798782348633,
+  "cash": 1456.5898818969727,
   "positions": {
     "MSFT": {
       "qty": 5,
@@ -21,9 +21,9 @@
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 34.21142796107701,
+      "stop_price": 35.4150014604841,
       "partial_taken": false,
-      "peak_price": 38.459999084472656,
+      "peak_price": 39.70500183105469,
       "sector": "Information Technology"
     },
     "ADP": {
@@ -53,7 +53,7 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 31.255715233939036,
+      "stop_price": 31.29714366367885,
       "peak_price": 33.58000183105469,
       "sector": "Industrials",
       "partial_taken": false
@@ -77,7 +77,7 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.625,
-      "stop_price": 177.0884050641741,
+      "stop_price": 177.2442910330636,
       "peak_price": 186.9600067138672,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -85,7 +85,7 @@
     "BKR": {
       "qty": 3,
       "avg_price": 63.36000061035156,
-      "stop_price": 61.78347178867885,
+      "stop_price": 61.81132943289621,
       "peak_price": 64.84989929199219,
       "sector": "Energy",
       "partial_taken": false
@@ -93,7 +93,7 @@
     "GILD": {
       "qty": 1,
       "avg_price": 146.67999267578125,
-      "stop_price": 143.70428466796875,
+      "stop_price": 143.82856968470983,
       "peak_price": 151.22000122070312,
       "sector": "Health Care",
       "partial_taken": false
@@ -109,23 +109,15 @@
     "CEG": {
       "qty": 1,
       "avg_price": 282.0199890136719,
-      "stop_price": 272.1089307031449,
-      "peak_price": 290.0400085449219,
+      "stop_price": 272.6214294433594,
+      "peak_price": 290.7799987792969,
       "sector": "Utilities",
-      "partial_taken": false
-    },
-    "PEP": {
-      "qty": 1,
-      "avg_price": 141.38999938964844,
-      "stop_price": 136.92047337123327,
-      "peak_price": 141.38999938964844,
-      "sector": "Consumer Staples",
       "partial_taken": false
     },
     "KDP": {
       "qty": 15,
       "avg_price": 32.935001373291016,
-      "stop_price": 31.472270693097794,
+      "stop_price": 31.628571374075754,
       "peak_price": 32.994998931884766,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -627,6 +619,25 @@
         "atr14": 5.43,
         "relative_strength_20d": 0.0719
       }
+    },
+    {
+      "date": "2026-09-04T15:07:35.350413+00:00",
+      "symbol": "PEP",
+      "action": "SELL",
+      "qty": 1,
+      "price": 138.91,
+      "pnl": -2.48,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "Trend k\u0131r\u0131ld\u0131: fiyat (138.91) SMA50 (139.67) alt\u0131na indi.",
+      "indicators": {
+        "price": 138.91,
+        "sma20": 140.61,
+        "sma50": 139.67,
+        "rsi14": 51.93,
+        "atr14": 2.27,
+        "relative_strength_20d": 0.0039
+      }
     }
   ],
   "equity_history": [
@@ -779,6 +790,11 @@
       "date": "2026-09-03T21:53:38.566916+00:00",
       "equity": 10494.5,
       "cash": 1317.68
+    },
+    {
+      "date": "2026-09-04T15:07:36.014890+00:00",
+      "equity": 10382.9,
+      "cash": 1456.59
     }
   ]
 }

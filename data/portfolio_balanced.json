@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 176.36486434936523,
+  "cash": 2044.7748413085938,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -11,18 +11,10 @@
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "AMCR": {
-      "qty": 40,
-      "avg_price": 47.90999984741211,
-      "stop_price": 45.884286063058035,
-      "peak_price": 47.90999984741211,
-      "sector": "Materials",
-      "partial_taken": false
-    },
     "CL": {
       "qty": 15,
       "avg_price": 92.55000305175781,
-      "stop_price": 89.34429059709821,
+      "stop_price": 89.5107192993164,
       "peak_price": 92.55000305175781,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -30,7 +22,7 @@
     "COF": {
       "qty": 5,
       "avg_price": 216.27000427246094,
-      "stop_price": 210.61500549316406,
+      "stop_price": 211.03857639857702,
       "peak_price": 220.8300018310547,
       "sector": "Financials",
       "partial_taken": false
@@ -38,8 +30,8 @@
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.63142830984933,
-      "peak_price": 14.40999984741211,
+      "stop_price": 13.724285534449987,
+      "peak_price": 14.5,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -54,8 +46,8 @@
     "NVDA": {
       "qty": 2,
       "avg_price": 208.47999572753906,
-      "stop_price": 214.95428248814173,
-      "peak_price": 229.2949981689453,
+      "stop_price": 217.03143746512276,
+      "peak_price": 232.27000427246094,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -78,7 +70,7 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 70.81125967843192,
+      "stop_price": 70.9021464756557,
       "peak_price": 75.2300033569336,
       "sector": "Energy",
       "partial_taken": false
@@ -94,7 +86,7 @@
     "ABNB": {
       "qty": 1,
       "avg_price": 183.22000122070312,
-      "stop_price": 177.0884050641741,
+      "stop_price": 177.2442910330636,
       "peak_price": 186.9600067138672,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -110,7 +102,7 @@
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 134.96500505719865,
+      "stop_price": 135.1214338030134,
       "peak_price": 140.89500427246094,
       "sector": "Utilities",
       "partial_taken": false
@@ -118,7 +110,7 @@
     "CNC": {
       "qty": 2,
       "avg_price": 64.33999633789062,
-      "stop_price": 64.62999943324498,
+      "stop_price": 64.87428392682757,
       "peak_price": 68.3499984741211,
       "sector": "Health Care",
       "partial_taken": false
@@ -134,7 +126,7 @@
     "KVUE": {
       "qty": 4,
       "avg_price": 18.8799991607666,
-      "stop_price": 18.482856478009904,
+      "stop_price": 18.50499943324498,
       "peak_price": 19.1299991607666,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -150,17 +142,9 @@
     "CSX": {
       "qty": 1,
       "avg_price": 48.9900016784668,
-      "stop_price": 46.89643574698799,
-      "peak_price": 48.9900016784668,
+      "stop_price": 47.5603333852937,
+      "peak_price": 49.63999938964844,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "CMCSA": {
-      "qty": 2,
-      "avg_price": 26.649999618530273,
-      "stop_price": 25.412856238228933,
-      "peak_price": 26.649999618530273,
-      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -733,6 +717,38 @@
         "atr14": 0.62,
         "volume_vs_avg20": 1.07
       }
+    },
+    {
+      "date": "2026-09-04T15:07:37.678390+00:00",
+      "symbol": "AMCR",
+      "action": "SELL",
+      "qty": 40,
+      "price": 45.39,
+      "pnl": -100.8,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "\u0130zleyen stop tetiklendi (45.88), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 45.88
+      }
+    },
+    {
+      "date": "2026-09-04T15:07:38.068357+00:00",
+      "symbol": "CMCSA",
+      "action": "SELL",
+      "qty": 2,
+      "price": 26.41,
+      "pnl": -0.49,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "Uzun vadeli trend (SMA200=26.43) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=58.21.",
+      "indicators": {
+        "price": 26.41,
+        "sma200": 26.43,
+        "rsi14": 58.21,
+        "atr14": 0.59,
+        "volume_vs_avg20": 0.16
+      }
     }
   ],
   "equity_history": [
@@ -885,6 +901,11 @@
       "date": "2026-09-03T21:53:42.505890+00:00",
       "equity": 9857.45,
       "cash": 176.36
+    },
+    {
+      "date": "2026-09-04T15:07:39.815298+00:00",
+      "equity": 9864.94,
+      "cash": 2044.77
     }
   ]
 }

@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 
-STRATEGIES = ["ai_momentum", "mean_reversion", "balanced"]
+STRATEGIES = ["ai_momentum", "mean_reversion", "balanced", "hold_never"]
 
 # Kullanıcıya gösterilen strateji adları. Strateji anahtarı (ör. "ai_momentum")
 # kod içinde, dosya adlarında ve ledger'da değişmez; yalnızca burası dashboard
@@ -24,7 +24,13 @@ STRATEGY_LABELS = {
     "ai_momentum": "Nasdaq-100 Momentum",
     "mean_reversion": "Mean Reversion",
     "balanced": "Balanced",
+    "hold_never": "Momentum — Hiç Satma",
 }
+
+# hold_never gibi sonradan eklenen bir stratejinin ilk ledger dosyası henüz
+# yoksa, canlı akış (trade_bot.main) bunu bu başlangıç sermayesiyle üretir.
+# Halihazırda dosyası olan stratejiler bu yoldan hiç geçmez -- bkz. init_ledger.
+DEFAULT_STARTING_CASH = 10_000.0
 
 RISK_PER_TRADE = 0.02      # equity fraction risked per trade (via stop distance)
 MAX_POSITION_PCT = 0.25    # one name can't exceed this share of cash at entry
@@ -59,6 +65,24 @@ def load_ledger(strategy: str) -> dict:
         raise LedgerError(f"Ledger dosyası bulunamadı: {path}") from None
     except json.JSONDecodeError as e:
         raise LedgerError(f"Ledger dosyası bozuk (JSON parse hatası): {path} ({e})") from e
+
+
+def init_ledger(strategy: str, starting_cash: float = DEFAULT_STARTING_CASH) -> dict:
+    """Yeni eklenen bir stratejinin ilk ledger'ını starting_cash ile diske yazar.
+
+    Yalnızca dosya hiç yokken çağrılmalı (bkz. trade_bot.main) -- var olan bir
+    ledger'ı asla ezmez, bozuk bir dosyayı da asla sessizce sıfırlamaz; onun
+    hata yolu load_ledger üzerinden LedgerError olarak kalır."""
+    fresh = {
+        "strategy": strategy,
+        "starting_cash": starting_cash,
+        "cash": starting_cash,
+        "positions": {},
+        "trades": [],
+        "equity_history": [],
+    }
+    save_ledger(strategy, fresh)
+    return fresh
 
 
 def save_ledger(strategy: str, ledger: dict) -> None:

@@ -22,7 +22,11 @@ STRATEGY_MODULES = {
 # Yalnızca backtest.py üzerinden çalıştırılır. Canlı bot (trade_bot.py) ve
 # raporlama (generate_report.py) ledger.STRATEGIES sabit listesini kullanır
 # (bkz. ledger.py) ve bu isimleri hiç görmez -- bilerek buraya bağlanmıyor.
+#
+# hold_never burada YOK: ledger.STRATEGIES'e eklendi, artık trade_bot.py
+# üzerinden gerçek sermayeyle de çalışıyor (bkz. strategies/hold_never.py
+# başlığı ve trade_bot.py'deki DISABLE_TRAILING_STOP guard'ı).
 BACKTEST_ONLY = {
     "mr_bollinger", "mr_zscore", "trend_donchian", "ai_infra", "ai_hold",
-    "hold_wide", "hold_sma200", "hold_never", "ndx_equity_sizing",
+    "hold_wide", "hold_sma200", "ndx_equity_sizing",
 }

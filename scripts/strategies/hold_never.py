@@ -1,14 +1,17 @@
 """
-AI/Tech Momentum -- Never Exit Variant  (backtest-only REFERENCE BENCHMARK, not a real strategy)
+AI/Tech Momentum -- Never Exit Variant  (LIVE, own $10,000 ledger)
 --------------------------------------------------------------------------------------------------
-This is not a strategy meant to be traded -- it exists purely to answer "what would
+Originally built purely as a backtest reference benchmark to answer "what would
 ai_momentum's exact entries have returned with zero exit rules at all?" so the value
-of ai_momentum's SMA50 exit and trailing stop can be isolated and measured against it.
+of ai_momentum's SMA50 exit and trailing stop could be isolated and measured against
+it. Now also traded live (trade_bot.py) with its own portfolio_hold_never.json ledger,
+started fresh with $10,000 -- see ledger.STRATEGIES. Entry rules, sizing, and the
+"never exit" behavior below are unchanged from the original benchmark design.
 
 Universe, entry, sizing, sector limits and regime filter are identical to
 ai_momentum.py. Once a position is opened it is held through the end of the
-backtest, no matter what price does -- no SMA break, no trailing stop, no
-regime change ever closes it.
+backtest (or, live, indefinitely), no matter what price does -- no SMA break,
+no trailing stop, no regime change ever closes it.
 
 Entry (all must hold) -- same as ai_momentum:
   - price > SMA20 > SMA50            trend is up on both horizons
@@ -27,9 +30,10 @@ entry/selection quality only, not the contribution of risk management.
 
 ATR_MULT=2.0 is kept only so the BUY signal's stop_price (used by
 ledger.plan_position for risk-based position sizing) matches ai_momentum exactly.
-DISABLE_TRAILING_STOP=True tells backtest.py's centralized position-management
-loop to skip both the trailing-stop ratchet and the stop-price sell check for
-this strategy, since that loop otherwise runs unconditionally for every module.
+DISABLE_TRAILING_STOP=True tells both backtest.py's and trade_bot.py's centralized
+position-management loops to skip both the trailing-stop ratchet and the
+stop-price sell check for this strategy, since those loops otherwise run
+unconditionally for every module.
 """
 from .indicators import sma, rsi, atr
 

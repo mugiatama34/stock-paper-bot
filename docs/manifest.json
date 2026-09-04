@@ -1,7 +1,7 @@
 {
   "name": "Stock Paper Bot Dashboard",
   "short_name": "Paper Bot",
-  "description": "Üç paralel paper-trading stratejisinin canlı performans panosu.",
+  "description": "Paralel paper-trading stratejilerinin canlı performans panosu.",
   "start_url": "index.html",
   "scope": ".",
   "display": "standalone",

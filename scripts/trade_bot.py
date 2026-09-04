@@ -1,5 +1,5 @@
 """
-Runs all three strategies against their universes.
+Runs all live strategies (ledger.STRATEGIES) against their universes.
 
 Order of operations each run:
   1. Build the universe (Nasdaq-100 / S&P 500 with GICS sectors).
@@ -7,9 +7,12 @@ Order of operations each run:
   3. Check the market regime: SPY below its SMA200 means risk-off -- exits and
      stops still run, but no new positions are opened by any strategy.
   4. Per strategy: ratchet trailing stops, process exits, then process entries
-     subject to liquidity and sector-concentration limits.
+     subject to liquidity and sector-concentration limits. A strategy module
+     may opt out of the trailing-stop ratchet/sell check entirely by setting
+     DISABLE_TRAILING_STOP = True (e.g. hold_never, which never exits).
 """
 import math
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -126,28 +129,32 @@ def run_strategy(strategy_name, price_data, spy_df, universes, risk_on, regime_n
         price = float(df["Close"].iloc[-1])
         current_prices[symbol] = price
 
-        from strategies.indicators import atr as atr_fn
-        try:
-            atr_val = float(atr_fn(df, 14).iloc[-1])
-        except Exception:
-            atr_val = 0.0
+        # DISABLE_TRAILING_STOP=True (hold_never) skips both the ratchet and the
+        # stop-price sell check -- same guard as backtest.py's centralized loop,
+        # otherwise this would force-sell a strategy defined to never exit.
+        if not getattr(module, "DISABLE_TRAILING_STOP", False):
+            from strategies.indicators import atr as atr_fn
+            try:
+                atr_val = float(atr_fn(df, 14).iloc[-1])
+            except Exception:
+                atr_val = 0.0
 
-        ledger_mod.update_trailing_stop(lg, symbol, price, atr_val,
-                                        atr_mult=getattr(module, "ATR_MULT", 2.0))
+            ledger_mod.update_trailing_stop(lg, symbol, price, atr_val,
+                                            atr_mult=getattr(module, "ATR_MULT", 2.0))
 
-        stop = lg["positions"][symbol].get("stop_price")
-        if stop and price <= stop:
-            reasoning = f"İzleyen stop tetiklendi ({stop:.2f}), zirveden geri çekilme."
-            qty = lg["positions"][symbol]["qty"]
-            avg_price = lg["positions"][symbol]["avg_price"]
-            held_days = _held_days(lg["trades"], symbol)
-            if ledger_mod.sell(lg, symbol, price, reasoning, {"stop_price": round(stop, 2)}):
-                ledger_mod.save_ledger(strategy_name, lg)
-                pnl = lg["trades"][-1].get("pnl")
-                pnl_pct = (pnl / (avg_price * qty) * 100) if avg_price else None
-                telegram_notify.notify_sell(strategy_name, symbol, qty, price, reasoning,
-                                            pnl=pnl, pnl_pct=pnl_pct, held_days=held_days)
-            continue
+            stop = lg["positions"][symbol].get("stop_price")
+            if stop and price <= stop:
+                reasoning = f"İzleyen stop tetiklendi ({stop:.2f}), zirveden geri çekilme."
+                qty = lg["positions"][symbol]["qty"]
+                avg_price = lg["positions"][symbol]["avg_price"]
+                held_days = _held_days(lg["trades"], symbol)
+                if ledger_mod.sell(lg, symbol, price, reasoning, {"stop_price": round(stop, 2)}):
+                    ledger_mod.save_ledger(strategy_name, lg)
+                    pnl = lg["trades"][-1].get("pnl")
+                    pnl_pct = (pnl / (avg_price * qty) * 100) if avg_price else None
+                    telegram_notify.notify_sell(strategy_name, symbol, qty, price, reasoning,
+                                                pnl=pnl, pnl_pct=pnl_pct, held_days=held_days)
+                continue
 
         try:
             signal = module.evaluate(symbol, df, spy_df, True, lg["positions"][symbol])
@@ -270,6 +277,14 @@ def main():
     for name in strategies:
         module = STRATEGY_MODULES[name]
         needed |= set(universes[module.UNIVERSE_KEY].keys())
+
+        # Yeni eklenen bir stratejinin (ör. hold_never) ilk ledger dosyası henüz
+        # yoksa burada $10.000 ile üretilir. Dosyası zaten var olan stratejiler
+        # için bu blok hiç tetiklenmez -- onların hata/okuma yolu değişmedi.
+        if not os.path.exists(ledger_mod.ledger_path(name)):
+            ledger_mod.init_ledger(name)
+            print(f"[init] {name}: ilk ledger ${ledger_mod.DEFAULT_STARTING_CASH:,.2f} ile oluşturuldu")
+
         try:
             lg = ledger_mod.load_ledger(name)
         except ledger_mod.LedgerError as e:

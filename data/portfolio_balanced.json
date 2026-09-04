@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 3379.249786376953,
+  "cash": 2534.9297790527344,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -22,8 +22,8 @@
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.804285458156041,
-      "peak_price": 14.579999923706055,
+      "stop_price": 13.829285076686315,
+      "peak_price": 14.604999542236328,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -137,6 +137,14 @@
       "stop_price": 47.5603333852937,
       "peak_price": 49.63999938964844,
       "sector": "Industrials",
+      "partial_taken": false
+    },
+    "KMB": {
+      "qty": 8,
+      "avg_price": 105.54000091552734,
+      "stop_price": 101.24513135637555,
+      "peak_price": 105.54000091552734,
+      "sector": "Consumer Staples",
       "partial_taken": false
     }
   },
@@ -755,6 +763,23 @@
       "indicators": {
         "stop_price": 89.51
       }
+    },
+    {
+      "date": "2026-09-04T19:47:48.673272+00:00",
+      "symbol": "KMB",
+      "action": "BUY",
+      "qty": 8,
+      "price": 105.54,
+      "stop_price": 101.25,
+      "sector": "Consumer Staples",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=101.78), RSI14=42.81 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.04x \u00fczerinde. \u0130zleyen stop: 101.25.",
+      "indicators": {
+        "price": 105.54,
+        "sma200": 101.78,
+        "rsi14": 42.81,
+        "atr14": 2.15,
+        "volume_vs_avg20": 1.04
+      }
     }
   ],
   "equity_history": [
@@ -917,6 +942,11 @@
       "date": "2026-09-04T19:07:08.623306+00:00",
       "equity": 9835.83,
       "cash": 3379.25
+    },
+    {
+      "date": "2026-09-04T19:47:49.233251+00:00",
+      "equity": 9846.25,
+      "cash": 2534.93
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2534.9297790527344,
+  "cash": 1956.5897598266602,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -22,8 +22,8 @@
     "F": {
       "qty": 60,
       "avg_price": 13.930000305175781,
-      "stop_price": 13.829285076686315,
-      "peak_price": 14.604999542236328,
+      "stop_price": 13.841428211757115,
+      "peak_price": 14.619999885559082,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -145,6 +145,14 @@
       "stop_price": 101.24513135637555,
       "peak_price": 105.54000091552734,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "OMC": {
+      "qty": 7,
+      "avg_price": 82.62000274658203,
+      "stop_price": 77.99285997663226,
+      "peak_price": 82.62000274658203,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -780,6 +788,23 @@
         "atr14": 2.15,
         "volume_vs_avg20": 1.04
       }
+    },
+    {
+      "date": "2026-09-04T21:50:23.725448+00:00",
+      "symbol": "OMC",
+      "action": "BUY",
+      "qty": 7,
+      "price": 82.62,
+      "stop_price": 77.99,
+      "sector": "Communication Services",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=77.1), RSI14=41.76 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.24x \u00fczerinde. \u0130zleyen stop: 77.99.",
+      "indicators": {
+        "price": 82.62,
+        "sma200": 77.1,
+        "rsi14": 41.76,
+        "atr14": 2.31,
+        "volume_vs_avg20": 1.24
+      }
     }
   ],
   "equity_history": [
@@ -947,6 +972,11 @@
       "date": "2026-09-04T19:47:49.233251+00:00",
       "equity": 9846.25,
       "cash": 2534.93
+    },
+    {
+      "date": "2026-09-04T21:50:24.277609+00:00",
+      "equity": 9847.96,
+      "cash": 1956.59
     }
   ]
 }

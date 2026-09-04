@@ -1,7 +1,7 @@
 {
   "strategy": "hold_never",
   "starting_cash": 10000.0,
-  "cash": 845.5698680877686,
+  "cash": 655.0698680877686,
   "positions": {
     "ADP": {
       "qty": 8,
@@ -81,6 +81,14 @@
       "stop_price": 173.99488242689011,
       "peak_price": 182.1649932861328,
       "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "BKR": {
+      "qty": 3,
+      "avg_price": 63.5,
+      "stop_price": 60.45000185285296,
+      "peak_price": 63.5,
+      "sector": "Energy",
       "partial_taken": false
     }
   },
@@ -264,6 +272,24 @@
         "atr14": 4.09,
         "relative_strength_20d": 0.0387
       }
+    },
+    {
+      "date": "2026-09-04T21:50:24.614554+00:00",
+      "symbol": "BKR",
+      "action": "BUY",
+      "qty": 3,
+      "price": 63.5,
+      "stop_price": 60.45,
+      "sector": "Energy",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (63.48) ve SMA50 (59.84) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %3.6 g\u00fc\u00e7l\u00fc, RSI=40.14 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 63.5,
+        "sma20": 63.48,
+        "sma50": 59.84,
+        "rsi14": 40.14,
+        "atr14": 1.52,
+        "relative_strength_20d": 0.0357
+      }
     }
   ],
   "equity_history": [
@@ -276,6 +302,11 @@
       "date": "2026-09-04T19:47:49.567161+00:00",
       "equity": 9987.82,
       "cash": 845.57
+    },
+    {
+      "date": "2026-09-04T21:50:25.101744+00:00",
+      "equity": 9993.19,
+      "cash": 655.07
     }
   ]
 }

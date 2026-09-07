@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1956.5897598266602,
+  "cash": 1618.129768371582,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -94,7 +94,7 @@
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 135.1214338030134,
+      "stop_price": 135.1221466064453,
       "peak_price": 140.89500427246094,
       "sector": "Utilities",
       "partial_taken": false
@@ -142,7 +142,7 @@
     "KMB": {
       "qty": 8,
       "avg_price": 105.54000091552734,
-      "stop_price": 101.24513135637555,
+      "stop_price": 101.39051322309591,
       "peak_price": 105.54000091552734,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -152,6 +152,14 @@
       "avg_price": 82.62000274658203,
       "stop_price": 77.99285997663226,
       "peak_price": 82.62000274658203,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "GOOGL": {
+      "qty": 1,
+      "avg_price": 338.4599914550781,
+      "stop_price": 325.26644084506904,
+      "peak_price": 338.4599914550781,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -805,6 +813,23 @@
         "atr14": 2.31,
         "volume_vs_avg20": 1.24
       }
+    },
+    {
+      "date": "2026-09-07T17:59:56.135516+00:00",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 338.46,
+      "stop_price": 325.27,
+      "sector": "Communication Services",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=335.5), RSI14=44.5 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.04x \u00fczerinde. \u0130zleyen stop: 325.27.",
+      "indicators": {
+        "price": 338.46,
+        "sma200": 335.5,
+        "rsi14": 44.5,
+        "atr14": 6.6,
+        "volume_vs_avg20": 1.04
+      }
     }
   ],
   "equity_history": [
@@ -977,6 +1002,11 @@
       "date": "2026-09-04T21:50:24.277609+00:00",
       "equity": 9847.96,
       "cash": 1956.59
+    },
+    {
+      "date": "2026-09-07T17:59:56.551439+00:00",
+      "equity": 9847.96,
+      "cash": 1618.13
     }
   ]
 }

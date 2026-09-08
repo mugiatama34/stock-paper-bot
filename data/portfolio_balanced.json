@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2075.0347747802734,
+  "cash": 1468.7347583770752,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -54,16 +54,16 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 70.9021464756557,
-      "peak_price": 75.2300033569336,
+      "stop_price": 71.4528557913644,
+      "peak_price": 75.8499984741211,
       "sector": "Energy",
       "partial_taken": false
     },
     "AES": {
       "qty": 5,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.709285872323173,
-      "peak_price": 14.805000305175781,
+      "stop_price": 14.717142241341728,
+      "peak_price": 14.8149995803833,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -73,22 +73,6 @@
       "stop_price": 136.14142717633928,
       "peak_price": 141.61000061035156,
       "sector": "Utilities",
-      "partial_taken": false
-    },
-    "CNC": {
-      "qty": 2,
-      "avg_price": 64.33999633789062,
-      "stop_price": 64.87428392682757,
-      "peak_price": 68.3499984741211,
-      "sector": "Health Care",
-      "partial_taken": false
-    },
-    "INVH": {
-      "qty": 3,
-      "avg_price": 29.139999389648438,
-      "stop_price": 28.3271427154541,
-      "peak_price": 29.149999618530273,
-      "sector": "Real Estate",
       "partial_taken": false
     },
     "KIM": {
@@ -129,6 +113,22 @@
       "stop_price": 325.26644084506904,
       "peak_price": 338.4599914550781,
       "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "FRT": {
+      "qty": 4,
+      "avg_price": 117.31500244140625,
+      "stop_price": 114.59571402413505,
+      "peak_price": 117.31500244140625,
+      "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "PAYX": {
+      "qty": 3,
+      "avg_price": 117.0,
+      "stop_price": 111.27785818917411,
+      "peak_price": 117.0,
+      "sector": "Industrials",
       "partial_taken": false
     }
   },
@@ -854,6 +854,68 @@
       "indicators": {
         "stop_price": 18.5
       }
+    },
+    {
+      "date": "2026-09-08T19:57:02.931860+00:00",
+      "symbol": "CNC",
+      "action": "SELL",
+      "qty": 2,
+      "price": 64.59,
+      "pnl": 0.5,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (64.87), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 64.87
+      }
+    },
+    {
+      "date": "2026-09-08T19:57:03.347383+00:00",
+      "symbol": "INVH",
+      "action": "SELL",
+      "qty": 3,
+      "price": 28.26,
+      "pnl": -2.64,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "\u0130zleyen stop tetiklendi (28.33), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 28.33
+      }
+    },
+    {
+      "date": "2026-09-08T19:57:05.525183+00:00",
+      "symbol": "FRT",
+      "action": "BUY",
+      "qty": 4,
+      "price": 117.32,
+      "stop_price": 114.6,
+      "sector": "Real Estate",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=109.88), RSI14=48.75 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.32x \u00fczerinde. \u0130zleyen stop: 114.60.",
+      "indicators": {
+        "price": 117.32,
+        "sma200": 109.88,
+        "rsi14": 48.75,
+        "atr14": 1.36,
+        "volume_vs_avg20": 1.32
+      }
+    },
+    {
+      "date": "2026-09-08T19:57:05.888070+00:00",
+      "symbol": "PAYX",
+      "action": "BUY",
+      "qty": 3,
+      "price": 117.0,
+      "stop_price": 111.28,
+      "sector": "Industrials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=102.17), RSI14=43.39 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.05x \u00fczerinde. \u0130zleyen stop: 111.28.",
+      "indicators": {
+        "price": 117.0,
+        "sma200": 102.17,
+        "rsi14": 43.39,
+        "atr14": 2.86,
+        "volume_vs_avg20": 1.05
+      }
     }
   ],
   "equity_history": [
@@ -1046,6 +1108,11 @@
       "date": "2026-09-08T14:46:49.636678+00:00",
       "equity": 9775.97,
       "cash": 2075.03
+    },
+    {
+      "date": "2026-09-08T19:57:06.268308+00:00",
+      "equity": 9753.14,
+      "cash": 1468.73
     }
   ]
 }

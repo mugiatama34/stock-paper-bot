@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 619.8699264526367,
+  "cash": 1824.7899703979492,
   "positions": {
     "AMZN": {
       "qty": 9,
@@ -17,14 +17,6 @@
       "stop_price": 23.521785736083984,
       "peak_price": 24.219999313354492,
       "sector": "Real Estate",
-      "partial_taken": false
-    },
-    "UNH": {
-      "qty": 3,
-      "avg_price": 398.760009765625,
-      "stop_price": 385.00130789620533,
-      "peak_price": 403.82720947265625,
-      "sector": "Health Care",
       "partial_taken": false
     },
     "D": {
@@ -62,8 +54,8 @@
     "JCI": {
       "qty": 1,
       "avg_price": 144.61500549316406,
-      "stop_price": 137.18394197736467,
-      "peak_price": 144.97500610351562,
+      "stop_price": 138.27357428414481,
+      "peak_price": 146.1199951171875,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -635,6 +627,24 @@
         "rsi14_prev": 26.8,
         "atr14": 1.45
       }
+    },
+    {
+      "date": "2026-09-08T19:57:00.806851+00:00",
+      "symbol": "UNH",
+      "action": "SELL",
+      "qty": 3,
+      "price": 401.64,
+      "pnl": 8.64,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=56.32, fiyat=401.64.",
+      "indicators": {
+        "price": 401.64,
+        "sma200": 349.61,
+        "rsi14": 56.32,
+        "rsi14_prev": 51.31,
+        "atr14": 8.18
+      }
     }
   ],
   "equity_history": [
@@ -827,6 +837,11 @@
       "date": "2026-09-08T14:46:46.863935+00:00",
       "equity": 9888.72,
       "cash": 619.87
+    },
+    {
+      "date": "2026-09-08T19:57:02.888615+00:00",
+      "equity": 9910.66,
+      "cash": 1824.79
     }
   ]
 }

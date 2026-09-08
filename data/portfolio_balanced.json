@@ -1,12 +1,12 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1618.129768371582,
+  "cash": 2075.0347747802734,
   "positions": {
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 352.96159340998616,
+      "stop_price": 354.9957125002324,
       "peak_price": 374.5199890136719,
       "sector": "Information Technology",
       "partial_taken": false
@@ -51,14 +51,6 @@
       "sector": "Financials",
       "partial_taken": false
     },
-    "UPS": {
-      "qty": 1,
-      "avg_price": 105.13999938964844,
-      "stop_price": 102.08684295371471,
-      "peak_price": 105.72000122070312,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
@@ -75,27 +67,11 @@
       "sector": "Utilities",
       "partial_taken": false
     },
-    "ABNB": {
-      "qty": 1,
-      "avg_price": 183.22000122070312,
-      "stop_price": 177.2442910330636,
-      "peak_price": 186.9600067138672,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
-    "ABT": {
-      "qty": 1,
-      "avg_price": 110.36000061035156,
-      "stop_price": 106.98856789725167,
-      "peak_price": 112.0199966430664,
-      "sector": "Health Care",
-      "partial_taken": false
-    },
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 135.1221466064453,
-      "peak_price": 140.89500427246094,
+      "stop_price": 136.14142717633928,
+      "peak_price": 141.61000061035156,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -110,17 +86,9 @@
     "INVH": {
       "qty": 3,
       "avg_price": 29.139999389648438,
-      "stop_price": 28.31785719735282,
+      "stop_price": 28.3271427154541,
       "peak_price": 29.149999618530273,
       "sector": "Real Estate",
-      "partial_taken": false
-    },
-    "KVUE": {
-      "qty": 4,
-      "avg_price": 18.8799991607666,
-      "stop_price": 18.50499943324498,
-      "peak_price": 19.1299991607666,
-      "sector": "Consumer Staples",
       "partial_taken": false
     },
     "KIM": {
@@ -134,7 +102,7 @@
     "CSX": {
       "qty": 1,
       "avg_price": 48.9900016784668,
-      "stop_price": 47.5603333852937,
+      "stop_price": 47.592874548285195,
       "peak_price": 49.63999938964844,
       "sector": "Industrials",
       "partial_taken": false
@@ -142,7 +110,7 @@
     "KMB": {
       "qty": 8,
       "avg_price": 105.54000091552734,
-      "stop_price": 101.39051322309591,
+      "stop_price": 101.43976164709251,
       "peak_price": 105.54000091552734,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -150,7 +118,7 @@
     "OMC": {
       "qty": 7,
       "avg_price": 82.62000274658203,
-      "stop_price": 77.99285997663226,
+      "stop_price": 77.99643053327289,
       "peak_price": 82.62000274658203,
       "sector": "Communication Services",
       "partial_taken": false
@@ -830,6 +798,62 @@
         "atr14": 6.6,
         "volume_vs_avg20": 1.04
       }
+    },
+    {
+      "date": "2026-09-08T14:46:46.943073+00:00",
+      "symbol": "UPS",
+      "action": "SELL",
+      "qty": 1,
+      "price": 101.23,
+      "pnl": -3.91,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "\u0130zleyen stop tetiklendi (102.09), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 102.09
+      }
+    },
+    {
+      "date": "2026-09-08T14:46:47.429472+00:00",
+      "symbol": "ABNB",
+      "action": "SELL",
+      "qty": 1,
+      "price": 176.07,
+      "pnl": -7.15,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "\u0130zleyen stop tetiklendi (177.24), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 177.24
+      }
+    },
+    {
+      "date": "2026-09-08T14:46:47.848357+00:00",
+      "symbol": "ABT",
+      "action": "SELL",
+      "qty": 1,
+      "price": 105.62,
+      "pnl": -4.74,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (106.99), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 106.99
+      }
+    },
+    {
+      "date": "2026-09-08T14:46:48.334122+00:00",
+      "symbol": "KVUE",
+      "action": "SELL",
+      "qty": 4,
+      "price": 18.5,
+      "pnl": -1.54,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "\u0130zleyen stop tetiklendi (18.50), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 18.5
+      }
     }
   ],
   "equity_history": [
@@ -1017,6 +1041,11 @@
       "date": "2026-09-07T22:16:43.369827+00:00",
       "equity": 9847.96,
       "cash": 1618.13
+    },
+    {
+      "date": "2026-09-08T14:46:49.636678+00:00",
+      "equity": 9775.97,
+      "cash": 2075.03
     }
   ]
 }

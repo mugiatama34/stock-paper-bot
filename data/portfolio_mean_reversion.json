@@ -46,7 +46,7 @@
     "CFG": {
       "qty": 5,
       "avg_price": 70.49500274658203,
-      "stop_price": 67.30196108136859,
+      "stop_price": 67.47785404750279,
       "peak_price": 71.08999633789062,
       "sector": "Financials",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "HST": {
       "qty": 14,
       "avg_price": 22.485000610351562,
-      "stop_price": 21.477856840406144,
+      "stop_price": 21.491249833788192,
       "peak_price": 22.485000610351562,
       "sector": "Real Estate",
       "partial_taken": false
@@ -62,8 +62,8 @@
     "JCI": {
       "qty": 1,
       "avg_price": 144.61500549316406,
-      "stop_price": 136.42572348458427,
-      "peak_price": 144.94000244140625,
+      "stop_price": 137.18394197736467,
+      "peak_price": 144.97500610351562,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -94,7 +94,7 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 105.9092845916748,
+      "stop_price": 106.15482030596051,
       "peak_price": 111.0199966430664,
       "sector": "Information Technology",
       "partial_taken": false
@@ -102,7 +102,7 @@
     "ROST": {
       "qty": 1,
       "avg_price": 231.17999267578125,
-      "stop_price": 216.47499411446708,
+      "stop_price": 216.83749389648438,
       "peak_price": 232.0,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -110,8 +110,8 @@
     "TXN": {
       "qty": 1,
       "avg_price": 254.8000030517578,
-      "stop_price": 238.87678582327706,
-      "peak_price": 258.6499938964844,
+      "stop_price": 241.22787312098913,
+      "peak_price": 259.260009765625,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -134,8 +134,8 @@
     "PNW": {
       "qty": 1,
       "avg_price": 98.0999984741211,
-      "stop_price": 94.47142710004535,
-      "peak_price": 98.0999984741211,
+      "stop_price": 95.0051759992327,
+      "peak_price": 98.63999938964844,
       "sector": "Utilities",
       "partial_taken": false
     }
@@ -821,6 +821,11 @@
     {
       "date": "2026-09-07T22:16:41.815626+00:00",
       "equity": 9935.83,
+      "cash": 619.87
+    },
+    {
+      "date": "2026-09-08T14:46:46.863935+00:00",
+      "equity": 9888.72,
       "cash": 619.87
     }
   ]

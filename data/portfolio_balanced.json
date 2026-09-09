@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2031.564733505249,
+  "cash": 2061.224733352661,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -44,12 +44,12 @@
       "partial_taken": false
     },
     "AES": {
-      "qty": 5,
+      "qty": 3,
       "avg_price": 14.725000381469727,
       "stop_price": 14.739999771118164,
       "peak_price": 14.829999923706055,
       "sector": "Utilities",
-      "partial_taken": false
+      "partial_taken": true
     },
     "AWK": {
       "qty": 1,
@@ -110,8 +110,8 @@
     "INCY": {
       "qty": 2,
       "avg_price": 124.4000015258789,
-      "stop_price": 120.01143101283482,
-      "peak_price": 126.4800033569336,
+      "stop_price": 120.83285740443638,
+      "peak_price": 127.4000015258789,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -126,8 +126,8 @@
     "BDX": {
       "qty": 1,
       "avg_price": 179.10000610351562,
-      "stop_price": 170.9935586111886,
-      "peak_price": 179.27499389648438,
+      "stop_price": 171.91856166294642,
+      "peak_price": 180.1999969482422,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -1069,6 +1069,24 @@
         "atr14": 1.53,
         "volume_vs_avg20": 1.11
       }
+    },
+    {
+      "date": "2026-09-09T18:46:07.361237+00:00",
+      "symbol": "AES",
+      "action": "SELL",
+      "qty": 2,
+      "price": 14.83,
+      "pnl": 0.21,
+      "partial": true,
+      "sector": "Utilities",
+      "reasoning": "RSI a\u015f\u0131r\u0131 al\u0131mda (72.41 > 70): pozisyonun yar\u0131s\u0131 sat\u0131larak k\u00e2r kilitlendi, kalan yar\u0131 izleyen stop ile s\u00fcr\u00fcyor.",
+      "indicators": {
+        "price": 14.83,
+        "sma200": 14.32,
+        "rsi14": 72.41,
+        "atr14": 0.05,
+        "volume_vs_avg20": 0.46
+      }
     }
   ],
   "equity_history": [
@@ -1281,6 +1299,11 @@
       "date": "2026-09-09T16:57:51.379774+00:00",
       "equity": 9630.34,
       "cash": 2031.56
+    },
+    {
+      "date": "2026-09-09T18:46:09.530221+00:00",
+      "equity": 9637.74,
+      "cash": 2061.22
     }
   ]
 }

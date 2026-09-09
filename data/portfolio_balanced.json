@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2061.224733352661,
+  "cash": 758.554708480835,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -137,6 +137,38 @@
       "stop_price": 79.10928453717914,
       "peak_price": 82.16999816894531,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "EBAY": {
+      "qty": 4,
+      "avg_price": 103.62000274658203,
+      "stop_price": 97.00946703197332,
+      "peak_price": 103.62000274658203,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "GM": {
+      "qty": 4,
+      "avg_price": 84.0250015258789,
+      "stop_price": 79.74039350096866,
+      "peak_price": 84.0250015258789,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "KEY": {
+      "qty": 15,
+      "avg_price": 21.725000381469727,
+      "stop_price": 20.97070726190821,
+      "peak_price": 21.725000381469727,
+      "sector": "Financials",
+      "partial_taken": false
+    },
+    "T": {
+      "qty": 9,
+      "avg_price": 25.135000228881836,
+      "stop_price": 24.178571428571427,
+      "peak_price": 25.135000228881836,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -1087,6 +1119,74 @@
         "atr14": 0.05,
         "volume_vs_avg20": 0.46
       }
+    },
+    {
+      "date": "2026-09-09T19:58:04.447329+00:00",
+      "symbol": "EBAY",
+      "action": "BUY",
+      "qty": 4,
+      "price": 103.62,
+      "stop_price": 97.01,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=98.32), RSI14=52.64 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.54x \u00fczerinde. \u0130zleyen stop: 97.01.",
+      "indicators": {
+        "price": 103.62,
+        "sma200": 98.32,
+        "rsi14": 52.64,
+        "atr14": 3.31,
+        "volume_vs_avg20": 1.54
+      }
+    },
+    {
+      "date": "2026-09-09T19:58:04.932942+00:00",
+      "symbol": "GM",
+      "action": "BUY",
+      "qty": 4,
+      "price": 84.03,
+      "stop_price": 79.74,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=79.68), RSI14=47.31 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.1x \u00fczerinde. \u0130zleyen stop: 79.74.",
+      "indicators": {
+        "price": 84.03,
+        "sma200": 79.68,
+        "rsi14": 47.31,
+        "atr14": 2.14,
+        "volume_vs_avg20": 1.1
+      }
+    },
+    {
+      "date": "2026-09-09T19:58:05.444528+00:00",
+      "symbol": "KEY",
+      "action": "BUY",
+      "qty": 15,
+      "price": 21.73,
+      "stop_price": 20.97,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=21.06), RSI14=46.8 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.11x \u00fczerinde. \u0130zleyen stop: 20.97.",
+      "indicators": {
+        "price": 21.73,
+        "sma200": 21.06,
+        "rsi14": 46.8,
+        "atr14": 0.38,
+        "volume_vs_avg20": 1.11
+      }
+    },
+    {
+      "date": "2026-09-09T19:58:05.969718+00:00",
+      "symbol": "T",
+      "action": "BUY",
+      "qty": 9,
+      "price": 25.14,
+      "stop_price": 24.18,
+      "sector": "Communication Services",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=24.7), RSI14=50.22 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.14x \u00fczerinde. \u0130zleyen stop: 24.18.",
+      "indicators": {
+        "price": 25.14,
+        "sma200": 24.7,
+        "rsi14": 50.22,
+        "atr14": 0.48,
+        "volume_vs_avg20": 1.14
+      }
     }
   ],
   "equity_history": [
@@ -1304,6 +1404,11 @@
       "date": "2026-09-09T18:46:09.530221+00:00",
       "equity": 9637.74,
       "cash": 2061.22
+    },
+    {
+      "date": "2026-09-09T19:58:06.465058+00:00",
+      "equity": 9617.91,
+      "cash": 758.55
     }
   ]
 }

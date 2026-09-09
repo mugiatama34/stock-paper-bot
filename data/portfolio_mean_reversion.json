@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 4972.133792877197,
+  "cash": 5183.608783721924,
   "positions": {
     "D": {
       "qty": 8,
@@ -83,19 +83,11 @@
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "SW": {
-      "qty": 5,
-      "avg_price": 45.415000915527344,
-      "stop_price": 42.43250029427664,
-      "peak_price": 45.970001220703125,
-      "sector": "Materials",
-      "partial_taken": false
-    },
     "IRM": {
       "qty": 14,
       "avg_price": 115.27999877929688,
-      "stop_price": 106.28444535391671,
-      "peak_price": 115.27999877929688,
+      "stop_price": 106.28444862365723,
+      "peak_price": 115.33000183105469,
       "sector": "Real Estate",
       "partial_taken": false
     }
@@ -704,6 +696,20 @@
         "rsi14_prev": 29.58,
         "atr14": 3.6
       }
+    },
+    {
+      "date": "2026-09-09T19:58:00.507093+00:00",
+      "symbol": "SW",
+      "action": "SELL",
+      "qty": 5,
+      "price": 42.29,
+      "pnl": -15.6,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "\u0130zleyen stop tetiklendi (42.43), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 42.43
+      }
     }
   ],
   "equity_history": [
@@ -921,6 +927,11 @@
       "date": "2026-09-09T18:46:07.333211+00:00",
       "equity": 9799.02,
       "cash": 4972.13
+    },
+    {
+      "date": "2026-09-09T19:58:02.764033+00:00",
+      "equity": 9798.41,
+      "cash": 5183.61
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 5183.608783721924,
+  "cash": 5451.898777008057,
   "positions": {
     "D": {
       "qty": 8,
@@ -49,14 +49,6 @@
       "stop_price": 118.93285397120884,
       "peak_price": 125.33999633789062,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "BAX": {
-      "qty": 11,
-      "avg_price": 26.104999542236328,
-      "stop_price": 24.509136774979062,
-      "peak_price": 26.155000686645508,
-      "sector": "Health Care",
       "partial_taken": false
     },
     "CSCO": {
@@ -710,6 +702,20 @@
       "indicators": {
         "stop_price": 42.43
       }
+    },
+    {
+      "date": "2026-09-09T21:57:29.184549+00:00",
+      "symbol": "BAX",
+      "action": "SELL",
+      "qty": 11,
+      "price": 24.39,
+      "pnl": -18.87,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (24.51), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 24.51
+      }
     }
   ],
   "equity_history": [
@@ -932,6 +938,11 @@
       "date": "2026-09-09T19:58:02.764033+00:00",
       "equity": 9798.41,
       "cash": 5183.61
+    },
+    {
+      "date": "2026-09-09T21:57:31.332567+00:00",
+      "equity": 9794.55,
+      "cash": 5451.9
     }
   ]
 }

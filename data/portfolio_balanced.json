@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 758.554708480835,
+  "cash": 1264.034719467163,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -9,14 +9,6 @@
       "stop_price": 355.6105081814927,
       "peak_price": 374.5199890136719,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "COF": {
-      "qty": 5,
-      "avg_price": 216.27000427246094,
-      "stop_price": 211.03857639857702,
-      "peak_price": 220.8300018310547,
-      "sector": "Financials",
       "partial_taken": false
     },
     "KMI": {
@@ -158,17 +150,33 @@
     "KEY": {
       "qty": 15,
       "avg_price": 21.725000381469727,
-      "stop_price": 20.97070726190821,
-      "peak_price": 21.725000381469727,
+      "stop_price": 20.97570642267481,
+      "peak_price": 21.729999542236328,
       "sector": "Financials",
       "partial_taken": false
     },
     "T": {
       "qty": 9,
       "avg_price": 25.135000228881836,
-      "stop_price": 24.178571428571427,
-      "peak_price": 25.135000228881836,
+      "stop_price": 24.193570818219865,
+      "peak_price": 25.149999618530273,
       "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "ALL": {
+      "qty": 1,
+      "avg_price": 253.5800018310547,
+      "stop_price": 243.83190588604103,
+      "peak_price": 253.5800018310547,
+      "sector": "Financials",
+      "partial_taken": false
+    },
+    "APD": {
+      "qty": 1,
+      "avg_price": 295.239990234375,
+      "stop_price": 282.8871547154018,
+      "peak_price": 295.239990234375,
+      "sector": "Materials",
       "partial_taken": false
     }
   },
@@ -1187,6 +1195,54 @@
         "atr14": 0.48,
         "volume_vs_avg20": 1.14
       }
+    },
+    {
+      "date": "2026-09-09T21:57:31.340506+00:00",
+      "symbol": "COF",
+      "action": "SELL",
+      "qty": 5,
+      "price": 210.86,
+      "pnl": -27.05,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (211.04), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 211.04
+      }
+    },
+    {
+      "date": "2026-09-09T21:57:33.535074+00:00",
+      "symbol": "ALL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 253.58,
+      "stop_price": 243.83,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=220.22), RSI14=44.07 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.08x \u00fczerinde. \u0130zleyen stop: 243.83.",
+      "indicators": {
+        "price": 253.58,
+        "sma200": 220.22,
+        "rsi14": 44.07,
+        "atr14": 4.87,
+        "volume_vs_avg20": 1.08
+      }
+    },
+    {
+      "date": "2026-09-09T21:57:34.125720+00:00",
+      "symbol": "APD",
+      "action": "BUY",
+      "qty": 1,
+      "price": 295.24,
+      "stop_price": 282.89,
+      "sector": "Materials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=280.67), RSI14=40.42 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.05x \u00fczerinde. \u0130zleyen stop: 282.89.",
+      "indicators": {
+        "price": 295.24,
+        "sma200": 280.67,
+        "rsi14": 40.42,
+        "atr14": 6.18,
+        "volume_vs_avg20": 1.05
+      }
     }
   ],
   "equity_history": [
@@ -1409,6 +1465,11 @@
       "date": "2026-09-09T19:58:06.465058+00:00",
       "equity": 9617.91,
       "cash": 758.55
+    },
+    {
+      "date": "2026-09-09T21:57:34.633320+00:00",
+      "equity": 9614.23,
+      "cash": 1264.03
     }
   ]
 }

@@ -1,43 +1,27 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 4282.524955749512,
+  "cash": 4943.024955749512,
   "positions": {
     "CRM": {
       "qty": 9,
       "avg_price": 209.28500366210938,
-      "stop_price": 243.4150129045759,
+      "stop_price": 243.4179404122489,
       "partial_taken": false,
       "peak_price": 266.2950134277344
     },
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 36.52285657610212,
+      "stop_price": 36.60642787388393,
       "partial_taken": false,
       "peak_price": 40.94499969482422,
       "sector": "Information Technology"
     },
-    "CHTR": {
-      "qty": 2,
-      "avg_price": 150.3000030517578,
-      "stop_price": 143.9957231794085,
-      "peak_price": 159.02000427246094,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
-    "CMCSA": {
-      "qty": 16,
-      "avg_price": 27.020000457763672,
-      "stop_price": 26.08500017438616,
-      "peak_price": 27.2450008392334,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 31.7314270564488,
+      "stop_price": 31.895713533673966,
       "peak_price": 33.81999969482422,
       "sector": "Industrials",
       "partial_taken": false
@@ -53,7 +37,7 @@
     "GILD": {
       "qty": 1,
       "avg_price": 146.67999267578125,
-      "stop_price": 143.82856968470983,
+      "stop_price": 144.1528560093471,
       "peak_price": 151.22000122070312,
       "sector": "Health Care",
       "partial_taken": false
@@ -61,7 +45,7 @@
     "CEG": {
       "qty": 1,
       "avg_price": 282.0199890136719,
-      "stop_price": 284.6657017299107,
+      "stop_price": 284.9314182826451,
       "peak_price": 303.0799865722656,
       "sector": "Utilities",
       "partial_taken": false
@@ -77,7 +61,7 @@
     "FANG": {
       "qty": 1,
       "avg_price": 203.16000366210938,
-      "stop_price": 192.59713527134485,
+      "stop_price": 192.61856297084265,
       "peak_price": 203.72999572753906,
       "sector": "Energy",
       "partial_taken": false
@@ -85,7 +69,7 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 98.00501251220703,
+      "stop_price": 113.09928240094865,
       "peak_price": 144.26499938964844,
       "sector": "Health Care",
       "partial_taken": false
@@ -93,7 +77,7 @@
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 117.3257053920201,
+      "stop_price": 118.07313537597656,
       "peak_price": 137.7899932861328,
       "sector": "Information Technology",
       "partial_taken": false
@@ -736,6 +720,34 @@
         "atr14": 10.23,
         "relative_strength_20d": 0.4235
       }
+    },
+    {
+      "date": "2026-09-09T16:57:43.406682+00:00",
+      "symbol": "CHTR",
+      "action": "SELL",
+      "qty": 2,
+      "price": 135.01,
+      "pnl": -30.58,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "\u0130zleyen stop tetiklendi (144.00), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 144.0
+      }
+    },
+    {
+      "date": "2026-09-09T16:57:43.773061+00:00",
+      "symbol": "CMCSA",
+      "action": "SELL",
+      "qty": 16,
+      "price": 24.41,
+      "pnl": -41.84,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "\u0130zleyen stop tetiklendi (26.09), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 26.09
+      }
     }
   ],
   "equity_history": [
@@ -943,6 +955,11 @@
       "date": "2026-09-08T22:02:31.044897+00:00",
       "equity": 10206.23,
       "cash": 4282.52
+    },
+    {
+      "date": "2026-09-09T16:57:44.436049+00:00",
+      "equity": 10109.49,
+      "cash": 4943.02
     }
   ]
 }

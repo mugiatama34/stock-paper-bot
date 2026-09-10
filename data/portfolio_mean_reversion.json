@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 2753.1888008117676,
+  "cash": 1944.1288032531738,
   "positions": {
     "D": {
       "qty": 8,
@@ -94,8 +94,24 @@
     "ABBV": {
       "qty": 3,
       "avg_price": 252.2899932861328,
-      "stop_price": 239.30250985281808,
-      "peak_price": 252.7899932861328,
+      "stop_price": 241.04447773524694,
+      "peak_price": 254.58999633789062,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "PKG": {
+      "qty": 2,
+      "avg_price": 232.49000549316406,
+      "stop_price": 216.8676812308175,
+      "peak_price": 232.49000549316406,
+      "sector": "Materials",
+      "partial_taken": false
+    },
+    "WST": {
+      "qty": 1,
+      "avg_price": 344.0799865722656,
+      "stop_price": 326.36570412772045,
+      "peak_price": 344.0799865722656,
       "sector": "Health Care",
       "partial_taken": false
     }
@@ -797,6 +813,40 @@
         "rsi14_prev": 31.45,
         "atr14": 5.39
       }
+    },
+    {
+      "date": "2026-09-10T19:57:29.016766+00:00",
+      "symbol": "PKG",
+      "action": "BUY",
+      "qty": 2,
+      "price": 232.49,
+      "stop_price": 216.87,
+      "sector": "Materials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 23.65 \u2192 33.1 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=222.19) \u00fczerinde. \u0130zleyen stop: 216.87.",
+      "indicators": {
+        "price": 232.49,
+        "sma200": 222.19,
+        "rsi14": 33.1,
+        "rsi14_prev": 23.65,
+        "atr14": 6.25
+      }
+    },
+    {
+      "date": "2026-09-10T19:57:29.338366+00:00",
+      "symbol": "WST",
+      "action": "BUY",
+      "qty": 1,
+      "price": 344.08,
+      "stop_price": 326.37,
+      "sector": "Health Care",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.35 \u2192 38.67 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=294.63) \u00fczerinde. \u0130zleyen stop: 326.37.",
+      "indicators": {
+        "price": 344.08,
+        "sma200": 294.63,
+        "rsi14": 38.67,
+        "rsi14_prev": 28.35,
+        "atr14": 7.09
+      }
     }
   ],
   "equity_history": [
@@ -1034,6 +1084,11 @@
       "date": "2026-09-10T18:20:30.796463+00:00",
       "equity": 9710.64,
       "cash": 2753.19
+    },
+    {
+      "date": "2026-09-10T19:57:29.681222+00:00",
+      "equity": 9723.6,
+      "cash": 1944.13
     }
   ]
 }

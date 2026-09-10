@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 6281.264932632446,
+  "cash": 6753.53994178772,
   "positions": {
     "SMCI": {
       "qty": 13,
@@ -17,14 +17,6 @@
       "stop_price": 284.9314182826451,
       "peak_price": 303.0799865722656,
       "sector": "Utilities",
-      "partial_taken": false
-    },
-    "KDP": {
-      "qty": 15,
-      "avg_price": 32.935001373291016,
-      "stop_price": 31.721999304635183,
-      "peak_price": 32.994998931884766,
-      "sector": "Consumer Staples",
       "partial_taken": false
     },
     "FANG": {
@@ -54,8 +46,8 @@
     "CRM": {
       "qty": 6,
       "avg_price": 242.60499572753906,
-      "stop_price": 219.05499485560827,
-      "peak_price": 242.60499572753906,
+      "stop_price": 219.86999729701452,
+      "peak_price": 243.4199981689453,
       "sector": "Unknown",
       "partial_taken": false
     }
@@ -799,6 +791,20 @@
         "atr14": 11.78,
         "relative_strength_20d": 0.2739
       }
+    },
+    {
+      "date": "2026-09-10T19:57:27.012936+00:00",
+      "symbol": "KDP",
+      "action": "SELL",
+      "qty": 15,
+      "price": 31.49,
+      "pnl": -21.75,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "\u0130zleyen stop tetiklendi (31.72), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 31.72
+      }
     }
   ],
   "equity_history": [
@@ -1036,6 +1042,11 @@
       "date": "2026-09-10T18:20:29.170813+00:00",
       "equity": 9990.18,
       "cash": 6281.26
+    },
+    {
+      "date": "2026-09-10T19:57:27.710197+00:00",
+      "equity": 9982.13,
+      "cash": 6753.54
     }
   ]
 }

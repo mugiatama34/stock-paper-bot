@@ -1,15 +1,8 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 5265.719951629639,
+  "cash": 6281.264932632446,
   "positions": {
-    "CRM": {
-      "qty": 9,
-      "avg_price": 209.28500366210938,
-      "stop_price": 243.4179404122489,
-      "partial_taken": false,
-      "peak_price": 266.2950134277344
-    },
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
@@ -17,14 +10,6 @@
       "partial_taken": false,
       "peak_price": 40.94499969482422,
       "sector": "Information Technology"
-    },
-    "CPRT": {
-      "qty": 9,
-      "avg_price": 33.2599983215332,
-      "stop_price": 32.00571414402553,
-      "peak_price": 33.81999969482422,
-      "sector": "Industrials",
-      "partial_taken": false
     },
     "CEG": {
       "qty": 1,
@@ -45,8 +30,8 @@
     "FANG": {
       "qty": 1,
       "avg_price": 203.16000366210938,
-      "stop_price": 192.86856079101562,
-      "peak_price": 203.72999572753906,
+      "stop_price": 194.71856689453125,
+      "peak_price": 205.5800018310547,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -64,6 +49,14 @@
       "stop_price": 118.56713540213448,
       "peak_price": 137.7899932861328,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "CRM": {
+      "qty": 6,
+      "avg_price": 242.60499572753906,
+      "stop_price": 219.05499485560827,
+      "peak_price": 242.60499572753906,
+      "sector": "Unknown",
       "partial_taken": false
     }
   },
@@ -760,6 +753,52 @@
       "indicators": {
         "stop_price": 144.48
       }
+    },
+    {
+      "date": "2026-09-10T18:20:27.405897+00:00",
+      "symbol": "CRM",
+      "action": "SELL",
+      "qty": 9,
+      "price": 242.6,
+      "pnl": 299.88,
+      "partial": false,
+      "sector": "Unknown",
+      "reasoning": "\u0130zleyen stop tetiklendi (243.42), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 243.42
+      }
+    },
+    {
+      "date": "2026-09-10T18:20:27.916550+00:00",
+      "symbol": "CPRT",
+      "action": "SELL",
+      "qty": 9,
+      "price": 31.97,
+      "pnl": -11.61,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "\u0130zleyen stop tetiklendi (32.01), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 32.01
+      }
+    },
+    {
+      "date": "2026-09-10T18:20:28.719070+00:00",
+      "symbol": "CRM",
+      "action": "BUY",
+      "qty": 6,
+      "price": 242.6,
+      "stop_price": 219.05,
+      "sector": "Unknown",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (228.3) ve SMA50 (196.91) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %27.4 g\u00fc\u00e7l\u00fc, RSI=70.59 (<75, tepe de\u011fil). \u0130zleyen stop: 219.05 (2xATR).",
+      "indicators": {
+        "price": 242.6,
+        "sma20": 228.3,
+        "sma50": 196.91,
+        "rsi14": 70.59,
+        "atr14": 11.78,
+        "relative_strength_20d": 0.2739
+      }
     }
   ],
   "equity_history": [
@@ -992,6 +1031,11 @@
       "date": "2026-09-10T14:41:48.115133+00:00",
       "equity": 10044.94,
       "cash": 5265.72
+    },
+    {
+      "date": "2026-09-10T18:20:29.170813+00:00",
+      "equity": 9990.18,
+      "cash": 6281.26
     }
   ]
 }

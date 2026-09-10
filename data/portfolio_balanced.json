@@ -6,7 +6,7 @@
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 355.6105081814927,
+      "stop_price": 356.51270873439256,
       "peak_price": 374.5199890136719,
       "sector": "Information Technology",
       "partial_taken": false
@@ -14,7 +14,7 @@
     "KMI": {
       "qty": 20,
       "avg_price": 31.0,
-      "stop_price": 30.616430282592773,
+      "stop_price": 30.649287632533483,
       "peak_price": 32.2400016784668,
       "sector": "Energy",
       "partial_taken": false
@@ -30,7 +30,7 @@
     "WMB": {
       "qty": 1,
       "avg_price": 71.08000183105469,
-      "stop_price": 71.49071284702846,
+      "stop_price": 71.62856946672711,
       "peak_price": 75.8499984741211,
       "sector": "Energy",
       "partial_taken": false
@@ -38,16 +38,16 @@
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.739999771118164,
-      "peak_price": 14.829999923706055,
+      "stop_price": 14.754385811941964,
+      "peak_price": 14.840100288391113,
       "sector": "Utilities",
       "partial_taken": true
     },
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 136.24856785365515,
-      "peak_price": 141.61000061035156,
+      "stop_price": 136.31714085170202,
+      "peak_price": 141.6699981689453,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -86,7 +86,7 @@
     "PAYX": {
       "qty": 3,
       "avg_price": 117.0,
-      "stop_price": 111.54357256208148,
+      "stop_price": 111.59000069754464,
       "peak_price": 117.0,
       "sector": "Industrials",
       "partial_taken": false
@@ -94,7 +94,7 @@
     "DLTR": {
       "qty": 2,
       "avg_price": 124.04000091552734,
-      "stop_price": 113.08285631452289,
+      "stop_price": 113.23499843052456,
       "peak_price": 124.04000091552734,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -102,7 +102,7 @@
     "INCY": {
       "qty": 2,
       "avg_price": 124.4000015258789,
-      "stop_price": 120.83285740443638,
+      "stop_price": 121.00428553989956,
       "peak_price": 127.4000015258789,
       "sector": "Health Care",
       "partial_taken": false
@@ -110,7 +110,7 @@
     "BALL": {
       "qty": 3,
       "avg_price": 61.02000045776367,
-      "stop_price": 58.775436263504595,
+      "stop_price": 58.84207111765064,
       "peak_price": 61.02000045776367,
       "sector": "Materials",
       "partial_taken": false
@@ -118,7 +118,7 @@
     "BDX": {
       "qty": 1,
       "avg_price": 179.10000610351562,
-      "stop_price": 171.91856166294642,
+      "stop_price": 172.23570937230974,
       "peak_price": 180.1999969482422,
       "sector": "Health Care",
       "partial_taken": false
@@ -126,7 +126,7 @@
     "SYY": {
       "qty": 8,
       "avg_price": 82.16999816894531,
-      "stop_price": 79.10928453717914,
+      "stop_price": 79.26856994628906,
       "peak_price": 82.16999816894531,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -134,16 +134,16 @@
     "EBAY": {
       "qty": 4,
       "avg_price": 103.62000274658203,
-      "stop_price": 97.00946703197332,
-      "peak_price": 103.62000274658203,
+      "stop_price": 98.35330011001253,
+      "peak_price": 105.0199966430664,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "GM": {
       "qty": 4,
       "avg_price": 84.0250015258789,
-      "stop_price": 79.74039350096866,
-      "peak_price": 84.0250015258789,
+      "stop_price": 80.70148242471343,
+      "peak_price": 84.9800033569336,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -158,15 +158,15 @@
     "T": {
       "qty": 9,
       "avg_price": 25.135000228881836,
-      "stop_price": 24.193570818219865,
-      "peak_price": 25.149999618530273,
+      "stop_price": 24.513471330915177,
+      "peak_price": 25.524900436401367,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "ALL": {
       "qty": 1,
       "avg_price": 253.5800018310547,
-      "stop_price": 243.83190588604103,
+      "stop_price": 244.01210026807894,
       "peak_price": 253.5800018310547,
       "sector": "Financials",
       "partial_taken": false
@@ -174,7 +174,7 @@
     "APD": {
       "qty": 1,
       "avg_price": 295.239990234375,
-      "stop_price": 282.8871547154018,
+      "stop_price": 284.24499947684154,
       "peak_price": 295.239990234375,
       "sector": "Materials",
       "partial_taken": false
@@ -1469,6 +1469,11 @@
     {
       "date": "2026-09-09T21:57:34.633320+00:00",
       "equity": 9614.23,
+      "cash": 1264.03
+    },
+    {
+      "date": "2026-09-10T14:41:53.529453+00:00",
+      "equity": 9592.4,
       "cash": 1264.03
     }
   ]

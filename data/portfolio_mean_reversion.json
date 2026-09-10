@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 5451.898777008057,
+  "cash": 2753.1888008117676,
   "positions": {
     "D": {
       "qty": 8,
@@ -14,7 +14,7 @@
     "CFG": {
       "qty": 5,
       "avg_price": 70.49500274658203,
-      "stop_price": 67.69435446602958,
+      "stop_price": 67.76303264072963,
       "peak_price": 71.08999633789062,
       "sector": "Financials",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "HST": {
       "qty": 14,
       "avg_price": 22.485000610351562,
-      "stop_price": 21.545714173998153,
+      "stop_price": 21.558214119502477,
       "peak_price": 22.485000610351562,
       "sector": "Real Estate",
       "partial_taken": false
@@ -30,23 +30,15 @@
     "JCI": {
       "qty": 1,
       "avg_price": 144.61500549316406,
-      "stop_price": 139.0246527535575,
+      "stop_price": 139.1496522086007,
       "peak_price": 146.3800048828125,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "AFL": {
-      "qty": 4,
-      "avg_price": 116.5199966430664,
-      "stop_price": 114.47303336007255,
-      "peak_price": 118.58999633789062,
-      "sector": "Financials",
       "partial_taken": false
     },
     "PCAR": {
       "qty": 2,
       "avg_price": 125.33999633789062,
-      "stop_price": 118.93285397120884,
+      "stop_price": 119.1462481362479,
       "peak_price": 125.33999633789062,
       "sector": "Industrials",
       "partial_taken": false
@@ -54,7 +46,7 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 106.25749833243233,
+      "stop_price": 106.40571294512067,
       "peak_price": 111.0199966430664,
       "sector": "Information Technology",
       "partial_taken": false
@@ -62,7 +54,7 @@
     "ROST": {
       "qty": 1,
       "avg_price": 231.17999267578125,
-      "stop_price": 217.35958353364163,
+      "stop_price": 217.49925913356697,
       "peak_price": 232.0,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -78,9 +70,33 @@
     "IRM": {
       "qty": 14,
       "avg_price": 115.27999877929688,
-      "stop_price": 106.28444862365723,
+      "stop_price": 106.42448343549457,
       "peak_price": 115.33000183105469,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "LYV": {
+      "qty": 8,
+      "avg_price": 172.39500427246094,
+      "stop_price": 162.80571092878068,
+      "peak_price": 172.39500427246094,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "ABNB": {
+      "qty": 6,
+      "avg_price": 169.8699951171875,
+      "stop_price": 157.13267735072546,
+      "peak_price": 169.8699951171875,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "ABBV": {
+      "qty": 3,
+      "avg_price": 252.2899932861328,
+      "stop_price": 238.80250985281808,
+      "peak_price": 252.2899932861328,
+      "sector": "Health Care",
       "partial_taken": false
     }
   },
@@ -716,6 +732,71 @@
       "indicators": {
         "stop_price": 24.51
       }
+    },
+    {
+      "date": "2026-09-10T14:41:48.135648+00:00",
+      "symbol": "AFL",
+      "action": "SELL",
+      "qty": 4,
+      "price": 114.14,
+      "pnl": -9.54,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (114.47), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 114.47
+      }
+    },
+    {
+      "date": "2026-09-10T14:41:50.189876+00:00",
+      "symbol": "LYV",
+      "action": "BUY",
+      "qty": 8,
+      "price": 172.4,
+      "stop_price": 162.81,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 27.02 \u2192 34.54 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=161.05) \u00fczerinde. \u0130zleyen stop: 162.81.",
+      "indicators": {
+        "price": 172.4,
+        "sma200": 161.05,
+        "rsi14": 34.54,
+        "rsi14_prev": 27.02,
+        "atr14": 3.84
+      }
+    },
+    {
+      "date": "2026-09-10T14:41:50.725192+00:00",
+      "symbol": "ABNB",
+      "action": "BUY",
+      "qty": 6,
+      "price": 169.87,
+      "stop_price": 157.13,
+      "sector": "Consumer Discretionary",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 30.62 \u2192 32.02 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=140.27) \u00fczerinde. \u0130zleyen stop: 157.13.",
+      "indicators": {
+        "price": 169.87,
+        "sma200": 140.27,
+        "rsi14": 32.02,
+        "rsi14_prev": 30.62,
+        "atr14": 5.09
+      }
+    },
+    {
+      "date": "2026-09-10T14:41:51.291251+00:00",
+      "symbol": "ABBV",
+      "action": "BUY",
+      "qty": 3,
+      "price": 252.29,
+      "stop_price": 238.8,
+      "sector": "Health Care",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.45 \u2192 37.39 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=226.16) \u00fczerinde. \u0130zleyen stop: 238.80.",
+      "indicators": {
+        "price": 252.29,
+        "sma200": 226.16,
+        "rsi14": 37.39,
+        "rsi14_prev": 31.45,
+        "atr14": 5.39
+      }
     }
   ],
   "equity_history": [
@@ -943,6 +1024,11 @@
       "date": "2026-09-09T21:57:31.332567+00:00",
       "equity": 9794.55,
       "cash": 5451.9
+    },
+    {
+      "date": "2026-09-10T14:41:51.856026+00:00",
+      "equity": 9782.77,
+      "cash": 2753.19
     }
   ]
 }

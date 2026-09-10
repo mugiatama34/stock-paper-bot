@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 4943.024955749512,
+  "cash": 5265.719951629639,
   "positions": {
     "CRM": {
       "qty": 9,
@@ -13,7 +13,7 @@
     "SMCI": {
       "qty": 13,
       "avg_price": 35.165000915527344,
-      "stop_price": 36.60642787388393,
+      "stop_price": 36.81787109375,
       "partial_taken": false,
       "peak_price": 40.94499969482422,
       "sector": "Information Technology"
@@ -21,25 +21,9 @@
     "CPRT": {
       "qty": 9,
       "avg_price": 33.2599983215332,
-      "stop_price": 31.895713533673966,
+      "stop_price": 32.00571414402553,
       "peak_price": 33.81999969482422,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "BKR": {
-      "qty": 3,
-      "avg_price": 63.36000061035156,
-      "stop_price": 61.81132943289621,
-      "peak_price": 64.84989929199219,
-      "sector": "Energy",
-      "partial_taken": false
-    },
-    "GILD": {
-      "qty": 1,
-      "avg_price": 146.67999267578125,
-      "stop_price": 144.1528560093471,
-      "peak_price": 151.22000122070312,
-      "sector": "Health Care",
       "partial_taken": false
     },
     "CEG": {
@@ -53,7 +37,7 @@
     "KDP": {
       "qty": 15,
       "avg_price": 32.935001373291016,
-      "stop_price": 31.68285642351423,
+      "stop_price": 31.721999304635183,
       "peak_price": 32.994998931884766,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -61,7 +45,7 @@
     "FANG": {
       "qty": 1,
       "avg_price": 203.16000366210938,
-      "stop_price": 192.61856297084265,
+      "stop_price": 192.86856079101562,
       "peak_price": 203.72999572753906,
       "sector": "Energy",
       "partial_taken": false
@@ -69,7 +53,7 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 113.09928240094865,
+      "stop_price": 118.72214181082589,
       "peak_price": 144.26499938964844,
       "sector": "Health Care",
       "partial_taken": false
@@ -77,7 +61,7 @@
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 118.07313537597656,
+      "stop_price": 118.56713540213448,
       "peak_price": 137.7899932861328,
       "sector": "Information Technology",
       "partial_taken": false
@@ -748,6 +732,34 @@
       "indicators": {
         "stop_price": 26.09
       }
+    },
+    {
+      "date": "2026-09-10T14:41:46.645329+00:00",
+      "symbol": "BKR",
+      "action": "SELL",
+      "qty": 3,
+      "price": 59.63,
+      "pnl": -11.19,
+      "partial": false,
+      "sector": "Energy",
+      "reasoning": "\u0130zleyen stop tetiklendi (61.81), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 61.81
+      }
+    },
+    {
+      "date": "2026-09-10T14:41:47.303502+00:00",
+      "symbol": "GILD",
+      "action": "SELL",
+      "qty": 1,
+      "price": 143.8,
+      "pnl": -2.88,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (144.48), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 144.48
+      }
     }
   ],
   "equity_history": [
@@ -975,6 +987,11 @@
       "date": "2026-09-09T21:57:29.153115+00:00",
       "equity": 10051.15,
       "cash": 4943.02
+    },
+    {
+      "date": "2026-09-10T14:41:48.115133+00:00",
+      "equity": 10044.94,
+      "cash": 5265.72
     }
   ]
 }

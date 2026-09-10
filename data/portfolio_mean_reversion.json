@@ -94,8 +94,8 @@
     "ABBV": {
       "qty": 3,
       "avg_price": 252.2899932861328,
-      "stop_price": 241.04447773524694,
-      "peak_price": 254.58999633789062,
+      "stop_price": 241.34912490844727,
+      "peak_price": 255.0,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -110,8 +110,8 @@
     "WST": {
       "qty": 1,
       "avg_price": 344.0799865722656,
-      "stop_price": 326.36570412772045,
-      "peak_price": 344.0799865722656,
+      "stop_price": 326.50982666015625,
+      "peak_price": 344.25,
       "sector": "Health Care",
       "partial_taken": false
     }
@@ -1088,6 +1088,11 @@
     {
       "date": "2026-09-10T19:57:29.681222+00:00",
       "equity": 9723.6,
+      "cash": 1944.13
+    },
+    {
+      "date": "2026-09-10T21:54:37.447004+00:00",
+      "equity": 9730.98,
       "cash": 1944.13
     }
   ]

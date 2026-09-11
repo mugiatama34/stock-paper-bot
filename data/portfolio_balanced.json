@@ -1,13 +1,13 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1462.2047138214111,
+  "cash": 1695.7047138214111,
   "positions": {
     "ADI": {
       "qty": 6,
       "avg_price": 371.1700134277344,
-      "stop_price": 356.51270873439256,
-      "peak_price": 374.5199890136719,
+      "stop_price": 359.3737996356009,
+      "peak_price": 378.9150085449219,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -75,14 +75,6 @@
       "sector": "Industrials",
       "partial_taken": false
     },
-    "DLTR": {
-      "qty": 2,
-      "avg_price": 124.04000091552734,
-      "stop_price": 113.27442823137555,
-      "peak_price": 124.04000091552734,
-      "sector": "Consumer Staples",
-      "partial_taken": false
-    },
     "INCY": {
       "qty": 2,
       "avg_price": 124.4000015258789,
@@ -110,16 +102,16 @@
     "SYY": {
       "qty": 8,
       "avg_price": 82.16999816894531,
-      "stop_price": 80.66571698869977,
-      "peak_price": 83.63500213623047,
+      "stop_price": 81.2528566632952,
+      "peak_price": 84.31999969482422,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "EBAY": {
       "qty": 4,
       "avg_price": 103.62000274658203,
-      "stop_price": 99.06032831703922,
-      "peak_price": 105.62000274658203,
+      "stop_price": 100.43461224386678,
+      "peak_price": 107.1500015258789,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -134,8 +126,8 @@
     "KEY": {
       "qty": 15,
       "avg_price": 21.725000381469727,
-      "stop_price": 20.97570642267481,
-      "peak_price": 21.729999542236328,
+      "stop_price": 21.006213472932036,
+      "peak_price": 21.774999618530273,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -151,7 +143,7 @@
       "qty": 1,
       "avg_price": 253.5800018310547,
       "stop_price": 244.01210026807894,
-      "peak_price": 253.5800018310547,
+      "peak_price": 254.05499267578125,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -166,8 +158,8 @@
     "VMRK": {
       "qty": 5,
       "avg_price": 65.0199966430664,
-      "stop_price": 63.0807124546596,
-      "peak_price": 65.43499755859375,
+      "stop_price": 63.095711844308035,
+      "peak_price": 65.44999694824219,
       "sector": "Real Estate",
       "partial_taken": false
     }
@@ -1315,6 +1307,24 @@
         "atr14": 0.96,
         "volume_vs_avg20": 0.13
       }
+    },
+    {
+      "date": "2026-09-11T18:49:26.185901+00:00",
+      "symbol": "DLTR",
+      "action": "SELL",
+      "qty": 2,
+      "price": 116.75,
+      "pnl": -14.58,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "Uzun vadeli trend (SMA200=117.49) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=31.46.",
+      "indicators": {
+        "price": 116.75,
+        "sma200": 117.49,
+        "rsi14": 31.46,
+        "atr14": 5.48,
+        "volume_vs_avg20": 0.86
+      }
     }
   ],
   "equity_history": [
@@ -1567,6 +1577,11 @@
       "date": "2026-09-11T14:40:40.373482+00:00",
       "equity": 9666.15,
       "cash": 1462.2
+    },
+    {
+      "date": "2026-09-11T18:49:28.453774+00:00",
+      "equity": 9714.46,
+      "cash": 1695.7
     }
   ]
 }

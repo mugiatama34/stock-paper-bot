@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1566.4787979125977,
+  "cash": 1714.4087753295898,
   "positions": {
     "D": {
       "qty": 8,
@@ -27,14 +27,6 @@
       "sector": "Real Estate",
       "partial_taken": false
     },
-    "JCI": {
-      "qty": 1,
-      "avg_price": 144.61500549316406,
-      "stop_price": 139.21572276524134,
-      "peak_price": 146.3800048828125,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
     "PCAR": {
       "qty": 2,
       "avg_price": 125.33999633789062,
@@ -46,8 +38,8 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 106.40571294512067,
-      "peak_price": 111.02999877929688,
+      "stop_price": 106.66482680184501,
+      "peak_price": 111.83000183105469,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -57,14 +49,6 @@
       "stop_price": 219.69324047714858,
       "peak_price": 232.0,
       "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
-    "TXN": {
-      "qty": 1,
-      "avg_price": 254.8000030517578,
-      "stop_price": 250.65964344569616,
-      "peak_price": 268.4649963378906,
-      "sector": "Information Technology",
       "partial_taken": false
     },
     "IRM": {
@@ -94,8 +78,8 @@
     "ABBV": {
       "qty": 3,
       "avg_price": 252.2899932861328,
-      "stop_price": 243.04752894810267,
-      "peak_price": 256.510009765625,
+      "stop_price": 243.70753261021204,
+      "peak_price": 257.1700134277344,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -110,8 +94,8 @@
     "WST": {
       "qty": 1,
       "avg_price": 344.0799865722656,
-      "stop_price": 328.17569950648715,
-      "peak_price": 345.239990234375,
+      "stop_price": 330.5634035382952,
+      "peak_price": 348.45001220703125,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -121,6 +105,14 @@
       "stop_price": 48.696241166152404,
       "peak_price": 53.95000076293945,
       "sector": "Financials",
+      "partial_taken": false
+    },
+    "ITW": {
+      "qty": 1,
+      "avg_price": 268.9100036621094,
+      "stop_price": 256.2617972237723,
+      "peak_price": 268.9100036621094,
+      "sector": "Industrials",
       "partial_taken": false
     }
   },
@@ -872,6 +864,59 @@
         "rsi14_prev": 29.33,
         "atr14": 2.1
       }
+    },
+    {
+      "date": "2026-09-11T18:49:22.997190+00:00",
+      "symbol": "JCI",
+      "action": "SELL",
+      "qty": 1,
+      "price": 146.73,
+      "pnl": 2.11,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=57.23, fiyat=146.73.",
+      "indicators": {
+        "price": 146.73,
+        "sma200": 134.95,
+        "rsi14": 57.23,
+        "rsi14_prev": 49.19,
+        "atr14": 2.98
+      }
+    },
+    {
+      "date": "2026-09-11T18:49:23.524297+00:00",
+      "symbol": "TXN",
+      "action": "SELL",
+      "qty": 1,
+      "price": 270.11,
+      "pnl": 15.31,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.23, fiyat=270.11.",
+      "indicators": {
+        "price": 270.11,
+        "sma200": 239.64,
+        "rsi14": 55.23,
+        "rsi14_prev": 42.46,
+        "atr14": 7.42
+      }
+    },
+    {
+      "date": "2026-09-11T18:49:25.627921+00:00",
+      "symbol": "ITW",
+      "action": "BUY",
+      "qty": 1,
+      "price": 268.91,
+      "stop_price": 256.26,
+      "sector": "Industrials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 25.72 \u2192 33.01 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=265.29) \u00fczerinde. \u0130zleyen stop: 256.26.",
+      "indicators": {
+        "price": 268.91,
+        "sma200": 265.29,
+        "rsi14": 33.01,
+        "rsi14_prev": 25.72,
+        "atr14": 5.06
+      }
     }
   ],
   "equity_history": [
@@ -1124,6 +1169,11 @@
       "date": "2026-09-11T14:40:38.660158+00:00",
       "equity": 9791.02,
       "cash": 1566.48
+    },
+    {
+      "date": "2026-09-11T18:49:26.139399+00:00",
+      "equity": 9819.35,
+      "cash": 1714.41
     }
   ]
 }

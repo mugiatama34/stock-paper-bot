@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1944.1288032531738,
+  "cash": 1566.4787979125977,
   "positions": {
     "D": {
       "qty": 8,
@@ -30,7 +30,7 @@
     "JCI": {
       "qty": 1,
       "avg_price": 144.61500549316406,
-      "stop_price": 139.1496522086007,
+      "stop_price": 139.21572276524134,
       "peak_price": 146.3800048828125,
       "sector": "Industrials",
       "partial_taken": false
@@ -38,7 +38,7 @@
     "PCAR": {
       "qty": 2,
       "avg_price": 125.33999633789062,
-      "stop_price": 119.1462481362479,
+      "stop_price": 119.38999775477818,
       "peak_price": 125.33999633789062,
       "sector": "Industrials",
       "partial_taken": false
@@ -47,14 +47,14 @@
       "qty": 2,
       "avg_price": 110.62000274658203,
       "stop_price": 106.40571294512067,
-      "peak_price": 111.0199966430664,
+      "peak_price": 111.02999877929688,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "ROST": {
       "qty": 1,
       "avg_price": 231.17999267578125,
-      "stop_price": 217.49925913356697,
+      "stop_price": 219.69324047714858,
       "peak_price": 232.0,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -62,8 +62,8 @@
     "TXN": {
       "qty": 1,
       "avg_price": 254.8000030517578,
-      "stop_price": 245.2392943246024,
-      "peak_price": 262.6000061035156,
+      "stop_price": 250.65964344569616,
+      "peak_price": 268.4649963378906,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -86,7 +86,7 @@
     "ABNB": {
       "qty": 6,
       "avg_price": 169.8699951171875,
-      "stop_price": 157.13267735072546,
+      "stop_price": 157.4603543962751,
       "peak_price": 169.8699951171875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -94,25 +94,33 @@
     "ABBV": {
       "qty": 3,
       "avg_price": 252.2899932861328,
-      "stop_price": 241.34912490844727,
-      "peak_price": 255.0,
+      "stop_price": 243.04752894810267,
+      "peak_price": 256.510009765625,
       "sector": "Health Care",
       "partial_taken": false
     },
     "PKG": {
       "qty": 2,
       "avg_price": 232.49000549316406,
-      "stop_price": 216.8676812308175,
-      "peak_price": 232.49000549316406,
+      "stop_price": 219.38607461111886,
+      "peak_price": 234.89500427246094,
       "sector": "Materials",
       "partial_taken": false
     },
     "WST": {
       "qty": 1,
       "avg_price": 344.0799865722656,
-      "stop_price": 326.50982666015625,
-      "peak_price": 344.25,
+      "stop_price": 328.17569950648715,
+      "peak_price": 345.239990234375,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "PYPL": {
+      "qty": 7,
+      "avg_price": 53.95000076293945,
+      "stop_price": 48.696241166152404,
+      "peak_price": 53.95000076293945,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -847,6 +855,23 @@
         "rsi14_prev": 28.35,
         "atr14": 7.09
       }
+    },
+    {
+      "date": "2026-09-11T14:40:38.320258+00:00",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "qty": 7,
+      "price": 53.95,
+      "stop_price": 48.7,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 29.33 \u2192 32.49 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=50.6) \u00fczerinde. \u0130zleyen stop: 48.70.",
+      "indicators": {
+        "price": 53.95,
+        "sma200": 50.6,
+        "rsi14": 32.49,
+        "rsi14_prev": 29.33,
+        "atr14": 2.1
+      }
     }
   ],
   "equity_history": [
@@ -1094,6 +1119,11 @@
       "date": "2026-09-10T21:54:37.447004+00:00",
       "equity": 9730.98,
       "cash": 1944.13
+    },
+    {
+      "date": "2026-09-11T14:40:38.660158+00:00",
+      "equity": 9791.02,
+      "cash": 1566.48
     }
   ]
 }

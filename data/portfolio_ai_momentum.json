@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 6753.53994178772,
+  "cash": 4012.599878311157,
   "positions": {
     "SMCI": {
       "qty": 13,
@@ -22,7 +22,7 @@
     "FANG": {
       "qty": 1,
       "avg_price": 203.16000366210938,
-      "stop_price": 194.71856689453125,
+      "stop_price": 194.76285443987166,
       "peak_price": 205.5800018310547,
       "sector": "Energy",
       "partial_taken": false
@@ -30,15 +30,15 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 118.72214181082589,
-      "peak_price": 144.26499938964844,
+      "stop_price": 123.48001534598214,
+      "peak_price": 147.19000244140625,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 118.56713540213448,
+      "stop_price": 118.59427860804966,
       "peak_price": 137.7899932861328,
       "sector": "Information Technology",
       "partial_taken": false
@@ -46,9 +46,25 @@
     "CRM": {
       "qty": 6,
       "avg_price": 242.60499572753906,
-      "stop_price": 219.86999729701452,
-      "peak_price": 243.4199981689453,
+      "stop_price": 223.90254429408483,
+      "peak_price": 247.625,
       "sector": "Unknown",
+      "partial_taken": false
+    },
+    "TSLA": {
+      "qty": 4,
+      "avg_price": 364.32000732421875,
+      "stop_price": 335.7757306780134,
+      "peak_price": 364.32000732421875,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "TMUS": {
+      "qty": 7,
+      "avg_price": 183.3800048828125,
+      "stop_price": 174.78836449892302,
+      "peak_price": 183.3800048828125,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -805,6 +821,42 @@
       "indicators": {
         "stop_price": 31.72
       }
+    },
+    {
+      "date": "2026-09-11T14:40:36.097758+00:00",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "qty": 4,
+      "price": 364.32,
+      "stop_price": 335.78,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (355.07) ve SMA50 (354.48) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %8.9 g\u00fc\u00e7l\u00fc, RSI=50.57 (<75, tepe de\u011fil). \u0130zleyen stop: 335.78 (2xATR).",
+      "indicators": {
+        "price": 364.32,
+        "sma20": 355.07,
+        "sma50": 354.48,
+        "rsi14": 50.57,
+        "atr14": 14.27,
+        "relative_strength_20d": 0.0886
+      }
+    },
+    {
+      "date": "2026-09-11T14:40:36.615008+00:00",
+      "symbol": "TMUS",
+      "action": "BUY",
+      "qty": 7,
+      "price": 183.38,
+      "stop_price": 174.79,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (181.18) ve SMA50 (181.03) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %2.3 g\u00fc\u00e7l\u00fc, RSI=51.94 (<75, tepe de\u011fil). \u0130zleyen stop: 174.79 (2xATR).",
+      "indicators": {
+        "price": 183.38,
+        "sma20": 181.18,
+        "sma50": 181.03,
+        "rsi14": 51.94,
+        "atr14": 4.3,
+        "relative_strength_20d": 0.0227
+      }
     }
   ],
   "equity_history": [
@@ -1052,6 +1104,11 @@
       "date": "2026-09-10T21:54:36.022602+00:00",
       "equity": 9976.32,
       "cash": 6753.54
+    },
+    {
+      "date": "2026-09-11T14:40:37.018891+00:00",
+      "equity": 10086.22,
+      "cash": 4012.6
     }
   ]
 }

@@ -110,8 +110,8 @@
     "EBAY": {
       "qty": 4,
       "avg_price": 103.62000274658203,
-      "stop_price": 100.85318480594826,
-      "peak_price": 107.62000274658203,
+      "stop_price": 100.95746881996891,
+      "peak_price": 107.75,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -126,8 +126,8 @@
     "KEY": {
       "qty": 15,
       "avg_price": 21.725000381469727,
-      "stop_price": 21.056214617341215,
-      "peak_price": 21.825000762939453,
+      "stop_price": 21.071214006989653,
+      "peak_price": 21.84000015258789,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -166,8 +166,8 @@
     "KHC": {
       "qty": 17,
       "avg_price": 24.514999389648438,
-      "stop_price": 23.2607086122456,
-      "peak_price": 24.514999389648438,
+      "stop_price": 23.34570960406689,
+      "peak_price": 24.600000381469727,
       "sector": "Consumer Staples",
       "partial_taken": false
     }
@@ -1611,6 +1611,11 @@
     {
       "date": "2026-09-11T19:56:26.497905+00:00",
       "equity": 9697.73,
+      "cash": 1278.95
+    },
+    {
+      "date": "2026-09-11T21:55:57.532768+00:00",
+      "equity": 9702.57,
       "cash": 1278.95
     }
   ]

@@ -1,16 +1,8 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1714.4087753295898,
+  "cash": 2229.2887802124023,
   "positions": {
-    "D": {
-      "qty": 8,
-      "avg_price": 66.95999908447266,
-      "stop_price": 64.75642422267369,
-      "peak_price": 66.95999908447266,
-      "sector": "Utilities",
-      "partial_taken": false
-    },
     "CFG": {
       "qty": 5,
       "avg_price": 70.49500274658203,
@@ -38,8 +30,8 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 106.76714406694684,
-      "peak_price": 111.93499755859375,
+      "stop_price": 106.91839463370187,
+      "peak_price": 112.12999725341797,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -70,8 +62,8 @@
     "ABNB": {
       "qty": 6,
       "avg_price": 169.8699951171875,
-      "stop_price": 157.64393179757255,
-      "peak_price": 170.125,
+      "stop_price": 157.7089342389788,
+      "peak_price": 170.19000244140625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -917,6 +909,20 @@
         "rsi14_prev": 25.72,
         "atr14": 5.06
       }
+    },
+    {
+      "date": "2026-09-11T21:55:54.061269+00:00",
+      "symbol": "D",
+      "action": "SELL",
+      "qty": 8,
+      "price": 64.36,
+      "pnl": -20.8,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "\u0130zleyen stop tetiklendi (64.76), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 64.76
+      }
     }
   ],
   "equity_history": [
@@ -1179,6 +1185,11 @@
       "date": "2026-09-11T19:56:24.710368+00:00",
       "equity": 9815.79,
       "cash": 1714.41
+    },
+    {
+      "date": "2026-09-11T21:55:55.994952+00:00",
+      "equity": 9818.96,
+      "cash": 2229.29
     }
   ]
 }

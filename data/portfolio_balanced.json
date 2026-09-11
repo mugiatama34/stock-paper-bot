@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1695.7047138214111,
+  "cash": 1278.9497241973877,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -110,8 +110,8 @@
     "EBAY": {
       "qty": 4,
       "avg_price": 103.62000274658203,
-      "stop_price": 100.43461224386678,
-      "peak_price": 107.1500015258789,
+      "stop_price": 100.85318480594826,
+      "peak_price": 107.62000274658203,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -126,8 +126,8 @@
     "KEY": {
       "qty": 15,
       "avg_price": 21.725000381469727,
-      "stop_price": 21.006213472932036,
-      "peak_price": 21.774999618530273,
+      "stop_price": 21.056214617341215,
+      "peak_price": 21.825000762939453,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -158,9 +158,17 @@
     "VMRK": {
       "qty": 5,
       "avg_price": 65.0199966430664,
-      "stop_price": 63.095711844308035,
-      "peak_price": 65.44999694824219,
+      "stop_price": 63.225716727120535,
+      "peak_price": 65.58000183105469,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "KHC": {
+      "qty": 17,
+      "avg_price": 24.514999389648438,
+      "stop_price": 23.2607086122456,
+      "peak_price": 24.514999389648438,
+      "sector": "Consumer Staples",
       "partial_taken": false
     }
   },
@@ -1325,6 +1333,23 @@
         "atr14": 5.48,
         "volume_vs_avg20": 0.86
       }
+    },
+    {
+      "date": "2026-09-11T19:56:26.092887+00:00",
+      "symbol": "KHC",
+      "action": "BUY",
+      "qty": 17,
+      "price": 24.51,
+      "stop_price": 23.26,
+      "sector": "Consumer Staples",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=23.24), RSI14=42.0 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.73x \u00fczerinde. \u0130zleyen stop: 23.26.",
+      "indicators": {
+        "price": 24.51,
+        "sma200": 23.24,
+        "rsi14": 42.0,
+        "atr14": 0.63,
+        "volume_vs_avg20": 1.73
+      }
     }
   ],
   "equity_history": [
@@ -1582,6 +1607,11 @@
       "date": "2026-09-11T18:49:28.453774+00:00",
       "equity": 9714.46,
       "cash": 1695.7
+    },
+    {
+      "date": "2026-09-11T19:56:26.497905+00:00",
+      "equity": 9697.73,
+      "cash": 1278.95
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 2566.599878311157,
+  "cash": 1961.0198764801025,
   "positions": {
     "SMCI": {
       "qty": 13,
@@ -46,8 +46,8 @@
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 335.9257245744978,
-      "peak_price": 364.4700012207031,
+      "stop_price": 337.2607160295759,
+      "peak_price": 365.80499267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -70,9 +70,17 @@
     "CEG": {
       "qty": 3,
       "avg_price": 284.6300048828125,
-      "stop_price": 266.10072108677457,
-      "peak_price": 284.6300048828125,
+      "stop_price": 266.55785696847096,
+      "peak_price": 285.0899963378906,
       "sector": "Utilities",
+      "partial_taken": false
+    },
+    "CTAS": {
+      "qty": 3,
+      "avg_price": 201.86000061035156,
+      "stop_price": 195.35857282366072,
+      "peak_price": 201.86000061035156,
+      "sector": "Industrials",
       "partial_taken": false
     }
   },
@@ -915,6 +923,24 @@
         "atr14": 9.26,
         "relative_strength_20d": 0.0396
       }
+    },
+    {
+      "date": "2026-09-11T19:56:22.959645+00:00",
+      "symbol": "CTAS",
+      "action": "BUY",
+      "qty": 3,
+      "price": 201.86,
+      "stop_price": 195.36,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (201.81) ve SMA50 (199.28) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %2.6 g\u00fc\u00e7l\u00fc, RSI=45.99 (<75, tepe de\u011fil). \u0130zleyen stop: 195.36 (2xATR).",
+      "indicators": {
+        "price": 201.86,
+        "sma20": 201.81,
+        "sma50": 199.28,
+        "rsi14": 45.99,
+        "atr14": 3.25,
+        "relative_strength_20d": 0.0256
+      }
     }
   ],
   "equity_history": [
@@ -1172,6 +1198,11 @@
       "date": "2026-09-11T18:49:22.976907+00:00",
       "equity": 10069.62,
       "cash": 2566.6
+    },
+    {
+      "date": "2026-09-11T19:56:23.365922+00:00",
+      "equity": 10053.34,
+      "cash": 1961.02
     }
   ]
 }

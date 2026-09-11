@@ -38,8 +38,8 @@
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
-      "stop_price": 106.66482680184501,
-      "peak_price": 111.83000183105469,
+      "stop_price": 106.76714406694684,
+      "peak_price": 111.93499755859375,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -70,8 +70,8 @@
     "ABNB": {
       "qty": 6,
       "avg_price": 169.8699951171875,
-      "stop_price": 157.4603543962751,
-      "peak_price": 169.8699951171875,
+      "stop_price": 157.64393179757255,
+      "peak_price": 170.125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -86,8 +86,8 @@
     "PKG": {
       "qty": 2,
       "avg_price": 232.49000549316406,
-      "stop_price": 219.38607461111886,
-      "peak_price": 234.89500427246094,
+      "stop_price": 219.58607155936105,
+      "peak_price": 235.09500122070312,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -1173,6 +1173,11 @@
     {
       "date": "2026-09-11T18:49:26.139399+00:00",
       "equity": 9819.35,
+      "cash": 1714.41
+    },
+    {
+      "date": "2026-09-11T19:56:24.710368+00:00",
+      "equity": 9815.79,
       "cash": 1714.41
     }
   ]

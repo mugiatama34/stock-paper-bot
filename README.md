@@ -112,6 +112,23 @@ fırsat maliyeti ölçülemedi. Ortak sebep: reddedilen alım sinyalleri ve naki
 zaman serisi hiçbir yerde loglanmıyor. Bu konulara dönülecekse önce bu kayıtların
 eklenmesi gerekir.
 
+**Güncelleme — 2026-09-13:** Yukarıdaki "nakit zaman serisi loglanmıyor" kısmı
+artık geçerli değil. Backtest tarafında `reports/backtest_capital_*.json`
+(`capital_curve`: gün bazında equity/cash/invested) ve canlı tarafında
+`ledger.record_equity_snapshot` ile `data/portfolio_*.json` içindeki
+`equity_history` (her çalıştırmada equity+cash) bu boşluğu kapattı. Bunun
+sayesinde **atıl nakdin getiriye etkisi artık ölçülebilir**.
+
+Diğer ikisi hâlâ ölçülemiyor, sebep değişti: reddedilen alım sinyalleri şu an
+yalnızca backtest'te ve yalnızca BUY sinyali üretildikten sonraki redler için
+loglanıyor (`reports/backtest_rejected_*.json`: `yetersiz_nakit`,
+`sektor_limiti`, `rejim_filtresi`, `diger`). `evaluate()`'in `None` döndüğü
+(giriş şartı hiç tutmayan) durumlar ve canlı bottaki eşdeğer red noktaları
+(`trade_bot.py`'deki `print("[skip] ...")` satırları) hiçbir dosyaya
+yazılmıyor. Bu yüzden **rejim filtresinin net etkisi** ve **tarama
+sıklığının fırsat maliyeti** için gereken karşı-olgusal sinyal kaydı hâlâ
+eksik; bu ikisi ölçülemeyen olarak kalıyor.
+
 ## Öğrenme günlüğü
 
 ### 2026-08-30

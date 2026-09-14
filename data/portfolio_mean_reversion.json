@@ -62,23 +62,23 @@
     "ABNB": {
       "qty": 6,
       "avg_price": 169.8699951171875,
-      "stop_price": 157.7089342389788,
-      "peak_price": 170.19000244140625,
+      "stop_price": 158.41499546595983,
+      "peak_price": 170.64999389648438,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "ABBV": {
       "qty": 3,
       "avg_price": 252.2899932861328,
-      "stop_price": 243.70753261021204,
-      "peak_price": 257.1700134277344,
+      "stop_price": 247.67181069510323,
+      "peak_price": 261.7699890136719,
       "sector": "Health Care",
       "partial_taken": false
     },
     "PKG": {
       "qty": 2,
       "avg_price": 232.49000549316406,
-      "stop_price": 219.58607155936105,
+      "stop_price": 220.36643055507116,
       "peak_price": 235.09500122070312,
       "sector": "Materials",
       "partial_taken": false
@@ -86,8 +86,8 @@
     "WST": {
       "qty": 1,
       "avg_price": 344.0799865722656,
-      "stop_price": 330.5634035382952,
-      "peak_price": 348.45001220703125,
+      "stop_price": 336.2750156947545,
+      "peak_price": 355.20001220703125,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -95,7 +95,7 @@
       "qty": 7,
       "avg_price": 53.95000076293945,
       "stop_price": 48.696241166152404,
-      "peak_price": 53.95000076293945,
+      "peak_price": 54.029998779296875,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -103,7 +103,7 @@
       "qty": 1,
       "avg_price": 268.9100036621094,
       "stop_price": 256.2617972237723,
-      "peak_price": 268.9100036621094,
+      "peak_price": 269.0400085449219,
       "sector": "Industrials",
       "partial_taken": false
     }
@@ -1189,6 +1189,11 @@
     {
       "date": "2026-09-11T21:55:55.994952+00:00",
       "equity": 9818.96,
+      "cash": 2229.29
+    },
+    {
+      "date": "2026-09-14T21:01:43.763177+00:00",
+      "equity": 9809.92,
       "cash": 2229.29
     }
   ]

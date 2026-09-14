@@ -1,28 +1,20 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1961.0198764801025,
+  "cash": 1734.849905014038,
   "positions": {
-    "SMCI": {
-      "qty": 13,
-      "avg_price": 35.165000915527344,
-      "stop_price": 36.81787109375,
-      "partial_taken": false,
-      "peak_price": 40.94499969482422,
-      "sector": "Information Technology"
-    },
     "FANG": {
       "qty": 1,
       "avg_price": 203.16000366210938,
-      "stop_price": 194.76285443987166,
-      "peak_price": 205.5800018310547,
+      "stop_price": 194.93285478864397,
+      "peak_price": 205.72000122070312,
       "sector": "Energy",
       "partial_taken": false
     },
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 123.48001534598214,
+      "stop_price": 124.218015398298,
       "peak_price": 147.19000244140625,
       "sector": "Health Care",
       "partial_taken": false
@@ -30,7 +22,7 @@
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 118.59427860804966,
+      "stop_price": 118.86142185756138,
       "peak_price": 137.7899932861328,
       "sector": "Information Technology",
       "partial_taken": false
@@ -38,15 +30,15 @@
     "CRM": {
       "qty": 6,
       "avg_price": 242.60499572753906,
-      "stop_price": 224.85754612513952,
-      "peak_price": 248.5800018310547,
+      "stop_price": 234.61285182407923,
+      "peak_price": 259.42999267578125,
       "sector": "Unknown",
       "partial_taken": false
     },
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 337.2607160295759,
+      "stop_price": 337.87357003348217,
       "peak_price": 365.80499267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -54,7 +46,7 @@
     "TMUS": {
       "qty": 7,
       "avg_price": 183.3800048828125,
-      "stop_price": 174.78836449892302,
+      "stop_price": 174.79629548717875,
       "peak_price": 183.3800048828125,
       "sector": "Communication Services",
       "partial_taken": false
@@ -67,19 +59,35 @@
       "sector": "Health Care",
       "partial_taken": false
     },
-    "CEG": {
-      "qty": 3,
-      "avg_price": 284.6300048828125,
-      "stop_price": 266.55785696847096,
-      "peak_price": 285.0899963378906,
-      "sector": "Utilities",
-      "partial_taken": false
-    },
     "CTAS": {
       "qty": 3,
       "avg_price": 201.86000061035156,
       "stop_price": 195.35857282366072,
       "peak_price": 201.86000061035156,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "TEAM": {
+      "qty": 3,
+      "avg_price": 192.77000427246094,
+      "stop_price": 172.72386169433594,
+      "peak_price": 192.77000427246094,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "NFLX": {
+      "qty": 8,
+      "avg_price": 80.31999969482422,
+      "stop_price": 75.83428628104073,
+      "peak_price": 80.31999969482422,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "ADP": {
+      "qty": 1,
+      "avg_price": 276.6300048828125,
+      "stop_price": 266.1590639298741,
+      "peak_price": 276.6300048828125,
       "sector": "Industrials",
       "partial_taken": false
     }
@@ -941,6 +949,88 @@
         "atr14": 3.25,
         "relative_strength_20d": 0.0256
       }
+    },
+    {
+      "date": "2026-09-14T21:01:39.149544+00:00",
+      "symbol": "SMCI",
+      "action": "SELL",
+      "qty": 13,
+      "price": 36.74,
+      "pnl": 20.48,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (36.82), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 36.82
+      }
+    },
+    {
+      "date": "2026-09-14T21:01:39.709800+00:00",
+      "symbol": "CEG",
+      "action": "SELL",
+      "qty": 3,
+      "price": 264.57,
+      "pnl": -60.18,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "\u0130zleyen stop tetiklendi (266.56), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 266.56
+      }
+    },
+    {
+      "date": "2026-09-14T21:01:40.527289+00:00",
+      "symbol": "TEAM",
+      "action": "BUY",
+      "qty": 3,
+      "price": 192.77,
+      "stop_price": 172.72,
+      "sector": "Information Technology",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (179.14) ve SMA50 (135.98) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %20.8 g\u00fc\u00e7l\u00fc, RSI=62.9 (<75, tepe de\u011fil). \u0130zleyen stop: 172.72 (2xATR).",
+      "indicators": {
+        "price": 192.77,
+        "sma20": 179.14,
+        "sma50": 135.98,
+        "rsi14": 62.9,
+        "atr14": 10.02,
+        "relative_strength_20d": 0.2082
+      }
+    },
+    {
+      "date": "2026-09-14T21:01:41.012787+00:00",
+      "symbol": "NFLX",
+      "action": "BUY",
+      "qty": 8,
+      "price": 80.32,
+      "stop_price": 75.83,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (79.55) ve SMA50 (75.75) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %4.8 g\u00fc\u00e7l\u00fc, RSI=50.76 (<75, tepe de\u011fil). \u0130zleyen stop: 75.83 (2xATR).",
+      "indicators": {
+        "price": 80.32,
+        "sma20": 79.55,
+        "sma50": 75.75,
+        "rsi14": 50.76,
+        "atr14": 2.24,
+        "relative_strength_20d": 0.0475
+      }
+    },
+    {
+      "date": "2026-09-14T21:01:41.540631+00:00",
+      "symbol": "ADP",
+      "action": "BUY",
+      "qty": 1,
+      "price": 276.63,
+      "stop_price": 266.16,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (275.87) ve SMA50 (264.27) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %4.0 g\u00fc\u00e7l\u00fc, RSI=45.19 (<75, tepe de\u011fil). \u0130zleyen stop: 266.16 (2xATR).",
+      "indicators": {
+        "price": 276.63,
+        "sma20": 275.87,
+        "sma50": 264.27,
+        "rsi14": 45.19,
+        "atr14": 5.24,
+        "relative_strength_20d": 0.0398
+      }
     }
   ],
   "equity_history": [
@@ -1208,6 +1298,11 @@
       "date": "2026-09-11T21:55:54.056990+00:00",
       "equity": 10050.85,
       "cash": 1961.02
+    },
+    {
+      "date": "2026-09-14T21:01:42.102069+00:00",
+      "equity": 10023.87,
+      "cash": 1734.85
     }
   ]
 }

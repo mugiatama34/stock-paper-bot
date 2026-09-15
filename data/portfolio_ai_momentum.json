@@ -1,20 +1,20 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1734.849905014038,
+  "cash": 3594.9899044036865,
   "positions": {
     "FANG": {
       "qty": 1,
       "avg_price": 203.16000366210938,
-      "stop_price": 194.93285478864397,
-      "peak_price": 205.72000122070312,
+      "stop_price": 200.52943420410156,
+      "peak_price": 211.52499389648438,
       "sector": "Energy",
       "partial_taken": false
     },
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 124.218015398298,
+      "stop_price": 126.35087367466518,
       "peak_price": 147.19000244140625,
       "sector": "Health Care",
       "partial_taken": false
@@ -43,28 +43,12 @@
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
-    "TMUS": {
-      "qty": 7,
-      "avg_price": 183.3800048828125,
-      "stop_price": 174.79629548717875,
-      "peak_price": 183.3800048828125,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
       "stop_price": 207.77249581473214,
       "peak_price": 219.18499755859375,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "CTAS": {
-      "qty": 3,
-      "avg_price": 201.86000061035156,
-      "stop_price": 195.35857282366072,
-      "peak_price": 201.86000061035156,
-      "sector": "Industrials",
       "partial_taken": false
     },
     "TEAM": {
@@ -78,7 +62,7 @@
     "NFLX": {
       "qty": 8,
       "avg_price": 80.31999969482422,
-      "stop_price": 75.83428628104073,
+      "stop_price": 75.86142948695591,
       "peak_price": 80.31999969482422,
       "sector": "Communication Services",
       "partial_taken": false
@@ -1031,6 +1015,44 @@
         "atr14": 5.24,
         "relative_strength_20d": 0.0398
       }
+    },
+    {
+      "date": "2026-09-15T20:22:55.176899+00:00",
+      "symbol": "TMUS",
+      "action": "SELL",
+      "qty": 7,
+      "price": 180.47,
+      "pnl": -20.37,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "Trend k\u0131r\u0131ld\u0131: fiyat (180.47) SMA50 (181.13) alt\u0131na indi.",
+      "indicators": {
+        "price": 180.47,
+        "sma20": 181.27,
+        "sma50": 181.13,
+        "rsi14": 49.87,
+        "atr14": 4.48,
+        "relative_strength_20d": 0.0274
+      }
+    },
+    {
+      "date": "2026-09-15T20:22:55.666086+00:00",
+      "symbol": "CTAS",
+      "action": "SELL",
+      "qty": 3,
+      "price": 198.95,
+      "pnl": -8.73,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "Trend k\u0131r\u0131ld\u0131: fiyat (198.95) SMA50 (200.09) alt\u0131na indi.",
+      "indicators": {
+        "price": 198.95,
+        "sma20": 201.92,
+        "sma50": 200.09,
+        "rsi14": 35.48,
+        "atr14": 3.26,
+        "relative_strength_20d": 0.0254
+      }
     }
   ],
   "equity_history": [
@@ -1308,6 +1330,11 @@
       "date": "2026-09-14T22:45:02.278378+00:00",
       "equity": 10023.87,
       "cash": 1734.85
+    },
+    {
+      "date": "2026-09-15T20:22:56.319524+00:00",
+      "equity": 9906.51,
+      "cash": 3594.99
     }
   ]
 }

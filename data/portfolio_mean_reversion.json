@@ -1,30 +1,14 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1036.4888000488281,
+  "cash": 1289.1687927246094,
   "positions": {
-    "CFG": {
-      "qty": 5,
-      "avg_price": 70.49500274658203,
-      "stop_price": 67.76303264072963,
-      "peak_price": 71.08999633789062,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "HST": {
       "qty": 14,
       "avg_price": 22.485000610351562,
       "stop_price": 21.558214119502477,
       "peak_price": 22.485000610351562,
       "sector": "Real Estate",
-      "partial_taken": false
-    },
-    "PCAR": {
-      "qty": 2,
-      "avg_price": 125.33999633789062,
-      "stop_price": 119.39981923784528,
-      "peak_price": 125.33999633789062,
-      "sector": "Industrials",
       "partial_taken": false
     },
     "CSCO": {
@@ -38,7 +22,7 @@
     "ROST": {
       "qty": 1,
       "avg_price": 231.17999267578125,
-      "stop_price": 219.69324047714858,
+      "stop_price": 220.04345276004736,
       "peak_price": 232.0,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -70,7 +54,7 @@
     "ABBV": {
       "qty": 3,
       "avg_price": 252.2899932861328,
-      "stop_price": 248.3837836129325,
+      "stop_price": 248.82128034319197,
       "peak_price": 263.0400085449219,
       "sector": "Health Care",
       "partial_taken": false
@@ -102,8 +86,8 @@
     "LH": {
       "qty": 2,
       "avg_price": 323.9700012207031,
-      "stop_price": 302.57589011852815,
-      "peak_price": 323.9700012207031,
+      "stop_price": 303.12649363854615,
+      "peak_price": 324.510009765625,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -118,17 +102,25 @@
     "TGT": {
       "qty": 2,
       "avg_price": 154.39999389648438,
-      "stop_price": 144.89730780465263,
-      "peak_price": 154.39999389648438,
+      "stop_price": 145.31481007167272,
+      "peak_price": 154.67999267578125,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "MDLZ": {
       "qty": 5,
       "avg_price": 62.099998474121094,
-      "stop_price": 59.21964045933315,
-      "peak_price": 62.099998474121094,
+      "stop_price": 59.405535970415386,
+      "peak_price": 62.36000061035156,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "JKHY": {
+      "qty": 2,
+      "avg_price": 158.97999572753906,
+      "stop_price": 146.39386799975256,
+      "peak_price": 158.97999572753906,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -1033,6 +1025,51 @@
         "rsi14_prev": 31.98,
         "atr14": 1.15
       }
+    },
+    {
+      "date": "2026-09-16T20:21:11.777011+00:00",
+      "symbol": "CFG",
+      "action": "SELL",
+      "qty": 5,
+      "price": 66.84,
+      "pnl": -18.28,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (67.76), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 67.76
+      }
+    },
+    {
+      "date": "2026-09-16T20:21:12.185041+00:00",
+      "symbol": "PCAR",
+      "action": "SELL",
+      "qty": 2,
+      "price": 118.22,
+      "pnl": -14.24,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "\u0130zleyen stop tetiklendi (119.40), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 119.4
+      }
+    },
+    {
+      "date": "2026-09-16T20:21:13.578612+00:00",
+      "symbol": "JKHY",
+      "action": "BUY",
+      "qty": 2,
+      "price": 158.98,
+      "stop_price": 146.39,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 22.88 \u2192 33.43 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=158.37) \u00fczerinde. \u0130zleyen stop: 146.39.",
+      "indicators": {
+        "price": 158.98,
+        "sma200": 158.37,
+        "rsi14": 33.43,
+        "rsi14_prev": 22.88,
+        "atr14": 5.03
+      }
     }
   ],
   "equity_history": [
@@ -1320,6 +1357,11 @@
       "date": "2026-09-15T22:27:00.568359+00:00",
       "equity": 9783.84,
       "cash": 1036.49
+    },
+    {
+      "date": "2026-09-16T20:21:13.986990+00:00",
+      "equity": 9740.24,
+      "cash": 1289.17
     }
   ]
 }

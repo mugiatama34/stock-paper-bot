@@ -1,20 +1,20 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 3789.5298976898193,
+  "cash": 4392.009878158569,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 127.3651602608817,
-      "peak_price": 147.19000244140625,
+      "stop_price": 137.49945286342077,
+      "peak_price": 158.07000732421875,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 118.86142185756138,
+      "stop_price": 119.85142299107143,
       "peak_price": 137.7899932861328,
       "sector": "Information Technology",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "CRM": {
       "qty": 6,
       "avg_price": 242.60499572753906,
-      "stop_price": 234.61285182407923,
+      "stop_price": 240.15857151576452,
       "peak_price": 259.42999267578125,
       "sector": "Unknown",
       "partial_taken": false
@@ -31,7 +31,7 @@
       "qty": 4,
       "avg_price": 364.32000732421875,
       "stop_price": 337.87357003348217,
-      "peak_price": 365.80499267578125,
+      "peak_price": 366.20001220703125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -46,23 +46,15 @@
     "TEAM": {
       "qty": 3,
       "avg_price": 192.77000427246094,
-      "stop_price": 173.15170288085938,
+      "stop_price": 174.2145756312779,
       "peak_price": 192.77000427246094,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "NFLX": {
-      "qty": 8,
-      "avg_price": 80.31999969482422,
-      "stop_price": 75.86142948695591,
-      "peak_price": 80.31999969482422,
-      "sector": "Communication Services",
       "partial_taken": false
     },
     "ADP": {
       "qty": 1,
       "avg_price": 276.6300048828125,
-      "stop_price": 266.1590639298741,
+      "stop_price": 266.213994269004,
       "peak_price": 276.6300048828125,
       "sector": "Industrials",
       "partial_taken": false
@@ -1059,6 +1051,20 @@
       "indicators": {
         "stop_price": 200.53
       }
+    },
+    {
+      "date": "2026-09-17T20:29:19.702051+00:00",
+      "symbol": "NFLX",
+      "action": "SELL",
+      "qty": 8,
+      "price": 75.31,
+      "pnl": -40.08,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "\u0130zleyen stop tetiklendi (75.87), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 75.87
+      }
     }
   ],
   "equity_history": [
@@ -1356,6 +1362,11 @@
       "date": "2026-09-16T22:19:41.708463+00:00",
       "equity": 9840.4,
       "cash": 3789.53
+    },
+    {
+      "date": "2026-09-17T20:29:20.538116+00:00",
+      "equity": 9885.08,
+      "cash": 4392.01
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1064.6097297668457,
+  "cash": 1163.4597358703613,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -15,14 +15,14 @@
       "qty": 3,
       "avg_price": 14.725000381469727,
       "stop_price": 14.75440011705671,
-      "peak_price": 14.840100288391113,
+      "peak_price": 14.850000381469727,
       "sector": "Utilities",
       "partial_taken": true
     },
     "AWK": {
       "qty": 1,
       "avg_price": 138.22999572753906,
-      "stop_price": 136.56714521135603,
+      "stop_price": 136.62000165666853,
       "peak_price": 141.6699981689453,
       "sector": "Utilities",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "PAYX": {
       "qty": 3,
       "avg_price": 117.0,
-      "stop_price": 113.23428780691964,
+      "stop_price": 113.3885737827846,
       "peak_price": 118.51000213623047,
       "sector": "Industrials",
       "partial_taken": false
@@ -55,14 +55,14 @@
       "qty": 2,
       "avg_price": 124.4000015258789,
       "stop_price": 121.09214455740792,
-      "peak_price": 127.4000015258789,
+      "peak_price": 127.62000274658203,
       "sector": "Health Care",
       "partial_taken": false
     },
     "BALL": {
       "qty": 3,
       "avg_price": 61.02000045776367,
-      "stop_price": 59.03870394031421,
+      "stop_price": 59.09162654401819,
       "peak_price": 61.2599983215332,
       "sector": "Materials",
       "partial_taken": false
@@ -76,12 +76,12 @@
       "partial_taken": false
     },
     "EBAY": {
-      "qty": 4,
+      "qty": 2,
       "avg_price": 103.62000274658203,
-      "stop_price": 102.3016142068139,
-      "peak_price": 109.16999816894531,
+      "stop_price": 105.53428758893695,
+      "peak_price": 112.9000015258789,
       "sector": "Consumer Discretionary",
-      "partial_taken": false
+      "partial_taken": true
     },
     "GM": {
       "qty": 4,
@@ -91,18 +91,10 @@
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
-    "T": {
-      "qty": 9,
-      "avg_price": 25.135000228881836,
-      "stop_price": 25.637141363961355,
-      "peak_price": 26.719999313354492,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
     "ALL": {
       "qty": 1,
       "avg_price": 253.5800018310547,
-      "stop_price": 248.64444025686117,
+      "stop_price": 248.8504196220272,
       "peak_price": 258.4800109863281,
       "sector": "Financials",
       "partial_taken": false
@@ -126,7 +118,7 @@
     "AMT": {
       "qty": 2,
       "avg_price": 176.94000244140625,
-      "stop_price": 169.5300053187779,
+      "stop_price": 169.59643336704798,
       "peak_price": 177.7100067138672,
       "sector": "Real Estate",
       "partial_taken": false
@@ -134,8 +126,8 @@
     "ANET": {
       "qty": 1,
       "avg_price": 187.80999755859375,
-      "stop_price": 182.61527797154017,
-      "peak_price": 197.5399932861328,
+      "stop_price": 183.88838413783483,
+      "peak_price": 199.52999877929688,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -150,7 +142,7 @@
     "SLB": {
       "qty": 6,
       "avg_price": 54.20000076293945,
-      "stop_price": 49.7729833142144,
+      "stop_price": 49.91448790426401,
       "peak_price": 54.20000076293945,
       "sector": "Energy",
       "partial_taken": false
@@ -158,7 +150,7 @@
     "AFL": {
       "qty": 5,
       "avg_price": 116.80999755859375,
-      "stop_price": 113.26428767613002,
+      "stop_price": 113.2721437726702,
       "peak_price": 116.80999755859375,
       "sector": "Financials",
       "partial_taken": false
@@ -166,17 +158,25 @@
     "ARE": {
       "qty": 8,
       "avg_price": 53.52000045776367,
-      "stop_price": 50.254429408482146,
-      "peak_price": 53.52000045776367,
+      "stop_price": 52.76714324951172,
+      "peak_price": 56.34000015258789,
       "sector": "Real Estate",
       "partial_taken": false
     },
     "COP": {
       "qty": 2,
       "avg_price": 132.5399932861328,
-      "stop_price": 125.37856837681362,
-      "peak_price": 132.5399932861328,
+      "stop_price": 126.05429295131138,
+      "peak_price": 133.19000244140625,
       "sector": "Energy",
+      "partial_taken": false
+    },
+    "T": {
+      "qty": 14,
+      "avg_price": 25.389999389648438,
+      "stop_price": 24.164284297398158,
+      "peak_price": 25.389999389648438,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -1561,6 +1561,55 @@
         "atr14": 3.58,
         "volume_vs_avg20": 1.38
       }
+    },
+    {
+      "date": "2026-09-17T20:29:25.247541+00:00",
+      "symbol": "EBAY",
+      "action": "SELL",
+      "qty": 2,
+      "price": 112.9,
+      "pnl": 18.56,
+      "partial": true,
+      "sector": "Consumer Discretionary",
+      "reasoning": "RSI a\u015f\u0131r\u0131 al\u0131mda (71.27 > 70): pozisyonun yar\u0131s\u0131 sat\u0131larak k\u00e2r kilitlendi, kalan yar\u0131 izleyen stop ile s\u00fcr\u00fcyor.",
+      "indicators": {
+        "price": 112.9,
+        "sma200": 99.16,
+        "rsi14": 71.27,
+        "atr14": 3.68,
+        "volume_vs_avg20": 1.42
+      }
+    },
+    {
+      "date": "2026-09-17T20:29:25.774972+00:00",
+      "symbol": "T",
+      "action": "SELL",
+      "qty": 9,
+      "price": 25.39,
+      "pnl": 2.29,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "\u0130zleyen stop tetiklendi (25.64), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 25.64
+      }
+    },
+    {
+      "date": "2026-09-17T20:29:27.902857+00:00",
+      "symbol": "T",
+      "action": "BUY",
+      "qty": 14,
+      "price": 25.39,
+      "stop_price": 24.16,
+      "sector": "Communication Services",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=24.74), RSI14=49.6 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.01x \u00fczerinde. \u0130zleyen stop: 24.16.",
+      "indicators": {
+        "price": 25.39,
+        "sma200": 24.74,
+        "rsi14": 49.6,
+        "atr14": 0.61,
+        "volume_vs_avg20": 1.01
+      }
     }
   ],
   "equity_history": [
@@ -1858,6 +1907,11 @@
       "date": "2026-09-16T22:19:44.404332+00:00",
       "equity": 9543.07,
       "cash": 1064.61
+    },
+    {
+      "date": "2026-09-17T20:29:28.372347+00:00",
+      "equity": 9578.42,
+      "cash": 1163.46
     }
   ]
 }

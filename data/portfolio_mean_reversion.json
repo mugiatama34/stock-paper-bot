@@ -70,8 +70,8 @@
     "ITW": {
       "qty": 1,
       "avg_price": 268.9100036621094,
-      "stop_price": 257.1766270228795,
-      "peak_price": 269.0400085449219,
+      "stop_price": 257.8032237461635,
+      "peak_price": 270.0299987792969,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -110,8 +110,8 @@
     "EMR": {
       "qty": 3,
       "avg_price": 147.39999389648438,
-      "stop_price": 138.72927856445312,
-      "peak_price": 147.83999633789062,
+      "stop_price": 140.47571073259627,
+      "peak_price": 149.88999938964844,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -1536,6 +1536,11 @@
     {
       "date": "2026-09-18T14:31:26.136203+00:00",
       "equity": 9708.95,
+      "cash": 817.95
+    },
+    {
+      "date": "2026-09-18T19:52:23.757251+00:00",
+      "equity": 9725.79,
       "cash": 817.95
     }
   ]

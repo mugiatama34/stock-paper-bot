@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2844.0147018432617,
+  "cash": 1113.7496719360352,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -14,8 +14,8 @@
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.757242338997978,
-      "peak_price": 14.850099563598633,
+      "stop_price": 14.762142317635673,
+      "peak_price": 14.854999542236328,
       "sector": "Utilities",
       "partial_taken": true
     },
@@ -129,6 +129,38 @@
       "stop_price": 24.31571388244629,
       "peak_price": 25.520000457763672,
       "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "DAL": {
+      "qty": 8,
+      "avg_price": 79.94000244140625,
+      "stop_price": 75.69034140450614,
+      "peak_price": 79.94000244140625,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "GM": {
+      "qty": 6,
+      "avg_price": 82.5,
+      "stop_price": 77.26889037794717,
+      "peak_price": 82.5,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "GOOG": {
+      "qty": 1,
+      "avg_price": 345.57000732421875,
+      "stop_price": 329.9250339378869,
+      "peak_price": 345.57000732421875,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "NUE": {
+      "qty": 1,
+      "avg_price": 250.1750030517578,
+      "stop_price": 233.60357012067522,
+      "peak_price": 250.1750030517578,
+      "sector": "Materials",
       "partial_taken": false
     }
   },
@@ -1650,6 +1682,74 @@
         "atr14": 4.06,
         "volume_vs_avg20": 0.37
       }
+    },
+    {
+      "date": "2026-09-18T19:52:25.480329+00:00",
+      "symbol": "DAL",
+      "action": "BUY",
+      "qty": 8,
+      "price": 79.94,
+      "stop_price": 75.69,
+      "sector": "Industrials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=74.75), RSI14=49.57 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.1x \u00fczerinde. \u0130zleyen stop: 75.69.",
+      "indicators": {
+        "price": 79.94,
+        "sma200": 74.75,
+        "rsi14": 49.57,
+        "atr14": 2.12,
+        "volume_vs_avg20": 1.1
+      }
+    },
+    {
+      "date": "2026-09-18T19:52:25.851405+00:00",
+      "symbol": "GM",
+      "action": "BUY",
+      "qty": 6,
+      "price": 82.5,
+      "stop_price": 77.27,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=80.18), RSI14=41.94 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.32x \u00fczerinde. \u0130zleyen stop: 77.27.",
+      "indicators": {
+        "price": 82.5,
+        "sma200": 80.18,
+        "rsi14": 41.94,
+        "atr14": 2.62,
+        "volume_vs_avg20": 1.32
+      }
+    },
+    {
+      "date": "2026-09-18T19:52:26.219988+00:00",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "qty": 1,
+      "price": 345.57,
+      "stop_price": 329.93,
+      "sector": "Communication Services",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=335.77), RSI14=52.49 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.17x \u00fczerinde. \u0130zleyen stop: 329.93.",
+      "indicators": {
+        "price": 345.57,
+        "sma200": 335.77,
+        "rsi14": 52.49,
+        "atr14": 7.82,
+        "volume_vs_avg20": 1.17
+      }
+    },
+    {
+      "date": "2026-09-18T19:52:26.551137+00:00",
+      "symbol": "NUE",
+      "action": "BUY",
+      "qty": 1,
+      "price": 250.18,
+      "stop_price": 233.6,
+      "sector": "Materials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=210.05), RSI14=49.73 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.43x \u00fczerinde. \u0130zleyen stop: 233.60.",
+      "indicators": {
+        "price": 250.18,
+        "sma200": 210.05,
+        "rsi14": 49.73,
+        "atr14": 8.29,
+        "volume_vs_avg20": 1.43
+      }
     }
   ],
   "equity_history": [
@@ -1962,6 +2062,11 @@
       "date": "2026-09-18T14:31:31.636231+00:00",
       "equity": 9554.45,
       "cash": 2844.01
+    },
+    {
+      "date": "2026-09-18T19:52:26.896772+00:00",
+      "equity": 9547.81,
+      "cash": 1113.75
     }
   ]
 }

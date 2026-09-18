@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1113.7496719360352,
+  "cash": 659.8296890258789,
   "positions": {
     "ADI": {
       "qty": 6,
@@ -161,6 +161,22 @@
       "stop_price": 233.60357012067522,
       "peak_price": 250.1750030517578,
       "sector": "Materials",
+      "partial_taken": false
+    },
+    "AWK": {
+      "qty": 2,
+      "avg_price": 135.89999389648438,
+      "stop_price": 130.7671399797712,
+      "peak_price": 135.89999389648438,
+      "sector": "Utilities",
+      "partial_taken": false
+    },
+    "DLR": {
+      "qty": 1,
+      "avg_price": 182.1199951171875,
+      "stop_price": 172.64073796380004,
+      "peak_price": 182.1199951171875,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -1750,6 +1766,40 @@
         "atr14": 8.29,
         "volume_vs_avg20": 1.43
       }
+    },
+    {
+      "date": "2026-09-18T21:52:27.408041+00:00",
+      "symbol": "AWK",
+      "action": "BUY",
+      "qty": 2,
+      "price": 135.9,
+      "stop_price": 130.77,
+      "sector": "Utilities",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=130.45), RSI14=40.62 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.79x \u00fczerinde. \u0130zleyen stop: 130.77.",
+      "indicators": {
+        "price": 135.9,
+        "sma200": 130.45,
+        "rsi14": 40.62,
+        "atr14": 2.57,
+        "volume_vs_avg20": 1.79
+      }
+    },
+    {
+      "date": "2026-09-18T21:52:27.983283+00:00",
+      "symbol": "DLR",
+      "action": "BUY",
+      "qty": 1,
+      "price": 182.12,
+      "stop_price": 172.64,
+      "sector": "Real Estate",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=177.63), RSI14=46.91 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 2.09x \u00fczerinde. \u0130zleyen stop: 172.64.",
+      "indicators": {
+        "price": 182.12,
+        "sma200": 177.63,
+        "rsi14": 46.91,
+        "atr14": 4.74,
+        "volume_vs_avg20": 2.09
+      }
     }
   ],
   "equity_history": [
@@ -2067,6 +2117,11 @@
       "date": "2026-09-18T19:52:26.896772+00:00",
       "equity": 9547.81,
       "cash": 1113.75
+    },
+    {
+      "date": "2026-09-18T21:52:28.476623+00:00",
+      "equity": 9551.62,
+      "cash": 659.83
     }
   ]
 }

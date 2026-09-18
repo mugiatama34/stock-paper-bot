@@ -1,12 +1,12 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 4392.009878158569,
+  "cash": 5821.9898891448975,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 137.49945286342077,
+      "stop_price": 137.99229649135046,
       "peak_price": 158.07000732421875,
       "sector": "Health Care",
       "partial_taken": false
@@ -14,17 +14,9 @@
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 119.85142299107143,
-      "peak_price": 137.7899932861328,
+      "stop_price": 127.42215619768416,
+      "peak_price": 145.9199981689453,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "CRM": {
-      "qty": 6,
-      "avg_price": 242.60499572753906,
-      "stop_price": 240.15857151576452,
-      "peak_price": 259.42999267578125,
-      "sector": "Unknown",
       "partial_taken": false
     },
     "TSLA": {
@@ -38,7 +30,7 @@
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
-      "stop_price": 207.77249581473214,
+      "stop_price": 208.04464067731584,
       "peak_price": 219.18499755859375,
       "sector": "Health Care",
       "partial_taken": false
@@ -46,7 +38,7 @@
     "TEAM": {
       "qty": 3,
       "avg_price": 192.77000427246094,
-      "stop_price": 174.2145756312779,
+      "stop_price": 174.9074467250279,
       "peak_price": 192.77000427246094,
       "sector": "Information Technology",
       "partial_taken": false
@@ -1065,6 +1057,20 @@
       "indicators": {
         "stop_price": 75.87
       }
+    },
+    {
+      "date": "2026-09-18T14:31:22.545366+00:00",
+      "symbol": "CRM",
+      "action": "SELL",
+      "qty": 6,
+      "price": 238.33,
+      "pnl": -25.65,
+      "partial": false,
+      "sector": "Unknown",
+      "reasoning": "\u0130zleyen stop tetiklendi (241.38), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 241.38
+      }
     }
   ],
   "equity_history": [
@@ -1372,6 +1378,11 @@
       "date": "2026-09-17T22:27:20.287018+00:00",
       "equity": 9885.08,
       "cash": 4392.01
+    },
+    {
+      "date": "2026-09-18T14:31:23.498345+00:00",
+      "equity": 9893.33,
+      "cash": 5821.99
     }
   ]
 }

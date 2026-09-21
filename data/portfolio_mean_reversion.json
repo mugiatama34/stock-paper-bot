@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 2158.9094066619873,
+  "cash": 2282.1094036102295,
   "positions": {
     "CSCO": {
       "qty": 2,
@@ -99,20 +99,20 @@
       "sector": "Materials",
       "partial_taken": false
     },
-    "WBD": {
-      "qty": 28,
-      "avg_price": 30.799999237060547,
-      "stop_price": 29.47856903076172,
-      "peak_price": 30.799999237060547,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
     "MSI": {
       "qty": 1,
       "avg_price": 461.3599853515625,
       "stop_price": 438.09603552454996,
       "peak_price": 461.3599853515625,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "WBD": {
+      "qty": 24,
+      "avg_price": 30.799999237060547,
+      "stop_price": 29.47856903076172,
+      "peak_price": 30.799999237060547,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -1395,6 +1395,41 @@
         "rsi14_prev": 30.34,
         "atr14": 9.31
       }
+    },
+    {
+      "date": "2026-09-21T22:50:20.931825+00:00",
+      "symbol": "WBD",
+      "action": "SELL",
+      "qty": 28,
+      "price": 30.8,
+      "pnl": 0.0,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=72.75, fiyat=30.8.",
+      "indicators": {
+        "price": 30.8,
+        "sma200": 27.54,
+        "rsi14": 72.75,
+        "rsi14_prev": 28.25,
+        "atr14": 0.53
+      }
+    },
+    {
+      "date": "2026-09-21T22:50:22.961322+00:00",
+      "symbol": "WBD",
+      "action": "BUY",
+      "qty": 24,
+      "price": 30.8,
+      "stop_price": 29.48,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.25 \u2192 72.75 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=27.54) \u00fczerinde. \u0130zleyen stop: 29.48.",
+      "indicators": {
+        "price": 30.8,
+        "sma200": 27.54,
+        "rsi14": 72.75,
+        "rsi14_prev": 28.25,
+        "atr14": 0.53
+      }
     }
   ],
   "equity_history": [
@@ -1727,6 +1762,11 @@
       "date": "2026-09-21T21:12:27.935092+00:00",
       "equity": 9829.74,
       "cash": 2158.91
+    },
+    {
+      "date": "2026-09-21T22:50:23.290670+00:00",
+      "equity": 9829.74,
+      "cash": 2282.11
     }
   ]
 }

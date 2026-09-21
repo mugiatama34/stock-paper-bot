@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1415.0093898773193,
+  "cash": 2158.9094066619873,
   "positions": {
     "CSCO": {
       "qty": 2,
@@ -9,14 +9,6 @@
       "stop_price": 106.91839463370187,
       "peak_price": 112.12999725341797,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "IRM": {
-      "qty": 14,
-      "avg_price": 115.27999877929688,
-      "stop_price": 108.49816095187602,
-      "peak_price": 116.66000366210938,
-      "sector": "Real Estate",
       "partial_taken": false
     },
     "LYV": {
@@ -108,11 +100,19 @@
       "partial_taken": false
     },
     "WBD": {
-      "qty": 14,
-      "avg_price": 30.78499984741211,
-      "stop_price": 29.46356964111328,
-      "peak_price": 30.78499984741211,
+      "qty": 28,
+      "avg_price": 30.799999237060547,
+      "stop_price": 29.47856903076172,
+      "peak_price": 30.799999237060547,
       "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "MSI": {
+      "qty": 1,
+      "avg_price": 461.3599853515625,
+      "stop_price": 438.09603552454996,
+      "peak_price": 461.3599853515625,
+      "sector": "Information Technology",
       "partial_taken": false
     }
   },
@@ -1325,6 +1325,76 @@
         "rsi14_prev": 28.25,
         "atr14": 0.53
       }
+    },
+    {
+      "date": "2026-09-21T21:12:25.269778+00:00",
+      "symbol": "IRM",
+      "action": "SELL",
+      "qty": 14,
+      "price": 116.89,
+      "pnl": 22.54,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.18, fiyat=116.89.",
+      "indicators": {
+        "price": 116.89,
+        "sma200": 109.4,
+        "rsi14": 55.18,
+        "rsi14_prev": 45.3,
+        "atr14": 3.27
+      }
+    },
+    {
+      "date": "2026-09-21T21:12:25.721090+00:00",
+      "symbol": "WBD",
+      "action": "SELL",
+      "qty": 14,
+      "price": 30.8,
+      "pnl": 0.21,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=72.75, fiyat=30.8.",
+      "indicators": {
+        "price": 30.8,
+        "sma200": 27.54,
+        "rsi14": 72.75,
+        "rsi14_prev": 28.25,
+        "atr14": 0.53
+      }
+    },
+    {
+      "date": "2026-09-21T21:12:27.111256+00:00",
+      "symbol": "WBD",
+      "action": "BUY",
+      "qty": 28,
+      "price": 30.8,
+      "stop_price": 29.48,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.25 \u2192 72.75 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=27.54) \u00fczerinde. \u0130zleyen stop: 29.48.",
+      "indicators": {
+        "price": 30.8,
+        "sma200": 27.54,
+        "rsi14": 72.75,
+        "rsi14_prev": 28.25,
+        "atr14": 0.53
+      }
+    },
+    {
+      "date": "2026-09-21T21:12:27.523095+00:00",
+      "symbol": "MSI",
+      "action": "BUY",
+      "qty": 1,
+      "price": 461.36,
+      "stop_price": 438.1,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 30.34 \u2192 33.4 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=424.94) \u00fczerinde. \u0130zleyen stop: 438.10.",
+      "indicators": {
+        "price": 461.36,
+        "sma200": 424.94,
+        "rsi14": 33.4,
+        "rsi14_prev": 30.34,
+        "atr14": 9.31
+      }
     }
   ],
   "equity_history": [
@@ -1652,6 +1722,11 @@
       "date": "2026-09-21T18:55:04.476077+00:00",
       "equity": 9843.02,
       "cash": 1415.01
+    },
+    {
+      "date": "2026-09-21T21:12:27.935092+00:00",
+      "equity": 9829.74,
+      "cash": 2158.91
     }
   ]
 }

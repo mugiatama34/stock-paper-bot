@@ -14,8 +14,8 @@
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 145.45714133126395,
-      "peak_price": 166.05999755859375,
+      "stop_price": 147.8971437726702,
+      "peak_price": 168.5,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -54,8 +54,8 @@
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 29.727855682373047,
-      "peak_price": 30.78499984741211,
+      "stop_price": 29.742855072021484,
+      "peak_price": 30.799999237060547,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -1423,6 +1423,11 @@
     {
       "date": "2026-09-21T18:55:00.534910+00:00",
       "equity": 10084.0,
+      "cash": 4375.09
+    },
+    {
+      "date": "2026-09-21T21:12:25.261042+00:00",
+      "equity": 10077.0,
       "cash": 4375.09
     }
   ]

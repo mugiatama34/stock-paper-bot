@@ -1,45 +1,45 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 5821.9898891448975,
+  "cash": 4375.094896316528,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 137.99229649135046,
-      "peak_price": 158.07000732421875,
+      "stop_price": 152.3344268798828,
+      "peak_price": 174.6999969482422,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 134.45142691476005,
-      "peak_price": 153.9199981689453,
+      "stop_price": 145.45714133126395,
+      "peak_price": 166.05999755859375,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 337.87357003348217,
-      "peak_price": 366.20001220703125,
+      "stop_price": 348.72998482840404,
+      "peak_price": 376.04998779296875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
-      "stop_price": 208.04464067731584,
-      "peak_price": 219.18499755859375,
+      "stop_price": 209.78213500976562,
+      "peak_price": 221.55499267578125,
       "sector": "Health Care",
       "partial_taken": false
     },
     "TEAM": {
       "qty": 3,
       "avg_price": 192.77000427246094,
-      "stop_price": 174.9074467250279,
-      "peak_price": 192.77000427246094,
+      "stop_price": 178.2674342564174,
+      "peak_price": 195.69000244140625,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -49,6 +49,14 @@
       "stop_price": 266.213994269004,
       "peak_price": 276.6300048828125,
       "sector": "Industrials",
+      "partial_taken": false
+    },
+    "WBD": {
+      "qty": 47,
+      "avg_price": 30.78499984741211,
+      "stop_price": 29.727855682373047,
+      "peak_price": 30.78499984741211,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -1071,6 +1079,24 @@
       "indicators": {
         "stop_price": 241.38
       }
+    },
+    {
+      "date": "2026-09-21T18:55:00.165636+00:00",
+      "symbol": "WBD",
+      "action": "BUY",
+      "qty": 47,
+      "price": 30.78,
+      "stop_price": 29.73,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (28.46) ve SMA50 (27.46) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %6.4 g\u00fc\u00e7l\u00fc, RSI=72.66 (<75, tepe de\u011fil). \u0130zleyen stop: 29.73 (2xATR).",
+      "indicators": {
+        "price": 30.78,
+        "sma20": 28.46,
+        "sma50": 27.46,
+        "rsi14": 72.66,
+        "atr14": 0.53,
+        "relative_strength_20d": 0.0643
+      }
     }
   ],
   "equity_history": [
@@ -1393,6 +1419,11 @@
       "date": "2026-09-18T21:52:24.073785+00:00",
       "equity": 9912.11,
       "cash": 5821.99
+    },
+    {
+      "date": "2026-09-21T18:55:00.534910+00:00",
+      "equity": 10084.0,
+      "cash": 4375.09
     }
   ]
 }

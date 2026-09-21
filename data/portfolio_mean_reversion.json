@@ -1,16 +1,8 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 817.9537715911865,
+  "cash": 1415.0093898773193,
   "positions": {
-    "HST": {
-      "qty": 14,
-      "avg_price": 22.485000610351562,
-      "stop_price": 21.558214119502477,
-      "peak_price": 22.485000610351562,
-      "sector": "Real Estate",
-      "partial_taken": false
-    },
     "CSCO": {
       "qty": 2,
       "avg_price": 110.62000274658203,
@@ -19,19 +11,11 @@
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "ROST": {
-      "qty": 1,
-      "avg_price": 231.17999267578125,
-      "stop_price": 220.45652257603538,
-      "peak_price": 232.0,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
     "IRM": {
       "qty": 14,
       "avg_price": 115.27999877929688,
-      "stop_price": 107.00229344389663,
-      "peak_price": 115.33000183105469,
+      "stop_price": 108.49816095187602,
+      "peak_price": 116.66000366210938,
       "sector": "Real Estate",
       "partial_taken": false
     },
@@ -46,23 +30,15 @@
     "ABNB": {
       "qty": 6,
       "avg_price": 169.8699951171875,
-      "stop_price": 159.2451798575265,
+      "stop_price": 159.88269751412528,
       "peak_price": 170.64999389648438,
       "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
-    "PKG": {
-      "qty": 2,
-      "avg_price": 232.49000549316406,
-      "stop_price": 221.67947151874435,
-      "peak_price": 235.57000732421875,
-      "sector": "Materials",
       "partial_taken": false
     },
     "PYPL": {
       "qty": 7,
       "avg_price": 53.95000076293945,
-      "stop_price": 50.12898934738686,
+      "stop_price": 50.29607253723681,
       "peak_price": 54.029998779296875,
       "sector": "Financials",
       "partial_taken": false
@@ -70,7 +46,7 @@
     "ITW": {
       "qty": 1,
       "avg_price": 268.9100036621094,
-      "stop_price": 257.8032237461635,
+      "stop_price": 258.07286834716797,
       "peak_price": 270.0299987792969,
       "sector": "Industrials",
       "partial_taken": false
@@ -78,7 +54,7 @@
     "LH": {
       "qty": 2,
       "avg_price": 323.9700012207031,
-      "stop_price": 304.0689490182059,
+      "stop_price": 304.30108424595426,
       "peak_price": 324.510009765625,
       "sector": "Health Care",
       "partial_taken": false
@@ -86,7 +62,7 @@
     "TGT": {
       "qty": 2,
       "avg_price": 154.39999389648438,
-      "stop_price": 150.62999834333147,
+      "stop_price": 151.01003483363561,
       "peak_price": 159.8300018310547,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -110,33 +86,33 @@
     "EMR": {
       "qty": 3,
       "avg_price": 147.39999389648438,
-      "stop_price": 140.50570951189314,
-      "peak_price": 149.9199981689453,
+      "stop_price": 142.5307126726423,
+      "peak_price": 151.82000732421875,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "D": {
-      "qty": 5,
-      "avg_price": 64.29000091552734,
-      "stop_price": 61.66407273375538,
-      "peak_price": 64.29000091552734,
-      "sector": "Utilities",
-      "partial_taken": false
-    },
-    "WBD": {
-      "qty": 9,
-      "avg_price": 28.239999771118164,
-      "stop_price": 27.463212626320974,
-      "peak_price": 28.239999771118164,
-      "sector": "Communication Services",
       "partial_taken": false
     },
     "HSIC": {
       "qty": 3,
       "avg_price": 85.87000274658203,
-      "stop_price": 81.46196746826172,
+      "stop_price": 81.5521469116211,
       "peak_price": 85.87000274658203,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "IFF": {
+      "qty": 7,
+      "avg_price": 83.8499984741211,
+      "stop_price": 79.96751338448613,
+      "peak_price": 83.8499984741211,
+      "sector": "Materials",
+      "partial_taken": false
+    },
+    "WBD": {
+      "qty": 14,
+      "avg_price": 30.78499984741211,
+      "stop_price": 29.46356964111328,
+      "peak_price": 30.78499984741211,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -1225,6 +1201,130 @@
         "rsi14_prev": 30.93,
         "atr14": 1.76
       }
+    },
+    {
+      "date": "2026-09-21T18:55:00.543180+00:00",
+      "symbol": "HST",
+      "action": "SELL",
+      "qty": 14,
+      "price": 22.2,
+      "pnl": -3.92,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.51, fiyat=22.2.",
+      "indicators": {
+        "price": 22.2,
+        "sma200": 20.52,
+        "rsi14": 55.51,
+        "rsi14_prev": 41.13,
+        "atr14": 0.39
+      }
+    },
+    {
+      "date": "2026-09-21T18:55:00.866803+00:00",
+      "symbol": "ROST",
+      "action": "SELL",
+      "qty": 1,
+      "price": 232.65,
+      "pnl": 1.48,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=56.68, fiyat=232.65.",
+      "indicators": {
+        "price": 232.65,
+        "sma200": 214.65,
+        "rsi14": 56.68,
+        "rsi14_prev": 47.33,
+        "atr14": 4.89
+      }
+    },
+    {
+      "date": "2026-09-21T18:55:01.204854+00:00",
+      "symbol": "PKG",
+      "action": "SELL",
+      "qty": 2,
+      "price": 239.78,
+      "pnl": 14.58,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=58.03, fiyat=239.78.",
+      "indicators": {
+        "price": 239.78,
+        "sma200": 222.11,
+        "rsi14": 58.03,
+        "rsi14_prev": 43.27,
+        "atr14": 5.83
+      }
+    },
+    {
+      "date": "2026-09-21T18:55:01.574019+00:00",
+      "symbol": "D",
+      "action": "SELL",
+      "qty": 5,
+      "price": 62.97,
+      "pnl": -6.6,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=33.24, fiyat=62.97.",
+      "indicators": {
+        "price": 62.97,
+        "sma200": 63.1,
+        "rsi14": 33.24,
+        "rsi14_prev": 40.53,
+        "atr14": 1.07
+      }
+    },
+    {
+      "date": "2026-09-21T18:55:01.924609+00:00",
+      "symbol": "WBD",
+      "action": "SELL",
+      "qty": 9,
+      "price": 30.78,
+      "pnl": 22.91,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=72.66, fiyat=30.78.",
+      "indicators": {
+        "price": 30.78,
+        "sma200": 27.54,
+        "rsi14": 72.66,
+        "rsi14_prev": 28.25,
+        "atr14": 0.53
+      }
+    },
+    {
+      "date": "2026-09-21T18:55:03.840073+00:00",
+      "symbol": "IFF",
+      "action": "BUY",
+      "qty": 7,
+      "price": 83.85,
+      "stop_price": 79.97,
+      "sector": "Materials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 26.73 \u2192 38.62 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=74.69) \u00fczerinde. \u0130zleyen stop: 79.97.",
+      "indicators": {
+        "price": 83.85,
+        "sma200": 74.69,
+        "rsi14": 38.62,
+        "rsi14_prev": 26.73,
+        "atr14": 1.55
+      }
+    },
+    {
+      "date": "2026-09-21T18:55:04.165725+00:00",
+      "symbol": "WBD",
+      "action": "BUY",
+      "qty": 14,
+      "price": 30.78,
+      "stop_price": 29.46,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.25 \u2192 72.66 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=27.54) \u00fczerinde. \u0130zleyen stop: 29.46.",
+      "indicators": {
+        "price": 30.78,
+        "sma200": 27.54,
+        "rsi14": 72.66,
+        "rsi14_prev": 28.25,
+        "atr14": 0.53
+      }
     }
   ],
   "equity_history": [
@@ -1547,6 +1647,11 @@
       "date": "2026-09-18T21:52:25.719169+00:00",
       "equity": 9717.94,
       "cash": 817.95
+    },
+    {
+      "date": "2026-09-21T18:55:04.476077+00:00",
+      "equity": 9843.02,
+      "cash": 1415.01
     }
   ]
 }

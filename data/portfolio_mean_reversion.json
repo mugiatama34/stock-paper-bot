@@ -1,16 +1,8 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 2282.1094036102295,
+  "cash": 1182.09934425354,
   "positions": {
-    "CSCO": {
-      "qty": 2,
-      "avg_price": 110.62000274658203,
-      "stop_price": 106.91839463370187,
-      "peak_price": 112.12999725341797,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
     "LYV": {
       "qty": 8,
       "avg_price": 172.39500427246094,
@@ -27,18 +19,10 @@
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
-    "PYPL": {
-      "qty": 7,
-      "avg_price": 53.95000076293945,
-      "stop_price": 50.29607253723681,
-      "peak_price": 54.029998779296875,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "ITW": {
       "qty": 1,
       "avg_price": 268.9100036621094,
-      "stop_price": 258.07286834716797,
+      "stop_price": 259.00679888044084,
       "peak_price": 270.0299987792969,
       "sector": "Industrials",
       "partial_taken": false
@@ -54,7 +38,7 @@
     "TGT": {
       "qty": 2,
       "avg_price": 154.39999389648438,
-      "stop_price": 151.01003483363561,
+      "stop_price": 151.18714032854353,
       "peak_price": 159.8300018310547,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -75,27 +59,19 @@
       "sector": "Financials",
       "partial_taken": false
     },
-    "EMR": {
-      "qty": 3,
-      "avg_price": 147.39999389648438,
-      "stop_price": 142.5307126726423,
-      "peak_price": 151.82000732421875,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
     "HSIC": {
       "qty": 3,
       "avg_price": 85.87000274658203,
-      "stop_price": 81.5521469116211,
-      "peak_price": 85.87000274658203,
+      "stop_price": 82.46571813310895,
+      "peak_price": 86.7300033569336,
       "sector": "Health Care",
       "partial_taken": false
     },
     "IFF": {
       "qty": 7,
       "avg_price": 83.8499984741211,
-      "stop_price": 79.96751338448613,
-      "peak_price": 83.8499984741211,
+      "stop_price": 81.09534115301858,
+      "peak_price": 85.08999633789062,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -107,12 +83,44 @@
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "WBD": {
-      "qty": 24,
-      "avg_price": 30.799999237060547,
-      "stop_price": 29.47856903076172,
-      "peak_price": 30.799999237060547,
-      "sector": "Communication Services",
+    "ECL": {
+      "qty": 3,
+      "avg_price": 273.4100036621094,
+      "stop_price": 260.9439529150109,
+      "peak_price": 273.4100036621094,
+      "sector": "Materials",
+      "partial_taken": false
+    },
+    "SWK": {
+      "qty": 9,
+      "avg_price": 90.13500213623047,
+      "stop_price": 83.79107581284995,
+      "peak_price": 90.13500213623047,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "ESS": {
+      "qty": 2,
+      "avg_price": 273.6300048828125,
+      "stop_price": 262.8853650774275,
+      "peak_price": 273.6300048828125,
+      "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "GPC": {
+      "qty": 3,
+      "avg_price": 129.7100067138672,
+      "stop_price": 121.41272563322103,
+      "peak_price": 129.7100067138672,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "BXP": {
+      "qty": 5,
+      "avg_price": 63.724998474121094,
+      "stop_price": 60.39732224600656,
+      "peak_price": 63.724998474121094,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -1430,6 +1438,159 @@
         "rsi14_prev": 28.25,
         "atr14": 0.53
       }
+    },
+    {
+      "date": "2026-09-22T15:43:42.847059+00:00",
+      "symbol": "CSCO",
+      "action": "SELL",
+      "qty": 2,
+      "price": 105.54,
+      "pnl": -10.15,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (106.92), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 106.92
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:43.303635+00:00",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "qty": 7,
+      "price": 53.69,
+      "pnl": -1.85,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.0, fiyat=53.69.",
+      "indicators": {
+        "price": 53.69,
+        "sma200": 50.32,
+        "rsi14": 55.0,
+        "rsi14_prev": 50.32,
+        "atr14": 1.66
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:43.780220+00:00",
+      "symbol": "EMR",
+      "action": "SELL",
+      "qty": 3,
+      "price": 153.46,
+      "pnl": 18.17,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=60.61, fiyat=153.46.",
+      "indicators": {
+        "price": 153.46,
+        "sma200": 142.93,
+        "rsi14": 60.61,
+        "rsi14_prev": 48.82,
+        "atr14": 3.53
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:44.263160+00:00",
+      "symbol": "WBD",
+      "action": "SELL",
+      "qty": 24,
+      "price": 30.8,
+      "pnl": 0.0,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=75.94, fiyat=30.8.",
+      "indicators": {
+        "price": 30.8,
+        "sma200": 27.57,
+        "rsi14": 75.94,
+        "rsi14_prev": 72.75,
+        "atr14": 0.51
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:46.100636+00:00",
+      "symbol": "ECL",
+      "action": "BUY",
+      "qty": 3,
+      "price": 273.41,
+      "stop_price": 260.94,
+      "sector": "Materials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 23.2 \u2192 37.16 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=271.69) \u00fczerinde. \u0130zleyen stop: 260.94.",
+      "indicators": {
+        "price": 273.41,
+        "sma200": 271.69,
+        "rsi14": 37.16,
+        "rsi14_prev": 23.2,
+        "atr14": 4.99
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:46.548135+00:00",
+      "symbol": "SWK",
+      "action": "BUY",
+      "qty": 9,
+      "price": 90.14,
+      "stop_price": 83.79,
+      "sector": "Industrials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 27.59 \u2192 38.07 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=81.69) \u00fczerinde. \u0130zleyen stop: 83.79.",
+      "indicators": {
+        "price": 90.14,
+        "sma200": 81.69,
+        "rsi14": 38.07,
+        "rsi14_prev": 27.59,
+        "atr14": 2.54
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:47.177286+00:00",
+      "symbol": "ESS",
+      "action": "BUY",
+      "qty": 2,
+      "price": 273.63,
+      "stop_price": 262.89,
+      "sector": "Real Estate",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.03 \u2192 39.09 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=264.88) \u00fczerinde. \u0130zleyen stop: 262.89.",
+      "indicators": {
+        "price": 273.63,
+        "sma200": 264.88,
+        "rsi14": 39.09,
+        "rsi14_prev": 28.03,
+        "atr14": 4.3
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:47.648050+00:00",
+      "symbol": "GPC",
+      "action": "BUY",
+      "qty": 3,
+      "price": 129.71,
+      "stop_price": 121.41,
+      "sector": "Consumer Discretionary",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 29.38 \u2192 40.81 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=118.02) \u00fczerinde. \u0130zleyen stop: 121.41.",
+      "indicators": {
+        "price": 129.71,
+        "sma200": 118.02,
+        "rsi14": 40.81,
+        "rsi14_prev": 29.38,
+        "atr14": 3.32
+      }
+    },
+    {
+      "date": "2026-09-22T15:43:48.101916+00:00",
+      "symbol": "BXP",
+      "action": "BUY",
+      "qty": 5,
+      "price": 63.72,
+      "stop_price": 60.4,
+      "sector": "Real Estate",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.58 \u2192 33.25 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=62.36) \u00fczerinde. \u0130zleyen stop: 60.40.",
+      "indicators": {
+        "price": 63.72,
+        "sma200": 62.36,
+        "rsi14": 33.25,
+        "rsi14_prev": 31.58,
+        "atr14": 1.33
+      }
     }
   ],
   "equity_history": [
@@ -1767,6 +1928,11 @@
       "date": "2026-09-21T22:50:23.290670+00:00",
       "equity": 9829.74,
       "cash": 2282.11
+    },
+    {
+      "date": "2026-09-22T15:43:48.552558+00:00",
+      "equity": 9788.84,
+      "cash": 1182.1
     }
   ]
 }

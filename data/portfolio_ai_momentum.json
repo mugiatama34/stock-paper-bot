@@ -1,37 +1,37 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 4375.094896316528,
+  "cash": 4642.377397537231,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 152.3344268798828,
-      "peak_price": 174.6999969482422,
+      "stop_price": 160.51228986467635,
+      "peak_price": 183.2050018310547,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 147.8971437726702,
-      "peak_price": 168.5,
+      "stop_price": 149.6550020490374,
+      "peak_price": 169.48500061035156,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 348.72998482840404,
-      "peak_price": 376.04998779296875,
+      "stop_price": 350.14144025530135,
+      "peak_price": 376.2300109863281,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
-      "stop_price": 209.78213500976562,
-      "peak_price": 221.55499267578125,
+      "stop_price": 213.91642543247767,
+      "peak_price": 225.9199981689453,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -43,18 +43,10 @@
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "ADP": {
-      "qty": 1,
-      "avg_price": 276.6300048828125,
-      "stop_price": 266.213994269004,
-      "peak_price": 276.6300048828125,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 29.742855072021484,
+      "stop_price": 29.774998256138392,
       "peak_price": 30.799999237060547,
       "sector": "Communication Services",
       "partial_taken": false
@@ -1097,6 +1089,25 @@
         "atr14": 0.53,
         "relative_strength_20d": 0.0643
       }
+    },
+    {
+      "date": "2026-09-22T15:43:42.038124+00:00",
+      "symbol": "ADP",
+      "action": "SELL",
+      "qty": 1,
+      "price": 267.28,
+      "pnl": -9.35,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "Trend k\u0131r\u0131ld\u0131: fiyat (267.28) SMA50 (267.85) alt\u0131na indi.",
+      "indicators": {
+        "price": 267.28,
+        "sma20": 275.14,
+        "sma50": 267.85,
+        "rsi14": 34.1,
+        "atr14": 5.44,
+        "relative_strength_20d": -0.0644
+      }
     }
   ],
   "equity_history": [
@@ -1434,6 +1445,11 @@
       "date": "2026-09-21T22:50:20.874982+00:00",
       "equity": 10077.0,
       "cash": 4375.09
+    },
+    {
+      "date": "2026-09-22T15:43:42.842798+00:00",
+      "equity": 10100.54,
+      "cash": 4642.38
     }
   ]
 }

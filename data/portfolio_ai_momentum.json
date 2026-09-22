@@ -22,8 +22,8 @@
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 350.14144025530135,
-      "peak_price": 376.2300109863281,
+      "stop_price": 352.64463588169644,
+      "peak_price": 378.8999938964844,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -46,8 +46,8 @@
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 29.774998256138392,
-      "peak_price": 30.799999237060547,
+      "stop_price": 29.8049989427839,
+      "peak_price": 30.829999923706055,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -1449,6 +1449,11 @@
     {
       "date": "2026-09-22T15:43:42.842798+00:00",
       "equity": 10100.54,
+      "cash": 4642.38
+    },
+    {
+      "date": "2026-09-22T20:22:54.534179+00:00",
+      "equity": 10108.82,
       "cash": 4642.38
     }
   ]

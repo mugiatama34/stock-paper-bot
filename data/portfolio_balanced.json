@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1706.2847366333008,
+  "cash": 2640.6347274780273,
   "positions": {
     "ADI": {
       "qty": 3,
@@ -14,7 +14,7 @@
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.764999525887626,
+      "stop_price": 14.767142432076591,
       "peak_price": 14.854999542236328,
       "sector": "Utilities",
       "partial_taken": true
@@ -25,14 +25,6 @@
       "stop_price": 122.04286411830357,
       "peak_price": 128.24000549316406,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "BALL": {
-      "qty": 3,
-      "avg_price": 61.02000045776367,
-      "stop_price": 59.10285568237305,
-      "peak_price": 61.2599983215332,
-      "sector": "Materials",
       "partial_taken": false
     },
     "BDX": {
@@ -78,7 +70,7 @@
     "SLB": {
       "qty": 6,
       "avg_price": 54.20000076293945,
-      "stop_price": 50.44357245309012,
+      "stop_price": 50.522857666015625,
       "peak_price": 54.20000076293945,
       "sector": "Energy",
       "partial_taken": false
@@ -89,14 +81,6 @@
       "stop_price": 113.31499917166573,
       "peak_price": 116.80999755859375,
       "sector": "Financials",
-      "partial_taken": false
-    },
-    "ARE": {
-      "qty": 8,
-      "avg_price": 53.52000045776367,
-      "stop_price": 52.76714324951172,
-      "peak_price": 56.34000015258789,
-      "sector": "Real Estate",
       "partial_taken": false
     },
     "T": {
@@ -110,7 +94,7 @@
     "DAL": {
       "qty": 4,
       "avg_price": 79.94000244140625,
-      "stop_price": 79.5171399797712,
+      "stop_price": 79.68142591203961,
       "peak_price": 83.91999816894531,
       "sector": "Industrials",
       "partial_taken": true
@@ -118,17 +102,9 @@
     "GM": {
       "qty": 6,
       "avg_price": 82.5,
-      "stop_price": 79.12497144560628,
+      "stop_price": 79.14796220389964,
       "peak_price": 84.56999969482422,
       "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
-    "GOOG": {
-      "qty": 1,
-      "avg_price": 345.57000732421875,
-      "stop_price": 336.27915513576386,
-      "peak_price": 351.95001220703125,
-      "sector": "Communication Services",
       "partial_taken": false
     },
     "NUE": {
@@ -158,7 +134,7 @@
     "BEN": {
       "qty": 6,
       "avg_price": 33.63999938964844,
-      "stop_price": 31.977142333984375,
+      "stop_price": 32.00261415754046,
       "peak_price": 33.63999938964844,
       "sector": "Financials",
       "partial_taken": false
@@ -166,8 +142,8 @@
     "APA": {
       "qty": 16,
       "avg_price": 42.29999923706055,
-      "stop_price": 39.14928436279297,
-      "peak_price": 42.29999923706055,
+      "stop_price": 40.52000100272043,
+      "peak_price": 43.720001220703125,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -1929,6 +1905,52 @@
         "atr14": 3.47,
         "volume_vs_avg20": 1.19
       }
+    },
+    {
+      "date": "2026-09-23T18:42:26.317984+00:00",
+      "symbol": "BALL",
+      "action": "SELL",
+      "qty": 3,
+      "price": 59.17,
+      "pnl": -5.55,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "Uzun vadeli trend (SMA200=59.38) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=26.62.",
+      "indicators": {
+        "price": 59.17,
+        "sma200": 59.38,
+        "rsi14": 26.62,
+        "atr14": 1.09,
+        "volume_vs_avg20": 0.39
+      }
+    },
+    {
+      "date": "2026-09-23T18:42:26.665947+00:00",
+      "symbol": "ARE",
+      "action": "SELL",
+      "qty": 8,
+      "price": 52.65,
+      "pnl": -7.0,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "\u0130zleyen stop tetiklendi (52.77), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 52.77
+      }
+    },
+    {
+      "date": "2026-09-23T18:42:27.013130+00:00",
+      "symbol": "GOOG",
+      "action": "SELL",
+      "qty": 1,
+      "price": 335.68,
+      "pnl": -9.89,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "\u0130zleyen stop tetiklendi (336.28), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 336.28
+      }
     }
   ],
   "equity_history": [
@@ -2281,6 +2303,11 @@
       "date": "2026-09-22T22:25:46.673870+00:00",
       "equity": 9635.35,
       "cash": 1706.28
+    },
+    {
+      "date": "2026-09-23T18:42:29.022616+00:00",
+      "equity": 9593.3,
+      "cash": 2640.63
     }
   ]
 }

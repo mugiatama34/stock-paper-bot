@@ -22,16 +22,16 @@
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 353.2805611746652,
-      "peak_price": 380.08770751953125,
+      "stop_price": 354.0892769949777,
+      "peak_price": 380.1199951171875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
-      "stop_price": 213.91642543247767,
-      "peak_price": 225.9199981689453,
+      "stop_price": 215.15142822265625,
+      "peak_price": 227.52999877929688,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -1464,6 +1464,11 @@
     {
       "date": "2026-09-23T18:42:23.566898+00:00",
       "equity": 10098.71,
+      "cash": 4642.38
+    },
+    {
+      "date": "2026-09-23T20:36:39.989979+00:00",
+      "equity": 10116.96,
       "cash": 4642.38
     }
   ]

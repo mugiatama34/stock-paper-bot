@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1639.4543018341064,
+  "cash": 1705.9143238067627,
   "positions": {
     "LYV": {
       "qty": 8,
@@ -9,14 +9,6 @@
       "stop_price": 162.80571092878068,
       "peak_price": 172.39500427246094,
       "sector": "Communication Services",
-      "partial_taken": false
-    },
-    "LH": {
-      "qty": 2,
-      "avg_price": 323.9700012207031,
-      "stop_price": 304.30108424595426,
-      "peak_price": 324.510009765625,
-      "sector": "Health Care",
       "partial_taken": false
     },
     "TGT": {
@@ -71,7 +63,7 @@
       "qty": 3,
       "avg_price": 273.4100036621094,
       "stop_price": 263.62966327703657,
-      "peak_price": 276.68499755859375,
+      "peak_price": 276.7200012207031,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -121,6 +113,14 @@
       "stop_price": 44.78036049434117,
       "peak_price": 47.275001525878906,
       "sector": "Industrials",
+      "partial_taken": false
+    },
+    "VEEV": {
+      "qty": 2,
+      "avg_price": 270.75,
+      "stop_price": 250.90268053327287,
+      "peak_price": 270.75,
+      "sector": "Health Care",
       "partial_taken": false
     }
   },
@@ -1657,6 +1657,37 @@
         "rsi14_prev": 19.38,
         "atr14": 1.0
       }
+    },
+    {
+      "date": "2026-09-23T20:36:39.998563+00:00",
+      "symbol": "LH",
+      "action": "SELL",
+      "qty": 2,
+      "price": 303.98,
+      "pnl": -39.98,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (304.30), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 304.3
+      }
+    },
+    {
+      "date": "2026-09-23T20:36:42.335938+00:00",
+      "symbol": "VEEV",
+      "action": "BUY",
+      "qty": 2,
+      "price": 270.75,
+      "stop_price": 250.9,
+      "sector": "Health Care",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 24.88 \u2192 41.77 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=199.43) \u00fczerinde. \u0130zleyen stop: 250.90.",
+      "indicators": {
+        "price": 270.75,
+        "sma200": 199.43,
+        "rsi14": 41.77,
+        "rsi14_prev": 24.88,
+        "atr14": 7.94
+      }
     }
   ],
   "equity_history": [
@@ -2014,6 +2045,11 @@
       "date": "2026-09-23T18:42:26.296293+00:00",
       "equity": 9748.35,
       "cash": 1639.45
+    },
+    {
+      "date": "2026-09-23T20:36:42.821746+00:00",
+      "equity": 9724.18,
+      "cash": 1705.91
     }
   ]
 }

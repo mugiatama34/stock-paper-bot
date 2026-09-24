@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1328.8743152618408,
+  "cash": 1041.8943157196045,
   "positions": {
     "LYV": {
       "qty": 8,
@@ -46,8 +46,8 @@
     "IFF": {
       "qty": 7,
       "avg_price": 83.8499984741211,
-      "stop_price": 81.8917579691087,
-      "peak_price": 85.79000091552734,
+      "stop_price": 81.95175552770245,
+      "peak_price": 85.8499984741211,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -91,14 +91,6 @@
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
-    "BXP": {
-      "qty": 5,
-      "avg_price": 63.724998474121094,
-      "stop_price": 60.96535682678223,
-      "peak_price": 64.30999755859375,
-      "sector": "Real Estate",
-      "partial_taken": false
-    },
     "TROW": {
       "qty": 2,
       "avg_price": 104.16999816894531,
@@ -126,9 +118,25 @@
     "FANG": {
       "qty": 2,
       "avg_price": 188.52000427246094,
-      "stop_price": 171.9182183401925,
-      "peak_price": 188.52000427246094,
+      "stop_price": 172.4082085745675,
+      "peak_price": 189.00999450683594,
       "sector": "Energy",
+      "partial_taken": false
+    },
+    "OKE": {
+      "qty": 4,
+      "avg_price": 91.18000030517578,
+      "stop_price": 85.23728098188128,
+      "peak_price": 91.18000030517578,
+      "sector": "Energy",
+      "partial_taken": false
+    },
+    "WELL": {
+      "qty": 1,
+      "avg_price": 233.61000061035156,
+      "stop_price": 220.63679013933455,
+      "peak_price": 233.61000061035156,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -1713,6 +1721,58 @@
         "rsi14_prev": 31.87,
         "atr14": 6.64
       }
+    },
+    {
+      "date": "2026-09-24T20:39:34.028394+00:00",
+      "symbol": "BXP",
+      "action": "SELL",
+      "qty": 5,
+      "price": 62.27,
+      "pnl": -7.27,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=28.76, fiyat=62.27.",
+      "indicators": {
+        "price": 62.27,
+        "sma200": 62.32,
+        "rsi14": 28.76,
+        "rsi14_prev": 29.24,
+        "atr14": 1.35
+      }
+    },
+    {
+      "date": "2026-09-24T20:39:35.681034+00:00",
+      "symbol": "OKE",
+      "action": "BUY",
+      "qty": 4,
+      "price": 91.18,
+      "stop_price": 85.24,
+      "sector": "Energy",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.57 \u2192 33.1 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=84.79) \u00fczerinde. \u0130zleyen stop: 85.24.",
+      "indicators": {
+        "price": 91.18,
+        "sma200": 84.79,
+        "rsi14": 33.1,
+        "rsi14_prev": 31.57,
+        "atr14": 2.38
+      }
+    },
+    {
+      "date": "2026-09-24T20:39:36.040546+00:00",
+      "symbol": "WELL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 233.61,
+      "stop_price": 220.64,
+      "sector": "Real Estate",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.83 \u2192 41.95 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=211.58) \u00fczerinde. \u0130zleyen stop: 220.64.",
+      "indicators": {
+        "price": 233.61,
+        "sma200": 211.58,
+        "rsi14": 41.95,
+        "rsi14_prev": 31.83,
+        "atr14": 5.19
+      }
     }
   ],
   "equity_history": [
@@ -2085,6 +2145,11 @@
       "date": "2026-09-24T18:53:11.129745+00:00",
       "equity": 9720.83,
       "cash": 1328.87
+    },
+    {
+      "date": "2026-09-24T20:39:36.386428+00:00",
+      "equity": 9719.46,
+      "cash": 1041.89
     }
   ]
 }

@@ -14,8 +14,8 @@
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.767142432076591,
-      "peak_price": 14.854999542236328,
+      "stop_price": 14.776428358895439,
+      "peak_price": 14.864999771118164,
       "sector": "Utilities",
       "partial_taken": true
     },
@@ -55,7 +55,7 @@
       "qty": 1,
       "avg_price": 187.80999755859375,
       "stop_price": 190.1520058768136,
-      "peak_price": 205.61500549316406,
+      "peak_price": 205.78500366210938,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -70,7 +70,7 @@
     "SLB": {
       "qty": 6,
       "avg_price": 54.20000076293945,
-      "stop_price": 50.522857666015625,
+      "stop_price": 50.67928695678711,
       "peak_price": 54.20000076293945,
       "sector": "Energy",
       "partial_taken": false
@@ -110,7 +110,7 @@
     "NUE": {
       "qty": 1,
       "avg_price": 250.1750030517578,
-      "stop_price": 233.72928728376115,
+      "stop_price": 234.4942866734096,
       "peak_price": 250.1750030517578,
       "sector": "Materials",
       "partial_taken": false
@@ -118,7 +118,7 @@
     "AWK": {
       "qty": 2,
       "avg_price": 135.89999389648438,
-      "stop_price": 130.98142569405692,
+      "stop_price": 131.31929888044084,
       "peak_price": 135.89999389648438,
       "sector": "Utilities",
       "partial_taken": false
@@ -134,7 +134,7 @@
     "BEN": {
       "qty": 6,
       "avg_price": 33.63999938964844,
-      "stop_price": 32.00261415754046,
+      "stop_price": 32.04071371895926,
       "peak_price": 33.63999938964844,
       "sector": "Financials",
       "partial_taken": false
@@ -142,8 +142,8 @@
     "APA": {
       "qty": 16,
       "avg_price": 42.29999923706055,
-      "stop_price": 40.52000100272043,
-      "peak_price": 43.720001220703125,
+      "stop_price": 40.88857051304409,
+      "peak_price": 44.04999923706055,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -158,7 +158,7 @@
     "ARE": {
       "qty": 12,
       "avg_price": 51.86000061035156,
-      "stop_price": 47.87001419067383,
+      "stop_price": 47.99285725184849,
       "peak_price": 51.86000061035156,
       "sector": "Real Estate",
       "partial_taken": false
@@ -166,8 +166,8 @@
     "GOOGL": {
       "qty": 1,
       "avg_price": 337.8299865722656,
-      "stop_price": 319.6078243072625,
-      "peak_price": 337.8299865722656,
+      "stop_price": 324.1870640345982,
+      "peak_price": 342.33990478515625,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -2367,6 +2367,11 @@
     {
       "date": "2026-09-23T22:27:41.338230+00:00",
       "equity": 9588.41,
+      "cash": 1680.48
+    },
+    {
+      "date": "2026-09-24T18:53:12.527428+00:00",
+      "equity": 9572.96,
       "cash": 1680.48
     }
   ]

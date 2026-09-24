@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1705.9143238067627,
+  "cash": 1328.8743152618408,
   "positions": {
     "LYV": {
       "qty": 8,
@@ -38,7 +38,7 @@
     "HSIC": {
       "qty": 3,
       "avg_price": 85.87000274658203,
-      "stop_price": 83.02107266017369,
+      "stop_price": 83.12553814479283,
       "peak_price": 87.43000030517578,
       "sector": "Health Care",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "IFF": {
       "qty": 7,
       "avg_price": 83.8499984741211,
-      "stop_price": 81.78998744338898,
+      "stop_price": 81.8917579691087,
       "peak_price": 85.79000091552734,
       "sector": "Materials",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "MSI": {
       "qty": 1,
       "avg_price": 461.3599853515625,
-      "stop_price": 440.597001736113,
+      "stop_price": 441.7777746960486,
       "peak_price": 463.7349853515625,
       "sector": "Information Technology",
       "partial_taken": false
@@ -62,7 +62,7 @@
     "ECL": {
       "qty": 3,
       "avg_price": 273.4100036621094,
-      "stop_price": 263.62966327703657,
+      "stop_price": 263.91076930566237,
       "peak_price": 276.7200012207031,
       "sector": "Materials",
       "partial_taken": false
@@ -70,7 +70,7 @@
     "SWK": {
       "qty": 9,
       "avg_price": 90.13500213623047,
-      "stop_price": 85.65035762524532,
+      "stop_price": 85.8304046942229,
       "peak_price": 92.12999725341797,
       "sector": "Industrials",
       "partial_taken": false
@@ -78,7 +78,7 @@
     "ESS": {
       "qty": 2,
       "avg_price": 273.6300048828125,
-      "stop_price": 263.68858119419644,
+      "stop_price": 263.88144138881137,
       "peak_price": 274.760009765625,
       "sector": "Real Estate",
       "partial_taken": false
@@ -86,7 +86,7 @@
     "GPC": {
       "qty": 3,
       "avg_price": 129.7100067138672,
-      "stop_price": 121.41272563322103,
+      "stop_price": 121.4741516628204,
       "peak_price": 129.7100067138672,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -102,7 +102,7 @@
     "TROW": {
       "qty": 2,
       "avg_price": 104.16999816894531,
-      "stop_price": 99.86544246980029,
+      "stop_price": 99.89879561036025,
       "peak_price": 104.97000122070312,
       "sector": "Financials",
       "partial_taken": false
@@ -110,7 +110,7 @@
     "CSX": {
       "qty": 11,
       "avg_price": 47.275001525878906,
-      "stop_price": 44.78036049434117,
+      "stop_price": 44.84732409885952,
       "peak_price": 47.275001525878906,
       "sector": "Industrials",
       "partial_taken": false
@@ -118,9 +118,17 @@
     "VEEV": {
       "qty": 2,
       "avg_price": 270.75,
-      "stop_price": 250.90268053327287,
-      "peak_price": 270.75,
+      "stop_price": 255.34427969796317,
+      "peak_price": 274.92999267578125,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "FANG": {
+      "qty": 2,
+      "avg_price": 188.52000427246094,
+      "stop_price": 171.9182183401925,
+      "peak_price": 188.52000427246094,
+      "sector": "Energy",
       "partial_taken": false
     }
   },
@@ -1688,6 +1696,23 @@
         "rsi14_prev": 24.88,
         "atr14": 7.94
       }
+    },
+    {
+      "date": "2026-09-24T18:53:10.734884+00:00",
+      "symbol": "FANG",
+      "action": "BUY",
+      "qty": 2,
+      "price": 188.52,
+      "stop_price": 171.92,
+      "sector": "Energy",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.87 \u2192 35.36 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=182.03) \u00fczerinde. \u0130zleyen stop: 171.92.",
+      "indicators": {
+        "price": 188.52,
+        "sma200": 182.03,
+        "rsi14": 35.36,
+        "rsi14_prev": 31.87,
+        "atr14": 6.64
+      }
     }
   ],
   "equity_history": [
@@ -2055,6 +2080,11 @@
       "date": "2026-09-23T22:27:39.578292+00:00",
       "equity": 9724.18,
       "cash": 1705.91
+    },
+    {
+      "date": "2026-09-24T18:53:11.129745+00:00",
+      "equity": 9720.83,
+      "cash": 1328.87
     }
   ]
 }

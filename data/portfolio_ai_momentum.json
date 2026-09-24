@@ -6,15 +6,15 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 160.51228986467635,
-      "peak_price": 183.2050018310547,
+      "stop_price": 168.03230721609933,
+      "peak_price": 191.3260040283203,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 149.6550020490374,
+      "stop_price": 151.18365587506975,
       "peak_price": 169.48500061035156,
       "sector": "Information Technology",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 354.0892769949777,
+      "stop_price": 356.861075265067,
       "peak_price": 380.1199951171875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -30,15 +30,15 @@
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
-      "stop_price": 215.15142822265625,
-      "peak_price": 227.52999877929688,
+      "stop_price": 216.50927734375,
+      "peak_price": 228.17999267578125,
       "sector": "Health Care",
       "partial_taken": false
     },
     "TEAM": {
       "qty": 3,
       "avg_price": 192.77000427246094,
-      "stop_price": 178.37743486676897,
+      "stop_price": 178.6403067452567,
       "peak_price": 195.69000244140625,
       "sector": "Information Technology",
       "partial_taken": false
@@ -46,8 +46,8 @@
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 29.8049989427839,
-      "peak_price": 30.829999923706055,
+      "stop_price": 29.85128402709961,
+      "peak_price": 30.844999313354492,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -1474,6 +1474,11 @@
     {
       "date": "2026-09-23T22:27:37.942363+00:00",
       "equity": 10116.96,
+      "cash": 4642.38
+    },
+    {
+      "date": "2026-09-24T18:53:09.431895+00:00",
+      "equity": 10137.49,
       "cash": 4642.38
     }
   ]

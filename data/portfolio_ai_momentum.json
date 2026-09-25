@@ -6,8 +6,8 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 175.39357430594308,
-      "peak_price": 198.86000061035156,
+      "stop_price": 175.413578578404,
+      "peak_price": 198.8800048828125,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -46,8 +46,8 @@
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 29.881427764892578,
-      "peak_price": 30.850000381469727,
+      "stop_price": 29.891427993774414,
+      "peak_price": 30.860000610351562,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -1494,6 +1494,11 @@
     {
       "date": "2026-09-25T19:09:02.383233+00:00",
       "equity": 10100.06,
+      "cash": 4642.38
+    },
+    {
+      "date": "2026-09-25T20:39:07.094053+00:00",
+      "equity": 10087.06,
       "cash": 4642.38
     }
   ]

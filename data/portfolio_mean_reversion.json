@@ -62,8 +62,8 @@
     "ECL": {
       "qty": 3,
       "avg_price": 273.4100036621094,
-      "stop_price": 266.75857727221586,
-      "peak_price": 279.260009765625,
+      "stop_price": 266.8796263357622,
+      "peak_price": 279.489990234375,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -94,8 +94,8 @@
     "TROW": {
       "qty": 2,
       "avg_price": 104.16999816894531,
-      "stop_price": 100.26091042951175,
-      "peak_price": 105.31999969482422,
+      "stop_price": 100.41876995927947,
+      "peak_price": 105.51000213623047,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -142,8 +142,8 @@
     "JNJ": {
       "qty": 1,
       "avg_price": 270.4700012207031,
-      "stop_price": 257.779173714774,
-      "peak_price": 270.4700012207031,
+      "stop_price": 258.529173714774,
+      "peak_price": 271.2200012207031,
       "sector": "Health Care",
       "partial_taken": false
     }
@@ -2219,6 +2219,11 @@
     {
       "date": "2026-09-25T19:09:05.089965+00:00",
       "equity": 9736.3,
+      "cash": 933.68
+    },
+    {
+      "date": "2026-09-25T20:39:07.879833+00:00",
+      "equity": 9747.64,
       "cash": 933.68
     }
   ]

@@ -6,15 +6,15 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 170.9235382080078,
-      "peak_price": 194.82000732421875,
+      "stop_price": 175.39357430594308,
+      "peak_price": 198.86000061035156,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 151.18365587506975,
+      "stop_price": 151.43794141496932,
       "peak_price": 169.48500061035156,
       "sector": "Information Technology",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "TSLA": {
       "qty": 4,
       "avg_price": 364.32000732421875,
-      "stop_price": 356.861075265067,
+      "stop_price": 357.7028503417969,
       "peak_price": 380.1199951171875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -38,7 +38,7 @@
     "TEAM": {
       "qty": 3,
       "avg_price": 192.77000427246094,
-      "stop_price": 178.6403067452567,
+      "stop_price": 178.79029192243303,
       "peak_price": 195.69000244140625,
       "sector": "Information Technology",
       "partial_taken": false
@@ -46,8 +46,8 @@
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 29.85128402709961,
-      "peak_price": 30.844999313354492,
+      "stop_price": 29.881427764892578,
+      "peak_price": 30.850000381469727,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -1489,6 +1489,11 @@
     {
       "date": "2026-09-24T22:44:30.151456+00:00",
       "equity": 10122.97,
+      "cash": 4642.38
+    },
+    {
+      "date": "2026-09-25T19:09:02.383233+00:00",
+      "equity": 10100.06,
       "cash": 4642.38
     }
   ]

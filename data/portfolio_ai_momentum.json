@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 4642.377397537231,
+  "cash": 4676.437440872192,
   "positions": {
     "MRNA": {
       "qty": 2,
@@ -14,40 +14,40 @@
     "MSTR": {
       "qty": 4,
       "avg_price": 137.7899932861328,
-      "stop_price": 151.43794141496932,
+      "stop_price": 151.5307126726423,
       "peak_price": 169.48500061035156,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "TSLA": {
-      "qty": 4,
-      "avg_price": 364.32000732421875,
-      "stop_price": 357.7028503417969,
-      "peak_price": 380.1199951171875,
-      "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
-      "stop_price": 216.50927734375,
-      "peak_price": 228.17999267578125,
+      "stop_price": 217.77285766601562,
+      "peak_price": 228.69000244140625,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "TEAM": {
-      "qty": 3,
-      "avg_price": 192.77000427246094,
-      "stop_price": 178.79029192243303,
-      "peak_price": 195.69000244140625,
-      "sector": "Information Technology",
       "partial_taken": false
     },
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 29.891427993774414,
-      "peak_price": 30.860000610351562,
+      "stop_price": 29.96142714364188,
+      "peak_price": 30.899999618530273,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "AMD": {
+      "qty": 2,
+      "avg_price": 607.8699951171875,
+      "stop_price": 555.4771597726004,
+      "peak_price": 607.8699951171875,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "META": {
+      "qty": 1,
+      "avg_price": 715.6199951171875,
+      "stop_price": 653.057763303917,
+      "peak_price": 715.6199951171875,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -1108,6 +1108,70 @@
         "atr14": 5.44,
         "relative_strength_20d": -0.0644
       }
+    },
+    {
+      "date": "2026-09-28T22:37:28.458609+00:00",
+      "symbol": "TSLA",
+      "action": "SELL",
+      "qty": 4,
+      "price": 357.45,
+      "pnl": -27.48,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "\u0130zleyen stop tetiklendi (357.79), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 357.79
+      }
+    },
+    {
+      "date": "2026-09-28T22:37:28.921453+00:00",
+      "symbol": "TEAM",
+      "action": "SELL",
+      "qty": 3,
+      "price": 178.54,
+      "pnl": -42.69,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (178.79), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 178.79
+      }
+    },
+    {
+      "date": "2026-09-28T22:37:29.628852+00:00",
+      "symbol": "AMD",
+      "action": "BUY",
+      "qty": 2,
+      "price": 607.87,
+      "stop_price": 555.48,
+      "sector": "Information Technology",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (535.22) ve SMA50 (506.96) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %30.8 g\u00fc\u00e7l\u00fc, RSI=70.72 (<75, tepe de\u011fil). \u0130zleyen stop: 555.48 (2xATR).",
+      "indicators": {
+        "price": 607.87,
+        "sma20": 535.22,
+        "sma50": 506.96,
+        "rsi14": 70.72,
+        "atr14": 26.2,
+        "relative_strength_20d": 0.308
+      }
+    },
+    {
+      "date": "2026-09-28T22:37:30.150745+00:00",
+      "symbol": "META",
+      "action": "BUY",
+      "qty": 1,
+      "price": 715.62,
+      "stop_price": 653.06,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (667.39) ve SMA50 (616.72) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %24.1 g\u00fc\u00e7l\u00fc, RSI=67.84 (<75, tepe de\u011fil). \u0130zleyen stop: 653.06 (2xATR).",
+      "indicators": {
+        "price": 715.62,
+        "sma20": 667.39,
+        "sma50": 616.72,
+        "rsi14": 67.84,
+        "atr14": 31.28,
+        "relative_strength_20d": 0.2414
+      }
     }
   ],
   "equity_history": [
@@ -1505,6 +1569,11 @@
       "date": "2026-09-25T22:49:35.119966+00:00",
       "equity": 10087.06,
       "cash": 4642.38
+    },
+    {
+      "date": "2026-09-28T22:37:30.601668+00:00",
+      "equity": 9997.98,
+      "cash": 4676.44
     }
   ]
 }

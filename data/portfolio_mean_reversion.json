@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 933.6842975616455,
+  "cash": 950.1143054962158,
   "positions": {
     "LYV": {
       "qty": 8,
@@ -22,7 +22,7 @@
     "MDLZ": {
       "qty": 5,
       "avg_price": 62.099998474121094,
-      "stop_price": 59.47785718100412,
+      "stop_price": 59.56535679953439,
       "peak_price": 62.36000061035156,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "MSI": {
       "qty": 1,
       "avg_price": 461.3599853515625,
-      "stop_price": 441.7777746960486,
+      "stop_price": 441.9844644549805,
       "peak_price": 463.7349853515625,
       "sector": "Information Technology",
       "partial_taken": false
@@ -62,15 +62,15 @@
     "ECL": {
       "qty": 3,
       "avg_price": 273.4100036621094,
-      "stop_price": 266.8796263357622,
-      "peak_price": 279.489990234375,
+      "stop_price": 267.70501692255317,
+      "peak_price": 280.2300109863281,
       "sector": "Materials",
       "partial_taken": false
     },
     "SWK": {
       "qty": 9,
       "avg_price": 90.13500213623047,
-      "stop_price": 85.9621399470738,
+      "stop_price": 85.98446273803711,
       "peak_price": 92.12999725341797,
       "sector": "Industrials",
       "partial_taken": false
@@ -86,7 +86,7 @@
     "GPC": {
       "qty": 3,
       "avg_price": 129.7100067138672,
-      "stop_price": 121.67300224304199,
+      "stop_price": 122.16428620474679,
       "peak_price": 129.85000610351562,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -110,7 +110,7 @@
     "FANG": {
       "qty": 2,
       "avg_price": 188.52000427246094,
-      "stop_price": 172.53678022112166,
+      "stop_price": 172.62427847726005,
       "peak_price": 189.00999450683594,
       "sector": "Energy",
       "partial_taken": false
@@ -126,7 +126,7 @@
     "WELL": {
       "qty": 1,
       "avg_price": 233.61000061035156,
-      "stop_price": 220.75193405151367,
+      "stop_price": 221.22850690569197,
       "peak_price": 233.61000061035156,
       "sector": "Real Estate",
       "partial_taken": false
@@ -134,16 +134,16 @@
     "NWSA": {
       "qty": 14,
       "avg_price": 28.530000686645508,
-      "stop_price": 26.764516167822748,
-      "peak_price": 28.530000686645508,
+      "stop_price": 27.297678879329137,
+      "peak_price": 29.100000381469727,
       "sector": "Communication Services",
       "partial_taken": false
     },
-    "JNJ": {
-      "qty": 1,
-      "avg_price": 270.4700012207031,
-      "stop_price": 258.529173714774,
-      "peak_price": 271.2200012207031,
+    "BMY": {
+      "qty": 4,
+      "avg_price": 63.880001068115234,
+      "stop_price": 60.87464427947998,
+      "peak_price": 63.880001068115234,
       "sector": "Health Care",
       "partial_taken": false
     }
@@ -1833,6 +1833,41 @@
         "rsi14_prev": 30.67,
         "atr14": 5.08
       }
+    },
+    {
+      "date": "2026-09-28T22:37:30.707691+00:00",
+      "symbol": "JNJ",
+      "action": "SELL",
+      "qty": 1,
+      "price": 271.95,
+      "pnl": 1.48,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=61.78, fiyat=271.95.",
+      "indicators": {
+        "price": 271.95,
+        "sma200": 238.64,
+        "rsi14": 61.78,
+        "rsi14_prev": 38.47,
+        "atr14": 4.8
+      }
+    },
+    {
+      "date": "2026-09-28T22:37:32.125792+00:00",
+      "symbol": "BMY",
+      "action": "BUY",
+      "qty": 4,
+      "price": 63.88,
+      "stop_price": 60.87,
+      "sector": "Health Care",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 27.35 \u2192 44.69 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=58.49) \u00fczerinde. \u0130zleyen stop: 60.87.",
+      "indicators": {
+        "price": 63.88,
+        "sma200": 58.49,
+        "rsi14": 44.69,
+        "rsi14_prev": 27.35,
+        "atr14": 1.2
+      }
     }
   ],
   "equity_history": [
@@ -2230,6 +2265,11 @@
       "date": "2026-09-25T22:49:36.776075+00:00",
       "equity": 9747.64,
       "cash": 933.68
+    },
+    {
+      "date": "2026-09-28T22:37:32.629547+00:00",
+      "equity": 9720.25,
+      "cash": 950.11
     }
   ]
 }

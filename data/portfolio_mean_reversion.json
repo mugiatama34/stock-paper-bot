@@ -1,12 +1,12 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 950.1143054962158,
+  "cash": 2049.2342624664307,
   "positions": {
     "LYV": {
       "qty": 8,
       "avg_price": 172.39500427246094,
-      "stop_price": 162.89500481741769,
+      "stop_price": 162.93607820783342,
       "peak_price": 172.39500427246094,
       "sector": "Communication Services",
       "partial_taken": false
@@ -19,18 +19,10 @@
       "sector": "Consumer Staples",
       "partial_taken": false
     },
-    "MDLZ": {
-      "qty": 5,
-      "avg_price": 62.099998474121094,
-      "stop_price": 59.56535679953439,
-      "peak_price": 62.36000061035156,
-      "sector": "Consumer Staples",
-      "partial_taken": false
-    },
     "BAC": {
       "qty": 10,
       "avg_price": 58.18000030517578,
-      "stop_price": 54.807681219918386,
+      "stop_price": 54.857483455113005,
       "peak_price": 58.18000030517578,
       "sector": "Financials",
       "partial_taken": false
@@ -43,28 +35,12 @@
       "sector": "Health Care",
       "partial_taken": false
     },
-    "IFF": {
-      "qty": 7,
-      "avg_price": 83.8499984741211,
-      "stop_price": 82.06975127983476,
-      "peak_price": 85.8499984741211,
-      "sector": "Materials",
-      "partial_taken": false
-    },
     "MSI": {
       "qty": 1,
       "avg_price": 461.3599853515625,
-      "stop_price": 441.9844644549805,
+      "stop_price": 442.30024921821985,
       "peak_price": 463.7349853515625,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "ECL": {
-      "qty": 3,
-      "avg_price": 273.4100036621094,
-      "stop_price": 267.70501692255317,
-      "peak_price": 280.2300109863281,
-      "sector": "Materials",
       "partial_taken": false
     },
     "SWK": {
@@ -78,7 +54,7 @@
     "ESS": {
       "qty": 2,
       "avg_price": 273.6300048828125,
-      "stop_price": 264.16982705252514,
+      "stop_price": 264.3448290143694,
       "peak_price": 274.760009765625,
       "sector": "Real Estate",
       "partial_taken": false
@@ -86,7 +62,7 @@
     "GPC": {
       "qty": 3,
       "avg_price": 129.7100067138672,
-      "stop_price": 122.16428620474679,
+      "stop_price": 122.37946782793317,
       "peak_price": 129.85000610351562,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -102,7 +78,7 @@
     "CSX": {
       "qty": 11,
       "avg_price": 47.275001525878906,
-      "stop_price": 45.020537921360564,
+      "stop_price": 45.030359404427664,
       "peak_price": 47.275001525878906,
       "sector": "Industrials",
       "partial_taken": false
@@ -110,7 +86,7 @@
     "FANG": {
       "qty": 2,
       "avg_price": 188.52000427246094,
-      "stop_price": 172.62427847726005,
+      "stop_price": 172.92606462751115,
       "peak_price": 189.00999450683594,
       "sector": "Energy",
       "partial_taken": false
@@ -126,7 +102,7 @@
     "WELL": {
       "qty": 1,
       "avg_price": 233.61000061035156,
-      "stop_price": 221.22850690569197,
+      "stop_price": 221.34214673723494,
       "peak_price": 233.61000061035156,
       "sector": "Real Estate",
       "partial_taken": false
@@ -145,6 +121,14 @@
       "stop_price": 60.87464427947998,
       "peak_price": 63.880001068115234,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "ABNB": {
+      "qty": 4,
+      "avg_price": 156.9600067138672,
+      "stop_price": 143.94840131487166,
+      "peak_price": 156.9600067138672,
+      "sector": "Consumer Discretionary",
       "partial_taken": false
     }
   },
@@ -1868,6 +1852,73 @@
         "rsi14_prev": 27.35,
         "atr14": 1.2
       }
+    },
+    {
+      "date": "2026-09-29T21:30:36.065493+00:00",
+      "symbol": "MDLZ",
+      "action": "SELL",
+      "qty": 5,
+      "price": 59.32,
+      "pnl": -13.9,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "\u0130zleyen stop tetiklendi (59.63), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 59.63
+      }
+    },
+    {
+      "date": "2026-09-29T21:30:36.485354+00:00",
+      "symbol": "IFF",
+      "action": "SELL",
+      "qty": 7,
+      "price": 85.25,
+      "pnl": 9.8,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=58.79, fiyat=85.25.",
+      "indicators": {
+        "price": 85.25,
+        "sma200": 75.32,
+        "rsi14": 58.79,
+        "rsi14_prev": 52.98,
+        "atr14": 1.59
+      }
+    },
+    {
+      "date": "2026-09-29T21:30:36.860654+00:00",
+      "symbol": "ECL",
+      "action": "SELL",
+      "qty": 3,
+      "price": 277.87,
+      "pnl": 13.38,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=61.82, fiyat=277.87.",
+      "indicators": {
+        "price": 277.87,
+        "sma200": 272.26,
+        "rsi14": 61.82,
+        "rsi14_prev": 54.68,
+        "atr14": 4.9
+      }
+    },
+    {
+      "date": "2026-09-29T21:30:38.644139+00:00",
+      "symbol": "ABNB",
+      "action": "BUY",
+      "qty": 4,
+      "price": 156.96,
+      "stop_price": 143.95,
+      "sector": "Consumer Discretionary",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.06 \u2192 33.34 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=143.01) \u00fczerinde. \u0130zleyen stop: 143.95.",
+      "indicators": {
+        "price": 156.96,
+        "sma200": 143.01,
+        "rsi14": 33.34,
+        "rsi14_prev": 28.06,
+        "atr14": 5.2
+      }
     }
   ],
   "equity_history": [
@@ -2275,6 +2326,11 @@
       "date": "2026-09-28T23:57:02.267942+00:00",
       "equity": 9720.25,
       "cash": 950.11
+    },
+    {
+      "date": "2026-09-29T21:30:39.006359+00:00",
+      "equity": 9661.31,
+      "cash": 2049.23
     }
   ]
 }

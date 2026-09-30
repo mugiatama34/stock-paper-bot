@@ -30,16 +30,16 @@
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 30.03714152744838,
-      "peak_price": 30.899999618530273,
+      "stop_price": 30.071428571428573,
+      "peak_price": 30.950000762939453,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "AMD": {
       "qty": 2,
       "avg_price": 607.8699951171875,
-      "stop_price": 556.547140938895,
-      "peak_price": 608.1699829101562,
+      "stop_price": 560.1371677943638,
+      "peak_price": 611.760009765625,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -1593,6 +1593,11 @@
     {
       "date": "2026-09-30T18:23:26.420152+00:00",
       "equity": 9985.19,
+      "cash": 4676.44
+    },
+    {
+      "date": "2026-09-30T21:30:31.804464+00:00",
+      "equity": 9980.81,
       "cash": 4676.44
     }
   ]

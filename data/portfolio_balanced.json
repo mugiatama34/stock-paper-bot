@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2037.477300643921,
+  "cash": 875.0472831726074,
   "positions": {
     "ADI": {
       "qty": 3,
@@ -18,14 +18,6 @@
       "peak_price": 14.930000305175781,
       "sector": "Utilities",
       "partial_taken": true
-    },
-    "BDX": {
-      "qty": 1,
-      "avg_price": 179.10000610351562,
-      "stop_price": 178.384281703404,
-      "peak_price": 185.9199981689453,
-      "sector": "Health Care",
-      "partial_taken": false
     },
     "ANET": {
       "qty": 1,
@@ -57,14 +49,6 @@
       "stop_price": 192.55428641183036,
       "peak_price": 200.5800018310547,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "GOOGL": {
-      "qty": 1,
-      "avg_price": 337.8299865722656,
-      "stop_price": 331.10284423828125,
-      "peak_price": 348.9599914550781,
-      "sector": "Communication Services",
       "partial_taken": false
     },
     "IFF": {
@@ -131,12 +115,44 @@
       "sector": "Real Estate",
       "partial_taken": false
     },
-    "AJG": {
-      "qty": 2,
-      "avg_price": 232.74000549316406,
-      "stop_price": 220.4657200404576,
-      "peak_price": 232.74000549316406,
+    "BEN": {
+      "qty": 23,
+      "avg_price": 32.5,
+      "stop_price": 30.99626050303819,
+      "peak_price": 32.5,
       "sector": "Financials",
+      "partial_taken": false
+    },
+    "ESS": {
+      "qty": 2,
+      "avg_price": 269.510009765625,
+      "stop_price": 261.2701567518128,
+      "peak_price": 269.510009765625,
+      "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "INCY": {
+      "qty": 3,
+      "avg_price": 117.13999938964844,
+      "stop_price": 110.61285509381976,
+      "peak_price": 117.13999938964844,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "KDP": {
+      "qty": 11,
+      "avg_price": 30.690000534057617,
+      "stop_price": 29.034368223947286,
+      "peak_price": 30.690000534057617,
+      "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "LYV": {
+      "qty": 1,
+      "avg_price": 166.85000610351562,
+      "stop_price": 159.23715209960938,
+      "peak_price": 166.85000610351562,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -2448,6 +2464,141 @@
         "atr14": 6.14,
         "volume_vs_avg20": 1.27
       }
+    },
+    {
+      "date": "2026-10-01T21:55:41.479484+00:00",
+      "symbol": "BDX",
+      "action": "SELL",
+      "qty": 1,
+      "price": 178.07,
+      "pnl": -1.03,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (178.38), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 178.38
+      }
+    },
+    {
+      "date": "2026-10-01T21:55:41.861253+00:00",
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "qty": 1,
+      "price": 338.24,
+      "pnl": 0.41,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "Uzun vadeli trend (SMA200=338.36) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=49.8.",
+      "indicators": {
+        "price": 338.24,
+        "sma200": 338.36,
+        "rsi14": 49.8,
+        "atr14": 9.45,
+        "volume_vs_avg20": 1.22
+      }
+    },
+    {
+      "date": "2026-10-01T21:55:42.244918+00:00",
+      "symbol": "AJG",
+      "action": "SELL",
+      "qty": 2,
+      "price": 231.82,
+      "pnl": -1.84,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "Uzun vadeli trend (SMA200=231.9) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=41.59.",
+      "indicators": {
+        "price": 231.82,
+        "sma200": 231.9,
+        "rsi14": 41.59,
+        "atr14": 6.14,
+        "volume_vs_avg20": 1.93
+      }
+    },
+    {
+      "date": "2026-10-01T21:55:43.912320+00:00",
+      "symbol": "BEN",
+      "action": "BUY",
+      "qty": 23,
+      "price": 32.5,
+      "stop_price": 31.0,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=28.86), RSI14=40.88 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.33x \u00fczerinde. \u0130zleyen stop: 31.00.",
+      "indicators": {
+        "price": 32.5,
+        "sma200": 28.86,
+        "rsi14": 40.88,
+        "atr14": 0.75,
+        "volume_vs_avg20": 1.33
+      }
+    },
+    {
+      "date": "2026-10-01T21:55:44.279031+00:00",
+      "symbol": "ESS",
+      "action": "BUY",
+      "qty": 2,
+      "price": 269.51,
+      "stop_price": 261.27,
+      "sector": "Real Estate",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=263.23), RSI14=48.07 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.05x \u00fczerinde. \u0130zleyen stop: 261.27.",
+      "indicators": {
+        "price": 269.51,
+        "sma200": 263.23,
+        "rsi14": 48.07,
+        "atr14": 4.12,
+        "volume_vs_avg20": 1.05
+      }
+    },
+    {
+      "date": "2026-10-01T21:55:44.630932+00:00",
+      "symbol": "INCY",
+      "action": "BUY",
+      "qty": 3,
+      "price": 117.14,
+      "stop_price": 110.61,
+      "sector": "Health Care",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=106.77), RSI14=40.96 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.52x \u00fczerinde. \u0130zleyen stop: 110.61.",
+      "indicators": {
+        "price": 117.14,
+        "sma200": 106.77,
+        "rsi14": 40.96,
+        "atr14": 3.26,
+        "volume_vs_avg20": 1.52
+      }
+    },
+    {
+      "date": "2026-10-01T21:55:44.986960+00:00",
+      "symbol": "KDP",
+      "action": "BUY",
+      "qty": 11,
+      "price": 30.69,
+      "stop_price": 29.03,
+      "sector": "Consumer Staples",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=28.98), RSI14=46.38 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.63x \u00fczerinde. \u0130zleyen stop: 29.03.",
+      "indicators": {
+        "price": 30.69,
+        "sma200": 28.98,
+        "rsi14": 46.38,
+        "atr14": 0.83,
+        "volume_vs_avg20": 1.63
+      }
+    },
+    {
+      "date": "2026-10-01T21:55:45.339578+00:00",
+      "symbol": "LYV",
+      "action": "BUY",
+      "qty": 1,
+      "price": 166.85,
+      "stop_price": 159.24,
+      "sector": "Communication Services",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=163.66), RSI14=41.45 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.31x \u00fczerinde. \u0130zleyen stop: 159.24.",
+      "indicators": {
+        "price": 166.85,
+        "sma200": 163.66,
+        "rsi14": 41.45,
+        "atr14": 3.81,
+        "volume_vs_avg20": 1.31
+      }
     }
   ],
   "equity_history": [
@@ -2885,6 +3036,11 @@
       "date": "2026-10-01T19:11:18.149466+00:00",
       "equity": 9396.59,
       "cash": 2037.48
+    },
+    {
+      "date": "2026-10-01T21:55:45.678939+00:00",
+      "equity": 9392.16,
+      "cash": 875.05
     }
   ]
 }

@@ -1,21 +1,21 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 679.014762878418,
+  "cash": 2037.477300643921,
   "positions": {
     "ADI": {
       "qty": 3,
       "avg_price": 371.1700134277344,
-      "stop_price": 375.5878601074219,
-      "peak_price": 398.57000732421875,
+      "stop_price": 382.7642822265625,
+      "peak_price": 404.6600036621094,
       "sector": "Information Technology",
       "partial_taken": true
     },
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.808571270533971,
-      "peak_price": 14.899999618530273,
+      "stop_price": 14.838572093418666,
+      "peak_price": 14.930000305175781,
       "sector": "Utilities",
       "partial_taken": true
     },
@@ -30,7 +30,7 @@
     "ANET": {
       "qty": 1,
       "avg_price": 187.80999755859375,
-      "stop_price": 192.7451433454241,
+      "stop_price": 193.4466836111886,
       "peak_price": 207.4499969482422,
       "sector": "Information Technology",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "CTAS": {
       "qty": 2,
       "avg_price": 198.8000030517578,
-      "stop_price": 192.42857360839844,
+      "stop_price": 192.55428641183036,
       "peak_price": 200.5800018310547,
       "sector": "Industrials",
       "partial_taken": false
@@ -75,26 +75,10 @@
       "sector": "Materials",
       "partial_taken": false
     },
-    "MET": {
-      "qty": 5,
-      "avg_price": 97.69999694824219,
-      "stop_price": 94.10428183419364,
-      "peak_price": 97.69999694824219,
-      "sector": "Financials",
-      "partial_taken": false
-    },
-    "DOC": {
-      "qty": 35,
-      "avg_price": 20.100000381469727,
-      "stop_price": 19.421887801460045,
-      "peak_price": 20.1299991607666,
-      "sector": "Real Estate",
-      "partial_taken": false
-    },
     "TGT": {
       "qty": 3,
       "avg_price": 158.42999267578125,
-      "stop_price": 151.0507049560547,
+      "stop_price": 151.06307547433036,
       "peak_price": 158.42999267578125,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -110,41 +94,25 @@
     "FDS": {
       "qty": 2,
       "avg_price": 268.0899963378906,
-      "stop_price": 246.2821546282087,
-      "peak_price": 269.95001220703125,
+      "stop_price": 253.05787222726005,
+      "peak_price": 277.6400146484375,
       "sector": "Financials",
       "partial_taken": false
     },
     "AMZN": {
       "qty": 3,
       "avg_price": 249.14999389648438,
-      "stop_price": 238.31000191824776,
-      "peak_price": 249.14999389648438,
+      "stop_price": 238.40667942592077,
+      "peak_price": 249.25,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "BAX": {
       "qty": 23,
       "avg_price": 24.0,
-      "stop_price": 22.60285758972168,
+      "stop_price": 22.680714743477957,
       "peak_price": 24.0,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "DIS": {
-      "qty": 4,
-      "avg_price": 104.9000015258789,
-      "stop_price": 100.80929020472935,
-      "peak_price": 104.9000015258789,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
-    "EL": {
-      "qty": 3,
-      "avg_price": 92.7699966430664,
-      "stop_price": 86.66428048270089,
-      "peak_price": 92.7699966430664,
-      "sector": "Consumer Staples",
       "partial_taken": false
     },
     "FCX": {
@@ -158,9 +126,17 @@
     "IRM": {
       "qty": 1,
       "avg_price": 110.94999694824219,
-      "stop_price": 105.05639972996036,
-      "peak_price": 110.94999694824219,
+      "stop_price": 105.44158554949945,
+      "peak_price": 111.28500366210938,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "AJG": {
+      "qty": 2,
+      "avg_price": 232.74000549316406,
+      "stop_price": 220.4657200404576,
+      "peak_price": 232.74000549316406,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -2391,6 +2367,87 @@
         "atr14": 2.95,
         "volume_vs_avg20": 1.09
       }
+    },
+    {
+      "date": "2026-10-01T19:11:14.778427+00:00",
+      "symbol": "MET",
+      "action": "SELL",
+      "qty": 5,
+      "price": 93.51,
+      "pnl": -20.95,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (94.10), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 94.1
+      }
+    },
+    {
+      "date": "2026-10-01T19:11:15.282601+00:00",
+      "symbol": "DOC",
+      "action": "SELL",
+      "qty": 35,
+      "price": 19.41,
+      "pnl": -24.32,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "\u0130zleyen stop tetiklendi (19.42), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 19.42
+      }
+    },
+    {
+      "date": "2026-10-01T19:11:15.762437+00:00",
+      "symbol": "DIS",
+      "action": "SELL",
+      "qty": 4,
+      "price": 101.72,
+      "pnl": -12.72,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "Uzun vadeli trend (SMA200=103.36) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=36.98.",
+      "indicators": {
+        "price": 101.72,
+        "sma200": 103.36,
+        "rsi14": 36.98,
+        "atr14": 2.17,
+        "volume_vs_avg20": 0.63
+      }
+    },
+    {
+      "date": "2026-10-01T19:11:16.223862+00:00",
+      "symbol": "EL",
+      "action": "SELL",
+      "qty": 3,
+      "price": 90.11,
+      "pnl": -7.97,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "Uzun vadeli trend (SMA200=91.59) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=36.06.",
+      "indicators": {
+        "price": 90.11,
+        "sma200": 91.59,
+        "rsi14": 36.06,
+        "atr14": 3.2,
+        "volume_vs_avg20": 0.66
+      }
+    },
+    {
+      "date": "2026-10-01T19:11:17.702071+00:00",
+      "symbol": "AJG",
+      "action": "BUY",
+      "qty": 2,
+      "price": 232.74,
+      "stop_price": 220.47,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=231.9), RSI14=42.64 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.27x \u00fczerinde. \u0130zleyen stop: 220.47.",
+      "indicators": {
+        "price": 232.74,
+        "sma200": 231.9,
+        "rsi14": 42.64,
+        "atr14": 6.14,
+        "volume_vs_avg20": 1.27
+      }
     }
   ],
   "equity_history": [
@@ -2823,6 +2880,11 @@
       "date": "2026-09-30T23:13:08.636609+00:00",
       "equity": 9387.78,
       "cash": 679.01
+    },
+    {
+      "date": "2026-10-01T19:11:18.149466+00:00",
+      "equity": 9396.59,
+      "cash": 2037.48
     }
   ]
 }

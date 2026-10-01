@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 2013.6342868804932,
+  "cash": 1682.8842868804932,
   "positions": {
     "LYV": {
       "qty": 8,
@@ -30,7 +30,7 @@
     "MSI": {
       "qty": 1,
       "avg_price": 461.3599853515625,
-      "stop_price": 442.73628294194503,
+      "stop_price": 442.8696109091033,
       "peak_price": 463.7349853515625,
       "sector": "Information Technology",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "ESS": {
       "qty": 2,
       "avg_price": 273.6300048828125,
-      "stop_price": 264.49572208949496,
+      "stop_price": 264.5548361375199,
       "peak_price": 274.760009765625,
       "sector": "Real Estate",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "GPC": {
       "qty": 3,
       "avg_price": 129.7100067138672,
-      "stop_price": 122.37946782793317,
+      "stop_price": 122.3946475982666,
       "peak_price": 129.85000610351562,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -62,15 +62,15 @@
     "TROW": {
       "qty": 2,
       "avg_price": 104.16999816894531,
-      "stop_price": 100.41876995927947,
-      "peak_price": 105.51000213623047,
+      "stop_price": 100.97129396907724,
+      "peak_price": 106.03500366210938,
       "sector": "Financials",
       "partial_taken": false
     },
     "CSX": {
       "qty": 11,
       "avg_price": 47.275001525878906,
-      "stop_price": 45.182144846235005,
+      "stop_price": 45.19107396262033,
       "peak_price": 47.275001525878906,
       "sector": "Industrials",
       "partial_taken": false
@@ -78,7 +78,7 @@
     "FANG": {
       "qty": 2,
       "avg_price": 188.52000427246094,
-      "stop_price": 173.69214030674524,
+      "stop_price": 173.93321282523019,
       "peak_price": 189.00999450683594,
       "sector": "Energy",
       "partial_taken": false
@@ -94,7 +94,7 @@
     "WELL": {
       "qty": 1,
       "avg_price": 233.61000061035156,
-      "stop_price": 221.52089527675085,
+      "stop_price": 221.69660840715682,
       "peak_price": 233.61000061035156,
       "sector": "Real Estate",
       "partial_taken": false
@@ -126,9 +126,17 @@
     "NEM": {
       "qty": 5,
       "avg_price": 116.0199966430664,
-      "stop_price": 106.12805339268276,
+      "stop_price": 106.34321185520717,
       "peak_price": 116.0199966430664,
       "sector": "Materials",
+      "partial_taken": false
+    },
+    "CB": {
+      "qty": 1,
+      "avg_price": 330.75,
+      "stop_price": 319.0571517944336,
+      "peak_price": 330.75,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -1950,6 +1958,23 @@
         "rsi14_prev": 31.39,
         "atr14": 3.96
       }
+    },
+    {
+      "date": "2026-10-01T19:11:14.238981+00:00",
+      "symbol": "CB",
+      "action": "BUY",
+      "qty": 1,
+      "price": 330.75,
+      "stop_price": 319.06,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 23.02 \u2192 36.55 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=328.04) \u00fczerinde. \u0130zleyen stop: 319.06.",
+      "indicators": {
+        "price": 330.75,
+        "sma200": 328.04,
+        "rsi14": 36.55,
+        "rsi14_prev": 23.02,
+        "atr14": 4.68
+      }
     }
   ],
   "equity_history": [
@@ -2382,6 +2407,11 @@
       "date": "2026-09-30T23:13:07.573589+00:00",
       "equity": 9621.25,
       "cash": 2013.63
+    },
+    {
+      "date": "2026-10-01T19:11:14.749081+00:00",
+      "equity": 9608.84,
+      "cash": 1682.88
     }
   ]
 }

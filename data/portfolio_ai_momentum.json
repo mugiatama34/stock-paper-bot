@@ -22,7 +22,7 @@
     "BIIB": {
       "qty": 4,
       "avg_price": 219.18499755859375,
-      "stop_price": 218.2635716029576,
+      "stop_price": 218.39642551967077,
       "peak_price": 228.69000244140625,
       "sector": "Health Care",
       "partial_taken": false
@@ -30,7 +30,7 @@
     "WBD": {
       "qty": 47,
       "avg_price": 30.78499984741211,
-      "stop_price": 30.071428571428573,
+      "stop_price": 30.157143184116908,
       "peak_price": 30.950000762939453,
       "sector": "Communication Services",
       "partial_taken": false
@@ -38,15 +38,15 @@
     "AMD": {
       "qty": 2,
       "avg_price": 607.8699951171875,
-      "stop_price": 560.1371677943638,
-      "peak_price": 611.760009765625,
+      "stop_price": 565.6428571428571,
+      "peak_price": 616.989990234375,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "META": {
       "qty": 1,
       "avg_price": 715.6199951171875,
-      "stop_price": 679.491759569022,
+      "stop_price": 680.2738080920753,
       "peak_price": 738.7899780273438,
       "sector": "Communication Services",
       "partial_taken": false
@@ -1603,6 +1603,11 @@
     {
       "date": "2026-09-30T23:13:06.548929+00:00",
       "equity": 9980.81,
+      "cash": 4676.44
+    },
+    {
+      "date": "2026-10-01T19:11:12.927880+00:00",
+      "equity": 10017.99,
       "cash": 4676.44
     }
   ]

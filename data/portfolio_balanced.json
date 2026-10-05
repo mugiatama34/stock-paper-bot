@@ -6,8 +6,8 @@
     "ADI": {
       "qty": 3,
       "avg_price": 371.1700134277344,
-      "stop_price": 395.4800066266741,
-      "peak_price": 417.1499938964844,
+      "stop_price": 397.10642787388394,
+      "peak_price": 419.1000061035156,
       "sector": "Information Technology",
       "partial_taken": true
     },
@@ -46,7 +46,7 @@
     "TGT": {
       "qty": 3,
       "avg_price": 158.42999267578125,
-      "stop_price": 151.3371342250279,
+      "stop_price": 151.35712105887276,
       "peak_price": 158.42999267578125,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -62,7 +62,7 @@
     "FDS": {
       "qty": 2,
       "avg_price": 268.0899963378906,
-      "stop_price": 254.45430428641183,
+      "stop_price": 254.6775185721261,
       "peak_price": 277.6400146484375,
       "sector": "Financials",
       "partial_taken": false
@@ -70,7 +70,7 @@
     "AMZN": {
       "qty": 3,
       "avg_price": 249.14999389648438,
-      "stop_price": 240.77891104561942,
+      "stop_price": 241.060551234654,
       "peak_price": 251.52000427246094,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -78,23 +78,23 @@
     "BAX": {
       "qty": 23,
       "avg_price": 24.0,
-      "stop_price": 22.702857153756277,
-      "peak_price": 24.0,
+      "stop_price": 22.88428524562291,
+      "peak_price": 24.219999313354492,
       "sector": "Health Care",
       "partial_taken": false
     },
     "FCX": {
       "qty": 3,
       "avg_price": 70.0,
-      "stop_price": 67.19142804827008,
-      "peak_price": 72.04000091552734,
+      "stop_price": 67.65642547607422,
+      "peak_price": 72.5999984741211,
       "sector": "Materials",
       "partial_taken": false
     },
     "IRM": {
       "qty": 1,
       "avg_price": 110.94999694824219,
-      "stop_price": 107.69428362165179,
+      "stop_price": 107.98285566057477,
       "peak_price": 113.38999938964844,
       "sector": "Real Estate",
       "partial_taken": false
@@ -102,16 +102,16 @@
     "BEN": {
       "qty": 23,
       "avg_price": 32.5,
-      "stop_price": 31.306550506175128,
-      "peak_price": 32.810001373291016,
+      "stop_price": 31.311500130186772,
+      "peak_price": 32.880001068115234,
       "sector": "Financials",
       "partial_taken": false
     },
     "ESS": {
       "qty": 2,
       "avg_price": 269.510009765625,
-      "stop_price": 261.2701567518128,
-      "peak_price": 269.510009765625,
+      "stop_price": 263.23228060979505,
+      "peak_price": 271.92999267578125,
       "sector": "Real Estate",
       "partial_taken": false
     },
@@ -126,23 +126,23 @@
     "KDP": {
       "qty": 11,
       "avg_price": 30.690000534057617,
-      "stop_price": 29.034368223947286,
-      "peak_price": 30.690000534057617,
+      "stop_price": 29.189603242782304,
+      "peak_price": 30.889999389648438,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "LYV": {
       "qty": 1,
       "avg_price": 166.85000610351562,
-      "stop_price": 161.30429077148438,
-      "peak_price": 168.77000427246094,
+      "stop_price": 162.9471435546875,
+      "peak_price": 170.6699981689453,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "ACN": {
       "qty": 1,
       "avg_price": 198.89999389648438,
-      "stop_price": 178.5535605294364,
+      "stop_price": 178.77713230678015,
       "peak_price": 198.89999389648438,
       "sector": "Information Technology",
       "partial_taken": false
@@ -150,16 +150,16 @@
     "IFF": {
       "qty": 3,
       "avg_price": 82.41999816894531,
-      "stop_price": 79.02302695829475,
-      "peak_price": 82.41999816894531,
+      "stop_price": 79.89896201508165,
+      "peak_price": 83.26000213623047,
       "sector": "Materials",
       "partial_taken": false
     },
     "WMB": {
       "qty": 3,
       "avg_price": 70.54000091552734,
-      "stop_price": 67.34285954066685,
-      "peak_price": 70.54000091552734,
+      "stop_price": 67.59157017299107,
+      "peak_price": 70.80999755859375,
       "sector": "Energy",
       "partial_taken": false
     }
@@ -3146,6 +3146,11 @@
     {
       "date": "2026-10-02T23:16:15.444039+00:00",
       "equity": 9424.55,
+      "cash": 754.3
+    },
+    {
+      "date": "2026-10-05T23:17:16.385180+00:00",
+      "equity": 9464.81,
       "cash": 754.3
     }
   ]

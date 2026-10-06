@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1057.514238357544,
+  "cash": 1538.734224319458,
   "positions": {
     "LYV": {
       "qty": 8,
@@ -30,47 +30,31 @@
     "MSI": {
       "qty": 1,
       "avg_price": 461.3599853515625,
-      "stop_price": 444.7617656162807,
+      "stop_price": 445.42789350237166,
       "peak_price": 463.7349853515625,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "ESS": {
-      "qty": 2,
-      "avg_price": 273.6300048828125,
-      "stop_price": 264.5548361375199,
-      "peak_price": 274.760009765625,
-      "sector": "Real Estate",
       "partial_taken": false
     },
     "GPC": {
       "qty": 3,
       "avg_price": 129.7100067138672,
-      "stop_price": 122.61582510811942,
+      "stop_price": 122.72143091474261,
       "peak_price": 129.85000610351562,
       "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
-    "TROW": {
-      "qty": 2,
-      "avg_price": 104.16999816894531,
-      "stop_price": 100.97129396907724,
-      "peak_price": 106.03500366210938,
-      "sector": "Financials",
       "partial_taken": false
     },
     "CSX": {
       "qty": 11,
       "avg_price": 47.275001525878906,
-      "stop_price": 45.26392868586949,
-      "peak_price": 47.43000030517578,
+      "stop_price": 45.43482099260603,
+      "peak_price": 47.5,
       "sector": "Industrials",
       "partial_taken": false
     },
     "FANG": {
       "qty": 2,
       "avg_price": 188.52000427246094,
-      "stop_price": 175.427857535226,
+      "stop_price": 178.33321271623885,
       "peak_price": 189.00999450683594,
       "sector": "Energy",
       "partial_taken": false
@@ -78,7 +62,7 @@
     "OKE": {
       "qty": 4,
       "avg_price": 91.18000030517578,
-      "stop_price": 85.23728098188128,
+      "stop_price": 85.28446061270577,
       "peak_price": 91.18000030517578,
       "sector": "Energy",
       "partial_taken": false
@@ -110,23 +94,23 @@
     "NEM": {
       "qty": 5,
       "avg_price": 116.0199966430664,
-      "stop_price": 106.76999609810966,
-      "peak_price": 116.0199966430664,
+      "stop_price": 107.60017803737095,
+      "peak_price": 116.38999938964844,
       "sector": "Materials",
       "partial_taken": false
     },
     "CB": {
       "qty": 1,
       "avg_price": 330.75,
-      "stop_price": 319.8410677228655,
-      "peak_price": 331.29998779296875,
+      "stop_price": 322.2510681152344,
+      "peak_price": 334.2099914550781,
       "sector": "Financials",
       "partial_taken": false
     },
     "UNP": {
       "qty": 2,
       "avg_price": 278.2799987792969,
-      "stop_price": 266.110362461635,
+      "stop_price": 266.9514378138951,
       "peak_price": 278.2799987792969,
       "sector": "Industrials",
       "partial_taken": false
@@ -134,7 +118,7 @@
     "NUE": {
       "qty": 2,
       "avg_price": 240.38999938964844,
-      "stop_price": 231.03493859094897,
+      "stop_price": 231.71486142287094,
       "peak_price": 251.41000366210938,
       "sector": "Materials",
       "partial_taken": false
@@ -142,8 +126,8 @@
     "CNC": {
       "qty": 6,
       "avg_price": 64.30000305175781,
-      "stop_price": 59.172323090689524,
-      "peak_price": 64.30000305175781,
+      "stop_price": 59.88053485325405,
+      "peak_price": 64.61000061035156,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -153,6 +137,14 @@
       "stop_price": 83.6564301082066,
       "peak_price": 86.51000213623047,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "AIZ": {
+      "qty": 1,
+      "avg_price": 270.9599914550781,
+      "stop_price": 256.2381918770926,
+      "peak_price": 270.9599914550781,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -2091,6 +2083,59 @@
         "rsi14_prev": 27.26,
         "atr14": 1.14
       }
+    },
+    {
+      "date": "2026-10-06T21:48:42.697930+00:00",
+      "symbol": "ESS",
+      "action": "SELL",
+      "qty": 2,
+      "price": 272.49,
+      "pnl": -2.28,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=60.25, fiyat=272.49.",
+      "indicators": {
+        "price": 272.49,
+        "sma200": 263.56,
+        "rsi14": 60.25,
+        "rsi14_prev": 46.6,
+        "atr14": 4.16
+      }
+    },
+    {
+      "date": "2026-10-06T21:48:43.193940+00:00",
+      "symbol": "TROW",
+      "action": "SELL",
+      "qty": 2,
+      "price": 103.6,
+      "pnl": -1.14,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.22, fiyat=103.6.",
+      "indicators": {
+        "price": 103.6,
+        "sma200": 101.59,
+        "rsi14": 55.22,
+        "rsi14_prev": 48.85,
+        "atr14": 1.99
+      }
+    },
+    {
+      "date": "2026-10-06T21:48:44.738931+00:00",
+      "symbol": "AIZ",
+      "action": "BUY",
+      "qty": 1,
+      "price": 270.96,
+      "stop_price": 256.24,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 21.33 \u2192 32.67 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=249.47) \u00fczerinde. \u0130zleyen stop: 256.24.",
+      "indicators": {
+        "price": 270.96,
+        "sma200": 249.47,
+        "rsi14": 32.67,
+        "rsi14_prev": 21.33,
+        "atr14": 5.89
+      }
     }
   ],
   "equity_history": [
@@ -2558,6 +2603,11 @@
       "date": "2026-10-06T00:57:35.577792+00:00",
       "equity": NaN,
       "cash": 1057.51
+    },
+    {
+      "date": "2026-10-06T21:48:45.189592+00:00",
+      "equity": 9719.8,
+      "cash": 1538.73
     }
   ]
 }

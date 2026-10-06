@@ -38,15 +38,15 @@
     "AMD": {
       "qty": 2,
       "avg_price": 607.8699951171875,
-      "stop_price": 584.3342721121652,
-      "peak_price": 633.9099731445312,
+      "stop_price": 598.7757045200893,
+      "peak_price": 649.4199829101562,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "META": {
       "qty": 1,
       "avg_price": 715.6199951171875,
-      "stop_price": 684.5232532235799,
+      "stop_price": 685.1158432325058,
       "peak_price": 741.9000244140625,
       "sector": "Communication Services",
       "partial_taken": false
@@ -54,8 +54,8 @@
     "TSLA": {
       "qty": 3,
       "avg_price": 378.7300109863281,
-      "stop_price": 354.6128714425223,
-      "peak_price": 378.7300109863281,
+      "stop_price": 357.3342808314732,
+      "peak_price": 380.67999267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     }
@@ -1664,6 +1664,11 @@
     {
       "date": "2026-10-06T00:57:35.496497+00:00",
       "equity": NaN,
+      "cash": 3540.25
+    },
+    {
+      "date": "2026-10-06T21:48:42.681433+00:00",
+      "equity": 10099.34,
       "cash": 3540.25
     }
   ]

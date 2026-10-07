@@ -38,7 +38,7 @@
     "AMD": {
       "qty": 2,
       "avg_price": 607.8699951171875,
-      "stop_price": 598.7757045200893,
+      "stop_price": 602.0128435407366,
       "peak_price": 649.4199829101562,
       "sector": "Information Technology",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "TSLA": {
       "qty": 3,
       "avg_price": 378.7300109863281,
-      "stop_price": 357.3342808314732,
+      "stop_price": 358.4942932128906,
       "peak_price": 380.67999267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -1674,6 +1674,11 @@
     {
       "date": "2026-10-06T23:15:27.065609+00:00",
       "equity": 10099.34,
+      "cash": 3540.25
+    },
+    {
+      "date": "2026-10-07T22:11:59.163387+00:00",
+      "equity": 10036.4,
       "cash": 3540.25
     }
   ]

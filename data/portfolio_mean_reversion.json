@@ -1,24 +1,8 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1538.734224319458,
+  "cash": 2754.73419380188,
   "positions": {
-    "LYV": {
-      "qty": 8,
-      "avg_price": 172.39500427246094,
-      "stop_price": 163.06286239624023,
-      "peak_price": 172.39500427246094,
-      "sector": "Communication Services",
-      "partial_taken": false
-    },
-    "TGT": {
-      "qty": 2,
-      "avg_price": 154.39999389648438,
-      "stop_price": 151.18714032854353,
-      "peak_price": 159.8300018310547,
-      "sector": "Consumer Staples",
-      "partial_taken": false
-    },
     "HSIC": {
       "qty": 3,
       "avg_price": 85.87000274658203,
@@ -46,7 +30,7 @@
     "CSX": {
       "qty": 11,
       "avg_price": 47.275001525878906,
-      "stop_price": 45.43482099260603,
+      "stop_price": 45.472320147923064,
       "peak_price": 47.5,
       "sector": "Industrials",
       "partial_taken": false
@@ -54,7 +38,7 @@
     "FANG": {
       "qty": 2,
       "avg_price": 188.52000427246094,
-      "stop_price": 178.33321271623885,
+      "stop_price": 178.37555313110352,
       "peak_price": 189.00999450683594,
       "sector": "Energy",
       "partial_taken": false
@@ -65,14 +49,6 @@
       "stop_price": 85.28446061270577,
       "peak_price": 91.18000030517578,
       "sector": "Energy",
-      "partial_taken": false
-    },
-    "WELL": {
-      "qty": 1,
-      "avg_price": 233.61000061035156,
-      "stop_price": 221.96892874581474,
-      "peak_price": 233.61000061035156,
-      "sector": "Real Estate",
       "partial_taken": false
     },
     "NWSA": {
@@ -102,15 +78,15 @@
     "CB": {
       "qty": 1,
       "avg_price": 330.75,
-      "stop_price": 322.2510681152344,
-      "peak_price": 334.2099914550781,
+      "stop_price": 323.04287501743863,
+      "peak_price": 334.70001220703125,
       "sector": "Financials",
       "partial_taken": false
     },
     "UNP": {
       "qty": 2,
       "avg_price": 278.2799987792969,
-      "stop_price": 266.9514378138951,
+      "stop_price": 267.17252676827565,
       "peak_price": 278.2799987792969,
       "sector": "Industrials",
       "partial_taken": false
@@ -118,7 +94,7 @@
     "NUE": {
       "qty": 2,
       "avg_price": 240.38999938964844,
-      "stop_price": 231.71486142287094,
+      "stop_price": 232.1742661498029,
       "peak_price": 251.41000366210938,
       "sector": "Materials",
       "partial_taken": false
@@ -126,8 +102,8 @@
     "CNC": {
       "qty": 6,
       "avg_price": 64.30000305175781,
-      "stop_price": 59.88053485325405,
-      "peak_price": 64.61000061035156,
+      "stop_price": 60.22624615260533,
+      "peak_price": 64.98999786376953,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -142,9 +118,17 @@
     "AIZ": {
       "qty": 1,
       "avg_price": 270.9599914550781,
-      "stop_price": 256.2381918770926,
+      "stop_price": 256.27250235421315,
       "peak_price": 270.9599914550781,
       "sector": "Financials",
+      "partial_taken": false
+    },
+    "CRM": {
+      "qty": 3,
+      "avg_price": 224.55999755859375,
+      "stop_price": 204.90821129935128,
+      "peak_price": 224.55999755859375,
+      "sector": "Information Technology",
       "partial_taken": false
     }
   },
@@ -2136,6 +2120,69 @@
         "rsi14_prev": 21.33,
         "atr14": 5.89
       }
+    },
+    {
+      "date": "2026-10-07T22:11:59.171075+00:00",
+      "symbol": "LYV",
+      "action": "SELL",
+      "qty": 8,
+      "price": 170.84,
+      "pnl": -12.44,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=56.6, fiyat=170.84.",
+      "indicators": {
+        "price": 170.84,
+        "sma200": 164.3,
+        "rsi14": 56.6,
+        "rsi14_prev": 51.61,
+        "atr14": 3.71
+      }
+    },
+    {
+      "date": "2026-10-07T22:11:59.677411+00:00",
+      "symbol": "TGT",
+      "action": "SELL",
+      "qty": 2,
+      "price": 150.92,
+      "pnl": -6.96,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "\u0130zleyen stop tetiklendi (151.38), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 151.38
+      }
+    },
+    {
+      "date": "2026-10-07T22:12:00.104079+00:00",
+      "symbol": "WELL",
+      "action": "SELL",
+      "qty": 1,
+      "price": 221.12,
+      "pnl": -12.49,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "\u0130zleyen stop tetiklendi (221.97), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 221.97
+      }
+    },
+    {
+      "date": "2026-10-07T22:12:01.795217+00:00",
+      "symbol": "CRM",
+      "action": "BUY",
+      "qty": 3,
+      "price": 224.56,
+      "stop_price": 204.91,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.26 \u2192 32.04 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=199.23) \u00fczerinde. \u0130zleyen stop: 204.91.",
+      "indicators": {
+        "price": 224.56,
+        "sma200": 199.23,
+        "rsi14": 32.04,
+        "rsi14_prev": 28.26,
+        "atr14": 7.86
+      }
     }
   ],
   "equity_history": [
@@ -2613,6 +2660,11 @@
       "date": "2026-10-06T23:15:28.695661+00:00",
       "equity": 9719.8,
       "cash": 1538.73
+    },
+    {
+      "date": "2026-10-07T22:12:02.206030+00:00",
+      "equity": 9641.65,
+      "cash": 2754.73
     }
   ]
 }

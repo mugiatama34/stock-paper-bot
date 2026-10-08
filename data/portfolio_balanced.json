@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1429.1372413635254,
+  "cash": 1172.7972450256348,
   "positions": {
     "ADI": {
       "qty": 3,
@@ -30,24 +30,24 @@
     "APA": {
       "qty": 16,
       "avg_price": 42.29999923706055,
-      "stop_price": 41.284999302455354,
-      "peak_price": 44.099998474121094,
+      "stop_price": 42.34071677071707,
+      "peak_price": 45.470001220703125,
       "sector": "Energy",
       "partial_taken": false
     },
     "CTAS": {
       "qty": 2,
       "avg_price": 198.8000030517578,
-      "stop_price": 192.77714320591517,
-      "peak_price": 200.5800018310547,
+      "stop_price": 193.25856454031808,
+      "peak_price": 201.1199951171875,
       "sector": "Industrials",
       "partial_taken": false
     },
     "FDS": {
       "qty": 2,
       "avg_price": 268.0899963378906,
-      "stop_price": 255.1121586390904,
-      "peak_price": 277.6400146484375,
+      "stop_price": 263.64356122698103,
+      "peak_price": 286.5199890136719,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -110,8 +110,8 @@
     "KDP": {
       "qty": 11,
       "avg_price": 30.690000534057617,
-      "stop_price": 29.438199509496386,
-      "peak_price": 31.1299991607666,
+      "stop_price": 29.532650213101803,
+      "peak_price": 31.260000228881836,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -126,16 +126,16 @@
     "ACN": {
       "qty": 1,
       "avg_price": 198.89999389648438,
-      "stop_price": 179.01210239955358,
-      "peak_price": 198.89999389648438,
+      "stop_price": 187.35220990862166,
+      "peak_price": 208.36000061035156,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "IFF": {
       "qty": 3,
       "avg_price": 82.41999816894531,
-      "stop_price": 80.77528490339007,
-      "peak_price": 84.11000061035156,
+      "stop_price": 81.279543195452,
+      "peak_price": 84.6500015258789,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -150,9 +150,17 @@
     "PG": {
       "qty": 2,
       "avg_price": 147.82000732421875,
-      "stop_price": 143.1150120326451,
-      "peak_price": 147.82000732421875,
+      "stop_price": 145.64857264927454,
+      "peak_price": 150.58999633789062,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "GPC": {
+      "qty": 2,
+      "avg_price": 128.1699981689453,
+      "stop_price": 122.18142482212612,
+      "peak_price": 128.1699981689453,
+      "sector": "Consumer Discretionary",
       "partial_taken": false
     }
   },
@@ -2731,6 +2739,23 @@
         "atr14": 2.35,
         "volume_vs_avg20": 1.05
       }
+    },
+    {
+      "date": "2026-10-08T22:18:29.578555+00:00",
+      "symbol": "GPC",
+      "action": "BUY",
+      "qty": 2,
+      "price": 128.17,
+      "stop_price": 122.18,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=118.11), RSI14=50.23 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.16x \u00fczerinde. \u0130zleyen stop: 122.18.",
+      "indicators": {
+        "price": 128.17,
+        "sma200": 118.11,
+        "rsi14": 50.23,
+        "atr14": 2.99,
+        "volume_vs_avg20": 1.16
+      }
     }
   ],
   "equity_history": [
@@ -3218,6 +3243,11 @@
       "date": "2026-10-07T23:50:15.035816+00:00",
       "equity": 9428.58,
       "cash": 1429.14
+    },
+    {
+      "date": "2026-10-08T22:18:29.942075+00:00",
+      "equity": 9477.67,
+      "cash": 1172.8
     }
   ]
 }

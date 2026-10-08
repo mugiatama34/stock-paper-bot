@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 2754.73419380188,
+  "cash": 1611.1342334747314,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -30,7 +30,7 @@
     "CSX": {
       "qty": 11,
       "avg_price": 47.275001525878906,
-      "stop_price": 45.472320147923064,
+      "stop_price": 45.50982066563198,
       "peak_price": 47.5,
       "sector": "Industrials",
       "partial_taken": false
@@ -38,8 +38,8 @@
     "FANG": {
       "qty": 2,
       "avg_price": 188.52000427246094,
-      "stop_price": 178.37555313110352,
-      "peak_price": 189.00999450683594,
+      "stop_price": 180.5063738141741,
+      "peak_price": 191.67999267578125,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -78,8 +78,8 @@
     "CB": {
       "qty": 1,
       "avg_price": 330.75,
-      "stop_price": 323.04287501743863,
-      "peak_price": 334.70001220703125,
+      "stop_price": 330.93536267961775,
+      "peak_price": 343.7799987792969,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -94,7 +94,7 @@
     "NUE": {
       "qty": 2,
       "avg_price": 240.38999938964844,
-      "stop_price": 232.1742661498029,
+      "stop_price": 234.77358517630134,
       "peak_price": 251.41000366210938,
       "sector": "Materials",
       "partial_taken": false
@@ -102,7 +102,7 @@
     "CNC": {
       "qty": 6,
       "avg_price": 64.30000305175781,
-      "stop_price": 60.22624615260533,
+      "stop_price": 60.357854570661274,
       "peak_price": 64.98999786376953,
       "sector": "Health Care",
       "partial_taken": false
@@ -110,25 +110,41 @@
     "KO": {
       "qty": 3,
       "avg_price": 86.51000213623047,
-      "stop_price": 83.6564301082066,
-      "peak_price": 86.51000213623047,
+      "stop_price": 84.54588944571358,
+      "peak_price": 87.7699966430664,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "AIZ": {
       "qty": 1,
       "avg_price": 270.9599914550781,
-      "stop_price": 256.27250235421315,
-      "peak_price": 270.9599914550781,
+      "stop_price": 257.65306527274,
+      "peak_price": 272.8599853515625,
       "sector": "Financials",
       "partial_taken": false
     },
     "CRM": {
       "qty": 3,
       "avg_price": 224.55999755859375,
-      "stop_price": 204.90821129935128,
-      "peak_price": 224.55999755859375,
+      "stop_price": 208.1553611755371,
+      "peak_price": 227.8000030517578,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "VZ": {
+      "qty": 14,
+      "avg_price": 46.349998474121094,
+      "stop_price": 44.35714203970773,
+      "peak_price": 46.349998474121094,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "ADM": {
+      "qty": 6,
+      "avg_price": 82.44999694824219,
+      "stop_price": 77.69644546508789,
+      "peak_price": 82.44999694824219,
+      "sector": "Consumer Staples",
       "partial_taken": false
     }
   },
@@ -2183,6 +2199,40 @@
         "rsi14_prev": 28.26,
         "atr14": 7.86
       }
+    },
+    {
+      "date": "2026-10-08T22:18:28.070528+00:00",
+      "symbol": "VZ",
+      "action": "BUY",
+      "qty": 14,
+      "price": 46.35,
+      "stop_price": 44.36,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 23.22 \u2192 33.01 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=45.71) \u00fczerinde. \u0130zleyen stop: 44.36.",
+      "indicators": {
+        "price": 46.35,
+        "sma200": 45.71,
+        "rsi14": 33.01,
+        "rsi14_prev": 23.22,
+        "atr14": 0.8
+      }
+    },
+    {
+      "date": "2026-10-08T22:18:28.438413+00:00",
+      "symbol": "ADM",
+      "action": "BUY",
+      "qty": 6,
+      "price": 82.45,
+      "stop_price": 77.7,
+      "sector": "Consumer Staples",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 23.9 \u2192 37.74 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=74.19) \u00fczerinde. \u0130zleyen stop: 77.70.",
+      "indicators": {
+        "price": 82.45,
+        "sma200": 74.19,
+        "rsi14": 37.74,
+        "rsi14_prev": 23.9,
+        "atr14": 1.9
+      }
     }
   ],
   "equity_history": [
@@ -2670,6 +2720,11 @@
       "date": "2026-10-07T23:50:14.198817+00:00",
       "equity": 9641.65,
       "cash": 2754.73
+    },
+    {
+      "date": "2026-10-08T22:18:28.804849+00:00",
+      "equity": 9741.03,
+      "cash": 1611.13
     }
   ]
 }

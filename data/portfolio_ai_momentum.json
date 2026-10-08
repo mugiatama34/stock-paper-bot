@@ -1,29 +1,13 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 3540.247407913208,
+  "cash": 3406.6573810577393,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
       "stop_price": 178.078125,
       "peak_price": 203.4600067138672,
-      "sector": "Health Care",
-      "partial_taken": false
-    },
-    "MSTR": {
-      "qty": 4,
-      "avg_price": 137.7899932861328,
-      "stop_price": 151.54642704554968,
-      "peak_price": 169.48500061035156,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "BIIB": {
-      "qty": 4,
-      "avg_price": 219.18499755859375,
-      "stop_price": 218.5057111467634,
-      "peak_price": 228.69000244140625,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -46,7 +30,7 @@
     "META": {
       "qty": 1,
       "avg_price": 715.6199951171875,
-      "stop_price": 685.1158432325058,
+      "stop_price": 687.0669032505581,
       "peak_price": 741.9000244140625,
       "sector": "Communication Services",
       "partial_taken": false
@@ -54,9 +38,25 @@
     "TSLA": {
       "qty": 3,
       "avg_price": 378.7300109863281,
-      "stop_price": 358.4942932128906,
+      "stop_price": 358.5471496582031,
       "peak_price": 380.67999267578125,
       "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "ZS": {
+      "qty": 5,
+      "avg_price": 216.80999755859375,
+      "stop_price": 198.17443193708147,
+      "peak_price": 216.80999755859375,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "ILMN": {
+      "qty": 2,
+      "avg_price": 264.57000732421875,
+      "stop_price": 233.91571480887276,
+      "peak_price": 264.57000732421875,
+      "sector": "Health Care",
       "partial_taken": false
     }
   },
@@ -1198,6 +1198,70 @@
         "atr14": 12.06,
         "relative_strength_20d": 0.0611
       }
+    },
+    {
+      "date": "2026-10-08T22:18:25.580428+00:00",
+      "symbol": "MSTR",
+      "action": "SELL",
+      "qty": 4,
+      "price": 151.47,
+      "pnl": 54.72,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (152.23), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 152.23
+      }
+    },
+    {
+      "date": "2026-10-08T22:18:25.998093+00:00",
+      "symbol": "BIIB",
+      "action": "SELL",
+      "qty": 4,
+      "price": 218.43,
+      "pnl": -3.02,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (218.51), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 218.51
+      }
+    },
+    {
+      "date": "2026-10-08T22:18:26.562718+00:00",
+      "symbol": "ZS",
+      "action": "BUY",
+      "qty": 5,
+      "price": 216.81,
+      "stop_price": 198.17,
+      "sector": "Information Technology",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (200.65) ve SMA50 (184.08) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %30.2 g\u00fc\u00e7l\u00fc, RSI=63.85 (<75, tepe de\u011fil). \u0130zleyen stop: 198.17 (2xATR).",
+      "indicators": {
+        "price": 216.81,
+        "sma20": 200.65,
+        "sma50": 184.08,
+        "rsi14": 63.85,
+        "atr14": 9.32,
+        "relative_strength_20d": 0.3024
+      }
+    },
+    {
+      "date": "2026-10-08T22:18:26.939638+00:00",
+      "symbol": "ILMN",
+      "action": "BUY",
+      "qty": 2,
+      "price": 264.57,
+      "stop_price": 233.92,
+      "sector": "Health Care",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (254.61) ve SMA50 (225.45) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %29.1 g\u00fc\u00e7l\u00fc, RSI=61.5 (<75, tepe de\u011fil). \u0130zleyen stop: 233.92 (2xATR).",
+      "indicators": {
+        "price": 264.57,
+        "sma20": 254.61,
+        "sma50": 225.45,
+        "rsi14": 61.5,
+        "atr14": 15.33,
+        "relative_strength_20d": 0.2907
+      }
     }
   ],
   "equity_history": [
@@ -1685,6 +1749,11 @@
       "date": "2026-10-07T23:50:13.444366+00:00",
       "equity": 10036.4,
       "cash": 3540.25
+    },
+    {
+      "date": "2026-10-08T22:18:27.341555+00:00",
+      "equity": 9955.75,
+      "cash": 3406.66
     }
   ]
 }

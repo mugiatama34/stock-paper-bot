@@ -6,8 +6,8 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 187.13854108537947,
-      "peak_price": 218.6280975341797,
+      "stop_price": 192.83185686383928,
+      "peak_price": 225.0,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -46,24 +46,24 @@
     "ZS": {
       "qty": 5,
       "avg_price": 216.80999755859375,
-      "stop_price": 212.3372846330915,
-      "peak_price": 231.1199951171875,
+      "stop_price": 214.5229993547712,
+      "peak_price": 233.72999572753906,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "ILMN": {
       "qty": 2,
       "avg_price": 264.57000732421875,
-      "stop_price": 241.2992706298828,
-      "peak_price": 271.989990234375,
+      "stop_price": 246.9485800606864,
+      "peak_price": 278.1700134277344,
       "sector": "Health Care",
       "partial_taken": false
     },
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 351.59716796875,
-      "peak_price": 365.260009765625,
+      "stop_price": 352.0700204031808,
+      "peak_price": 365.8800048828125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     }
@@ -1789,6 +1789,11 @@
     {
       "date": "2026-10-09T17:03:06.527006+00:00",
       "equity": 10095.34,
+      "cash": 2676.14
+    },
+    {
+      "date": "2026-10-09T21:49:56.597348+00:00",
+      "equity": 10120.51,
       "cash": 2676.14
     }
   ]

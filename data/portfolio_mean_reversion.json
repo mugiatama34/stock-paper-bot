@@ -31,15 +31,15 @@
       "qty": 14,
       "avg_price": 28.530000686645508,
       "stop_price": 27.322322504861013,
-      "peak_price": 29.100000381469727,
+      "peak_price": 29.1200008392334,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "ABNB": {
       "qty": 4,
       "avg_price": 156.9600067138672,
-      "stop_price": 151.7857186453683,
-      "peak_price": 165.5800018310547,
+      "stop_price": 152.03999819074357,
+      "peak_price": 165.8699951171875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -70,8 +70,8 @@
     "CRM": {
       "qty": 3,
       "avg_price": 224.55999755859375,
-      "stop_price": 209.00928497314453,
-      "peak_price": 228.47000122070312,
+      "stop_price": 209.6692886352539,
+      "peak_price": 229.1300048828125,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -2831,6 +2831,11 @@
     {
       "date": "2026-10-09T17:03:12.921447+00:00",
       "equity": 9692.26,
+      "cash": 4051.32
+    },
+    {
+      "date": "2026-10-09T21:49:58.256043+00:00",
+      "equity": 9676.5,
       "cash": 4051.32
     }
   ]

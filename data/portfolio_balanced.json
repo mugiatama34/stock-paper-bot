@@ -14,8 +14,8 @@
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.840000697544642,
-      "peak_price": 14.930000305175781,
+      "stop_price": 14.844285692487444,
+      "peak_price": 14.9399995803833,
       "sector": "Utilities",
       "partial_taken": true
     },
@@ -38,24 +38,24 @@
     "CTAS": {
       "qty": 2,
       "avg_price": 198.8000030517578,
-      "stop_price": 194.46356419154577,
-      "peak_price": 202.1199951171875,
+      "stop_price": 194.68714468819755,
+      "peak_price": 202.41000366210938,
       "sector": "Industrials",
       "partial_taken": false
     },
     "FDS": {
       "qty": 2,
       "avg_price": 268.0899963378906,
-      "stop_price": 263.64356122698103,
-      "peak_price": 286.5199890136719,
+      "stop_price": 264.1214054652623,
+      "peak_price": 287.17999267578125,
       "sector": "Financials",
       "partial_taken": false
     },
     "AMZN": {
       "qty": 3,
       "avg_price": 249.14999389648438,
-      "stop_price": 249.7667236328125,
-      "peak_price": 260.8595886230469,
+      "stop_price": 251.17141723632812,
+      "peak_price": 262.42999267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -70,8 +70,8 @@
     "FCX": {
       "qty": 3,
       "avg_price": 70.0,
-      "stop_price": 68.46856907435826,
-      "peak_price": 73.52999877929688,
+      "stop_price": 68.62857273646763,
+      "peak_price": 73.69000244140625,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -110,8 +110,8 @@
     "KDP": {
       "qty": 11,
       "avg_price": 30.690000534057617,
-      "stop_price": 29.570769484439488,
-      "peak_price": 31.280000686645508,
+      "stop_price": 29.97719768529747,
+      "peak_price": 31.760000228881836,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -126,8 +126,8 @@
     "ACN": {
       "qty": 1,
       "avg_price": 198.89999389648438,
-      "stop_price": 188.50286865234375,
-      "peak_price": 208.36000061035156,
+      "stop_price": 189.12286594935827,
+      "peak_price": 209.05999755859375,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -150,8 +150,8 @@
     "PG": {
       "qty": 2,
       "avg_price": 147.82000732421875,
-      "stop_price": 146.08014133998327,
-      "peak_price": 151.08999633789062,
+      "stop_price": 146.2201407296317,
+      "peak_price": 151.22999572753906,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -3257,6 +3257,11 @@
     {
       "date": "2026-10-09T17:03:14.648949+00:00",
       "equity": 9507.36,
+      "cash": 1172.8
+    },
+    {
+      "date": "2026-10-09T21:49:59.978980+00:00",
+      "equity": 9535.47,
       "cash": 1172.8
     }
   ]

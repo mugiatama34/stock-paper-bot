@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1611.1342334747314,
+  "cash": 4051.315622329712,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -11,36 +11,12 @@
       "sector": "Health Care",
       "partial_taken": false
     },
-    "MSI": {
-      "qty": 1,
-      "avg_price": 461.3599853515625,
-      "stop_price": 445.42789350237166,
-      "peak_price": 463.7349853515625,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
     "GPC": {
       "qty": 3,
       "avg_price": 129.7100067138672,
       "stop_price": 122.72143091474261,
       "peak_price": 129.85000610351562,
       "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
-    "CSX": {
-      "qty": 11,
-      "avg_price": 47.275001525878906,
-      "stop_price": 45.50982066563198,
-      "peak_price": 47.5,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
-    "FANG": {
-      "qty": 2,
-      "avg_price": 188.52000427246094,
-      "stop_price": 180.5063738141741,
-      "peak_price": 191.67999267578125,
-      "sector": "Energy",
       "partial_taken": false
     },
     "OKE": {
@@ -62,57 +38,25 @@
     "ABNB": {
       "qty": 4,
       "avg_price": 156.9600067138672,
-      "stop_price": 150.8959012712751,
-      "peak_price": 164.07000732421875,
+      "stop_price": 151.7857186453683,
+      "peak_price": 165.5800018310547,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "NEM": {
       "qty": 5,
       "avg_price": 116.0199966430664,
-      "stop_price": 107.60017803737095,
-      "peak_price": 116.38999938964844,
-      "sector": "Materials",
-      "partial_taken": false
-    },
-    "CB": {
-      "qty": 1,
-      "avg_price": 330.75,
-      "stop_price": 330.93536267961775,
-      "peak_price": 343.7799987792969,
-      "sector": "Financials",
-      "partial_taken": false
-    },
-    "UNP": {
-      "qty": 2,
-      "avg_price": 278.2799987792969,
-      "stop_price": 267.17252676827565,
-      "peak_price": 278.2799987792969,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
-    "NUE": {
-      "qty": 2,
-      "avg_price": 240.38999938964844,
-      "stop_price": 234.77358517630134,
-      "peak_price": 251.41000366210938,
+      "stop_price": 109.24464416503906,
+      "peak_price": 118.17500305175781,
       "sector": "Materials",
       "partial_taken": false
     },
     "CNC": {
       "qty": 6,
       "avg_price": 64.30000305175781,
-      "stop_price": 60.357854570661274,
-      "peak_price": 64.98999786376953,
+      "stop_price": 60.85321562630789,
+      "peak_price": 65.83000183105469,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "KO": {
-      "qty": 3,
-      "avg_price": 86.51000213623047,
-      "stop_price": 84.54588944571358,
-      "peak_price": 87.7699966430664,
-      "sector": "Consumer Staples",
       "partial_taken": false
     },
     "AIZ": {
@@ -126,25 +70,25 @@
     "CRM": {
       "qty": 3,
       "avg_price": 224.55999755859375,
-      "stop_price": 208.1553611755371,
-      "peak_price": 227.8000030517578,
+      "stop_price": 209.00928497314453,
+      "peak_price": 228.47000122070312,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "VZ": {
-      "qty": 14,
-      "avg_price": 46.349998474121094,
-      "stop_price": 44.35714203970773,
-      "peak_price": 46.349998474121094,
-      "sector": "Communication Services",
       "partial_taken": false
     },
     "ADM": {
       "qty": 6,
       "avg_price": 82.44999694824219,
-      "stop_price": 77.69644546508789,
+      "stop_price": 77.93839263916016,
       "peak_price": 82.44999694824219,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "ALL": {
+      "qty": 5,
+      "avg_price": 230.3800048828125,
+      "stop_price": 217.56125422886439,
+      "peak_price": 230.3800048828125,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -2233,6 +2177,159 @@
         "rsi14_prev": 23.9,
         "atr14": 1.9
       }
+    },
+    {
+      "date": "2026-10-09T17:03:06.537456+00:00",
+      "symbol": "MSI",
+      "action": "SELL",
+      "qty": 1,
+      "price": 443.6,
+      "pnl": -17.76,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (445.43), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 445.43
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:07.030965+00:00",
+      "symbol": "CSX",
+      "action": "SELL",
+      "qty": 11,
+      "price": 47.29,
+      "pnl": 0.22,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=64.58, fiyat=47.29.",
+      "indicators": {
+        "price": 47.29,
+        "sma200": 44.37,
+        "rsi14": 64.58,
+        "rsi14_prev": 52.17,
+        "atr14": 0.7
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:07.557346+00:00",
+      "symbol": "FANG",
+      "action": "SELL",
+      "qty": 2,
+      "price": 192.22,
+      "pnl": 7.4,
+      "partial": false,
+      "sector": "Energy",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.47, fiyat=192.22.",
+      "indicators": {
+        "price": 192.22,
+        "sma200": 184.1,
+        "rsi14": 55.47,
+        "rsi14_prev": 48.75,
+        "atr14": 4.31
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:08.092017+00:00",
+      "symbol": "CB",
+      "action": "SELL",
+      "qty": 1,
+      "price": 342.39,
+      "pnl": 11.64,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=57.33, fiyat=342.39.",
+      "indicators": {
+        "price": 342.39,
+        "sma200": 328.86,
+        "rsi14": 57.33,
+        "rsi14_prev": 54.25,
+        "atr14": 5.08
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:08.614478+00:00",
+      "symbol": "UNP",
+      "action": "SELL",
+      "qty": 2,
+      "price": 277.97,
+      "pnl": -0.62,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=67.73, fiyat=277.97.",
+      "indicators": {
+        "price": 277.97,
+        "sma200": 263.81,
+        "rsi14": 67.73,
+        "rsi14_prev": 48.23,
+        "atr14": 3.89
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:09.122668+00:00",
+      "symbol": "NUE",
+      "action": "SELL",
+      "qty": 2,
+      "price": 251.63,
+      "pnl": 22.48,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=60.3, fiyat=251.63.",
+      "indicators": {
+        "price": 251.63,
+        "sma200": 215.86,
+        "rsi14": 60.3,
+        "rsi14_prev": 48.28,
+        "atr14": 6.66
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:09.763700+00:00",
+      "symbol": "KO",
+      "action": "SELL",
+      "qty": 3,
+      "price": 88.21,
+      "pnl": 5.11,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=56.46, fiyat=88.21.",
+      "indicators": {
+        "price": 88.21,
+        "sma200": 79.57,
+        "rsi14": 56.46,
+        "rsi14_prev": 47.37,
+        "atr14": 1.25
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:10.260134+00:00",
+      "symbol": "VZ",
+      "action": "SELL",
+      "qty": 14,
+      "price": 41.26,
+      "pnl": -71.33,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "\u0130zleyen stop tetiklendi (44.36), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 44.36
+      }
+    },
+    {
+      "date": "2026-10-09T17:03:12.395701+00:00",
+      "symbol": "ALL",
+      "action": "BUY",
+      "qty": 5,
+      "price": 230.38,
+      "stop_price": 217.56,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 27.92 \u2192 33.03 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=223.61) \u00fczerinde. \u0130zleyen stop: 217.56.",
+      "indicators": {
+        "price": 230.38,
+        "sma200": 223.61,
+        "rsi14": 33.03,
+        "rsi14_prev": 27.92,
+        "atr14": 5.13
+      }
     }
   ],
   "equity_history": [
@@ -2730,6 +2827,11 @@
       "date": "2026-10-08T23:58:07.965781+00:00",
       "equity": 9741.03,
       "cash": 1611.13
+    },
+    {
+      "date": "2026-10-09T17:03:12.921447+00:00",
+      "equity": 9692.26,
+      "cash": 4051.32
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 3406.6573810577393,
+  "cash": 2676.1373615264893,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 178.078125,
-      "peak_price": 203.4600067138672,
+      "stop_price": 187.13854108537947,
+      "peak_price": 218.6280975341797,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -22,7 +22,7 @@
     "AMD": {
       "qty": 2,
       "avg_price": 607.8699951171875,
-      "stop_price": 602.0128435407366,
+      "stop_price": 605.6171264648438,
       "peak_price": 649.4199829101562,
       "sector": "Information Technology",
       "partial_taken": false
@@ -30,7 +30,7 @@
     "META": {
       "qty": 1,
       "avg_price": 715.6199951171875,
-      "stop_price": 687.0669032505581,
+      "stop_price": 697.9485735212054,
       "peak_price": 741.9000244140625,
       "sector": "Communication Services",
       "partial_taken": false
@@ -38,25 +38,33 @@
     "TSLA": {
       "qty": 3,
       "avg_price": 378.7300109863281,
-      "stop_price": 358.5471496582031,
-      "peak_price": 380.67999267578125,
+      "stop_price": 361.2128470284598,
+      "peak_price": 383.2699890136719,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "ZS": {
       "qty": 5,
       "avg_price": 216.80999755859375,
-      "stop_price": 198.17443193708147,
-      "peak_price": 216.80999755859375,
+      "stop_price": 212.3372846330915,
+      "peak_price": 231.1199951171875,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "ILMN": {
       "qty": 2,
       "avg_price": 264.57000732421875,
-      "stop_price": 233.91571480887276,
-      "peak_price": 264.57000732421875,
+      "stop_price": 241.2992706298828,
+      "peak_price": 271.989990234375,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "MAR": {
+      "qty": 2,
+      "avg_price": 365.260009765625,
+      "stop_price": 351.59716796875,
+      "peak_price": 365.260009765625,
+      "sector": "Consumer Discretionary",
       "partial_taken": false
     }
   },
@@ -1262,6 +1270,24 @@
         "atr14": 15.33,
         "relative_strength_20d": 0.2907
       }
+    },
+    {
+      "date": "2026-10-09T17:03:05.963493+00:00",
+      "symbol": "MAR",
+      "action": "BUY",
+      "qty": 2,
+      "price": 365.26,
+      "stop_price": 351.6,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (351.06) ve SMA50 (349.74) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %7.0 g\u00fc\u00e7l\u00fc, RSI=71.62 (<75, tepe de\u011fil). \u0130zleyen stop: 351.60 (2xATR).",
+      "indicators": {
+        "price": 365.26,
+        "sma20": 351.06,
+        "sma50": 349.74,
+        "rsi14": 71.62,
+        "atr14": 6.83,
+        "relative_strength_20d": 0.0703
+      }
     }
   ],
   "equity_history": [
@@ -1759,6 +1785,11 @@
       "date": "2026-10-08T23:58:06.316682+00:00",
       "equity": 9955.75,
       "cash": 3406.66
+    },
+    {
+      "date": "2026-10-09T17:03:06.527006+00:00",
+      "equity": 10095.34,
+      "cash": 2676.14
     }
   ]
 }

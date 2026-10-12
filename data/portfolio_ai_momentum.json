@@ -1,12 +1,12 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 2676.1373615264893,
+  "cash": 3332.8973712921143,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 192.83185686383928,
+      "stop_price": 193.16971261160714,
       "peak_price": 225.0,
       "sector": "Health Care",
       "partial_taken": false
@@ -19,26 +19,18 @@
       "sector": "Communication Services",
       "partial_taken": false
     },
-    "AMD": {
-      "qty": 2,
-      "avg_price": 607.8699951171875,
-      "stop_price": 605.6171264648438,
-      "peak_price": 649.4199829101562,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
     "META": {
       "qty": 1,
       "avg_price": 715.6199951171875,
-      "stop_price": 697.9485735212054,
-      "peak_price": 741.9000244140625,
+      "stop_price": 698.0485752650669,
+      "peak_price": 742.9600219726562,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "TSLA": {
       "qty": 3,
       "avg_price": 378.7300109863281,
-      "stop_price": 361.2128470284598,
+      "stop_price": 361.55855887276783,
       "peak_price": 383.2699890136719,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -54,7 +46,7 @@
     "ILMN": {
       "qty": 2,
       "avg_price": 264.57000732421875,
-      "stop_price": 246.9485800606864,
+      "stop_price": 247.51143319266183,
       "peak_price": 278.1700134277344,
       "sector": "Health Care",
       "partial_taken": false
@@ -62,9 +54,17 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 352.0700204031808,
-      "peak_price": 365.8800048828125,
+      "stop_price": 355.5394287109375,
+      "peak_price": 369.29998779296875,
       "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "MRVL": {
+      "qty": 2,
+      "avg_price": 265.8599853515625,
+      "stop_price": 237.76883749628863,
+      "peak_price": 265.8599853515625,
+      "sector": "Information Technology",
       "partial_taken": false
     }
   },
@@ -1288,6 +1288,38 @@
         "atr14": 6.83,
         "relative_strength_20d": 0.0703
       }
+    },
+    {
+      "date": "2026-10-12T23:44:14.445071+00:00",
+      "symbol": "AMD",
+      "action": "SELL",
+      "qty": 2,
+      "price": 594.24,
+      "pnl": -27.26,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (605.62), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 605.62
+      }
+    },
+    {
+      "date": "2026-10-12T23:44:15.399377+00:00",
+      "symbol": "MRVL",
+      "action": "BUY",
+      "qty": 2,
+      "price": 265.86,
+      "stop_price": 237.77,
+      "sector": "Information Technology",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (260.77) ve SMA50 (238.01) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %19.0 g\u00fc\u00e7l\u00fc, RSI=52.34 (<75, tepe de\u011fil). \u0130zleyen stop: 237.77 (2xATR).",
+      "indicators": {
+        "price": 265.86,
+        "sma20": 260.77,
+        "sma50": 238.01,
+        "rsi14": 52.34,
+        "atr14": 14.05,
+        "relative_strength_20d": 0.1901
+      }
     }
   ],
   "equity_history": [
@@ -1800,6 +1832,11 @@
       "date": "2026-10-09T23:30:23.497740+00:00",
       "equity": 10120.51,
       "cash": 2676.14
+    },
+    {
+      "date": "2026-10-12T23:44:15.954801+00:00",
+      "equity": 10044.64,
+      "cash": 3332.9
     }
   ]
 }

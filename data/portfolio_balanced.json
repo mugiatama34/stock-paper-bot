@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1867.9572486877441,
+  "cash": 1520.4972648620605,
   "positions": {
     "ADI": {
       "qty": 3,
@@ -14,39 +14,39 @@
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.882857186453682,
-      "peak_price": 14.979999542236328,
+      "stop_price": 14.892857415335518,
+      "peak_price": 14.989999771118164,
       "sector": "Utilities",
       "partial_taken": true
     },
     "APA": {
       "qty": 8,
       "avg_price": 42.29999923706055,
-      "stop_price": 43.73000117710659,
-      "peak_price": 46.84000015258789,
+      "stop_price": 44.99285616193499,
+      "peak_price": 48.0099983215332,
       "sector": "Energy",
       "partial_taken": true
     },
     "CTAS": {
-      "qty": 2,
+      "qty": 1,
       "avg_price": 198.8000030517578,
-      "stop_price": 197.3478502546038,
-      "peak_price": 205.22999572753906,
+      "stop_price": 199.27000427246094,
+      "peak_price": 206.3800048828125,
       "sector": "Industrials",
-      "partial_taken": false
+      "partial_taken": true
     },
     "FDS": {
       "qty": 2,
       "avg_price": 268.0899963378906,
-      "stop_price": 266.1085880824498,
-      "peak_price": 288.6700134277344,
+      "stop_price": 268.2342987060547,
+      "peak_price": 290.82000732421875,
       "sector": "Financials",
       "partial_taken": false
     },
     "AMZN": {
       "qty": 3,
       "avg_price": 249.14999389648438,
-      "stop_price": 251.28427124023438,
+      "stop_price": 251.68569946289062,
       "peak_price": 262.42999267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -54,15 +54,15 @@
     "BAX": {
       "qty": 23,
       "avg_price": 24.0,
-      "stop_price": 23.487143925258092,
-      "peak_price": 24.780000686645508,
+      "stop_price": 23.61438533238002,
+      "peak_price": 24.889999389648438,
       "sector": "Health Care",
       "partial_taken": false
     },
     "FCX": {
       "qty": 3,
       "avg_price": 70.0,
-      "stop_price": 68.90143040248326,
+      "stop_price": 69.09000178745815,
       "peak_price": 73.69000244140625,
       "sector": "Materials",
       "partial_taken": false
@@ -75,14 +75,6 @@
       "sector": "Real Estate",
       "partial_taken": false
     },
-    "BEN": {
-      "qty": 23,
-      "avg_price": 32.5,
-      "stop_price": 31.45229356343284,
-      "peak_price": 32.880001068115234,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "ESS": {
       "qty": 2,
       "avg_price": 269.510009765625,
@@ -91,18 +83,10 @@
       "sector": "Real Estate",
       "partial_taken": false
     },
-    "INCY": {
-      "qty": 3,
-      "avg_price": 117.13999938964844,
-      "stop_price": 110.80999646868024,
-      "peak_price": 117.13999938964844,
-      "sector": "Health Care",
-      "partial_taken": false
-    },
     "KDP": {
       "qty": 11,
       "avg_price": 30.690000534057617,
-      "stop_price": 30.971739246534828,
+      "stop_price": 30.98815179415146,
       "peak_price": 32.75,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -126,16 +110,16 @@
     "IFF": {
       "qty": 3,
       "avg_price": 82.41999816894531,
-      "stop_price": 81.87215532575335,
-      "peak_price": 84.95999908447266,
+      "stop_price": 84.70428248814174,
+      "peak_price": 88.19999694824219,
       "sector": "Materials",
       "partial_taken": false
     },
     "WMB": {
       "qty": 3,
       "avg_price": 70.54000091552734,
-      "stop_price": 70.72571454729352,
-      "peak_price": 74.16999816894531,
+      "stop_price": 71.19214412144252,
+      "peak_price": 74.56999969482422,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -150,9 +134,33 @@
     "GPC": {
       "qty": 2,
       "avg_price": 128.1699981689453,
-      "stop_price": 124.05713653564453,
-      "peak_price": 129.6199951171875,
+      "stop_price": 125.0828628540039,
+      "peak_price": 130.7100067138672,
       "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "ABT": {
+      "qty": 7,
+      "avg_price": 102.61000061035156,
+      "stop_price": 97.86943054199219,
+      "peak_price": 102.61000061035156,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "FAST": {
+      "qty": 11,
+      "avg_price": 51.43000030517578,
+      "stop_price": 49.47571400233677,
+      "peak_price": 51.43000030517578,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "ICE": {
+      "qty": 2,
+      "avg_price": 156.4199981689453,
+      "stop_price": 150.44999476841517,
+      "peak_price": 156.4199981689453,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -2780,6 +2788,103 @@
         "atr14": 1.55,
         "volume_vs_avg20": 0.82
       }
+    },
+    {
+      "date": "2026-10-13T21:56:34.352718+00:00",
+      "symbol": "CTAS",
+      "action": "SELL",
+      "qty": 1,
+      "price": 206.38,
+      "pnl": 7.58,
+      "partial": true,
+      "sector": "Industrials",
+      "reasoning": "RSI a\u015f\u0131r\u0131 al\u0131mda (73.54 > 70): pozisyonun yar\u0131s\u0131 sat\u0131larak k\u00e2r kilitlendi, kalan yar\u0131 izleyen stop ile s\u00fcr\u00fcyor.",
+      "indicators": {
+        "price": 206.38,
+        "sma200": 187.78,
+        "rsi14": 73.54,
+        "atr14": 3.56,
+        "volume_vs_avg20": 0.83
+      }
+    },
+    {
+      "date": "2026-10-13T21:56:34.787819+00:00",
+      "symbol": "BEN",
+      "action": "SELL",
+      "qty": 23,
+      "price": 31.18,
+      "pnl": -30.36,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (31.45), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 31.45
+      }
+    },
+    {
+      "date": "2026-10-13T21:56:35.211078+00:00",
+      "symbol": "INCY",
+      "action": "SELL",
+      "qty": 3,
+      "price": 108.62,
+      "pnl": -25.56,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (110.81), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 110.81
+      }
+    },
+    {
+      "date": "2026-10-13T21:56:37.244563+00:00",
+      "symbol": "ABT",
+      "action": "BUY",
+      "qty": 7,
+      "price": 102.61,
+      "stop_price": 97.87,
+      "sector": "Health Care",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=102.33), RSI14=47.49 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.04x \u00fczerinde. \u0130zleyen stop: 97.87.",
+      "indicators": {
+        "price": 102.61,
+        "sma200": 102.33,
+        "rsi14": 47.49,
+        "atr14": 2.37,
+        "volume_vs_avg20": 1.04
+      }
+    },
+    {
+      "date": "2026-10-13T21:56:37.644169+00:00",
+      "symbol": "FAST",
+      "action": "BUY",
+      "qty": 11,
+      "price": 51.43,
+      "stop_price": 49.48,
+      "sector": "Industrials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=46.23), RSI14=53.87 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.41x \u00fczerinde. \u0130zleyen stop: 49.48.",
+      "indicators": {
+        "price": 51.43,
+        "sma200": 46.23,
+        "rsi14": 53.87,
+        "atr14": 0.98,
+        "volume_vs_avg20": 1.41
+      }
+    },
+    {
+      "date": "2026-10-13T21:56:38.045820+00:00",
+      "symbol": "ICE",
+      "action": "BUY",
+      "qty": 2,
+      "price": 156.42,
+      "stop_price": 150.45,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=153.84), RSI14=50.2 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.15x \u00fczerinde. \u0130zleyen stop: 150.45.",
+      "indicators": {
+        "price": 156.42,
+        "sma200": 153.84,
+        "rsi14": 50.2,
+        "atr14": 2.99,
+        "volume_vs_avg20": 1.15
+      }
     }
   ],
   "equity_history": [
@@ -3302,6 +3407,11 @@
       "date": "2026-10-13T01:38:02.627204+00:00",
       "equity": 9571.95,
       "cash": 1867.96
+    },
+    {
+      "date": "2026-10-13T21:56:38.441694+00:00",
+      "equity": 9602.29,
+      "cash": 1520.5
     }
   ]
 }

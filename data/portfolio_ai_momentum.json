@@ -22,15 +22,15 @@
     "META": {
       "qty": 1,
       "avg_price": 715.6199951171875,
-      "stop_price": 698.0485752650669,
-      "peak_price": 742.9600219726562,
+      "stop_price": 716.2785993303571,
+      "peak_price": 762.5,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "TSLA": {
       "qty": 3,
       "avg_price": 378.7300109863281,
-      "stop_price": 361.55855887276783,
+      "stop_price": 361.89998953683033,
       "peak_price": 383.2699890136719,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -54,16 +54,16 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 355.5394287109375,
-      "peak_price": 369.29998779296875,
+      "stop_price": 358.16143798828125,
+      "peak_price": 371.5,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "MRVL": {
       "qty": 2,
       "avg_price": 265.8599853515625,
-      "stop_price": 237.76936501442478,
-      "peak_price": 265.8599853515625,
+      "stop_price": 238.92841326478313,
+      "peak_price": 268.7250061035156,
       "sector": "Information Technology",
       "partial_taken": false
     }
@@ -1841,6 +1841,11 @@
     {
       "date": "2026-10-13T01:37:59.142573+00:00",
       "equity": 10044.64,
+      "cash": 3332.9
+    },
+    {
+      "date": "2026-10-13T21:56:29.273563+00:00",
+      "equity": 10074.34,
       "cash": 3332.9
     }
   ]

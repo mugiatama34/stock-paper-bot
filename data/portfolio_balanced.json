@@ -6,7 +6,7 @@
     "ADI": {
       "qty": 3,
       "avg_price": 371.1700134277344,
-      "stop_price": 399.0992649623326,
+      "stop_price": 399.09997994559154,
       "peak_price": 420.54998779296875,
       "sector": "Information Technology",
       "partial_taken": true
@@ -62,7 +62,7 @@
     "FCX": {
       "qty": 3,
       "avg_price": 70.0,
-      "stop_price": 68.90071650913784,
+      "stop_price": 68.90143040248326,
       "peak_price": 73.69000244140625,
       "sector": "Materials",
       "partial_taken": false
@@ -3296,6 +3296,11 @@
     {
       "date": "2026-10-12T23:44:23.891813+00:00",
       "equity": 9571.93,
+      "cash": 1867.96
+    },
+    {
+      "date": "2026-10-13T01:38:02.627204+00:00",
+      "equity": 9571.95,
       "cash": 1867.96
     }
   ]

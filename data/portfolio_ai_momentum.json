@@ -1,13 +1,13 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 3332.8973712921143,
+  "cash": 1904.7373905181885,
   "positions": {
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 193.16971261160714,
-      "peak_price": 225.0,
+      "stop_price": 193.9962877546038,
+      "peak_price": 226.3000030517578,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -22,7 +22,7 @@
     "META": {
       "qty": 1,
       "avg_price": 715.6199951171875,
-      "stop_price": 716.2785993303571,
+      "stop_price": 717.5066353934152,
       "peak_price": 762.5,
       "sector": "Communication Services",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "ILMN": {
       "qty": 2,
       "avg_price": 264.57000732421875,
-      "stop_price": 247.51143319266183,
+      "stop_price": 249.98286655970983,
       "peak_price": 278.1700134277344,
       "sector": "Health Care",
       "partial_taken": false
@@ -54,8 +54,8 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 358.16143798828125,
-      "peak_price": 371.5,
+      "stop_price": 358.5814426967076,
+      "peak_price": 371.82000732421875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -65,6 +65,22 @@
       "stop_price": 238.92841326478313,
       "peak_price": 268.7250061035156,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "FAST": {
+      "qty": 16,
+      "avg_price": 52.0,
+      "stop_price": 49.46571404593332,
+      "peak_price": 52.0,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "KDP": {
+      "qty": 18,
+      "avg_price": 33.119998931884766,
+      "stop_price": 31.397703448447007,
+      "peak_price": 33.119998931884766,
+      "sector": "Consumer Staples",
       "partial_taken": false
     }
   },
@@ -1320,6 +1336,42 @@
         "atr14": 14.05,
         "relative_strength_20d": 0.1901
       }
+    },
+    {
+      "date": "2026-10-14T20:53:16.774893+00:00",
+      "symbol": "FAST",
+      "action": "BUY",
+      "qty": 16,
+      "price": 52.0,
+      "stop_price": 49.47,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (50.43) ve SMA50 (50.38) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %3.7 g\u00fc\u00e7l\u00fc, RSI=60.6 (<75, tepe de\u011fil). \u0130zleyen stop: 49.47 (2xATR).",
+      "indicators": {
+        "price": 52.0,
+        "sma20": 50.43,
+        "sma50": 50.38,
+        "rsi14": 60.6,
+        "atr14": 1.27,
+        "relative_strength_20d": 0.0374
+      }
+    },
+    {
+      "date": "2026-10-14T20:53:17.340654+00:00",
+      "symbol": "KDP",
+      "action": "BUY",
+      "qty": 18,
+      "price": 33.12,
+      "stop_price": 31.4,
+      "sector": "Consumer Staples",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (31.28) ve SMA50 (31.22) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %2.6 g\u00fc\u00e7l\u00fc, RSI=67.05 (<75, tepe de\u011fil). \u0130zleyen stop: 31.40 (2xATR).",
+      "indicators": {
+        "price": 33.12,
+        "sma20": 31.28,
+        "sma50": 31.22,
+        "rsi14": 67.05,
+        "atr14": 0.86,
+        "relative_strength_20d": 0.0259
+      }
     }
   ],
   "equity_history": [
@@ -1852,6 +1904,11 @@
       "date": "2026-10-13T23:26:46.368839+00:00",
       "equity": 10074.34,
       "cash": 3332.9
+    },
+    {
+      "date": "2026-10-14T20:53:17.896714+00:00",
+      "equity": 9960.84,
+      "cash": 1904.74
     }
   ]
 }

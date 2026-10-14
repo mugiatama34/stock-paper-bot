@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1556.2172660827637,
+  "cash": 1324.0472679138184,
   "positions": {
     "ADI": {
       "qty": 3,
@@ -153,6 +153,14 @@
       "stop_price": 408.44571358816967,
       "peak_price": 446.6300048828125,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "WELL": {
+      "qty": 1,
+      "avg_price": 232.1699981689453,
+      "stop_price": 222.4757123674665,
+      "peak_price": 232.1699981689453,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -2944,6 +2952,23 @@
         "atr14": 19.09,
         "volume_vs_avg20": 1.31
       }
+    },
+    {
+      "date": "2026-10-14T22:38:16.887398+00:00",
+      "symbol": "WELL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 232.17,
+      "stop_price": 222.48,
+      "sector": "Real Estate",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=214.57), RSI14=47.74 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.17x \u00fczerinde. \u0130zleyen stop: 222.48.",
+      "indicators": {
+        "price": 232.17,
+        "sma200": 214.57,
+        "rsi14": 47.74,
+        "atr14": 4.85,
+        "volume_vs_avg20": 1.17
+      }
     }
   ],
   "equity_history": [
@@ -3481,6 +3506,11 @@
       "date": "2026-10-14T20:53:26.902759+00:00",
       "equity": 9548.91,
       "cash": 1556.22
+    },
+    {
+      "date": "2026-10-14T22:38:17.693401+00:00",
+      "equity": 9548.91,
+      "cash": 1324.05
     }
   ]
 }

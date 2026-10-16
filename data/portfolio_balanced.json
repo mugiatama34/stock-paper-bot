@@ -78,16 +78,16 @@
     "IFF": {
       "qty": 2,
       "avg_price": 82.41999816894531,
-      "stop_price": 86.9471457345145,
-      "peak_price": 90.6500015258789,
+      "stop_price": 86.97714451381138,
+      "peak_price": 90.68000030517578,
       "sector": "Materials",
       "partial_taken": true
     },
     "PG": {
       "qty": 1,
       "avg_price": 147.82000732421875,
-      "stop_price": 154.0585719517299,
-      "peak_price": 159.3300018310547,
+      "stop_price": 154.0771484375,
+      "peak_price": 159.35000610351562,
       "sector": "Consumer Staples",
       "partial_taken": true
     },
@@ -3743,6 +3743,11 @@
     {
       "date": "2026-10-16T20:02:11.929260+00:00",
       "equity": 9592.35,
+      "cash": 2281.26
+    },
+    {
+      "date": "2026-10-16T22:12:30.937453+00:00",
+      "equity": 9592.43,
       "cash": 2281.26
     }
   ]

@@ -54,8 +54,8 @@
     "NEM": {
       "qty": 9,
       "avg_price": 115.79000091552734,
-      "stop_price": 110.2996414729527,
-      "peak_price": 118.58000183105469,
+      "stop_price": 110.3196381160191,
+      "peak_price": 118.5999984741211,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -78,8 +78,8 @@
     "BNY": {
       "qty": 5,
       "avg_price": 143.25,
-      "stop_price": 135.0571528843471,
-      "peak_price": 143.25,
+      "stop_price": 135.1071559361049,
+      "peak_price": 143.3000030517578,
       "sector": "Financials",
       "partial_taken": false
     }
@@ -3421,6 +3421,11 @@
     {
       "date": "2026-10-16T20:02:07.139704+00:00",
       "equity": 9888.4,
+      "cash": 2192.25
+    },
+    {
+      "date": "2026-10-16T22:12:30.215645+00:00",
+      "equity": 9888.83,
       "cash": 2192.25
     }
   ]

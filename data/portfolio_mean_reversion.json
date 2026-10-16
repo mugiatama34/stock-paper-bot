@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 2694.055501937866,
+  "cash": 2192.2455348968506,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -46,33 +46,41 @@
     "PRU": {
       "qty": 14,
       "avg_price": 116.3499984741211,
-      "stop_price": 110.5249993460519,
+      "stop_price": 110.89910534449986,
       "peak_price": 116.3499984741211,
-      "sector": "Financials",
-      "partial_taken": false
-    },
-    "COIN": {
-      "qty": 4,
-      "avg_price": 183.80999755859375,
-      "stop_price": 157.93022755214147,
-      "peak_price": 183.80999755859375,
       "sector": "Financials",
       "partial_taken": false
     },
     "NEM": {
       "qty": 9,
       "avg_price": 115.79000091552734,
-      "stop_price": 107.19356972830636,
-      "peak_price": 115.79000091552734,
+      "stop_price": 110.2996414729527,
+      "peak_price": 118.58000183105469,
       "sector": "Materials",
       "partial_taken": false
     },
     "SPG": {
       "qty": 4,
       "avg_price": 203.38999938964844,
-      "stop_price": 195.3667836870466,
-      "peak_price": 203.38999938964844,
+      "stop_price": 197.31928253173828,
+      "peak_price": 205.52999877929688,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "SWKS": {
+      "qty": 6,
+      "avg_price": 79.69999694824219,
+      "stop_price": 69.24123055594308,
+      "peak_price": 79.69999694824219,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "BNY": {
+      "qty": 5,
+      "avg_price": 143.25,
+      "stop_price": 135.0571528843471,
+      "peak_price": 143.25,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -2805,6 +2813,58 @@
         "rsi14_prev": 31.5,
         "atr14": 3.21
       }
+    },
+    {
+      "date": "2026-10-16T20:02:04.466915+00:00",
+      "symbol": "COIN",
+      "action": "SELL",
+      "qty": 4,
+      "price": 173.16,
+      "pnl": -42.6,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=37.78, fiyat=173.16.",
+      "indicators": {
+        "price": 173.16,
+        "sma200": 182.32,
+        "rsi14": 37.78,
+        "rsi14_prev": 41.8,
+        "atr14": 10.87
+      }
+    },
+    {
+      "date": "2026-10-16T20:02:05.967911+00:00",
+      "symbol": "SWKS",
+      "action": "BUY",
+      "qty": 6,
+      "price": 79.7,
+      "stop_price": 69.24,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 29.49 \u2192 33.43 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=66.14) \u00fczerinde. \u0130zleyen stop: 69.24.",
+      "indicators": {
+        "price": 79.7,
+        "sma200": 66.14,
+        "rsi14": 33.43,
+        "rsi14_prev": 29.49,
+        "atr14": 4.18
+      }
+    },
+    {
+      "date": "2026-10-16T20:02:06.503276+00:00",
+      "symbol": "BNY",
+      "action": "BUY",
+      "qty": 5,
+      "price": 143.25,
+      "stop_price": 135.06,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.67 \u2192 37.89 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=137.47) \u00fczerinde. \u0130zleyen stop: 135.06.",
+      "indicators": {
+        "price": 143.25,
+        "sma200": 137.47,
+        "rsi14": 37.89,
+        "rsi14_prev": 31.67,
+        "atr14": 3.28
+      }
     }
   ],
   "equity_history": [
@@ -3357,6 +3417,11 @@
       "date": "2026-10-15T22:40:52.146194+00:00",
       "equity": 9934.37,
       "cash": 2694.06
+    },
+    {
+      "date": "2026-10-16T20:02:07.139704+00:00",
+      "equity": 9888.4,
+      "cash": 2192.25
     }
   ]
 }

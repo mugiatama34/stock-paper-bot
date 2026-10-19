@@ -30,15 +30,15 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 373.27713884626115,
-      "peak_price": 388.04998779296875,
+      "stop_price": 376.2343052455357,
+      "peak_price": 390.70001220703125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "KDP": {
       "qty": 18,
       "avg_price": 33.119998931884766,
-      "stop_price": 32.895713806152344,
+      "stop_price": 32.908570425851,
       "peak_price": 34.619998931884766,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -46,16 +46,16 @@
     "TEAM": {
       "qty": 6,
       "avg_price": 207.82000732421875,
-      "stop_price": 188.991450718471,
-      "peak_price": 207.82000732421875,
+      "stop_price": 196.40714154924666,
+      "peak_price": 214.75,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "MSFT": {
       "qty": 2,
       "avg_price": 529.0499877929688,
-      "stop_price": 505.5771222795759,
-      "peak_price": 529.0499877929688,
+      "stop_price": 510.6316223144531,
+      "peak_price": 533.52001953125,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -2046,6 +2046,11 @@
     {
       "date": "2026-10-16T22:12:29.490183+00:00",
       "equity": 9791.87,
+      "cash": 2804.5
+    },
+    {
+      "date": "2026-10-19T21:40:35.139648+00:00",
+      "equity": 9862.81,
       "cash": 2804.5
     }
   ]

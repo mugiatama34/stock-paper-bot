@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 1826.3455410003662,
+  "cash": 2828.2254581451416,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -22,17 +22,9 @@
     "GRMN": {
       "qty": 2,
       "avg_price": 276.4100036621094,
-      "stop_price": 266.3555395943778,
-      "peak_price": 286.1600036621094,
+      "stop_price": 271.0750056675502,
+      "peak_price": 290.3500061035156,
       "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
-    "MMM": {
-      "qty": 4,
-      "avg_price": 162.77000427246094,
-      "stop_price": 156.98893465314592,
-      "peak_price": 165.3300018310547,
-      "sector": "Industrials",
       "partial_taken": false
     },
     "DE": {
@@ -43,14 +35,6 @@
       "sector": "Industrials",
       "partial_taken": false
     },
-    "PRU": {
-      "qty": 14,
-      "avg_price": 116.3499984741211,
-      "stop_price": 110.89910534449986,
-      "peak_price": 116.3499984741211,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "NEM": {
       "qty": 9,
       "avg_price": 115.79000091552734,
@@ -59,27 +43,19 @@
       "sector": "Materials",
       "partial_taken": false
     },
-    "SPG": {
-      "qty": 4,
-      "avg_price": 203.38999938964844,
-      "stop_price": 197.32463945661272,
-      "peak_price": 205.52999877929688,
-      "sector": "Real Estate",
-      "partial_taken": false
-    },
     "SWKS": {
       "qty": 6,
       "avg_price": 79.69999694824219,
-      "stop_price": 69.80678994315011,
-      "peak_price": 80.2300033569336,
+      "stop_price": 71.22411101205009,
+      "peak_price": 81.30000305175781,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "BNY": {
       "qty": 5,
       "avg_price": 143.25,
-      "stop_price": 135.21608461652482,
-      "peak_price": 143.3000030517578,
+      "stop_price": 136.1142943246024,
+      "peak_price": 144.25,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -89,6 +65,22 @@
       "stop_price": 162.225346156529,
       "peak_price": 182.9499969482422,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "PFG": {
+      "qty": 11,
+      "avg_price": 107.94000244140625,
+      "stop_price": 102.86857223510742,
+      "peak_price": 107.94000244140625,
+      "sector": "Financials",
+      "partial_taken": false
+    },
+    "DOC": {
+      "qty": 50,
+      "avg_price": 18.760000228881836,
+      "stop_price": 17.64664575883689,
+      "peak_price": 18.760000228881836,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -2890,6 +2882,94 @@
         "rsi14_prev": 28.94,
         "atr14": 8.29
       }
+    },
+    {
+      "date": "2026-10-20T20:48:08.235119+00:00",
+      "symbol": "MMM",
+      "action": "SELL",
+      "qty": 4,
+      "price": 171.37,
+      "pnl": 34.4,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=62.6, fiyat=171.37.",
+      "indicators": {
+        "price": 171.37,
+        "sma200": 159.74,
+        "rsi14": 62.6,
+        "rsi14_prev": 36.29,
+        "atr14": 3.81
+      }
+    },
+    {
+      "date": "2026-10-20T20:48:08.686088+00:00",
+      "symbol": "PRU",
+      "action": "SELL",
+      "qty": 14,
+      "price": 115.27,
+      "pnl": -15.12,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=56.9, fiyat=115.27.",
+      "indicators": {
+        "price": 115.27,
+        "sma200": 106.83,
+        "rsi14": 56.9,
+        "rsi14_prev": 44.27,
+        "atr14": 2.25
+      }
+    },
+    {
+      "date": "2026-10-20T20:48:09.085144+00:00",
+      "symbol": "SPG",
+      "action": "SELL",
+      "qty": 4,
+      "price": 206.99,
+      "pnl": 14.4,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=61.88, fiyat=206.99.",
+      "indicators": {
+        "price": 206.99,
+        "sma200": 201.35,
+        "rsi14": 61.88,
+        "rsi14_prev": 46.46,
+        "atr14": 3.35
+      }
+    },
+    {
+      "date": "2026-10-20T20:48:10.284938+00:00",
+      "symbol": "PFG",
+      "action": "BUY",
+      "qty": 11,
+      "price": 107.94,
+      "stop_price": 102.87,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 25.23 \u2192 35.02 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=101.58) \u00fczerinde. \u0130zleyen stop: 102.87.",
+      "indicators": {
+        "price": 107.94,
+        "sma200": 101.58,
+        "rsi14": 35.02,
+        "rsi14_prev": 25.23,
+        "atr14": 2.03
+      }
+    },
+    {
+      "date": "2026-10-20T20:48:10.700327+00:00",
+      "symbol": "DOC",
+      "action": "BUY",
+      "qty": 50,
+      "price": 18.76,
+      "stop_price": 17.65,
+      "sector": "Real Estate",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 26.37 \u2192 34.82 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=18.57) \u00fczerinde. \u0130zleyen stop: 17.65.",
+      "indicators": {
+        "price": 18.76,
+        "sma200": 18.57,
+        "rsi14": 34.82,
+        "rsi14_prev": 26.37,
+        "atr14": 0.45
+      }
     }
   ],
   "equity_history": [
@@ -3462,6 +3542,11 @@
       "date": "2026-10-19T23:06:22.362992+00:00",
       "equity": 9808.33,
       "cash": 1826.35
+    },
+    {
+      "date": "2026-10-20T20:48:11.107697+00:00",
+      "equity": 9900.63,
+      "cash": 2828.23
     }
   ]
 }

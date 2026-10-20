@@ -6,8 +6,8 @@
     "MRNA": {
       "qty": 2,
       "avg_price": 144.26499938964844,
-      "stop_price": 202.0380140032087,
-      "peak_price": 236.5,
+      "stop_price": 203.52788652692522,
+      "peak_price": 242.0800018310547,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -30,31 +30,31 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 376.2343052455357,
-      "peak_price": 390.70001220703125,
+      "stop_price": 382.98714773995533,
+      "peak_price": 397.30999755859375,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "KDP": {
       "qty": 18,
       "avg_price": 33.119998931884766,
-      "stop_price": 32.908570425851,
-      "peak_price": 34.619998931884766,
+      "stop_price": 33.03571592058454,
+      "peak_price": 34.630001068115234,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "TEAM": {
       "qty": 6,
       "avg_price": 207.82000732421875,
-      "stop_price": 196.40714154924666,
-      "peak_price": 214.75,
+      "stop_price": 202.91430010114397,
+      "peak_price": 221.11000061035156,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "MSFT": {
       "qty": 2,
       "avg_price": 529.0499877929688,
-      "stop_price": 510.6316223144531,
+      "stop_price": 510.9314400809152,
       "peak_price": 533.52001953125,
       "sector": "Information Technology",
       "partial_taken": false
@@ -62,8 +62,8 @@
     "FAST": {
       "qty": 17,
       "avg_price": 51.02000045776367,
-      "stop_price": 48.15857206072126,
-      "peak_price": 51.02000045776367,
+      "stop_price": 48.77785873413086,
+      "peak_price": 51.650001525878906,
       "sector": "Industrials",
       "partial_taken": false
     }
@@ -2056,6 +2056,11 @@
     {
       "date": "2026-10-19T23:06:21.063893+00:00",
       "equity": 9862.81,
+      "cash": 2804.5
+    },
+    {
+      "date": "2026-10-20T20:48:08.223304+00:00",
+      "equity": 9965.58,
       "cash": 2804.5
     }
   ]

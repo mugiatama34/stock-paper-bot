@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 2828.2254581451416,
+  "cash": 5714.645471572876,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -11,76 +11,52 @@
       "sector": "Health Care",
       "partial_taken": false
     },
-    "DXCM": {
-      "qty": 10,
-      "avg_price": 85.91999816894531,
-      "stop_price": 81.78143092564174,
-      "peak_price": 87.70999908447266,
-      "sector": "Health Care",
-      "partial_taken": false
-    },
-    "GRMN": {
-      "qty": 2,
-      "avg_price": 276.4100036621094,
-      "stop_price": 271.0750056675502,
-      "peak_price": 290.3500061035156,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
     "DE": {
       "qty": 1,
       "avg_price": 650.3800048828125,
-      "stop_price": 601.7988352710455,
+      "stop_price": 602.4406999860491,
       "peak_price": 650.6699829101562,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "NEM": {
-      "qty": 9,
-      "avg_price": 115.79000091552734,
-      "stop_price": 110.38035311017718,
-      "peak_price": 118.5999984741211,
-      "sector": "Materials",
       "partial_taken": false
     },
     "SWKS": {
       "qty": 6,
       "avg_price": 79.69999694824219,
-      "stop_price": 71.22411101205009,
-      "peak_price": 81.30000305175781,
+      "stop_price": 72.47000285557338,
+      "peak_price": 82.22000122070312,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "BNY": {
       "qty": 5,
       "avg_price": 143.25,
-      "stop_price": 136.1142943246024,
-      "peak_price": 144.25,
+      "stop_price": 137.89287185668945,
+      "peak_price": 145.85000610351562,
       "sector": "Financials",
       "partial_taken": false
     },
     "ANET": {
       "qty": 2,
       "avg_price": 182.9499969482422,
-      "stop_price": 162.225346156529,
-      "peak_price": 182.9499969482422,
+      "stop_price": 162.95874350411552,
+      "peak_price": 184.3300018310547,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "PFG": {
       "qty": 11,
       "avg_price": 107.94000244140625,
-      "stop_price": 102.86857223510742,
-      "peak_price": 107.94000244140625,
+      "stop_price": 103.53285762241909,
+      "peak_price": 108.44000244140625,
       "sector": "Financials",
       "partial_taken": false
     },
-    "DOC": {
-      "qty": 50,
-      "avg_price": 18.760000228881836,
-      "stop_price": 17.64664575883689,
-      "peak_price": 18.760000228881836,
-      "sector": "Real Estate",
+    "BE": {
+      "qty": 2,
+      "avg_price": 238.52999877929688,
+      "stop_price": 194.22249167306083,
+      "peak_price": 238.52999877929688,
+      "sector": "Industrials",
       "partial_taken": false
     }
   },
@@ -2970,6 +2946,91 @@
         "rsi14_prev": 26.37,
         "atr14": 0.45
       }
+    },
+    {
+      "date": "2026-10-21T20:48:56.136798+00:00",
+      "symbol": "DXCM",
+      "action": "SELL",
+      "qty": 10,
+      "price": 80.26,
+      "pnl": -56.6,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (81.78), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 81.78
+      }
+    },
+    {
+      "date": "2026-10-21T20:48:56.654104+00:00",
+      "symbol": "GRMN",
+      "action": "SELL",
+      "qty": 2,
+      "price": 291.13,
+      "pnl": 29.44,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=58.73, fiyat=291.13.",
+      "indicators": {
+        "price": 291.13,
+        "sma200": 249.69,
+        "rsi14": 58.73,
+        "rsi14_prev": 53.3,
+        "atr14": 7.52
+      }
+    },
+    {
+      "date": "2026-10-21T20:48:57.137866+00:00",
+      "symbol": "NEM",
+      "action": "SELL",
+      "qty": 9,
+      "price": 117.18,
+      "pnl": 12.51,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.15, fiyat=117.18.",
+      "indicators": {
+        "price": 117.18,
+        "sma200": 112.06,
+        "rsi14": 55.15,
+        "rsi14_prev": 52.98,
+        "atr14": 3.45
+      }
+    },
+    {
+      "date": "2026-10-21T20:48:57.622456+00:00",
+      "symbol": "DOC",
+      "action": "SELL",
+      "qty": 50,
+      "price": 18.48,
+      "pnl": -14.0,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=37.37, fiyat=18.48.",
+      "indicators": {
+        "price": 18.48,
+        "sma200": 18.59,
+        "rsi14": 37.37,
+        "rsi14_prev": 34.82,
+        "atr14": 0.43
+      }
+    },
+    {
+      "date": "2026-10-21T20:48:59.172237+00:00",
+      "symbol": "BE",
+      "action": "BUY",
+      "qty": 2,
+      "price": 238.53,
+      "stop_price": 194.22,
+      "sector": "Industrials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 28.17 \u2192 36.03 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=218.29) \u00fczerinde. \u0130zleyen stop: 194.22.",
+      "indicators": {
+        "price": 238.53,
+        "sma200": 218.29,
+        "rsi14": 36.03,
+        "rsi14_prev": 28.17,
+        "atr14": 17.72
+      }
     }
   ],
   "equity_history": [
@@ -3552,6 +3613,11 @@
       "date": "2026-10-20T22:40:31.591095+00:00",
       "equity": 9900.63,
       "cash": 2828.23
+    },
+    {
+      "date": "2026-10-21T20:48:59.661439+00:00",
+      "equity": 9867.35,
+      "cash": 5714.65
     }
   ]
 }

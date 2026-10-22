@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 5714.645471572876,
+  "cash": 4882.02544593811,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -14,7 +14,7 @@
     "DE": {
       "qty": 1,
       "avg_price": 650.3800048828125,
-      "stop_price": 602.4406999860491,
+      "stop_price": 603.2141898018973,
       "peak_price": 650.6699829101562,
       "sector": "Industrials",
       "partial_taken": false
@@ -22,8 +22,8 @@
     "SWKS": {
       "qty": 6,
       "avg_price": 79.69999694824219,
-      "stop_price": 72.47000285557338,
-      "peak_price": 82.22000122070312,
+      "stop_price": 72.98821340288434,
+      "peak_price": 82.38999938964844,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -46,16 +46,16 @@
     "PFG": {
       "qty": 11,
       "avg_price": 107.94000244140625,
-      "stop_price": 103.53285762241909,
-      "peak_price": 108.44000244140625,
+      "stop_price": 104.82249913896833,
+      "peak_price": 110.11000061035156,
       "sector": "Financials",
       "partial_taken": false
     },
-    "BE": {
-      "qty": 2,
-      "avg_price": 238.52999877929688,
-      "stop_price": 194.22249167306083,
-      "peak_price": 238.52999877929688,
+    "DAL": {
+      "qty": 16,
+      "avg_price": 79.26000213623047,
+      "stop_price": 71.82036053088714,
+      "peak_price": 79.26000213623047,
       "sector": "Industrials",
       "partial_taken": false
     }
@@ -3031,6 +3031,41 @@
         "rsi14_prev": 28.17,
         "atr14": 17.72
       }
+    },
+    {
+      "date": "2026-10-22T20:43:15.356764+00:00",
+      "symbol": "BE",
+      "action": "SELL",
+      "qty": 2,
+      "price": 217.77,
+      "pnl": -41.52,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=26.03, fiyat=217.77.",
+      "indicators": {
+        "price": 217.77,
+        "sma200": 218.86,
+        "rsi14": 26.03,
+        "rsi14_prev": 36.03,
+        "atr14": 18.28
+      }
+    },
+    {
+      "date": "2026-10-22T20:43:16.709175+00:00",
+      "symbol": "DAL",
+      "action": "BUY",
+      "qty": 16,
+      "price": 79.26,
+      "stop_price": 71.82,
+      "sector": "Industrials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.49 \u2192 37.49 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=75.99) \u00fczerinde. \u0130zleyen stop: 71.82.",
+      "indicators": {
+        "price": 79.26,
+        "sma200": 75.99,
+        "rsi14": 37.49,
+        "rsi14_prev": 31.49,
+        "atr14": 2.98
+      }
     }
   ],
   "equity_history": [
@@ -3623,6 +3658,11 @@
       "date": "2026-10-21T22:45:41.098835+00:00",
       "equity": 9867.35,
       "cash": 5714.65
+    },
+    {
+      "date": "2026-10-22T20:43:17.091481+00:00",
+      "equity": 9826.1,
+      "cash": 4882.03
     }
   ]
 }

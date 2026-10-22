@@ -1,12 +1,12 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1707.9773120880127,
+  "cash": 2072.897310256958,
   "positions": {
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.901428767613002,
+      "stop_price": 14.904285839625768,
       "peak_price": 14.989999771118164,
       "sector": "Utilities",
       "partial_taken": true
@@ -22,16 +22,16 @@
     "CTAS": {
       "qty": 1,
       "avg_price": 198.8000030517578,
-      "stop_price": 212.41356767926897,
-      "peak_price": 220.14999389648438,
+      "stop_price": 216.23285348074776,
+      "peak_price": 224.0399932861328,
       "sector": "Industrials",
       "partial_taken": true
     },
     "FDS": {
       "qty": 1,
       "avg_price": 268.0899963378906,
-      "stop_price": 298.9542803083147,
-      "peak_price": 319.9100036621094,
+      "stop_price": 313.52571759905135,
+      "peak_price": 335.45001220703125,
       "sector": "Financials",
       "partial_taken": true
     },
@@ -46,16 +46,16 @@
     "ESS": {
       "qty": 2,
       "avg_price": 269.510009765625,
-      "stop_price": 264.9433814391575,
-      "peak_price": 274.1099853515625,
+      "stop_price": 272.60716465541293,
+      "peak_price": 282.45001220703125,
       "sector": "Real Estate",
       "partial_taken": false
     },
     "KDP": {
       "qty": 6,
       "avg_price": 30.690000534057617,
-      "stop_price": 33.135715757097515,
-      "peak_price": 34.630001068115234,
+      "stop_price": 33.66285596575056,
+      "peak_price": 35.189998626708984,
       "sector": "Consumer Staples",
       "partial_taken": true
     },
@@ -70,32 +70,32 @@
     "IFF": {
       "qty": 2,
       "avg_price": 82.41999816894531,
-      "stop_price": 87.8721422467913,
-      "peak_price": 91.20999908447266,
+      "stop_price": 90.20714460100446,
+      "peak_price": 93.83000183105469,
       "sector": "Materials",
       "partial_taken": true
     },
     "PG": {
       "qty": 1,
       "avg_price": 147.82000732421875,
-      "stop_price": 154.365718296596,
-      "peak_price": 159.35000610351562,
+      "stop_price": 159.2842799595424,
+      "peak_price": 165.58999633789062,
       "sector": "Consumer Staples",
       "partial_taken": true
     },
     "FAST": {
       "qty": 11,
       "avg_price": 51.43000030517578,
-      "stop_price": 49.58785901750837,
-      "peak_price": 52.4900016784668,
+      "stop_price": 49.68000085013254,
+      "peak_price": 52.72999954223633,
       "sector": "Industrials",
       "partial_taken": false
     },
     "ICE": {
       "qty": 1,
       "avg_price": 156.4199981689453,
-      "stop_price": 155.62857055664062,
-      "peak_price": 161.58999633789062,
+      "stop_price": 156.97142682756697,
+      "peak_price": 163.83999633789062,
       "sector": "Financials",
       "partial_taken": true
     },
@@ -124,12 +124,12 @@
       "partial_taken": false
     },
     "FOX": {
-      "qty": 13,
+      "qty": 7,
       "avg_price": 57.220001220703125,
-      "stop_price": 56.631286076136995,
-      "peak_price": 59.75,
+      "stop_price": 57.6057139805385,
+      "peak_price": 60.81999969482422,
       "sector": "Communication Services",
-      "partial_taken": false
+      "partial_taken": true
     },
     "DDOG": {
       "qty": 2,
@@ -142,24 +142,24 @@
     "GPC": {
       "qty": 5,
       "avg_price": 123.5199966430664,
-      "stop_price": 117.63428388323102,
-      "peak_price": 124.77999877929688,
+      "stop_price": 120.57642909458706,
+      "peak_price": 127.97000122070312,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "CF": {
       "qty": 5,
       "avg_price": 116.30000305175781,
-      "stop_price": 108.10357339041573,
-      "peak_price": 116.30000305175781,
+      "stop_price": 110.39428383963448,
+      "peak_price": 118.55999755859375,
       "sector": "Materials",
       "partial_taken": false
     },
     "DVA": {
       "qty": 2,
       "avg_price": 176.80999755859375,
-      "stop_price": 166.4785657610212,
-      "peak_price": 176.80999755859375,
+      "stop_price": 174.7107173374721,
+      "peak_price": 186.10000610351562,
       "sector": "Health Care",
       "partial_taken": false
     }
@@ -3319,6 +3319,24 @@
         "atr14": 5.17,
         "volume_vs_avg20": 1.81
       }
+    },
+    {
+      "date": "2026-10-22T20:43:17.136588+00:00",
+      "symbol": "FOX",
+      "action": "SELL",
+      "qty": 6,
+      "price": 60.82,
+      "pnl": 21.6,
+      "partial": true,
+      "sector": "Communication Services",
+      "reasoning": "RSI a\u015f\u0131r\u0131 al\u0131mda (70.25 > 70): pozisyonun yar\u0131s\u0131 sat\u0131larak k\u00e2r kilitlendi, kalan yar\u0131 izleyen stop ile s\u00fcr\u00fcyor.",
+      "indicators": {
+        "price": 60.82,
+        "sma200": 55.89,
+        "rsi14": 70.25,
+        "atr14": 1.61,
+        "volume_vs_avg20": 0.77
+      }
     }
   ],
   "equity_history": [
@@ -3911,6 +3929,11 @@
       "date": "2026-10-21T22:45:42.427663+00:00",
       "equity": 9690.36,
       "cash": 1707.98
+    },
+    {
+      "date": "2026-10-22T20:43:18.532348+00:00",
+      "equity": 9734.43,
+      "cash": 2072.9
     }
   ]
 }

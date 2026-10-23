@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 2423.812421798706,
+  "cash": 1905.052412033081,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -14,7 +14,7 @@
     "ILMN": {
       "qty": 2,
       "avg_price": 264.57000732421875,
-      "stop_price": 251.3885541643415,
+      "stop_price": 251.49712698800224,
       "peak_price": 282.8599853515625,
       "sector": "Health Care",
       "partial_taken": false
@@ -38,15 +38,15 @@
     "TEAM": {
       "qty": 6,
       "avg_price": 207.82000732421875,
-      "stop_price": 207.90600803920202,
-      "peak_price": 225.5050048828125,
+      "stop_price": 210.12340436662947,
+      "peak_price": 227.61000061035156,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "MSFT": {
       "qty": 2,
       "avg_price": 529.0499877929688,
-      "stop_price": 511.2743007114955,
+      "stop_price": 511.43858119419644,
       "peak_price": 533.52001953125,
       "sector": "Information Technology",
       "partial_taken": false
@@ -62,9 +62,17 @@
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 148.89285932268416,
+      "stop_price": 148.96143232073103,
       "peak_price": 157.19000244140625,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "AEP": {
+      "qty": 4,
+      "avg_price": 129.69000244140625,
+      "stop_price": 124.92857469831195,
+      "peak_price": 129.69000244140625,
+      "sector": "Utilities",
       "partial_taken": false
     }
   },
@@ -1517,6 +1525,24 @@
         "atr14": 4.15,
         "relative_strength_20d": 0.0543
       }
+    },
+    {
+      "date": "2026-10-23T20:35:23.198615+00:00",
+      "symbol": "AEP",
+      "action": "BUY",
+      "qty": 4,
+      "price": 129.69,
+      "stop_price": 124.93,
+      "sector": "Utilities",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (123.56) ve SMA50 (123.01) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %11.1 g\u00fc\u00e7l\u00fc, RSI=74.44 (<75, tepe de\u011fil). \u0130zleyen stop: 124.93 (2xATR).",
+      "indicators": {
+        "price": 129.69,
+        "sma20": 123.56,
+        "sma50": 123.01,
+        "rsi14": 74.44,
+        "atr14": 2.38,
+        "relative_strength_20d": 0.1106
+      }
     }
   ],
   "equity_history": [
@@ -2119,6 +2145,11 @@
       "date": "2026-10-22T22:46:20.792724+00:00",
       "equity": 9907.76,
       "cash": 2423.81
+    },
+    {
+      "date": "2026-10-23T20:35:23.688354+00:00",
+      "equity": 9900.31,
+      "cash": 1905.05
     }
   ]
 }

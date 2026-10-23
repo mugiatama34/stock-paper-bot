@@ -1,7 +1,7 @@
 {
   "strategy": "hold_never",
   "starting_cash": 10000.0,
-  "cash": 655.0698680877686,
+  "cash": 525.3798656463623,
   "positions": {
     "ADP": {
       "qty": 8,
@@ -89,6 +89,14 @@
       "stop_price": 60.45000185285296,
       "peak_price": 63.5,
       "sector": "Energy",
+      "partial_taken": false
+    },
+    "AEP": {
+      "qty": 1,
+      "avg_price": 129.69000244140625,
+      "stop_price": 124.92857469831195,
+      "peak_price": 129.69000244140625,
+      "sector": "Utilities",
       "partial_taken": false
     }
   },
@@ -289,6 +297,24 @@
         "rsi14": 40.14,
         "atr14": 1.52,
         "relative_strength_20d": 0.0357
+      }
+    },
+    {
+      "date": "2026-10-23T20:35:27.043628+00:00",
+      "symbol": "AEP",
+      "action": "BUY",
+      "qty": 1,
+      "price": 129.69,
+      "stop_price": 124.93,
+      "sector": "Utilities",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (123.56) ve SMA50 (123.01) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %11.1 g\u00fc\u00e7l\u00fc, RSI=74.44 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 129.69,
+        "sma20": 123.56,
+        "sma50": 123.01,
+        "rsi14": 74.44,
+        "atr14": 2.38,
+        "relative_strength_20d": 0.1106
       }
     }
   ],
@@ -737,6 +763,11 @@
       "date": "2026-10-22T22:46:23.706288+00:00",
       "equity": 10111.81,
       "cash": 655.07
+    },
+    {
+      "date": "2026-10-23T20:35:27.443379+00:00",
+      "equity": 10003.2,
+      "cash": 525.38
     }
   ]
 }

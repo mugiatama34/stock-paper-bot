@@ -1,36 +1,36 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2072.897310256958,
+  "cash": 2816.897310256958,
   "positions": {
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.904285839625768,
-      "peak_price": 14.989999771118164,
+      "stop_price": 14.908571788242885,
+      "peak_price": 15.0,
       "sector": "Utilities",
       "partial_taken": true
     },
     "APA": {
       "qty": 8,
       "avg_price": 42.29999923706055,
-      "stop_price": 46.86000006539481,
-      "peak_price": 49.89500045776367,
+      "stop_price": 48.577319525454456,
+      "peak_price": 51.900001525878906,
       "sector": "Energy",
       "partial_taken": true
     },
     "CTAS": {
       "qty": 1,
       "avg_price": 198.8000030517578,
-      "stop_price": 216.23285348074776,
-      "peak_price": 224.0399932861328,
+      "stop_price": 216.31429617745536,
+      "peak_price": 224.10000610351562,
       "sector": "Industrials",
       "partial_taken": true
     },
     "FDS": {
       "qty": 1,
       "avg_price": 268.0899963378906,
-      "stop_price": 313.52571759905135,
+      "stop_price": 314.0071454729353,
       "peak_price": 335.45001220703125,
       "sector": "Financials",
       "partial_taken": true
@@ -46,7 +46,7 @@
     "ESS": {
       "qty": 2,
       "avg_price": 269.510009765625,
-      "stop_price": 272.60716465541293,
+      "stop_price": 272.6635960170201,
       "peak_price": 282.45001220703125,
       "sector": "Real Estate",
       "partial_taken": false
@@ -62,7 +62,7 @@
     "LYV": {
       "qty": 1,
       "avg_price": 166.85000610351562,
-      "stop_price": 167.13427734375,
+      "stop_price": 167.22427586146765,
       "peak_price": 174.7899932861328,
       "sector": "Communication Services",
       "partial_taken": false
@@ -70,8 +70,8 @@
     "IFF": {
       "qty": 2,
       "avg_price": 82.41999816894531,
-      "stop_price": 90.20714460100446,
-      "peak_price": 93.83000183105469,
+      "stop_price": 90.4692873273577,
+      "peak_price": 94.1500015258789,
       "sector": "Materials",
       "partial_taken": true
     },
@@ -94,7 +94,7 @@
     "ICE": {
       "qty": 1,
       "avg_price": 156.4199981689453,
-      "stop_price": 156.97142682756697,
+      "stop_price": 157.28714207240515,
       "peak_price": 163.83999633789062,
       "sector": "Financials",
       "partial_taken": true
@@ -115,18 +115,10 @@
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "AMZN": {
-      "qty": 3,
-      "avg_price": 250.0,
-      "stop_price": 249.69286237444197,
-      "peak_price": 262.6300048828125,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
     "FOX": {
       "qty": 7,
       "avg_price": 57.220001220703125,
-      "stop_price": 57.6057139805385,
+      "stop_price": 57.674285888671875,
       "peak_price": 60.81999969482422,
       "sector": "Communication Services",
       "partial_taken": true
@@ -150,8 +142,8 @@
     "CF": {
       "qty": 5,
       "avg_price": 116.30000305175781,
-      "stop_price": 110.39428383963448,
-      "peak_price": 118.55999755859375,
+      "stop_price": 112.58142961774554,
+      "peak_price": 120.68000030517578,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -3337,6 +3329,20 @@
         "atr14": 1.61,
         "volume_vs_avg20": 0.77
       }
+    },
+    {
+      "date": "2026-10-23T20:35:25.032039+00:00",
+      "symbol": "AMZN",
+      "action": "SELL",
+      "qty": 3,
+      "price": 248.0,
+      "pnl": -6.0,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "\u0130zleyen stop tetiklendi (249.69), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 249.69
+      }
     }
   ],
   "equity_history": [
@@ -3939,6 +3945,11 @@
       "date": "2026-10-22T22:46:23.438774+00:00",
       "equity": 9734.43,
       "cash": 2072.9
+    },
+    {
+      "date": "2026-10-23T20:35:26.777200+00:00",
+      "equity": 9718.17,
+      "cash": 2816.9
     }
   ]
 }

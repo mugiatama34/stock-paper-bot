@@ -1,7 +1,7 @@
 {
   "strategy": "hold_never",
   "starting_cash": 10000.0,
-  "cash": 525.3798656463623,
+  "cash": 434.3298625946045,
   "positions": {
     "ADP": {
       "qty": 8,
@@ -97,6 +97,14 @@
       "stop_price": 124.92857469831195,
       "peak_price": 129.69000244140625,
       "sector": "Utilities",
+      "partial_taken": false
+    },
+    "ORLY": {
+      "qty": 1,
+      "avg_price": 91.05000305175781,
+      "stop_price": 87.36714608328683,
+      "peak_price": 91.05000305175781,
+      "sector": "Consumer Discretionary",
       "partial_taken": false
     }
   },
@@ -315,6 +323,24 @@
         "rsi14": 74.44,
         "atr14": 2.38,
         "relative_strength_20d": 0.1106
+      }
+    },
+    {
+      "date": "2026-10-26T21:46:38.653898+00:00",
+      "symbol": "ORLY",
+      "action": "BUY",
+      "qty": 1,
+      "price": 91.05,
+      "stop_price": 87.37,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (87.3) ve SMA50 (87.29) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %5.3 g\u00fc\u00e7l\u00fc, RSI=70.51 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 91.05,
+        "sma20": 87.3,
+        "sma50": 87.29,
+        "rsi14": 70.51,
+        "atr14": 1.84,
+        "relative_strength_20d": 0.0528
       }
     }
   ],
@@ -773,6 +799,11 @@
       "date": "2026-10-23T22:38:30.420057+00:00",
       "equity": 10003.2,
       "cash": 525.38
+    },
+    {
+      "date": "2026-10-26T21:46:38.965793+00:00",
+      "equity": 9960.3,
+      "cash": 434.33
     }
   ]
 }

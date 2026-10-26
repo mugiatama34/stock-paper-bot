@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1905.052412033081,
+  "cash": 1294.1524181365967,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -14,7 +14,7 @@
     "ILMN": {
       "qty": 2,
       "avg_price": 264.57000732421875,
-      "stop_price": 251.49712698800224,
+      "stop_price": 255.93855939592635,
       "peak_price": 282.8599853515625,
       "sector": "Health Care",
       "partial_taken": false
@@ -38,7 +38,7 @@
     "TEAM": {
       "qty": 6,
       "avg_price": 207.82000732421875,
-      "stop_price": 210.12340436662947,
+      "stop_price": 210.1962890625,
       "peak_price": 227.61000061035156,
       "sector": "Information Technology",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "FAST": {
       "qty": 17,
       "avg_price": 51.02000045776367,
-      "stop_price": 49.68000085013254,
+      "stop_price": 49.69000080653599,
       "peak_price": 52.72999954223633,
       "sector": "Industrials",
       "partial_taken": false
@@ -62,17 +62,33 @@
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 148.96143232073103,
-      "peak_price": 157.19000244140625,
+      "stop_price": 150.44571576799666,
+      "peak_price": 158.69000244140625,
       "sector": "Health Care",
       "partial_taken": false
     },
     "AEP": {
       "qty": 4,
       "avg_price": 129.69000244140625,
-      "stop_price": 124.92857469831195,
+      "stop_price": 124.97971670968192,
       "peak_price": 129.69000244140625,
       "sector": "Utilities",
+      "partial_taken": false
+    },
+    "TSLA": {
+      "qty": 1,
+      "avg_price": 391.6199951171875,
+      "stop_price": 365.3257053920201,
+      "peak_price": 391.6199951171875,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "HON": {
+      "qty": 1,
+      "avg_price": 219.27999877929688,
+      "stop_price": 208.1471448625837,
+      "peak_price": 219.27999877929688,
+      "sector": "Industrials",
       "partial_taken": false
     }
   },
@@ -1543,6 +1559,42 @@
         "atr14": 2.38,
         "relative_strength_20d": 0.1106
       }
+    },
+    {
+      "date": "2026-10-26T21:46:33.738144+00:00",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "qty": 1,
+      "price": 391.62,
+      "stop_price": 365.33,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (371.58) ve SMA50 (364.76) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %9.6 g\u00fc\u00e7l\u00fc, RSI=55.12 (<75, tepe de\u011fil). \u0130zleyen stop: 365.33 (2xATR).",
+      "indicators": {
+        "price": 391.62,
+        "sma20": 371.58,
+        "sma50": 364.76,
+        "rsi14": 55.12,
+        "atr14": 13.15,
+        "relative_strength_20d": 0.0959
+      }
+    },
+    {
+      "date": "2026-10-26T21:46:34.077224+00:00",
+      "symbol": "HON",
+      "action": "BUY",
+      "qty": 1,
+      "price": 219.28,
+      "stop_price": 208.15,
+      "sector": "Industrials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (212.08) ve SMA50 (212.01) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %3.7 g\u00fc\u00e7l\u00fc, RSI=60.6 (<75, tepe de\u011fil). \u0130zleyen stop: 208.15 (2xATR).",
+      "indicators": {
+        "price": 219.28,
+        "sma20": 212.08,
+        "sma50": 212.01,
+        "rsi14": 60.6,
+        "atr14": 5.57,
+        "relative_strength_20d": 0.037
+      }
     }
   ],
   "equity_history": [
@@ -2155,6 +2207,11 @@
       "date": "2026-10-23T22:38:27.467981+00:00",
       "equity": 9900.31,
       "cash": 1905.05
+    },
+    {
+      "date": "2026-10-26T21:46:34.412404+00:00",
+      "equity": 9929.11,
+      "cash": 1294.15
     }
   ]
 }

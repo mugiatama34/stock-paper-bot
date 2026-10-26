@@ -1,20 +1,20 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 2816.897310256958,
+  "cash": 3057.5073108673096,
   "positions": {
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.908571788242885,
-      "peak_price": 15.0,
+      "stop_price": 14.936428615025111,
+      "peak_price": 15.029999732971191,
       "sector": "Utilities",
       "partial_taken": true
     },
     "APA": {
       "qty": 8,
       "avg_price": 42.29999923706055,
-      "stop_price": 48.577319525454456,
+      "stop_price": 48.595049715287054,
       "peak_price": 51.900001525878906,
       "sector": "Energy",
       "partial_taken": true
@@ -22,8 +22,8 @@
     "CTAS": {
       "qty": 1,
       "avg_price": 198.8000030517578,
-      "stop_price": 216.31429617745536,
-      "peak_price": 224.10000610351562,
+      "stop_price": 218.08713858468192,
+      "peak_price": 225.92999267578125,
       "sector": "Industrials",
       "partial_taken": true
     },
@@ -62,7 +62,7 @@
     "LYV": {
       "qty": 1,
       "avg_price": 166.85000610351562,
-      "stop_price": 167.22427586146765,
+      "stop_price": 167.34641810825892,
       "peak_price": 174.7899932861328,
       "sector": "Communication Services",
       "partial_taken": false
@@ -70,7 +70,7 @@
     "IFF": {
       "qty": 2,
       "avg_price": 82.41999816894531,
-      "stop_price": 90.4692873273577,
+      "stop_price": 90.4971444266183,
       "peak_price": 94.1500015258789,
       "sector": "Materials",
       "partial_taken": true
@@ -86,7 +86,7 @@
     "FAST": {
       "qty": 11,
       "avg_price": 51.43000030517578,
-      "stop_price": 49.68000085013254,
+      "stop_price": 49.69000080653599,
       "peak_price": 52.72999954223633,
       "sector": "Industrials",
       "partial_taken": false
@@ -99,19 +99,11 @@
       "sector": "Financials",
       "partial_taken": true
     },
-    "WELL": {
-      "qty": 1,
-      "avg_price": 232.1699981689453,
-      "stop_price": 227.98285784040178,
-      "peak_price": 238.0800018310547,
-      "sector": "Real Estate",
-      "partial_taken": false
-    },
     "ADI": {
       "qty": 2,
       "avg_price": 395.44000244140625,
       "stop_price": 379.6842738560268,
-      "peak_price": 405.9599914550781,
+      "peak_price": 407.92999267578125,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -126,8 +118,8 @@
     "DDOG": {
       "qty": 2,
       "avg_price": 260.3599853515625,
-      "stop_price": 245.72742353166853,
-      "peak_price": 273.0899963378906,
+      "stop_price": 248.25885227748327,
+      "peak_price": 280.239990234375,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -143,7 +135,7 @@
       "qty": 5,
       "avg_price": 116.30000305175781,
       "stop_price": 112.58142961774554,
-      "peak_price": 120.68000030517578,
+      "peak_price": 120.83999633789062,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -3343,6 +3335,24 @@
       "indicators": {
         "stop_price": 249.69
       }
+    },
+    {
+      "date": "2026-10-26T21:46:36.716523+00:00",
+      "symbol": "WELL",
+      "action": "SELL",
+      "qty": 1,
+      "price": 240.61,
+      "pnl": 8.44,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "RSI a\u015f\u0131r\u0131 al\u0131mda (71.14 > 70): pozisyonun yar\u0131s\u0131 sat\u0131larak k\u00e2r kilitlendi, kalan yar\u0131 izleyen stop ile s\u00fcr\u00fcyor.",
+      "indicators": {
+        "price": 240.61,
+        "sma200": 216.64,
+        "rsi14": 71.14,
+        "atr14": 4.97,
+        "volume_vs_avg20": 0.94
+      }
     }
   ],
   "equity_history": [
@@ -3955,6 +3965,11 @@
       "date": "2026-10-23T22:38:30.146890+00:00",
       "equity": 9718.17,
       "cash": 2816.9
+    },
+    {
+      "date": "2026-10-26T21:46:38.369520+00:00",
+      "equity": 9758.07,
+      "cash": 3057.51
     }
   ]
 }

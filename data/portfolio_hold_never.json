@@ -1,7 +1,7 @@
 {
   "strategy": "hold_never",
   "starting_cash": 10000.0,
-  "cash": 434.3298625946045,
+  "cash": 338.2998676300049,
   "positions": {
     "ADP": {
       "qty": 8,
@@ -105,6 +105,14 @@
       "stop_price": 87.36714608328683,
       "peak_price": 91.05000305175781,
       "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "CSGP": {
+      "qty": 3,
+      "avg_price": 32.0099983215332,
+      "stop_price": 29.2049982888358,
+      "peak_price": 32.0099983215332,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -341,6 +349,24 @@
         "rsi14": 70.51,
         "atr14": 1.84,
         "relative_strength_20d": 0.0528
+      }
+    },
+    {
+      "date": "2026-10-27T21:26:49.383106+00:00",
+      "symbol": "CSGP",
+      "action": "BUY",
+      "qty": 3,
+      "price": 32.01,
+      "stop_price": 29.2,
+      "sector": "Real Estate",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (30.57) ve SMA50 (30.56) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %18.1 g\u00fc\u00e7l\u00fc, RSI=65.99 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 32.01,
+        "sma20": 30.57,
+        "sma50": 30.56,
+        "rsi14": 65.99,
+        "atr14": 1.4,
+        "relative_strength_20d": 0.1806
       }
     }
   ],
@@ -809,6 +835,11 @@
       "date": "2026-10-26T23:21:40.951971+00:00",
       "equity": 9960.3,
       "cash": 434.33
+    },
+    {
+      "date": "2026-10-27T21:26:49.758162+00:00",
+      "equity": 9883.91,
+      "cash": 338.3
     }
   ]
 }

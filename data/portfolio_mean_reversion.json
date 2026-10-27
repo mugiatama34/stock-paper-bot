@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 3315.565393447876,
+  "cash": 3932.6054553985596,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -14,57 +14,57 @@
     "DE": {
       "qty": 1,
       "avg_price": 650.3800048828125,
-      "stop_price": 603.3744506835938,
+      "stop_price": 604.8628474644253,
       "peak_price": 650.6699829101562,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "SWKS": {
-      "qty": 6,
-      "avg_price": 79.69999694824219,
-      "stop_price": 74.91582216535296,
-      "peak_price": 83.43000030517578,
-      "sector": "Information Technology",
       "partial_taken": false
     },
     "ANET": {
       "qty": 2,
       "avg_price": 182.9499969482422,
       "stop_price": 162.95874350411552,
-      "peak_price": 184.3300018310547,
+      "peak_price": 187.0,
       "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "PFG": {
-      "qty": 11,
-      "avg_price": 107.94000244140625,
-      "stop_price": 104.82249913896833,
-      "peak_price": 110.12999725341797,
-      "sector": "Financials",
       "partial_taken": false
     },
     "DAL": {
       "qty": 16,
       "avg_price": 79.26000213623047,
-      "stop_price": 71.82036053088714,
-      "peak_price": 79.26000213623047,
+      "stop_price": 73.5950726275235,
+      "peak_price": 81.44999694824219,
       "sector": "Industrials",
       "partial_taken": false
     },
     "STT": {
       "qty": 8,
       "avg_price": 169.94000244140625,
-      "stop_price": 157.999817439488,
-      "peak_price": 169.94000244140625,
+      "stop_price": 159.25696018763952,
+      "peak_price": 170.88999938964844,
       "sector": "Financials",
       "partial_taken": false
     },
     "DXCM": {
       "qty": 12,
       "avg_price": 78.56999969482422,
-      "stop_price": 71.91285841805595,
+      "stop_price": 72.001250403268,
       "peak_price": 78.56999969482422,
       "sector": "Health Care",
+      "partial_taken": false
+    },
+    "AMD": {
+      "qty": 1,
+      "avg_price": 560.260009765625,
+      "stop_price": 486.1234337942941,
+      "peak_price": 560.260009765625,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "HOOD": {
+      "qty": 6,
+      "avg_price": 94.55999755859375,
+      "stop_price": 81.58946282523019,
+      "peak_price": 94.55999755859375,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -3126,6 +3126,76 @@
         "rsi14_prev": 30.61,
         "atr14": 2.66
       }
+    },
+    {
+      "date": "2026-10-27T21:26:42.093358+00:00",
+      "symbol": "SWKS",
+      "action": "SELL",
+      "qty": 6,
+      "price": 85.48,
+      "pnl": 34.68,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=55.21, fiyat=85.48.",
+      "indicators": {
+        "price": 85.48,
+        "sma200": 66.88,
+        "rsi14": 55.21,
+        "rsi14_prev": 51.51,
+        "atr14": 3.23
+      }
+    },
+    {
+      "date": "2026-10-27T21:26:42.446227+00:00",
+      "symbol": "PFG",
+      "action": "SELL",
+      "qty": 11,
+      "price": 111.98,
+      "pnl": 44.44,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=59.7, fiyat=111.98.",
+      "indicators": {
+        "price": 111.98,
+        "sma200": 102.1,
+        "rsi14": 59.7,
+        "rsi14_prev": 51.35,
+        "atr14": 2.52
+      }
+    },
+    {
+      "date": "2026-10-27T21:26:43.796338+00:00",
+      "symbol": "AMD",
+      "action": "BUY",
+      "qty": 1,
+      "price": 560.26,
+      "stop_price": 486.12,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 25.59 \u2192 33.99 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=405.5) \u00fczerinde. \u0130zleyen stop: 486.12.",
+      "indicators": {
+        "price": 560.26,
+        "sma200": 405.5,
+        "rsi14": 33.99,
+        "rsi14_prev": 25.59,
+        "atr14": 29.65
+      }
+    },
+    {
+      "date": "2026-10-27T21:26:44.158927+00:00",
+      "symbol": "HOOD",
+      "action": "BUY",
+      "qty": 6,
+      "price": 94.56,
+      "stop_price": 81.59,
+      "sector": "Financials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 27.63 \u2192 32.22 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=93.04) \u00fczerinde. \u0130zleyen stop: 81.59.",
+      "indicators": {
+        "price": 94.56,
+        "sma200": 93.04,
+        "rsi14": 32.22,
+        "rsi14_prev": 27.63,
+        "atr14": 5.19
+      }
     }
   ],
   "equity_history": [
@@ -3748,6 +3818,11 @@
       "date": "2026-10-26T23:21:39.705943+00:00",
       "equity": 9845.22,
       "cash": 3315.57
+    },
+    {
+      "date": "2026-10-27T21:26:44.523039+00:00",
+      "equity": 9939.6,
+      "cash": 3932.61
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1294.1524181365967,
+  "cash": 1006.0624332427979,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -62,24 +62,24 @@
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 150.44571576799666,
-      "peak_price": 158.69000244140625,
+      "stop_price": 150.95714460100447,
+      "peak_price": 159.0800018310547,
       "sector": "Health Care",
       "partial_taken": false
     },
     "AEP": {
       "qty": 4,
       "avg_price": 129.69000244140625,
-      "stop_price": 124.97971670968192,
-      "peak_price": 129.69000244140625,
+      "stop_price": 125.58428846086774,
+      "peak_price": 130.3000030517578,
       "sector": "Utilities",
       "partial_taken": false
     },
     "TSLA": {
       "qty": 1,
       "avg_price": 391.6199951171875,
-      "stop_price": 365.3257053920201,
-      "peak_price": 391.6199951171875,
+      "stop_price": 379.8928440638951,
+      "peak_price": 407.4599914550781,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
@@ -89,6 +89,14 @@
       "stop_price": 208.1471448625837,
       "peak_price": 219.27999877929688,
       "sector": "Industrials",
+      "partial_taken": false
+    },
+    "CSGP": {
+      "qty": 9,
+      "avg_price": 32.0099983215332,
+      "stop_price": 29.2049982888358,
+      "peak_price": 32.0099983215332,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -1595,6 +1603,24 @@
         "atr14": 5.57,
         "relative_strength_20d": 0.037
       }
+    },
+    {
+      "date": "2026-10-27T21:26:41.688742+00:00",
+      "symbol": "CSGP",
+      "action": "BUY",
+      "qty": 9,
+      "price": 32.01,
+      "stop_price": 29.2,
+      "sector": "Real Estate",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (30.57) ve SMA50 (30.56) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %18.1 g\u00fc\u00e7l\u00fc, RSI=65.99 (<75, tepe de\u011fil). \u0130zleyen stop: 29.20 (2xATR).",
+      "indicators": {
+        "price": 32.01,
+        "sma20": 30.57,
+        "sma50": 30.56,
+        "rsi14": 65.99,
+        "atr14": 1.4,
+        "relative_strength_20d": 0.1806
+      }
     }
   ],
   "equity_history": [
@@ -2217,6 +2243,11 @@
       "date": "2026-10-26T23:21:38.714547+00:00",
       "equity": 9929.11,
       "cash": 1294.15
+    },
+    {
+      "date": "2026-10-27T21:26:42.080007+00:00",
+      "equity": 9914.02,
+      "cash": 1006.06
     }
   ]
 }

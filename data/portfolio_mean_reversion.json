@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 3932.6054553985596,
+  "cash": 3548.785478591919,
   "positions": {
     "HSIC": {
       "qty": 3,
@@ -14,7 +14,7 @@
     "DE": {
       "qty": 1,
       "avg_price": 650.3800048828125,
-      "stop_price": 604.8628474644253,
+      "stop_price": 607.1039276123047,
       "peak_price": 650.6699829101562,
       "sector": "Industrials",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "ANET": {
       "qty": 2,
       "avg_price": 182.9499969482422,
-      "stop_price": 162.95874350411552,
+      "stop_price": 163.14034925188338,
       "peak_price": 187.0,
       "sector": "Information Technology",
       "partial_taken": false
@@ -38,33 +38,33 @@
     "STT": {
       "qty": 8,
       "avg_price": 169.94000244140625,
-      "stop_price": 159.25696018763952,
-      "peak_price": 170.88999938964844,
+      "stop_price": 161.74177496773856,
+      "peak_price": 173.5399932861328,
       "sector": "Financials",
       "partial_taken": false
     },
     "DXCM": {
       "qty": 12,
       "avg_price": 78.56999969482422,
-      "stop_price": 72.001250403268,
-      "peak_price": 78.56999969482422,
+      "stop_price": 72.00571823120117,
+      "peak_price": 78.62000274658203,
       "sector": "Health Care",
       "partial_taken": false
     },
     "AMD": {
       "qty": 1,
       "avg_price": 560.260009765625,
-      "stop_price": 486.1234337942941,
-      "peak_price": 560.260009765625,
+      "stop_price": 506.7429907662528,
+      "peak_price": 578.4400024414062,
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "HOOD": {
-      "qty": 6,
-      "avg_price": 94.55999755859375,
-      "stop_price": 81.58946282523019,
-      "peak_price": 94.55999755859375,
-      "sector": "Financials",
+    "FCX": {
+      "qty": 14,
+      "avg_price": 66.5999984741211,
+      "stop_price": 60.47320817726919,
+      "peak_price": 66.5999984741211,
+      "sector": "Materials",
       "partial_taken": false
     }
   },
@@ -3196,6 +3196,41 @@
         "rsi14_prev": 27.63,
         "atr14": 5.19
       }
+    },
+    {
+      "date": "2026-10-28T21:50:32.671045+00:00",
+      "symbol": "HOOD",
+      "action": "SELL",
+      "qty": 6,
+      "price": 91.43,
+      "pnl": -18.78,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=31.75, fiyat=91.43.",
+      "indicators": {
+        "price": 91.43,
+        "sma200": 92.91,
+        "rsi14": 31.75,
+        "rsi14_prev": 32.22,
+        "atr14": 5.26
+      }
+    },
+    {
+      "date": "2026-10-28T21:50:34.288891+00:00",
+      "symbol": "FCX",
+      "action": "BUY",
+      "qty": 14,
+      "price": 66.6,
+      "stop_price": 60.47,
+      "sector": "Materials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.15 \u2192 35.57 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=64.89) \u00fczerinde. \u0130zleyen stop: 60.47.",
+      "indicators": {
+        "price": 66.6,
+        "sma200": 64.89,
+        "rsi14": 35.57,
+        "rsi14_prev": 31.15,
+        "atr14": 2.45
+      }
     }
   ],
   "equity_history": [
@@ -3828,6 +3863,11 @@
       "date": "2026-10-27T23:12:26.738609+00:00",
       "equity": 9939.6,
       "cash": 3932.61
+    },
+    {
+      "date": "2026-10-28T21:50:34.599625+00:00",
+      "equity": 9945.98,
+      "cash": 3548.79
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "hold_never",
   "starting_cash": 10000.0,
-  "cash": 338.2998676300049,
+  "cash": 219.87986946105957,
   "positions": {
     "ADP": {
       "qty": 8,
@@ -113,6 +113,22 @@
       "stop_price": 29.2049982888358,
       "peak_price": 32.0099983215332,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "MDLZ": {
+      "qty": 1,
+      "avg_price": 61.869998931884766,
+      "stop_price": 59.2028557913644,
+      "peak_price": 61.869998931884766,
+      "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "PYPL": {
+      "qty": 1,
+      "avg_price": 56.54999923706055,
+      "stop_price": 54.0201416015625,
+      "peak_price": 56.54999923706055,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -367,6 +383,42 @@
         "rsi14": 65.99,
         "atr14": 1.4,
         "relative_strength_20d": 0.1806
+      }
+    },
+    {
+      "date": "2026-10-28T21:50:38.160607+00:00",
+      "symbol": "MDLZ",
+      "action": "BUY",
+      "qty": 1,
+      "price": 61.87,
+      "stop_price": 59.2,
+      "sector": "Consumer Staples",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (61.68) ve SMA50 (61.49) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %5.7 g\u00fc\u00e7l\u00fc, RSI=54.77 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 61.87,
+        "sma20": 61.68,
+        "sma50": 61.49,
+        "rsi14": 54.77,
+        "atr14": 1.33,
+        "relative_strength_20d": 0.0574
+      }
+    },
+    {
+      "date": "2026-10-28T21:50:38.556256+00:00",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 56.55,
+      "stop_price": 54.02,
+      "sector": "Financials",
+      "reasoning": "Momentum giri\u015fi (referans \u00f6l\u00e7\u00fct, \u00e7\u0131k\u0131\u015f kural\u0131 yok): fiyat SMA20 (55.78) ve SMA50 (55.52) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %6.4 g\u00fc\u00e7l\u00fc, RSI=59.49 (<75, tepe de\u011fil).",
+      "indicators": {
+        "price": 56.55,
+        "sma20": 55.78,
+        "sma50": 55.52,
+        "rsi14": 59.49,
+        "atr14": 1.26,
+        "relative_strength_20d": 0.0638
       }
     }
   ],
@@ -845,6 +897,11 @@
       "date": "2026-10-27T23:12:27.737516+00:00",
       "equity": 9883.91,
       "cash": 338.3
+    },
+    {
+      "date": "2026-10-28T21:50:38.887191+00:00",
+      "equity": 9812.81,
+      "cash": 219.88
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1006.0624332427979,
+  "cash": 578.7724437713623,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -14,8 +14,8 @@
     "ILMN": {
       "qty": 2,
       "avg_price": 264.57000732421875,
-      "stop_price": 255.93855939592635,
-      "peak_price": 282.8599853515625,
+      "stop_price": 261.3721618652344,
+      "peak_price": 288.7900085449219,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -30,7 +30,7 @@
     "KDP": {
       "qty": 18,
       "avg_price": 33.119998931884766,
-      "stop_price": 33.66285596575056,
+      "stop_price": 33.668569564819336,
       "peak_price": 35.189998626708984,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "MSFT": {
       "qty": 2,
       "avg_price": 529.0499877929688,
-      "stop_price": 511.43858119419644,
+      "stop_price": 512.2818690708706,
       "peak_price": 533.52001953125,
       "sector": "Information Technology",
       "partial_taken": false
@@ -54,7 +54,7 @@
     "FAST": {
       "qty": 17,
       "avg_price": 51.02000045776367,
-      "stop_price": 49.69000080653599,
+      "stop_price": 49.69857243129185,
       "peak_price": 52.72999954223633,
       "sector": "Industrials",
       "partial_taken": false
@@ -63,7 +63,7 @@
       "qty": 5,
       "avg_price": 157.19000244140625,
       "stop_price": 150.95714460100447,
-      "peak_price": 159.0800018310547,
+      "peak_price": 159.1999969482422,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -86,17 +86,33 @@
     "HON": {
       "qty": 1,
       "avg_price": 219.27999877929688,
-      "stop_price": 208.1471448625837,
+      "stop_price": 208.19571576799666,
       "peak_price": 219.27999877929688,
       "sector": "Industrials",
       "partial_taken": false
     },
-    "CSGP": {
-      "qty": 9,
-      "avg_price": 32.0099983215332,
-      "stop_price": 29.2049982888358,
-      "peak_price": 32.0099983215332,
-      "sector": "Real Estate",
+    "MNST": {
+      "qty": 6,
+      "avg_price": 45.65999984741211,
+      "stop_price": 43.59428460257394,
+      "peak_price": 45.65999984741211,
+      "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "XEL": {
+      "qty": 3,
+      "avg_price": 77.18000030517578,
+      "stop_price": 74.48642839704242,
+      "peak_price": 77.18000030517578,
+      "sector": "Utilities",
+      "partial_taken": false
+    },
+    "PYPL": {
+      "qty": 3,
+      "avg_price": 56.54999923706055,
+      "stop_price": 54.0201416015625,
+      "peak_price": 56.54999923706055,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -1621,6 +1637,74 @@
         "atr14": 1.4,
         "relative_strength_20d": 0.1806
       }
+    },
+    {
+      "date": "2026-10-28T21:50:30.809877+00:00",
+      "symbol": "CSGP",
+      "action": "SELL",
+      "qty": 9,
+      "price": 27.54,
+      "pnl": -40.23,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "\u0130zleyen stop tetiklendi (29.20), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 29.2
+      }
+    },
+    {
+      "date": "2026-10-28T21:50:31.451980+00:00",
+      "symbol": "MNST",
+      "action": "BUY",
+      "qty": 6,
+      "price": 45.66,
+      "stop_price": 43.59,
+      "sector": "Consumer Staples",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (44.79) ve SMA50 (44.78) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %8.4 g\u00fc\u00e7l\u00fc, RSI=62.61 (<75, tepe de\u011fil). \u0130zleyen stop: 43.59 (2xATR).",
+      "indicators": {
+        "price": 45.66,
+        "sma20": 44.79,
+        "sma50": 44.78,
+        "rsi14": 62.61,
+        "atr14": 1.03,
+        "relative_strength_20d": 0.0844
+      }
+    },
+    {
+      "date": "2026-10-28T21:50:31.813978+00:00",
+      "symbol": "XEL",
+      "action": "BUY",
+      "qty": 3,
+      "price": 77.18,
+      "stop_price": 74.49,
+      "sector": "Utilities",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (75.0) ve SMA50 (74.44) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %8.2 g\u00fc\u00e7l\u00fc, RSI=67.95 (<75, tepe de\u011fil). \u0130zleyen stop: 74.49 (2xATR).",
+      "indicators": {
+        "price": 77.18,
+        "sma20": 75.0,
+        "sma50": 74.44,
+        "rsi14": 67.95,
+        "atr14": 1.35,
+        "relative_strength_20d": 0.0824
+      }
+    },
+    {
+      "date": "2026-10-28T21:50:32.329299+00:00",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "qty": 3,
+      "price": 56.55,
+      "stop_price": 54.02,
+      "sector": "Financials",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (55.78) ve SMA50 (55.52) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %6.4 g\u00fc\u00e7l\u00fc, RSI=59.49 (<75, tepe de\u011fil). \u0130zleyen stop: 54.02 (2xATR).",
+      "indicators": {
+        "price": 56.55,
+        "sma20": 55.78,
+        "sma50": 55.52,
+        "rsi14": 59.49,
+        "atr14": 1.26,
+        "relative_strength_20d": 0.0638
+      }
     }
   ],
   "equity_history": [
@@ -2253,6 +2337,11 @@
       "date": "2026-10-27T23:12:25.952894+00:00",
       "equity": 9914.02,
       "cash": 1006.06
+    },
+    {
+      "date": "2026-10-28T21:50:32.640779+00:00",
+      "equity": 9893.36,
+      "cash": 578.77
     }
   ]
 }

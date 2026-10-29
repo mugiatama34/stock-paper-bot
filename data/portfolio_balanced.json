@@ -1,45 +1,37 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1005.5773029327393,
+  "cash": 1054.7072925567627,
   "positions": {
     "AES": {
       "qty": 3,
       "avg_price": 14.725000381469727,
-      "stop_price": 14.9371429170881,
-      "peak_price": 15.029999732971191,
+      "stop_price": 14.952857562473842,
+      "peak_price": 15.050000190734863,
       "sector": "Utilities",
       "partial_taken": true
     },
     "APA": {
       "qty": 8,
       "avg_price": 42.29999923706055,
-      "stop_price": 48.791990532475005,
+      "stop_price": 48.81396972972362,
       "peak_price": 51.900001525878906,
       "sector": "Energy",
-      "partial_taken": true
-    },
-    "BAX": {
-      "qty": 12,
-      "avg_price": 24.0,
-      "stop_price": 24.416428429739817,
-      "peak_price": 25.760000228881836,
-      "sector": "Health Care",
       "partial_taken": true
     },
     "KDP": {
       "qty": 6,
       "avg_price": 30.690000534057617,
-      "stop_price": 33.668569564819336,
-      "peak_price": 35.189998626708984,
+      "stop_price": 33.79642759050642,
+      "peak_price": 35.29999923706055,
       "sector": "Consumer Staples",
       "partial_taken": true
     },
     "LYV": {
       "qty": 1,
       "avg_price": 166.85000610351562,
-      "stop_price": 167.51141575404577,
-      "peak_price": 174.7899932861328,
+      "stop_price": 170.20999799455916,
+      "peak_price": 177.8300018310547,
       "sector": "Communication Services",
       "partial_taken": false
     },
@@ -62,15 +54,15 @@
     "ADI": {
       "qty": 2,
       "avg_price": 395.44000244140625,
-      "stop_price": 399.10284423828125,
-      "peak_price": 428.2699890136719,
+      "stop_price": 404.3257141113281,
+      "peak_price": 433.2799987792969,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "DDOG": {
       "qty": 2,
       "avg_price": 260.3599853515625,
-      "stop_price": 249.08428737095423,
+      "stop_price": 249.41000148228235,
       "peak_price": 280.82000732421875,
       "sector": "Information Technology",
       "partial_taken": false
@@ -86,7 +78,7 @@
     "CF": {
       "qty": 5,
       "avg_price": 116.30000305175781,
-      "stop_price": 113.02642495291573,
+      "stop_price": 113.49999564034599,
       "peak_price": 120.83999633789062,
       "sector": "Materials",
       "partial_taken": false
@@ -94,39 +86,39 @@
     "DVA": {
       "qty": 2,
       "avg_price": 176.80999755859375,
-      "stop_price": 174.7107173374721,
-      "peak_price": 186.10000610351562,
+      "stop_price": 180.2478528703962,
+      "peak_price": 193.30999755859375,
       "sector": "Health Care",
       "partial_taken": false
     },
     "GM": {
       "qty": 10,
       "avg_price": 80.54000091552734,
-      "stop_price": 77.28428976876395,
-      "peak_price": 82.4800033569336,
+      "stop_price": 80.18143027169364,
+      "peak_price": 85.72000122070312,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "GPN": {
       "qty": 7,
       "avg_price": 81.43000030517578,
-      "stop_price": 79.00571986607143,
-      "peak_price": 83.55000305175781,
+      "stop_price": 80.96429007393974,
+      "peak_price": 85.72000122070312,
       "sector": "Financials",
       "partial_taken": false
     },
     "IEX": {
       "qty": 2,
       "avg_price": 233.2100067138672,
-      "stop_price": 227.44713701520647,
-      "peak_price": 238.5399932861328,
+      "stop_price": 227.4528590611049,
+      "peak_price": 239.3300018310547,
       "sector": "Industrials",
       "partial_taken": false
     },
     "PSX": {
       "qty": 1,
       "avg_price": 268.5299987792969,
-      "stop_price": 253.41999162946428,
+      "stop_price": 253.42999267578125,
       "peak_price": 273.760009765625,
       "sector": "Energy",
       "partial_taken": false
@@ -134,33 +126,41 @@
     "DG": {
       "qty": 5,
       "avg_price": 126.16999816894531,
-      "stop_price": 116.66286250523159,
-      "peak_price": 126.16999816894531,
+      "stop_price": 120.6942879813058,
+      "peak_price": 130.08999633789062,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "FOXA": {
       "qty": 8,
       "avg_price": 63.38999938964844,
-      "stop_price": 59.702857971191406,
-      "peak_price": 63.38999938964844,
+      "stop_price": 60.90714645385742,
+      "peak_price": 64.51000213623047,
       "sector": "Communication Services",
-      "partial_taken": false
-    },
-    "IBKR": {
-      "qty": 4,
-      "avg_price": 83.54000091552734,
-      "stop_price": 77.79571751185826,
-      "peak_price": 83.54000091552734,
-      "sector": "Financials",
       "partial_taken": false
     },
     "WELL": {
       "qty": 1,
       "avg_price": 227.1999969482422,
-      "stop_price": 214.93570818219865,
-      "peak_price": 227.1999969482422,
+      "stop_price": 220.49856785365515,
+      "peak_price": 233.1699981689453,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "BAX": {
+      "qty": 17,
+      "avg_price": 23.5,
+      "stop_price": 21.671428407941544,
+      "peak_price": 23.5,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "GL": {
+      "qty": 1,
+      "avg_price": 160.4499969482422,
+      "stop_price": 152.13213893345423,
+      "peak_price": 160.4499969482422,
+      "sector": "Financials",
       "partial_taken": false
     }
   },
@@ -3624,6 +3624,72 @@
         "atr14": 6.13,
         "volume_vs_avg20": 2.11
       }
+    },
+    {
+      "date": "2026-10-29T21:57:02.478417+00:00",
+      "symbol": "BAX",
+      "action": "SELL",
+      "qty": 12,
+      "price": 23.5,
+      "pnl": -6.0,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (24.42), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 24.42
+      }
+    },
+    {
+      "date": "2026-10-29T21:57:02.949345+00:00",
+      "symbol": "IBKR",
+      "action": "SELL",
+      "qty": 4,
+      "price": 81.77,
+      "pnl": -7.08,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "Uzun vadeli trend (SMA200=82.85) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=37.5.",
+      "indicators": {
+        "price": 81.77,
+        "sma200": 82.85,
+        "rsi14": 37.5,
+        "atr14": 2.94,
+        "volume_vs_avg20": 0.85
+      }
+    },
+    {
+      "date": "2026-10-29T21:57:04.174495+00:00",
+      "symbol": "BAX",
+      "action": "BUY",
+      "qty": 17,
+      "price": 23.5,
+      "stop_price": 21.67,
+      "sector": "Health Care",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=21.31), RSI14=44.11 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 2.41x \u00fczerinde. \u0130zleyen stop: 21.67.",
+      "indicators": {
+        "price": 23.5,
+        "sma200": 21.31,
+        "rsi14": 44.11,
+        "atr14": 0.91,
+        "volume_vs_avg20": 2.41
+      }
+    },
+    {
+      "date": "2026-10-29T21:57:04.626499+00:00",
+      "symbol": "GL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 160.45,
+      "stop_price": 152.13,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=159.08), RSI14=43.35 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.09x \u00fczerinde. \u0130zleyen stop: 152.13.",
+      "indicators": {
+        "price": 160.45,
+        "sma200": 159.08,
+        "rsi14": 43.35,
+        "atr14": 4.16,
+        "volume_vs_avg20": 1.09
+      }
     }
   ],
   "equity_history": [
@@ -4266,6 +4332,11 @@
       "date": "2026-10-28T23:33:12.221098+00:00",
       "equity": 9741.86,
       "cash": 1005.58
+    },
+    {
+      "date": "2026-10-29T21:57:05.078002+00:00",
+      "equity": 9817.66,
+      "cash": 1054.71
     }
   ]
 }

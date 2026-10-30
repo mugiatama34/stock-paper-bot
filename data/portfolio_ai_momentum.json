@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1555.5524730682373,
+  "cash": 1349.7524852752686,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -9,14 +9,6 @@
       "stop_price": 30.25428662981306,
       "peak_price": 30.950000762939453,
       "sector": "Communication Services",
-      "partial_taken": false
-    },
-    "ILMN": {
-      "qty": 2,
-      "avg_price": 264.57000732421875,
-      "stop_price": 263.1914324079241,
-      "peak_price": 290.05999755859375,
-      "sector": "Health Care",
       "partial_taken": false
     },
     "MAR": {
@@ -30,8 +22,8 @@
     "KDP": {
       "qty": 18,
       "avg_price": 33.119998931884766,
-      "stop_price": 33.79642759050642,
-      "peak_price": 35.29999923706055,
+      "stop_price": 34.37428501674107,
+      "peak_price": 35.84000015258789,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -54,8 +46,8 @@
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 157.05714198521204,
-      "peak_price": 165.61000061035156,
+      "stop_price": 161.04427664620536,
+      "peak_price": 170.67999267578125,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -78,7 +70,7 @@
     "HON": {
       "qty": 1,
       "avg_price": 219.27999877929688,
-      "stop_price": 210.68500409807478,
+      "stop_price": 210.77142987932478,
       "peak_price": 222.13999938964844,
       "sector": "Industrials",
       "partial_taken": false
@@ -86,24 +78,24 @@
     "MNST": {
       "qty": 6,
       "avg_price": 45.65999984741211,
-      "stop_price": 44.225711822509766,
-      "peak_price": 46.349998474121094,
+      "stop_price": 45.145713806152344,
+      "peak_price": 47.34000015258789,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "XEL": {
       "qty": 3,
       "avg_price": 77.18000030517578,
-      "stop_price": 76.11857169015067,
-      "peak_price": 79.04000091552734,
+      "stop_price": 76.81000082833427,
+      "peak_price": 79.81999969482422,
       "sector": "Utilities",
       "partial_taken": false
     },
     "PYPL": {
       "qty": 3,
       "avg_price": 56.54999923706055,
-      "stop_price": 54.32947213309152,
-      "peak_price": 56.95000076293945,
+      "stop_price": 54.34871292114258,
+      "peak_price": 57.0099983215332,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -113,6 +105,22 @@
       "stop_price": 221.12357657296317,
       "peak_price": 247.82000732421875,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "BIIB": {
+      "qty": 1,
+      "avg_price": 253.6199951171875,
+      "stop_price": 237.7699955531529,
+      "peak_price": 253.6199951171875,
+      "sector": "Health Care",
+      "partial_taken": false
+    },
+    "FANG": {
+      "qty": 2,
+      "avg_price": 212.0800018310547,
+      "stop_price": 200.8214351109096,
+      "peak_price": 212.0800018310547,
+      "sector": "Energy",
       "partial_taken": false
     }
   },
@@ -1737,6 +1745,56 @@
         "atr14": 13.35,
         "relative_strength_20d": 0.2397
       }
+    },
+    {
+      "date": "2026-10-30T21:39:54.816271+00:00",
+      "symbol": "ILMN",
+      "action": "SELL",
+      "qty": 2,
+      "price": 235.99,
+      "pnl": -57.16,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (263.19), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 263.19
+      }
+    },
+    {
+      "date": "2026-10-30T21:39:55.533217+00:00",
+      "symbol": "BIIB",
+      "action": "BUY",
+      "qty": 1,
+      "price": 253.62,
+      "stop_price": 237.77,
+      "sector": "Health Care",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (237.32) ve SMA50 (227.08) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %17.2 g\u00fc\u00e7l\u00fc, RSI=70.68 (<75, tepe de\u011fil). \u0130zleyen stop: 237.77 (2xATR).",
+      "indicators": {
+        "price": 253.62,
+        "sma20": 237.32,
+        "sma50": 227.08,
+        "rsi14": 70.68,
+        "atr14": 7.92,
+        "relative_strength_20d": 0.1715
+      }
+    },
+    {
+      "date": "2026-10-30T21:39:55.839954+00:00",
+      "symbol": "FANG",
+      "action": "BUY",
+      "qty": 2,
+      "price": 212.08,
+      "stop_price": 200.82,
+      "sector": "Energy",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (198.66) ve SMA50 (197.38) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %16.6 g\u00fc\u00e7l\u00fc, RSI=70.67 (<75, tepe de\u011fil). \u0130zleyen stop: 200.82 (2xATR).",
+      "indicators": {
+        "price": 212.08,
+        "sma20": 198.66,
+        "sma50": 197.38,
+        "rsi14": 70.67,
+        "atr14": 5.63,
+        "relative_strength_20d": 0.1663
+      }
     }
   ],
   "equity_history": [
@@ -2389,6 +2447,11 @@
       "date": "2026-10-29T23:36:09.412510+00:00",
       "equity": 9883.39,
       "cash": 1555.55
+    },
+    {
+      "date": "2026-10-30T21:39:56.185142+00:00",
+      "equity": 9776.93,
+      "cash": 1349.75
     }
   ]
 }

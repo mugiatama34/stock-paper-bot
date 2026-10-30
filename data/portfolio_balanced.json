@@ -1,37 +1,29 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1054.7072925567627,
+  "cash": 958.907283782959,
   "positions": {
-    "AES": {
-      "qty": 3,
-      "avg_price": 14.725000381469727,
-      "stop_price": 14.952857562473842,
-      "peak_price": 15.050000190734863,
-      "sector": "Utilities",
-      "partial_taken": true
-    },
     "APA": {
       "qty": 8,
       "avg_price": 42.29999923706055,
-      "stop_price": 48.81396972972362,
-      "peak_price": 51.900001525878906,
+      "stop_price": 49.73576710635744,
+      "peak_price": 52.81999969482422,
       "sector": "Energy",
       "partial_taken": true
     },
     "KDP": {
       "qty": 6,
       "avg_price": 30.690000534057617,
-      "stop_price": 33.79642759050642,
-      "peak_price": 35.29999923706055,
+      "stop_price": 34.37428501674107,
+      "peak_price": 35.84000015258789,
       "sector": "Consumer Staples",
       "partial_taken": true
     },
     "LYV": {
       "qty": 1,
       "avg_price": 166.85000610351562,
-      "stop_price": 170.20999799455916,
-      "peak_price": 177.8300018310547,
+      "stop_price": 170.24142238071985,
+      "peak_price": 177.88999938964844,
       "sector": "Communication Services",
       "partial_taken": false
     },
@@ -59,14 +51,6 @@
       "sector": "Information Technology",
       "partial_taken": false
     },
-    "DDOG": {
-      "qty": 2,
-      "avg_price": 260.3599853515625,
-      "stop_price": 249.41000148228235,
-      "peak_price": 280.82000732421875,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
     "GPC": {
       "qty": 5,
       "avg_price": 123.5199966430664,
@@ -78,8 +62,8 @@
     "CF": {
       "qty": 5,
       "avg_price": 116.30000305175781,
-      "stop_price": 113.49999564034599,
-      "peak_price": 120.83999633789062,
+      "stop_price": 115.67143031529018,
+      "peak_price": 123.30000305175781,
       "sector": "Materials",
       "partial_taken": false
     },
@@ -94,18 +78,18 @@
     "GM": {
       "qty": 10,
       "avg_price": 80.54000091552734,
-      "stop_price": 80.18143027169364,
-      "peak_price": 85.72000122070312,
+      "stop_price": 81.49571663992745,
+      "peak_price": 87.4000015258789,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "GPN": {
-      "qty": 7,
+      "qty": 4,
       "avg_price": 81.43000030517578,
-      "stop_price": 80.96429007393974,
-      "peak_price": 85.72000122070312,
+      "stop_price": 89.8999993460519,
+      "peak_price": 96.83999633789062,
       "sector": "Financials",
-      "partial_taken": false
+      "partial_taken": true
     },
     "IEX": {
       "qty": 2,
@@ -118,16 +102,16 @@
     "PSX": {
       "qty": 1,
       "avg_price": 268.5299987792969,
-      "stop_price": 253.42999267578125,
-      "peak_price": 273.760009765625,
+      "stop_price": 262.0285382952009,
+      "peak_price": 282.8299865722656,
       "sector": "Energy",
       "partial_taken": false
     },
     "DG": {
       "qty": 5,
       "avg_price": 126.16999816894531,
-      "stop_price": 120.6942879813058,
-      "peak_price": 130.08999633789062,
+      "stop_price": 122.84643663678851,
+      "peak_price": 132.3000030517578,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -142,8 +126,8 @@
     "WELL": {
       "qty": 1,
       "avg_price": 227.1999969482422,
-      "stop_price": 220.49856785365515,
-      "peak_price": 233.1699981689453,
+      "stop_price": 221.85428946358817,
+      "peak_price": 234.60000610351562,
       "sector": "Real Estate",
       "partial_taken": false
     },
@@ -155,12 +139,28 @@
       "sector": "Health Care",
       "partial_taken": false
     },
-    "GL": {
+    "AAPL": {
       "qty": 1,
-      "avg_price": 160.4499969482422,
-      "stop_price": 152.13213893345423,
-      "peak_price": 160.4499969482422,
+      "avg_price": 344.6300048828125,
+      "stop_price": 332.38000052315846,
+      "peak_price": 344.6300048828125,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "BEN": {
+      "qty": 13,
+      "avg_price": 31.639999389648438,
+      "stop_price": 29.98928533281599,
+      "peak_price": 31.639999389648438,
       "sector": "Financials",
+      "partial_taken": false
+    },
+    "DOC": {
+      "qty": 16,
+      "avg_price": 19.030000686645508,
+      "stop_price": 18.07963948152774,
+      "peak_price": 19.030000686645508,
+      "sector": "Real Estate",
       "partial_taken": false
     }
   },
@@ -3690,6 +3690,121 @@
         "atr14": 4.16,
         "volume_vs_avg20": 1.09
       }
+    },
+    {
+      "date": "2026-10-30T21:39:58.492375+00:00",
+      "symbol": "AES",
+      "action": "SELL",
+      "qty": 3,
+      "price": 14.83,
+      "pnl": 0.31,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "\u0130zleyen stop tetiklendi (14.95), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 14.95
+      }
+    },
+    {
+      "date": "2026-10-30T21:39:58.826505+00:00",
+      "symbol": "DDOG",
+      "action": "SELL",
+      "qty": 2,
+      "price": 235.27,
+      "pnl": -50.18,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (249.41), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 249.41
+      }
+    },
+    {
+      "date": "2026-10-30T21:39:59.164628+00:00",
+      "symbol": "GPN",
+      "action": "SELL",
+      "qty": 3,
+      "price": 96.84,
+      "pnl": 46.23,
+      "partial": true,
+      "sector": "Financials",
+      "reasoning": "RSI a\u015f\u0131r\u0131 al\u0131mda (74.97 > 70): pozisyonun yar\u0131s\u0131 sat\u0131larak k\u00e2r kilitlendi, kalan yar\u0131 izleyen stop ile s\u00fcr\u00fcyor.",
+      "indicators": {
+        "price": 96.84,
+        "sma200": 76.56,
+        "rsi14": 74.97,
+        "atr14": 3.47,
+        "volume_vs_avg20": 6.34
+      }
+    },
+    {
+      "date": "2026-10-30T21:39:59.545090+00:00",
+      "symbol": "GL",
+      "action": "SELL",
+      "qty": 1,
+      "price": 159.08,
+      "pnl": -1.37,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "Uzun vadeli trend (SMA200=159.17) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=39.37.",
+      "indicators": {
+        "price": 159.08,
+        "sma200": 159.17,
+        "rsi14": 39.37,
+        "atr14": 4.23,
+        "volume_vs_avg20": 0.99
+      }
+    },
+    {
+      "date": "2026-10-30T21:40:01.138230+00:00",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 344.63,
+      "stop_price": 332.38,
+      "sector": "Information Technology",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=296.27), RSI14=54.92 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.68x \u00fczerinde. \u0130zleyen stop: 332.38.",
+      "indicators": {
+        "price": 344.63,
+        "sma200": 296.27,
+        "rsi14": 54.92,
+        "atr14": 6.13,
+        "volume_vs_avg20": 1.68
+      }
+    },
+    {
+      "date": "2026-10-30T21:40:01.450617+00:00",
+      "symbol": "BEN",
+      "action": "BUY",
+      "qty": 13,
+      "price": 31.64,
+      "stop_price": 29.99,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=29.72), RSI14=48.69 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.08x \u00fczerinde. \u0130zleyen stop: 29.99.",
+      "indicators": {
+        "price": 31.64,
+        "sma200": 29.72,
+        "rsi14": 48.69,
+        "atr14": 0.83,
+        "volume_vs_avg20": 1.08
+      }
+    },
+    {
+      "date": "2026-10-30T21:40:01.762054+00:00",
+      "symbol": "DOC",
+      "action": "BUY",
+      "qty": 16,
+      "price": 19.03,
+      "stop_price": 18.08,
+      "sector": "Real Estate",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=18.69), RSI14=52.29 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.06x \u00fczerinde. \u0130zleyen stop: 18.08.",
+      "indicators": {
+        "price": 19.03,
+        "sma200": 18.69,
+        "rsi14": 52.29,
+        "atr14": 0.48,
+        "volume_vs_avg20": 1.06
+      }
     }
   ],
   "equity_history": [
@@ -4342,6 +4457,11 @@
       "date": "2026-10-29T23:36:10.536942+00:00",
       "equity": 9817.66,
       "cash": 1054.71
+    },
+    {
+      "date": "2026-10-30T21:40:02.135825+00:00",
+      "equity": 9826.99,
+      "cash": 958.91
     }
   ]
 }

@@ -1,21 +1,13 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 958.907283782959,
+  "cash": 1056.5472831726074,
   "positions": {
-    "APA": {
-      "qty": 8,
-      "avg_price": 42.29999923706055,
-      "stop_price": 49.73576710635744,
-      "peak_price": 52.81999969482422,
-      "sector": "Energy",
-      "partial_taken": true
-    },
     "KDP": {
       "qty": 6,
       "avg_price": 30.690000534057617,
-      "stop_price": 34.37428501674107,
-      "peak_price": 35.84000015258789,
+      "stop_price": 35.22428403581892,
+      "peak_price": 36.81999969482422,
       "sector": "Consumer Staples",
       "partial_taken": true
     },
@@ -30,8 +22,8 @@
     "IFF": {
       "qty": 2,
       "avg_price": 82.41999816894531,
-      "stop_price": 90.4971444266183,
-      "peak_price": 94.1500015258789,
+      "stop_price": 90.6028551374163,
+      "peak_price": 94.62999725341797,
       "sector": "Materials",
       "partial_taken": true
     },
@@ -78,16 +70,16 @@
     "GM": {
       "qty": 10,
       "avg_price": 80.54000091552734,
-      "stop_price": 81.49571663992745,
-      "peak_price": 87.4000015258789,
+      "stop_price": 83.97714560372489,
+      "peak_price": 89.94000244140625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "GPN": {
       "qty": 4,
       "avg_price": 81.43000030517578,
-      "stop_price": 89.8999993460519,
-      "peak_price": 96.83999633789062,
+      "stop_price": 92.28428540910993,
+      "peak_price": 99.62999725341797,
       "sector": "Financials",
       "partial_taken": true
     },
@@ -102,7 +94,7 @@
     "PSX": {
       "qty": 1,
       "avg_price": 268.5299987792969,
-      "stop_price": 262.0285382952009,
+      "stop_price": 262.36340767996654,
       "peak_price": 282.8299865722656,
       "sector": "Energy",
       "partial_taken": false
@@ -110,8 +102,8 @@
     "DG": {
       "qty": 5,
       "avg_price": 126.16999816894531,
-      "stop_price": 122.84643663678851,
-      "peak_price": 132.3000030517578,
+      "stop_price": 126.31143079485211,
+      "peak_price": 135.77999877929688,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -126,16 +118,16 @@
     "WELL": {
       "qty": 1,
       "avg_price": 227.1999969482422,
-      "stop_price": 221.85428946358817,
-      "peak_price": 234.60000610351562,
+      "stop_price": 226.0307115827288,
+      "peak_price": 239.0,
       "sector": "Real Estate",
       "partial_taken": false
     },
     "BAX": {
       "qty": 17,
       "avg_price": 23.5,
-      "stop_price": 21.671428407941544,
-      "peak_price": 23.5,
+      "stop_price": 22.236427579607284,
+      "peak_price": 24.219999313354492,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -150,17 +142,25 @@
     "BEN": {
       "qty": 13,
       "avg_price": 31.639999389648438,
-      "stop_price": 29.98928533281599,
-      "peak_price": 31.639999389648438,
+      "stop_price": 30.36785670689174,
+      "peak_price": 31.969999313354492,
       "sector": "Financials",
       "partial_taken": false
     },
     "DOC": {
       "qty": 16,
       "avg_price": 19.030000686645508,
-      "stop_price": 18.07963948152774,
-      "peak_price": 19.030000686645508,
+      "stop_price": 18.489761586583317,
+      "peak_price": 19.479999542236328,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "APA": {
+      "qty": 6,
+      "avg_price": 48.81999969482422,
+      "stop_price": 45.3020178050571,
+      "peak_price": 48.81999969482422,
+      "sector": "Energy",
       "partial_taken": false
     }
   },
@@ -3805,6 +3805,37 @@
         "atr14": 0.48,
         "volume_vs_avg20": 1.06
       }
+    },
+    {
+      "date": "2026-11-02T23:59:33.820578+00:00",
+      "symbol": "APA",
+      "action": "SELL",
+      "qty": 8,
+      "price": 48.82,
+      "pnl": 52.16,
+      "partial": false,
+      "sector": "Energy",
+      "reasoning": "\u0130zleyen stop tetiklendi (49.74), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 49.74
+      }
+    },
+    {
+      "date": "2026-11-02T23:59:35.626206+00:00",
+      "symbol": "APA",
+      "action": "BUY",
+      "qty": 6,
+      "price": 48.82,
+      "stop_price": 45.3,
+      "sector": "Energy",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=37.43), RSI14=53.94 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.34x \u00fczerinde. \u0130zleyen stop: 45.30.",
+      "indicators": {
+        "price": 48.82,
+        "sma200": 37.43,
+        "rsi14": 53.94,
+        "atr14": 1.76,
+        "volume_vs_avg20": 1.34
+      }
     }
   ],
   "equity_history": [
@@ -4467,6 +4498,11 @@
       "date": "2026-10-30T23:14:12.928636+00:00",
       "equity": 9826.99,
       "cash": 958.91
+    },
+    {
+      "date": "2026-11-02T23:59:36.116182+00:00",
+      "equity": 9880.06,
+      "cash": 1056.55
     }
   ]
 }

@@ -1,24 +1,8 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 3981.365526199341,
+  "cash": 6705.145448684692,
   "positions": {
-    "ANET": {
-      "qty": 2,
-      "avg_price": 182.9499969482422,
-      "stop_price": 163.44659859793526,
-      "peak_price": 187.0,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "DAL": {
-      "qty": 16,
-      "avg_price": 79.26000213623047,
-      "stop_price": 73.91311082380106,
-      "peak_price": 81.63999938964844,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
     "STT": {
       "qty": 8,
       "avg_price": 169.94000244140625,
@@ -30,23 +14,15 @@
     "DXCM": {
       "qty": 12,
       "avg_price": 78.56999969482422,
-      "stop_price": 75.25785718645368,
-      "peak_price": 82.29000091552734,
+      "stop_price": 77.58678681509835,
+      "peak_price": 84.76000213623047,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "ADM": {
-      "qty": 14,
-      "avg_price": 76.19999694824219,
-      "stop_price": 72.1510761805943,
-      "peak_price": 76.91000366210938,
-      "sector": "Consumer Staples",
       "partial_taken": false
     },
     "VLO": {
       "qty": 2,
       "avg_price": 399.6600036621094,
-      "stop_price": 352.5546449933733,
+      "stop_price": 352.9260766165597,
       "peak_price": 399.6600036621094,
       "sector": "Energy",
       "partial_taken": false
@@ -3317,6 +3293,60 @@
         "rsi14_prev": 30.59,
         "atr14": 18.84
       }
+    },
+    {
+      "date": "2026-11-02T23:59:31.117893+00:00",
+      "symbol": "ANET",
+      "action": "SELL",
+      "qty": 2,
+      "price": 164.14,
+      "pnl": -37.62,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=27.68, fiyat=164.14.",
+      "indicators": {
+        "price": 164.14,
+        "sma200": 165.34,
+        "rsi14": 27.68,
+        "rsi14_prev": 27.19,
+        "atr14": 9.8
+      }
+    },
+    {
+      "date": "2026-11-02T23:59:31.617428+00:00",
+      "symbol": "DAL",
+      "action": "SELL",
+      "qty": 16,
+      "price": 83.42,
+      "pnl": 66.56,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=57.56, fiyat=83.42.",
+      "indicators": {
+        "price": 83.42,
+        "sma200": 76.35,
+        "rsi14": 57.56,
+        "rsi14_prev": 50.55,
+        "atr14": 3.25
+      }
+    },
+    {
+      "date": "2026-11-02T23:59:32.103419+00:00",
+      "symbol": "ADM",
+      "action": "SELL",
+      "qty": 14,
+      "price": 75.77,
+      "pnl": -6.02,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=17.09, fiyat=75.77.",
+      "indicators": {
+        "price": 75.77,
+        "sma200": 75.96,
+        "rsi14": 17.09,
+        "rsi14_prev": 36.43,
+        "atr14": 1.81
+      }
     }
   ],
   "equity_history": [
@@ -3979,6 +4009,11 @@
       "date": "2026-10-30T23:14:11.541207+00:00",
       "equity": 9823.19,
       "cash": 3981.37
+    },
+    {
+      "date": "2026-11-02T23:59:33.813580+00:00",
+      "equity": 9839.67,
+      "cash": 6705.15
     }
   ]
 }

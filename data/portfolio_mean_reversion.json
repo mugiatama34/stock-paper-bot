@@ -1,20 +1,12 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 6705.145448684692,
+  "cash": 6751.725534439087,
   "positions": {
-    "STT": {
-      "qty": 8,
-      "avg_price": 169.94000244140625,
-      "stop_price": 162.10356848580497,
-      "peak_price": 173.75,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "DXCM": {
       "qty": 12,
       "avg_price": 78.56999969482422,
-      "stop_price": 77.58678681509835,
+      "stop_price": 77.67607252938407,
       "peak_price": 84.76000213623047,
       "sector": "Health Care",
       "partial_taken": false
@@ -25,6 +17,22 @@
       "stop_price": 352.9260766165597,
       "peak_price": 399.6600036621094,
       "sector": "Energy",
+      "partial_taken": false
+    },
+    "DELL": {
+      "qty": 1,
+      "avg_price": 408.3999938964844,
+      "stop_price": 327.73454854223235,
+      "peak_price": 408.3999938964844,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "HPE": {
+      "qty": 17,
+      "avg_price": 53.099998474121094,
+      "stop_price": 44.15981946672712,
+      "peak_price": 53.099998474121094,
+      "sector": "Information Technology",
       "partial_taken": false
     }
   },
@@ -3347,6 +3355,58 @@
         "rsi14_prev": 36.43,
         "atr14": 1.81
       }
+    },
+    {
+      "date": "2026-11-03T22:27:51.751705+00:00",
+      "symbol": "STT",
+      "action": "SELL",
+      "qty": 8,
+      "price": 169.71,
+      "pnl": -1.84,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "RSI toparland\u0131 (>55), d\u00f6n\u00fc\u015f tamamland\u0131. RSI14=57.71, fiyat=169.71.",
+      "indicators": {
+        "price": 169.71,
+        "sma200": 157.96,
+        "rsi14": 57.71,
+        "rsi14_prev": 40.45,
+        "atr14": 3.77
+      }
+    },
+    {
+      "date": "2026-11-03T22:27:53.440483+00:00",
+      "symbol": "DELL",
+      "action": "BUY",
+      "qty": 1,
+      "price": 408.4,
+      "stop_price": 327.73,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 24.19 \u2192 33.4 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=333.26) \u00fczerinde. \u0130zleyen stop: 327.73.",
+      "indicators": {
+        "price": 408.4,
+        "sma200": 333.26,
+        "rsi14": 33.4,
+        "rsi14_prev": 24.19,
+        "atr14": 32.27
+      }
+    },
+    {
+      "date": "2026-11-03T22:27:53.872896+00:00",
+      "symbol": "HPE",
+      "action": "BUY",
+      "qty": 17,
+      "price": 53.1,
+      "stop_price": 44.16,
+      "sector": "Information Technology",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 24.42 \u2192 33.67 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=40.93) \u00fczerinde. \u0130zleyen stop: 44.16.",
+      "indicators": {
+        "price": 53.1,
+        "sma200": 40.93,
+        "rsi14": 33.67,
+        "rsi14_prev": 24.42,
+        "atr14": 3.58
+      }
     }
   ],
   "equity_history": [
@@ -4019,6 +4079,11 @@
       "date": "2026-11-03T01:47:34.974350+00:00",
       "equity": NaN,
       "cash": 6705.15
+    },
+    {
+      "date": "2026-11-03T22:27:54.309393+00:00",
+      "equity": 9833.77,
+      "cash": 6751.73
     }
   ]
 }

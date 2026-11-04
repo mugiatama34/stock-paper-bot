@@ -14,24 +14,24 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 395.13427298409596,
-      "peak_price": 416.3800048828125,
+      "stop_price": 404.2699933733259,
+      "peak_price": 424.8699951171875,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "FAST": {
       "qty": 17,
       "avg_price": 51.02000045776367,
-      "stop_price": 50.217298621958726,
-      "peak_price": 52.72999954223633,
+      "stop_price": 50.86082926716955,
+      "peak_price": 53.209999084472656,
       "sector": "Industrials",
       "partial_taken": false
     },
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 161.04427664620536,
-      "peak_price": 170.67999267578125,
+      "stop_price": 164.6171373639788,
+      "peak_price": 174.47999572753906,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -54,32 +54,32 @@
     "HON": {
       "qty": 1,
       "avg_price": 219.27999877929688,
-      "stop_price": 212.7414332798549,
-      "peak_price": 224.0500030517578,
+      "stop_price": 216.33929007393974,
+      "peak_price": 228.47000122070312,
       "sector": "Industrials",
       "partial_taken": false
     },
     "MNST": {
       "qty": 6,
       "avg_price": 45.65999984741211,
-      "stop_price": 45.80571419852121,
-      "peak_price": 48.02000045776367,
+      "stop_price": 46.49785614013672,
+      "peak_price": 48.75,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "XEL": {
       "qty": 3,
       "avg_price": 77.18000030517578,
-      "stop_price": 76.81000082833427,
-      "peak_price": 79.81999969482422,
+      "stop_price": 77.31500244140625,
+      "peak_price": 80.5,
       "sector": "Utilities",
       "partial_taken": false
     },
     "PYPL": {
       "qty": 3,
       "avg_price": 56.54999923706055,
-      "stop_price": 55.91014153616769,
-      "peak_price": 58.779998779296875,
+      "stop_price": 57.1745719909668,
+      "peak_price": 60.20000076293945,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -94,32 +94,32 @@
     "BIIB": {
       "qty": 1,
       "avg_price": 253.6199951171875,
-      "stop_price": 237.7699955531529,
-      "peak_price": 253.6199951171875,
+      "stop_price": 237.9421626499721,
+      "peak_price": 254.4600067138672,
       "sector": "Health Care",
       "partial_taken": false
     },
     "INTU": {
       "qty": 1,
       "avg_price": 352.1000061035156,
-      "stop_price": 323.6371372767857,
-      "peak_price": 352.1000061035156,
+      "stop_price": 328.1800013950893,
+      "peak_price": 356.6400146484375,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "CSGP": {
       "qty": 13,
       "avg_price": 31.81999969482422,
-      "stop_price": 28.131428037370956,
-      "peak_price": 31.81999969482422,
+      "stop_price": 28.82571574619838,
+      "peak_price": 32.58000183105469,
       "sector": "Real Estate",
       "partial_taken": false
     },
     "KDP": {
       "qty": 18,
       "avg_price": 34.7400016784668,
-      "stop_price": 32.91071483067104,
-      "peak_price": 34.7400016784668,
+      "stop_price": 34.78928593226841,
+      "peak_price": 36.790000915527344,
       "sector": "Consumer Staples",
       "partial_taken": false
     }
@@ -2609,6 +2609,11 @@
     {
       "date": "2026-11-04T00:12:26.368789+00:00",
       "equity": 9684.48,
+      "cash": 1982.91
+    },
+    {
+      "date": "2026-11-04T22:46:39.966649+00:00",
+      "equity": 9830.79,
       "cash": 1982.91
     }
   ]

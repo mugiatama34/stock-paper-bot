@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 791.9472808837891,
+  "cash": 977.2872619628906,
   "positions": {
     "FAST": {
       "qty": 11,
@@ -9,14 +9,6 @@
       "stop_price": 50.86082926716955,
       "peak_price": 53.209999084472656,
       "sector": "Industrials",
-      "partial_taken": false
-    },
-    "ADI": {
-      "qty": 2,
-      "avg_price": 395.44000244140625,
-      "stop_price": 404.3257141113281,
-      "peak_price": 433.2799987792969,
-      "sector": "Information Technology",
       "partial_taken": false
     },
     "GPC": {
@@ -31,7 +23,7 @@
       "qty": 2,
       "avg_price": 176.80999755859375,
       "stop_price": 180.2478528703962,
-      "peak_price": 193.30999755859375,
+      "peak_price": 194.82000732421875,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -50,14 +42,6 @@
       "peak_price": 99.62999725341797,
       "sector": "Financials",
       "partial_taken": true
-    },
-    "IEX": {
-      "qty": 2,
-      "avg_price": 233.2100067138672,
-      "stop_price": 227.4528590611049,
-      "peak_price": 239.3300018310547,
-      "sector": "Industrials",
-      "partial_taken": false
     },
     "DG": {
       "qty": 5,
@@ -91,36 +75,12 @@
       "sector": "Health Care",
       "partial_taken": false
     },
-    "BEN": {
-      "qty": 13,
-      "avg_price": 31.639999389648438,
-      "stop_price": 32.270713806152344,
-      "peak_price": 33.869998931884766,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "DOC": {
       "qty": 16,
       "avg_price": 19.030000686645508,
       "stop_price": 19.1048547183336,
       "peak_price": 20.170000076293945,
       "sector": "Real Estate",
-      "partial_taken": false
-    },
-    "APH": {
-      "qty": 4,
-      "avg_price": 84.19000244140625,
-      "stop_price": 76.53999982561383,
-      "peak_price": 84.19000244140625,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "NWSA": {
-      "qty": 12,
-      "avg_price": 29.459999084472656,
-      "stop_price": 29.15714236668178,
-      "peak_price": 30.559999465942383,
-      "sector": "Communication Services",
       "partial_taken": false
     },
     "TGT": {
@@ -158,9 +118,49 @@
     "NEM": {
       "qty": 2,
       "avg_price": 118.11000061035156,
-      "stop_price": 109.1500015258789,
-      "peak_price": 118.11000061035156,
+      "stop_price": 110.36714390345982,
+      "peak_price": 119.70999908447266,
       "sector": "Materials",
+      "partial_taken": false
+    },
+    "AAPL": {
+      "qty": 2,
+      "avg_price": 344.1700134277344,
+      "stop_price": 326.36572265625,
+      "peak_price": 344.1700134277344,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "AIG": {
+      "qty": 7,
+      "avg_price": 80.93000030517578,
+      "stop_price": 77.53785705566406,
+      "peak_price": 80.93000030517578,
+      "sector": "Financials",
+      "partial_taken": false
+    },
+    "CRWD": {
+      "qty": 1,
+      "avg_price": 217.1999969482422,
+      "stop_price": 188.28113664899553,
+      "peak_price": 217.1999969482422,
+      "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "EMR": {
+      "qty": 2,
+      "avg_price": 162.61000061035156,
+      "stop_price": 151.44000244140625,
+      "peak_price": 162.61000061035156,
+      "sector": "Industrials",
+      "partial_taken": false
+    },
+    "PNW": {
+      "qty": 2,
+      "avg_price": 103.83000183105469,
+      "stop_price": 99.32647523020061,
+      "peak_price": 103.83000183105469,
+      "sector": "Utilities",
       "partial_taken": false
     }
   },
@@ -4057,6 +4057,161 @@
         "atr14": 4.48,
         "volume_vs_avg20": 1.74
       }
+    },
+    {
+      "date": "2026-11-05T22:46:37.177441+00:00",
+      "symbol": "ADI",
+      "action": "SELL",
+      "qty": 2,
+      "price": 361.01,
+      "pnl": -68.86,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (404.33), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 404.33
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:37.747241+00:00",
+      "symbol": "IEX",
+      "action": "SELL",
+      "qty": 2,
+      "price": 222.6,
+      "pnl": -21.22,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "\u0130zleyen stop tetiklendi (227.45), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 227.45
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:38.273085+00:00",
+      "symbol": "BEN",
+      "action": "SELL",
+      "qty": 13,
+      "price": 32.21,
+      "pnl": 7.41,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (32.27), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 32.27
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:38.805328+00:00",
+      "symbol": "APH",
+      "action": "SELL",
+      "qty": 4,
+      "price": 71.64,
+      "pnl": -50.2,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (76.54), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 76.54
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:39.272743+00:00",
+      "symbol": "NWSA",
+      "action": "SELL",
+      "qty": 12,
+      "price": 26.48,
+      "pnl": -35.76,
+      "partial": false,
+      "sector": "Communication Services",
+      "reasoning": "\u0130zleyen stop tetiklendi (29.16), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 29.16
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:40.526061+00:00",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "qty": 2,
+      "price": 344.17,
+      "stop_price": 326.37,
+      "sector": "Information Technology",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=298.06), RSI14=50.52 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.54x \u00fczerinde. \u0130zleyen stop: 326.37.",
+      "indicators": {
+        "price": 344.17,
+        "sma200": 298.06,
+        "rsi14": 50.52,
+        "atr14": 8.9,
+        "volume_vs_avg20": 1.54
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:41.008256+00:00",
+      "symbol": "AIG",
+      "action": "BUY",
+      "qty": 7,
+      "price": 80.93,
+      "stop_price": 77.54,
+      "sector": "Financials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=76.25), RSI14=50.74 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.0x \u00fczerinde. \u0130zleyen stop: 77.54.",
+      "indicators": {
+        "price": 80.93,
+        "sma200": 76.25,
+        "rsi14": 50.74,
+        "atr14": 1.7,
+        "volume_vs_avg20": 1.0
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:41.537904+00:00",
+      "symbol": "CRWD",
+      "action": "BUY",
+      "qty": 1,
+      "price": 217.2,
+      "stop_price": 188.28,
+      "sector": "Information Technology",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=169.72), RSI14=44.98 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.85x \u00fczerinde. \u0130zleyen stop: 188.28.",
+      "indicators": {
+        "price": 217.2,
+        "sma200": 169.72,
+        "rsi14": 44.98,
+        "atr14": 14.46,
+        "volume_vs_avg20": 1.85
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:42.072461+00:00",
+      "symbol": "EMR",
+      "action": "BUY",
+      "qty": 2,
+      "price": 162.61,
+      "stop_price": 151.44,
+      "sector": "Industrials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=146.79), RSI14=51.58 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.85x \u00fczerinde. \u0130zleyen stop: 151.44.",
+      "indicators": {
+        "price": 162.61,
+        "sma200": 146.79,
+        "rsi14": 51.58,
+        "atr14": 5.58,
+        "volume_vs_avg20": 1.85
+      }
+    },
+    {
+      "date": "2026-11-05T22:46:42.539750+00:00",
+      "symbol": "PNW",
+      "action": "BUY",
+      "qty": 2,
+      "price": 103.83,
+      "stop_price": 99.33,
+      "sector": "Utilities",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=98.88), RSI14=53.33 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.57x \u00fczerinde. \u0130zleyen stop: 99.33.",
+      "indicators": {
+        "price": 103.83,
+        "sma200": 98.88,
+        "rsi14": 53.33,
+        "atr14": 2.25,
+        "volume_vs_avg20": 1.57
+      }
     }
   ],
   "equity_history": [
@@ -4749,6 +4904,11 @@
       "date": "2026-11-05T00:32:20.483432+00:00",
       "equity": 9955.32,
       "cash": 791.95
+    },
+    {
+      "date": "2026-11-05T22:46:43.027215+00:00",
+      "equity": 9625.05,
+      "cash": 977.29
     }
   ]
 }

@@ -1,21 +1,13 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 6383.515508651733,
+  "cash": 5570.875494003296,
   "positions": {
-    "DXCM": {
-      "qty": 12,
-      "avg_price": 78.56999969482422,
-      "stop_price": 81.11393056597028,
-      "peak_price": 88.4800033569336,
-      "sector": "Health Care",
-      "partial_taken": false
-    },
     "TWLO": {
       "qty": 4,
       "avg_price": 200.9600067138672,
-      "stop_price": 159.10752432686942,
-      "peak_price": 200.9600067138672,
+      "stop_price": 161.39250564575195,
+      "peak_price": 202.02000427246094,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -25,6 +17,14 @@
       "stop_price": 199.6439312526158,
       "peak_price": 222.41000366210938,
       "sector": "Information Technology",
+      "partial_taken": false
+    },
+    "EOG": {
+      "qty": 12,
+      "avg_price": 147.1300048828125,
+      "stop_price": 134.91036878313338,
+      "peak_price": 147.1300048828125,
+      "sector": "Energy",
       "partial_taken": false
     }
   },
@@ -3475,6 +3475,37 @@
         "rsi14_prev": 31.27,
         "atr14": 9.11
       }
+    },
+    {
+      "date": "2026-11-06T22:15:56.384449+00:00",
+      "symbol": "DXCM",
+      "action": "SELL",
+      "qty": 12,
+      "price": 79.41,
+      "pnl": 10.08,
+      "partial": false,
+      "sector": "Health Care",
+      "reasoning": "\u0130zleyen stop tetiklendi (81.11), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 81.11
+      }
+    },
+    {
+      "date": "2026-11-06T22:15:57.581417+00:00",
+      "symbol": "EOG",
+      "action": "BUY",
+      "qty": 12,
+      "price": 147.13,
+      "stop_price": 134.91,
+      "sector": "Energy",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 30.97 \u2192 35.53 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=136.45) \u00fczerinde. \u0130zleyen stop: 134.91.",
+      "indicators": {
+        "price": 147.13,
+        "sma200": 136.45,
+        "rsi14": 35.53,
+        "rsi14_prev": 30.97,
+        "atr14": 4.89
+      }
     }
   ],
   "equity_history": [
@@ -4177,6 +4208,11 @@
       "date": "2026-11-06T00:33:50.926137+00:00",
       "equity": 9535.34,
       "cash": 6383.52
+    },
+    {
+      "date": "2026-11-06T22:15:58.054521+00:00",
+      "equity": 9426.42,
+      "cash": 5570.88
     }
   ]
 }

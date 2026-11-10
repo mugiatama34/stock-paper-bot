@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1409.6924648284912,
+  "cash": 1063.1924648284912,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -14,16 +14,16 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 404.2699933733259,
-      "peak_price": 424.8699951171875,
+      "stop_price": 405.1114283970424,
+      "peak_price": 428.260009765625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "FAST": {
       "qty": 17,
       "avg_price": 51.02000045776367,
-      "stop_price": 51.79181297424459,
-      "peak_price": 54.56999969482422,
+      "stop_price": 52.1036756078571,
+      "peak_price": 54.84000015258789,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -86,8 +86,8 @@
     "KDP": {
       "qty": 18,
       "avg_price": 34.7400016784668,
-      "stop_price": 34.80857031685965,
-      "peak_price": 36.939998626708984,
+      "stop_price": 35.298570905412944,
+      "peak_price": 37.59000015258789,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -110,17 +110,25 @@
     "SBUX": {
       "qty": 4,
       "avg_price": 106.16000366210938,
-      "stop_price": 103.17857469831195,
-      "peak_price": 109.44000244140625,
+      "stop_price": 103.5171399797712,
+      "peak_price": 109.94999694824219,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "PEP": {
       "qty": 2,
       "avg_price": 141.33999633789062,
-      "stop_price": 134.83143179757255,
-      "peak_price": 141.8800048828125,
+      "stop_price": 136.48285566057478,
+      "peak_price": 143.61000061035156,
       "sector": "Consumer Staples",
+      "partial_taken": false
+    },
+    "CMCSA": {
+      "qty": 14,
+      "avg_price": 24.75,
+      "stop_price": 23.13214247567313,
+      "peak_price": 24.75,
+      "sector": "Communication Services",
       "partial_taken": false
     }
   },
@@ -2056,6 +2064,24 @@
         "atr14": 3.41,
         "relative_strength_20d": 0.1776
       }
+    },
+    {
+      "date": "2026-11-10T22:29:03.954638+00:00",
+      "symbol": "CMCSA",
+      "action": "BUY",
+      "qty": 14,
+      "price": 24.75,
+      "stop_price": 23.13,
+      "sector": "Communication Services",
+      "reasoning": "Momentum giri\u015fi: fiyat SMA20 (22.93) ve SMA50 (22.87) \u00fczerinde, SPY'a g\u00f6re 20 g\u00fcnde %22.1 g\u00fc\u00e7l\u00fc, RSI=69.84 (<75, tepe de\u011fil). \u0130zleyen stop: 23.13 (2xATR).",
+      "indicators": {
+        "price": 24.75,
+        "sma20": 22.93,
+        "sma50": 22.87,
+        "rsi14": 69.84,
+        "atr14": 0.81,
+        "relative_strength_20d": 0.2214
+      }
     }
   ],
   "equity_history": [
@@ -2778,6 +2804,11 @@
       "date": "2026-11-10T02:24:05.692552+00:00",
       "equity": NaN,
       "cash": 1409.69
+    },
+    {
+      "date": "2026-11-10T22:29:04.474818+00:00",
+      "equity": 9699.34,
+      "cash": 1063.19
     }
   ]
 }

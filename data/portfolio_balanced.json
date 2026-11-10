@@ -1,13 +1,13 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 835.137279510498,
+  "cash": 706.8072776794434,
   "positions": {
     "FAST": {
       "qty": 11,
       "avg_price": 51.43000030517578,
-      "stop_price": 50.86082926716955,
-      "peak_price": 53.209999084472656,
+      "stop_price": 51.79181297424459,
+      "peak_price": 54.56999969482422,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -62,7 +62,7 @@
     "WELL": {
       "qty": 1,
       "avg_price": 227.1999969482422,
-      "stop_price": 234.92571367536272,
+      "stop_price": 235.06214250837053,
       "peak_price": 247.99000549316406,
       "sector": "Real Estate",
       "partial_taken": false
@@ -78,16 +78,16 @@
     "DOC": {
       "qty": 8,
       "avg_price": 19.030000686645508,
-      "stop_price": 19.16214234488351,
-      "peak_price": 20.260000228881836,
+      "stop_price": 19.51285743713379,
+      "peak_price": 20.6200008392334,
       "sector": "Real Estate",
       "partial_taken": true
     },
     "TGT": {
       "qty": 1,
       "avg_price": 154.39999389648438,
-      "stop_price": 153.1071493966239,
-      "peak_price": 163.10000610351562,
+      "stop_price": 154.4285648890904,
+      "peak_price": 165.89999389648438,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -110,16 +110,16 @@
     "NEM": {
       "qty": 2,
       "avg_price": 118.11000061035156,
-      "stop_price": 111.125734601702,
-      "peak_price": 120.91000366210938,
+      "stop_price": 115.09286172049386,
+      "peak_price": 125.16000366210938,
       "sector": "Materials",
       "partial_taken": false
     },
     "AAPL": {
       "qty": 2,
       "avg_price": 344.1700134277344,
-      "stop_price": 326.36572265625,
-      "peak_price": 344.1700134277344,
+      "stop_price": 331.8628496442522,
+      "peak_price": 350.69000244140625,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -134,41 +134,49 @@
     "CRWD": {
       "qty": 1,
       "avg_price": 217.1999969482422,
-      "stop_price": 188.28113664899553,
-      "peak_price": 217.1999969482422,
+      "stop_price": 198.04144287109375,
+      "peak_price": 228.5800018310547,
       "sector": "Information Technology",
       "partial_taken": false
     },
     "EMR": {
       "qty": 2,
       "avg_price": 162.61000061035156,
-      "stop_price": 151.44000244140625,
-      "peak_price": 162.61000061035156,
+      "stop_price": 157.52583748953683,
+      "peak_price": 169.52000427246094,
       "sector": "Industrials",
       "partial_taken": false
     },
     "PNW": {
       "qty": 2,
       "avg_price": 103.83000183105469,
-      "stop_price": 99.73318047515703,
-      "peak_price": 104.22000122070312,
+      "stop_price": 100.79746548885626,
+      "peak_price": 105.26000213623047,
       "sector": "Utilities",
       "partial_taken": false
     },
     "AMCR": {
       "qty": 7,
       "avg_price": 44.869998931884766,
-      "stop_price": 41.928570883614675,
-      "peak_price": 44.869998931884766,
+      "stop_price": 42.17071369716099,
+      "peak_price": 45.13999938964844,
       "sector": "Materials",
       "partial_taken": false
     },
     "FOX": {
       "qty": 4,
       "avg_price": 59.5,
-      "stop_price": 54.77371270315988,
-      "peak_price": 59.5,
+      "stop_price": 55.56085368565151,
+      "peak_price": 60.5099983215332,
       "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "AEP": {
+      "qty": 1,
+      "avg_price": 128.3300018310547,
+      "stop_price": 122.64714704241071,
+      "peak_price": 128.3300018310547,
+      "sector": "Utilities",
       "partial_taken": false
     }
   },
@@ -4286,6 +4294,23 @@
         "atr14": 2.36,
         "volume_vs_avg20": 1.71
       }
+    },
+    {
+      "date": "2026-11-10T00:49:22.473163+00:00",
+      "symbol": "AEP",
+      "action": "BUY",
+      "qty": 1,
+      "price": 128.33,
+      "stop_price": 122.65,
+      "sector": "Utilities",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=127.36), RSI14=53.52 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.36x \u00fczerinde. \u0130zleyen stop: 122.65.",
+      "indicators": {
+        "price": 128.33,
+        "sma200": 127.36,
+        "rsi14": 53.52,
+        "atr14": 2.84,
+        "volume_vs_avg20": 1.36
+      }
     }
   ],
   "equity_history": [
@@ -4998,6 +5023,11 @@
       "date": "2026-11-06T23:49:47.825051+00:00",
       "equity": 9544.41,
       "cash": 835.14
+    },
+    {
+      "date": "2026-11-10T00:49:22.838996+00:00",
+      "equity": 9713.15,
+      "cash": 706.81
     }
   ]
 }

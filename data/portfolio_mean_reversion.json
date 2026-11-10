@@ -1,13 +1,13 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 5570.875494003296,
+  "cash": 3831.9154949188232,
   "positions": {
     "TWLO": {
       "qty": 4,
       "avg_price": 200.9600067138672,
-      "stop_price": 161.39250564575195,
-      "peak_price": 202.02000427246094,
+      "stop_price": 166.21668243408203,
+      "peak_price": 206.63999938964844,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -22,9 +22,25 @@
     "EOG": {
       "qty": 12,
       "avg_price": 147.1300048828125,
-      "stop_price": 134.91036878313338,
-      "peak_price": 147.1300048828125,
+      "stop_price": 136.408568246024,
+      "peak_price": 148.42999267578125,
       "sector": "Energy",
+      "partial_taken": false
+    },
+    "META": {
+      "qty": 1,
+      "avg_price": 641.3699951171875,
+      "stop_price": 579.5307224818638,
+      "peak_price": 641.3699951171875,
+      "sector": "Communication Services",
+      "partial_taken": false
+    },
+    "IFF": {
+      "qty": 13,
+      "avg_price": 84.43000030517578,
+      "stop_price": 77.07017953055245,
+      "peak_price": 84.43000030517578,
+      "sector": "Materials",
       "partial_taken": false
     }
   },
@@ -3506,6 +3522,40 @@
         "rsi14_prev": 30.97,
         "atr14": 4.89
       }
+    },
+    {
+      "date": "2026-11-10T00:49:20.656696+00:00",
+      "symbol": "META",
+      "action": "BUY",
+      "qty": 1,
+      "price": 641.37,
+      "stop_price": 579.53,
+      "sector": "Communication Services",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 23.9 \u2192 36.95 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=631.07) \u00fczerinde. \u0130zleyen stop: 579.53.",
+      "indicators": {
+        "price": 641.37,
+        "sma200": 631.07,
+        "rsi14": 36.95,
+        "rsi14_prev": 23.9,
+        "atr14": 24.74
+      }
+    },
+    {
+      "date": "2026-11-10T00:49:20.997535+00:00",
+      "symbol": "IFF",
+      "action": "BUY",
+      "qty": 13,
+      "price": 84.43,
+      "stop_price": 77.07,
+      "sector": "Materials",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.89 \u2192 36.21 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=78.45) \u00fczerinde. \u0130zleyen stop: 77.07.",
+      "indicators": {
+        "price": 84.43,
+        "sma200": 78.45,
+        "rsi14": 36.21,
+        "rsi14_prev": 31.89,
+        "atr14": 2.94
+      }
     }
   ],
   "equity_history": [
@@ -4218,6 +4268,11 @@
       "date": "2026-11-06T23:49:46.536569+00:00",
       "equity": 9426.42,
       "cash": 5570.88
+    },
+    {
+      "date": "2026-11-10T00:49:21.333721+00:00",
+      "equity": 9468.24,
+      "cash": 3831.92
     }
   ]
 }

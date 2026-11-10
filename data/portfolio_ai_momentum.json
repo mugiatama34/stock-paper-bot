@@ -22,8 +22,8 @@
     "FAST": {
       "qty": 17,
       "avg_price": 51.02000045776367,
-      "stop_price": 50.86082926716955,
-      "peak_price": 53.209999084472656,
+      "stop_price": 51.79181297424459,
+      "peak_price": 54.56999969482422,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -63,7 +63,7 @@
       "qty": 1,
       "avg_price": 253.6199951171875,
       "stop_price": 237.9421626499721,
-      "peak_price": 254.4600067138672,
+      "peak_price": 254.8699951171875,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -87,7 +87,7 @@
       "qty": 18,
       "avg_price": 34.7400016784668,
       "stop_price": 34.80857031685965,
-      "peak_price": 36.88999938964844,
+      "peak_price": 36.939998626708984,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -110,16 +110,16 @@
     "SBUX": {
       "qty": 4,
       "avg_price": 106.16000366210938,
-      "stop_price": 100.54143306187221,
-      "peak_price": 106.16000366210938,
+      "stop_price": 103.17857469831195,
+      "peak_price": 109.44000244140625,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "PEP": {
       "qty": 2,
       "avg_price": 141.33999633789062,
-      "stop_price": 134.52713666643416,
-      "peak_price": 141.33999633789062,
+      "stop_price": 134.83143179757255,
+      "peak_price": 141.8800048828125,
       "sector": "Consumer Staples",
       "partial_taken": false
     }
@@ -2767,6 +2767,11 @@
     {
       "date": "2026-11-06T23:49:45.320113+00:00",
       "equity": 9581.56,
+      "cash": 1409.69
+    },
+    {
+      "date": "2026-11-10T00:49:19.590478+00:00",
+      "equity": 9657.74,
       "cash": 1409.69
     }
   ]

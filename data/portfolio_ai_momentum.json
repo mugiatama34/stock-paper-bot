@@ -14,16 +14,16 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 405.1114283970424,
-      "peak_price": 428.260009765625,
+      "stop_price": 406.27284022739957,
+      "peak_price": 429.17999267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
     "FAST": {
       "qty": 17,
       "avg_price": 51.02000045776367,
-      "stop_price": 52.1036756078571,
-      "peak_price": 54.84000015258789,
+      "stop_price": 52.886644111015215,
+      "peak_price": 55.4900016784668,
       "sector": "Industrials",
       "partial_taken": false
     },
@@ -46,8 +46,8 @@
     "XEL": {
       "qty": 3,
       "avg_price": 77.18000030517578,
-      "stop_price": 77.31500244140625,
-      "peak_price": 80.5,
+      "stop_price": 77.87285723005023,
+      "peak_price": 81.0999984741211,
       "sector": "Utilities",
       "partial_taken": false
     },
@@ -70,7 +70,7 @@
     "INTU": {
       "qty": 1,
       "avg_price": 352.1000061035156,
-      "stop_price": 328.1800013950893,
+      "stop_price": 328.83286830357144,
       "peak_price": 356.6400146484375,
       "sector": "Information Technology",
       "partial_taken": false
@@ -86,8 +86,8 @@
     "KDP": {
       "qty": 18,
       "avg_price": 34.7400016784668,
-      "stop_price": 35.298570905412944,
-      "peak_price": 37.59000015258789,
+      "stop_price": 35.90642820085798,
+      "peak_price": 38.25,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
@@ -102,7 +102,7 @@
     "ADSK": {
       "qty": 1,
       "avg_price": 269.1600036621094,
-      "stop_price": 250.6300005231585,
+      "stop_price": 250.80143301827567,
       "peak_price": 269.1600036621094,
       "sector": "Information Technology",
       "partial_taken": false
@@ -110,7 +110,7 @@
     "SBUX": {
       "qty": 4,
       "avg_price": 106.16000366210938,
-      "stop_price": 103.5171399797712,
+      "stop_price": 103.7642822265625,
       "peak_price": 109.94999694824219,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -118,16 +118,16 @@
     "PEP": {
       "qty": 2,
       "avg_price": 141.33999633789062,
-      "stop_price": 136.48285566057478,
-      "peak_price": 143.61000061035156,
+      "stop_price": 136.92714364188058,
+      "peak_price": 143.94000244140625,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "CMCSA": {
       "qty": 14,
       "avg_price": 24.75,
-      "stop_price": 23.13214247567313,
-      "peak_price": 24.75,
+      "stop_price": 23.495714460100448,
+      "peak_price": 25.020000457763672,
       "sector": "Communication Services",
       "partial_taken": false
     }
@@ -2813,6 +2813,11 @@
     {
       "date": "2026-11-11T00:15:38.010778+00:00",
       "equity": 9699.34,
+      "cash": 1063.19
+    },
+    {
+      "date": "2026-11-11T23:37:36.974576+00:00",
+      "equity": 9740.42,
       "cash": 1063.19
     }
   ]

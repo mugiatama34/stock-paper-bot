@@ -6,7 +6,7 @@
     "TWLO": {
       "qty": 4,
       "avg_price": 200.9600067138672,
-      "stop_price": 179.32696369716098,
+      "stop_price": 179.69716371808732,
       "peak_price": 219.47999572753906,
       "sector": "Information Technology",
       "partial_taken": false
@@ -14,7 +14,7 @@
     "CRM": {
       "qty": 6,
       "avg_price": 222.41000366210938,
-      "stop_price": 200.72428621564592,
+      "stop_price": 201.1617829459054,
       "peak_price": 222.41000366210938,
       "sector": "Information Technology",
       "partial_taken": false
@@ -22,8 +22,8 @@
     "EOG": {
       "qty": 12,
       "avg_price": 147.1300048828125,
-      "stop_price": 141.56286130632674,
-      "peak_price": 153.77000427246094,
+      "stop_price": 144.09142412458147,
+      "peak_price": 155.6199951171875,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -38,8 +38,8 @@
     "MPC": {
       "qty": 1,
       "avg_price": 402.8399963378906,
-      "stop_price": 350.5917718069894,
-      "peak_price": 402.8399963378906,
+      "stop_price": 359.95249829973494,
+      "peak_price": 412.8500061035156,
       "sector": "Energy",
       "partial_taken": false
     }
@@ -4332,6 +4332,11 @@
     {
       "date": "2026-11-12T01:41:17.206576+00:00",
       "equity": NaN,
+      "cash": 4057.85
+    },
+    {
+      "date": "2026-11-12T22:50:38.438128+00:00",
+      "equity": 9537.34,
       "cash": 4057.85
     }
   ]

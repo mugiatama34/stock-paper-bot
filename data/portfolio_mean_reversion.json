@@ -1,7 +1,7 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 4057.8455181121826,
+  "cash": 3153.255521774292,
   "positions": {
     "TWLO": {
       "qty": 4,
@@ -14,7 +14,7 @@
     "CRM": {
       "qty": 6,
       "avg_price": 222.41000366210938,
-      "stop_price": 201.1617829459054,
+      "stop_price": 201.7153581891741,
       "peak_price": 222.41000366210938,
       "sector": "Information Technology",
       "partial_taken": false
@@ -22,8 +22,8 @@
     "EOG": {
       "qty": 12,
       "avg_price": 147.1300048828125,
-      "stop_price": 144.09142412458147,
-      "peak_price": 155.6199951171875,
+      "stop_price": 146.77000863211495,
+      "peak_price": 158.32000732421875,
       "sector": "Energy",
       "partial_taken": false
     },
@@ -38,9 +38,17 @@
     "MPC": {
       "qty": 1,
       "avg_price": 402.8399963378906,
-      "stop_price": 359.95249829973494,
-      "peak_price": 412.8500061035156,
+      "stop_price": 362.11694771902904,
+      "peak_price": 414.6499938964844,
       "sector": "Energy",
+      "partial_taken": false
+    },
+    "VEEV": {
+      "qty": 3,
+      "avg_price": 301.5299987792969,
+      "stop_price": 279.6228517804827,
+      "peak_price": 301.5299987792969,
+      "sector": "Health Care",
       "partial_taken": false
     }
   },
@@ -3591,6 +3599,23 @@
         "rsi14_prev": 27.41,
         "atr14": 20.9
       }
+    },
+    {
+      "date": "2026-11-13T22:46:19.389325+00:00",
+      "symbol": "VEEV",
+      "action": "BUY",
+      "qty": 3,
+      "price": 301.53,
+      "stop_price": 279.62,
+      "sector": "Health Care",
+      "reasoning": "D\u00f6n\u00fc\u015f teyitli giri\u015f: RSI14 31.17 \u2192 33.61 (32 e\u015fi\u011fini yukar\u0131 k\u0131rd\u0131), fiyat uzun vadeli trend (SMA200=213.53) \u00fczerinde. \u0130zleyen stop: 279.62.",
+      "indicators": {
+        "price": 301.53,
+        "sma200": 213.53,
+        "rsi14": 33.61,
+        "rsi14_prev": 31.17,
+        "atr14": 8.76
+      }
     }
   ],
   "equity_history": [
@@ -4343,6 +4368,11 @@
       "date": "2026-11-13T00:41:48.455326+00:00",
       "equity": 9537.34,
       "cash": 4057.85
+    },
+    {
+      "date": "2026-11-13T22:46:19.845564+00:00",
+      "equity": 9579.3,
+      "cash": 3153.26
     }
   ]
 }

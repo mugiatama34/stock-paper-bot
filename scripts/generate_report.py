@@ -19,6 +19,7 @@ but a chart baked as an image can't switch at view time, so it's fixed dark and
 sits in a matching dark card in both page themes.
 """
 import argparse
+import math
 import os
 import re
 import shutil
@@ -135,9 +136,14 @@ def fetch_current_prices(symbols) -> dict:
     for sym in symbols:
         try:
             df = raw[sym] if len(symbols) > 1 else raw
-            df = df.dropna(how="all")
-            if not df.empty:
-                prices[sym] = float(df["Close"].iloc[-1])
+            # Son satırda Close NaN gelebiliyor (ör. hafta sonu / kısmi veri);
+            # son geçerli kapanışı al. NaN tek bir pozisyona girerse toplam
+            # equity NaN olur ve panoda "$nan" görünür.
+            closes = df["Close"].dropna()
+            if not closes.empty:
+                price = float(closes.iloc[-1])
+                if math.isfinite(price) and price > 0:
+                    prices[sym] = price
         except Exception:
             pass
     print(f"[data] priced {len(prices)}/{len(symbols)} held symbols")

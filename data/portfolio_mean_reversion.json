@@ -14,7 +14,7 @@
     "CRM": {
       "qty": 6,
       "avg_price": 222.41000366210938,
-      "stop_price": 201.7153581891741,
+      "stop_price": 202.0403594970703,
       "peak_price": 222.41000366210938,
       "sector": "Information Technology",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "EOG": {
       "qty": 12,
       "avg_price": 147.1300048828125,
-      "stop_price": 146.77000863211495,
+      "stop_price": 146.85750688825334,
       "peak_price": 158.32000732421875,
       "sector": "Energy",
       "partial_taken": false
@@ -38,7 +38,7 @@
     "MPC": {
       "qty": 1,
       "avg_price": 402.8399963378906,
-      "stop_price": 362.11694771902904,
+      "stop_price": 365.3066831316267,
       "peak_price": 414.6499938964844,
       "sector": "Energy",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "VEEV": {
       "qty": 3,
       "avg_price": 301.5299987792969,
-      "stop_price": 279.6228517804827,
+      "stop_price": 280.18446241106307,
       "peak_price": 301.5299987792969,
       "sector": "Health Care",
       "partial_taken": false
@@ -4377,6 +4377,11 @@
     {
       "date": "2026-11-14T00:28:47.532898+00:00",
       "equity": 9579.3,
+      "cash": 3153.26
+    },
+    {
+      "date": "2026-11-17T00:57:39.548407+00:00",
+      "equity": 9445.46,
       "cash": 3153.26
     }
   ]

@@ -1,7 +1,7 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 1652.7472896575928,
+  "cash": 1324.2172374725342,
   "positions": {
     "FAST": {
       "qty": 6,
@@ -10,14 +10,6 @@
       "peak_price": 55.54999923706055,
       "sector": "Industrials",
       "partial_taken": true
-    },
-    "GPC": {
-      "qty": 5,
-      "avg_price": 123.5199966430664,
-      "stop_price": 121.02928924560547,
-      "peak_price": 127.97000122070312,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
     },
     "DG": {
       "qty": 5,
@@ -42,14 +34,6 @@
       "peak_price": 26.5,
       "sector": "Health Care",
       "partial_taken": false
-    },
-    "DOC": {
-      "qty": 8,
-      "avg_price": 19.030000686645508,
-      "stop_price": 19.625933882939975,
-      "peak_price": 20.6200008392334,
-      "sector": "Real Estate",
-      "partial_taken": true
     },
     "TGT": {
       "qty": 1,
@@ -107,14 +91,6 @@
       "sector": "Industrials",
       "partial_taken": false
     },
-    "PNW": {
-      "qty": 2,
-      "avg_price": 103.83000183105469,
-      "stop_price": 103.37094102550553,
-      "peak_price": 107.91000366210938,
-      "sector": "Utilities",
-      "partial_taken": false
-    },
     "AMCR": {
       "qty": 7,
       "avg_price": 44.869998931884766,
@@ -126,23 +102,15 @@
     "FOX": {
       "qty": 4,
       "avg_price": 59.5,
-      "stop_price": 56.09871346609933,
+      "stop_price": 56.10799952915737,
       "peak_price": 61.11000061035156,
       "sector": "Communication Services",
-      "partial_taken": false
-    },
-    "AEP": {
-      "qty": 1,
-      "avg_price": 128.3300018310547,
-      "stop_price": 123.70175160843446,
-      "peak_price": 129.33999633789062,
-      "sector": "Utilities",
       "partial_taken": false
     },
     "CNC": {
       "qty": 2,
       "avg_price": 70.19000244140625,
-      "stop_price": 67.40785435267857,
+      "stop_price": 67.5679691859654,
       "peak_price": 74.7699966430664,
       "sector": "Health Care",
       "partial_taken": false
@@ -151,7 +119,7 @@
       "qty": 15,
       "avg_price": 28.469999313354492,
       "stop_price": 26.6228575025286,
-      "peak_price": 28.920000076293945,
+      "peak_price": 28.940000534057617,
       "sector": "Financials",
       "partial_taken": false
     },
@@ -166,9 +134,33 @@
     "ESS": {
       "qty": 2,
       "avg_price": 273.4599914550781,
-      "stop_price": 260.67999267578125,
+      "stop_price": 262.5264238630022,
       "peak_price": 273.4599914550781,
       "sector": "Real Estate",
+      "partial_taken": false
+    },
+    "APD": {
+      "qty": 2,
+      "avg_price": 306.9200134277344,
+      "stop_price": 293.5760759626116,
+      "peak_price": 306.9200134277344,
+      "sector": "Materials",
+      "partial_taken": false
+    },
+    "BBY": {
+      "qty": 4,
+      "avg_price": 98.4000015258789,
+      "stop_price": 89.69857352120536,
+      "peak_price": 98.4000015258789,
+      "sector": "Consumer Discretionary",
+      "partial_taken": false
+    },
+    "PNW": {
+      "qty": 4,
+      "avg_price": 102.87000274658203,
+      "stop_price": 97.87149226613728,
+      "peak_price": 102.87000274658203,
+      "sector": "Utilities",
       "partial_taken": false
     }
   },
@@ -4498,6 +4490,117 @@
         "atr14": 6.39,
         "volume_vs_avg20": 1.16
       }
+    },
+    {
+      "date": "2026-11-17T23:55:23.223312+00:00",
+      "symbol": "GPC",
+      "action": "SELL",
+      "qty": 5,
+      "price": 120.6,
+      "pnl": -14.6,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "\u0130zleyen stop tetiklendi (121.03), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 121.03
+      }
+    },
+    {
+      "date": "2026-11-17T23:55:23.716848+00:00",
+      "symbol": "DOC",
+      "action": "SELL",
+      "qty": 8,
+      "price": 19.46,
+      "pnl": 3.44,
+      "partial": false,
+      "sector": "Real Estate",
+      "reasoning": "\u0130zleyen stop tetiklendi (19.64), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 19.64
+      }
+    },
+    {
+      "date": "2026-11-17T23:55:24.252994+00:00",
+      "symbol": "PNW",
+      "action": "SELL",
+      "qty": 2,
+      "price": 102.87,
+      "pnl": -1.92,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "\u0130zleyen stop tetiklendi (103.37), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 103.37
+      }
+    },
+    {
+      "date": "2026-11-17T23:55:24.751773+00:00",
+      "symbol": "AEP",
+      "action": "SELL",
+      "qty": 1,
+      "price": 125.97,
+      "pnl": -2.36,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "Uzun vadeli trend (SMA200=126.79) k\u0131r\u0131ld\u0131, kalan pozisyon kapat\u0131ld\u0131. RSI14=45.37.",
+      "indicators": {
+        "price": 125.97,
+        "sma200": 126.79,
+        "rsi14": 45.37,
+        "atr14": 2.87,
+        "volume_vs_avg20": 1.11
+      }
+    },
+    {
+      "date": "2026-11-17T23:55:26.458337+00:00",
+      "symbol": "APD",
+      "action": "BUY",
+      "qty": 2,
+      "price": 306.92,
+      "stop_price": 293.58,
+      "sector": "Materials",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=290.24), RSI14=49.74 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.34x \u00fczerinde. \u0130zleyen stop: 293.58.",
+      "indicators": {
+        "price": 306.92,
+        "sma200": 290.24,
+        "rsi14": 49.74,
+        "atr14": 6.67,
+        "volume_vs_avg20": 1.34
+      }
+    },
+    {
+      "date": "2026-11-17T23:55:26.966412+00:00",
+      "symbol": "BBY",
+      "action": "BUY",
+      "qty": 4,
+      "price": 98.4,
+      "stop_price": 89.7,
+      "sector": "Consumer Discretionary",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=76.18), RSI14=51.87 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.22x \u00fczerinde. \u0130zleyen stop: 89.70.",
+      "indicators": {
+        "price": 98.4,
+        "sma200": 76.18,
+        "rsi14": 51.87,
+        "atr14": 4.35,
+        "volume_vs_avg20": 1.22
+      }
+    },
+    {
+      "date": "2026-11-17T23:55:27.461187+00:00",
+      "symbol": "PNW",
+      "action": "BUY",
+      "qty": 4,
+      "price": 102.87,
+      "stop_price": 97.87,
+      "sector": "Utilities",
+      "reasoning": "Dengeli giri\u015f: uzun vadeli trend sa\u011flam (SMA200=99.51), RSI14=46.9 n\u00f6tr b\u00f6lgede, hacim ortalaman\u0131n 1.15x \u00fczerinde. \u0130zleyen stop: 97.87.",
+      "indicators": {
+        "price": 102.87,
+        "sma200": 99.51,
+        "rsi14": 46.9,
+        "atr14": 2.5,
+        "volume_vs_avg20": 1.15
+      }
     }
   ],
   "equity_history": [
@@ -5270,6 +5373,11 @@
       "date": "2026-11-17T02:37:36.665391+00:00",
       "equity": 9608.46,
       "cash": 1652.75
+    },
+    {
+      "date": "2026-11-17T23:55:27.964169+00:00",
+      "equity": 9526.5,
+      "cash": 1324.22
     }
   ]
 }

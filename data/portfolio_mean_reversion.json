@@ -1,21 +1,13 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 3153.255521774292,
+  "cash": 4320.375547409058,
   "positions": {
     "TWLO": {
       "qty": 4,
       "avg_price": 200.9600067138672,
       "stop_price": 179.69716371808732,
       "peak_price": 219.47999572753906,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
-    "CRM": {
-      "qty": 6,
-      "avg_price": 222.41000366210938,
-      "stop_price": 202.0403594970703,
-      "peak_price": 222.41000366210938,
       "sector": "Information Technology",
       "partial_taken": false
     },
@@ -30,7 +22,7 @@
     "IFF": {
       "qty": 13,
       "avg_price": 84.43000030517578,
-      "stop_price": 77.30143192836216,
+      "stop_price": 77.31839506966728,
       "peak_price": 84.43000030517578,
       "sector": "Materials",
       "partial_taken": false
@@ -3616,6 +3608,20 @@
         "rsi14_prev": 31.17,
         "atr14": 8.76
       }
+    },
+    {
+      "date": "2026-11-17T23:55:21.535312+00:00",
+      "symbol": "CRM",
+      "action": "SELL",
+      "qty": 6,
+      "price": 194.52,
+      "pnl": -167.34,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (202.04), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 202.04
+      }
     }
   ],
   "equity_history": [
@@ -4388,6 +4394,11 @@
       "date": "2026-11-17T02:37:35.409751+00:00",
       "equity": 9445.46,
       "cash": 3153.26
+    },
+    {
+      "date": "2026-11-17T23:55:23.212616+00:00",
+      "equity": 9249.25,
+      "cash": 4320.38
     }
   ]
 }

@@ -14,7 +14,7 @@
     "MAR": {
       "qty": 2,
       "avg_price": 365.260009765625,
-      "stop_price": 407.1156964983259,
+      "stop_price": 407.3971252441406,
       "peak_price": 429.17999267578125,
       "sector": "Consumer Discretionary",
       "partial_taken": false
@@ -46,7 +46,7 @@
     "XEL": {
       "qty": 3,
       "avg_price": 77.18000030517578,
-      "stop_price": 78.49285779680524,
+      "stop_price": 78.70428684779576,
       "peak_price": 81.61000061035156,
       "sector": "Utilities",
       "partial_taken": false
@@ -62,7 +62,7 @@
     "BIIB": {
       "qty": 1,
       "avg_price": 253.6199951171875,
-      "stop_price": 239.13713727678572,
+      "stop_price": 239.9528525216239,
       "peak_price": 254.8699951171875,
       "sector": "Health Care",
       "partial_taken": false
@@ -102,7 +102,7 @@
     "CMCSA": {
       "qty": 14,
       "avg_price": 24.75,
-      "stop_price": 24.07857186453683,
+      "stop_price": 24.09714344569615,
       "peak_price": 25.600000381469727,
       "sector": "Communication Services",
       "partial_taken": false
@@ -118,7 +118,7 @@
     "ROP": {
       "qty": 1,
       "avg_price": 471.9200134277344,
-      "stop_price": 444.45715767996654,
+      "stop_price": 445.2821568080357,
       "peak_price": 471.9200134277344,
       "sector": "Information Technology",
       "partial_taken": false
@@ -2938,6 +2938,11 @@
     {
       "date": "2026-11-18T01:52:26.635796+00:00",
       "equity": NaN,
+      "cash": 1475.0
+    },
+    {
+      "date": "2026-11-18T23:30:01.320418+00:00",
+      "equity": 9587.0,
       "cash": 1475.0
     }
   ]

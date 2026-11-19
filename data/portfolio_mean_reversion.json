@@ -1,30 +1,14 @@
 {
   "strategy": "mean_reversion",
   "starting_cash": 10000.0,
-  "cash": 4472.135557174683,
+  "cash": 6209.18556022644,
   "positions": {
-    "TWLO": {
-      "qty": 4,
-      "avg_price": 200.9600067138672,
-      "stop_price": 180.81803349086215,
-      "peak_price": 219.47999572753906,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
     "EOG": {
       "qty": 12,
       "avg_price": 147.1300048828125,
       "stop_price": 146.85750688825334,
       "peak_price": 158.32000732421875,
       "sector": "Energy",
-      "partial_taken": false
-    },
-    "IFF": {
-      "qty": 13,
-      "avg_price": 84.43000030517578,
-      "stop_price": 77.31839506966728,
-      "peak_price": 84.43000030517578,
-      "sector": "Materials",
       "partial_taken": false
     },
     "MPC": {
@@ -38,8 +22,8 @@
     "PANW": {
       "qty": 2,
       "avg_price": 339.9200134277344,
-      "stop_price": 289.46644592285156,
-      "peak_price": 339.9200134277344,
+      "stop_price": 311.2621601649693,
+      "peak_price": 361.7300109863281,
       "sector": "Information Technology",
       "partial_taken": false
     }
@@ -3653,6 +3637,38 @@
         "rsi14_prev": 18.57,
         "atr14": 20.18
       }
+    },
+    {
+      "date": "2026-11-19T23:42:17.562982+00:00",
+      "symbol": "TWLO",
+      "action": "SELL",
+      "qty": 4,
+      "price": 178.78,
+      "pnl": -88.72,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (187.71), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 187.71
+      }
+    },
+    {
+      "date": "2026-11-19T23:42:17.865974+00:00",
+      "symbol": "IFF",
+      "action": "SELL",
+      "qty": 13,
+      "price": 78.61,
+      "pnl": -75.66,
+      "partial": false,
+      "sector": "Materials",
+      "reasoning": "Uzun vadeli trend (SMA200) k\u0131r\u0131ld\u0131, \u00e7\u0131k\u0131\u015f. RSI14=20.12, fiyat=78.61.",
+      "indicators": {
+        "price": 78.61,
+        "sma200": 78.86,
+        "rsi14": 20.12,
+        "rsi14_prev": 28.41,
+        "atr14": 2.8
+      }
     }
   ],
   "equity_history": [
@@ -4445,6 +4461,11 @@
       "date": "2026-11-19T01:29:59.837136+00:00",
       "equity": NaN,
       "cash": 4472.14
+    },
+    {
+      "date": "2026-11-19T23:42:18.179866+00:00",
+      "equity": 9094.46,
+      "cash": 6209.19
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 1475.0024490356445,
+  "cash": 3561.002452850342,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -19,28 +19,12 @@
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
-    "FAST": {
-      "qty": 17,
-      "avg_price": 51.02000045776367,
-      "stop_price": 53.034285409109934,
-      "peak_price": 55.54999923706055,
-      "sector": "Industrials",
-      "partial_taken": false
-    },
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 164.6171373639788,
+      "stop_price": 164.80501011439733,
       "peak_price": 174.47999572753906,
       "sector": "Health Care",
-      "partial_taken": false
-    },
-    "AEP": {
-      "qty": 4,
-      "avg_price": 129.69000244140625,
-      "stop_price": 125.5857162475586,
-      "peak_price": 130.3300018310547,
-      "sector": "Utilities",
       "partial_taken": false
     },
     "XEL": {
@@ -51,18 +35,10 @@
       "sector": "Utilities",
       "partial_taken": false
     },
-    "PYPL": {
-      "qty": 3,
-      "avg_price": 56.54999923706055,
-      "stop_price": 57.1745719909668,
-      "peak_price": 60.20000076293945,
-      "sector": "Financials",
-      "partial_taken": false
-    },
     "BIIB": {
       "qty": 1,
       "avg_price": 253.6199951171875,
-      "stop_price": 239.9528525216239,
+      "stop_price": 240.03428431919642,
       "peak_price": 254.8699951171875,
       "sector": "Health Care",
       "partial_taken": false
@@ -75,14 +51,6 @@
       "sector": "Industrials",
       "partial_taken": false
     },
-    "ADSK": {
-      "qty": 1,
-      "avg_price": 269.1600036621094,
-      "stop_price": 250.83714730398995,
-      "peak_price": 269.1600036621094,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
     "SBUX": {
       "qty": 4,
       "avg_price": 106.16000366210938,
@@ -91,18 +59,10 @@
       "sector": "Consumer Discretionary",
       "partial_taken": false
     },
-    "PEP": {
-      "qty": 2,
-      "avg_price": 141.33999633789062,
-      "stop_price": 139.55998883928572,
-      "peak_price": 146.42999267578125,
-      "sector": "Consumer Staples",
-      "partial_taken": false
-    },
     "CMCSA": {
       "qty": 14,
       "avg_price": 24.75,
-      "stop_price": 24.09714344569615,
+      "stop_price": 24.170000348772323,
       "peak_price": 25.600000381469727,
       "sector": "Communication Services",
       "partial_taken": false
@@ -110,7 +70,7 @@
     "MDLZ": {
       "qty": 7,
       "avg_price": 66.55999755859375,
-      "stop_price": 64.46000071934291,
+      "stop_price": 64.51285879952567,
       "peak_price": 67.54000091552734,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -118,7 +78,7 @@
     "ROP": {
       "qty": 1,
       "avg_price": 471.9200134277344,
-      "stop_price": 445.2821568080357,
+      "stop_price": 447.04715837751115,
       "peak_price": 471.9200134277344,
       "sector": "Information Technology",
       "partial_taken": false
@@ -2157,6 +2117,76 @@
         "atr14": 13.73,
         "relative_strength_20d": 0.2327
       }
+    },
+    {
+      "date": "2026-11-19T23:42:15.979530+00:00",
+      "symbol": "FAST",
+      "action": "SELL",
+      "qty": 17,
+      "price": 52.68,
+      "pnl": 28.22,
+      "partial": false,
+      "sector": "Industrials",
+      "reasoning": "\u0130zleyen stop tetiklendi (53.03), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 53.03
+      }
+    },
+    {
+      "date": "2026-11-19T23:42:16.286280+00:00",
+      "symbol": "AEP",
+      "action": "SELL",
+      "qty": 4,
+      "price": 124.97,
+      "pnl": -18.88,
+      "partial": false,
+      "sector": "Utilities",
+      "reasoning": "\u0130zleyen stop tetiklendi (125.59), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 125.59
+      }
+    },
+    {
+      "date": "2026-11-19T23:42:16.589574+00:00",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "qty": 3,
+      "price": 56.37,
+      "pnl": -0.54,
+      "partial": false,
+      "sector": "Financials",
+      "reasoning": "\u0130zleyen stop tetiklendi (57.17), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 57.17
+      }
+    },
+    {
+      "date": "2026-11-19T23:42:16.895321+00:00",
+      "symbol": "ADSK",
+      "action": "SELL",
+      "qty": 1,
+      "price": 243.45,
+      "pnl": -25.71,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (250.84), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 250.84
+      }
+    },
+    {
+      "date": "2026-11-19T23:42:17.230978+00:00",
+      "symbol": "PEP",
+      "action": "SELL",
+      "qty": 2,
+      "price": 139.0,
+      "pnl": -4.68,
+      "partial": false,
+      "sector": "Consumer Staples",
+      "reasoning": "\u0130zleyen stop tetiklendi (139.56), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 139.56
+      }
     }
   ],
   "equity_history": [
@@ -2949,6 +2979,11 @@
       "date": "2026-11-19T01:29:59.816394+00:00",
       "equity": NaN,
       "cash": 1475.0
+    },
+    {
+      "date": "2026-11-19T23:42:17.558015+00:00",
+      "equity": 9452.16,
+      "cash": 3561.0
     }
   ]
 }

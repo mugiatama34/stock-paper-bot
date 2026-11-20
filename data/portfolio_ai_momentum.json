@@ -1,7 +1,7 @@
 {
   "strategy": "ai_momentum",
   "starting_cash": 10000.0,
-  "cash": 3561.002452850342,
+  "cash": 4786.802471160889,
   "positions": {
     "WBD": {
       "qty": 47,
@@ -11,18 +11,10 @@
       "sector": "Communication Services",
       "partial_taken": false
     },
-    "MAR": {
-      "qty": 2,
-      "avg_price": 365.260009765625,
-      "stop_price": 407.3971252441406,
-      "peak_price": 429.17999267578125,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 164.80501011439733,
+      "stop_price": 165.0621381487165,
       "peak_price": 174.47999572753906,
       "sector": "Health Care",
       "partial_taken": false
@@ -30,7 +22,7 @@
     "XEL": {
       "qty": 3,
       "avg_price": 77.18000030517578,
-      "stop_price": 78.70428684779576,
+      "stop_price": 78.7385722569057,
       "peak_price": 81.61000061035156,
       "sector": "Utilities",
       "partial_taken": false
@@ -38,7 +30,7 @@
     "BIIB": {
       "qty": 1,
       "avg_price": 253.6199951171875,
-      "stop_price": 240.03428431919642,
+      "stop_price": 240.28428431919642,
       "peak_price": 254.8699951171875,
       "sector": "Health Care",
       "partial_taken": false
@@ -51,18 +43,10 @@
       "sector": "Industrials",
       "partial_taken": false
     },
-    "SBUX": {
-      "qty": 4,
-      "avg_price": 106.16000366210938,
-      "stop_price": 103.7642822265625,
-      "peak_price": 109.94999694824219,
-      "sector": "Consumer Discretionary",
-      "partial_taken": false
-    },
     "CMCSA": {
       "qty": 14,
       "avg_price": 24.75,
-      "stop_price": 24.170000348772323,
+      "stop_price": 24.189285823277064,
       "peak_price": 25.600000381469727,
       "sector": "Communication Services",
       "partial_taken": false
@@ -78,7 +62,7 @@
     "ROP": {
       "qty": 1,
       "avg_price": 471.9200134277344,
-      "stop_price": 447.04715837751115,
+      "stop_price": 447.4078674316406,
       "peak_price": 471.9200134277344,
       "sector": "Information Technology",
       "partial_taken": false
@@ -2187,6 +2171,34 @@
       "indicators": {
         "stop_price": 139.56
       }
+    },
+    {
+      "date": "2026-11-20T23:16:23.217915+00:00",
+      "symbol": "MAR",
+      "action": "SELL",
+      "qty": 2,
+      "price": 406.64,
+      "pnl": 82.76,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "\u0130zleyen stop tetiklendi (409.42), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 409.42
+      }
+    },
+    {
+      "date": "2026-11-20T23:16:23.757189+00:00",
+      "symbol": "SBUX",
+      "action": "SELL",
+      "qty": 4,
+      "price": 103.13,
+      "pnl": -12.12,
+      "partial": false,
+      "sector": "Consumer Discretionary",
+      "reasoning": "\u0130zleyen stop tetiklendi (103.76), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 103.76
+      }
     }
   ],
   "equity_history": [
@@ -2989,6 +3001,11 @@
       "date": "2026-11-20T01:27:16.682185+00:00",
       "equity": NaN,
       "cash": 3561.0
+    },
+    {
+      "date": "2026-11-20T23:16:24.237424+00:00",
+      "equity": 9439.75,
+      "cash": 4786.8
     }
   ]
 }

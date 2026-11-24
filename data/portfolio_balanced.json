@@ -1,38 +1,22 @@
 {
   "strategy": "balanced",
   "starting_cash": 10000.0,
-  "cash": 3737.1772537231445,
+  "cash": 4827.377277374268,
   "positions": {
     "BAX": {
       "qty": 17,
       "avg_price": 23.5,
-      "stop_price": 24.400714874267578,
-      "peak_price": 26.5,
+      "stop_price": 24.548572267804825,
+      "peak_price": 26.59000015258789,
       "sector": "Health Care",
       "partial_taken": false
     },
     "TGT": {
       "qty": 1,
       "avg_price": 154.39999389648438,
-      "stop_price": 155.19940697612003,
-      "peak_price": 167.4600067138672,
+      "stop_price": 155.75523085708568,
+      "peak_price": 168.19000244140625,
       "sector": "Consumer Staples",
-      "partial_taken": false
-    },
-    "APA": {
-      "qty": 11,
-      "avg_price": 44.4900016784668,
-      "stop_price": 44.46928460257394,
-      "peak_price": 48.439998626708984,
-      "sector": "Energy",
-      "partial_taken": false
-    },
-    "COP": {
-      "qty": 3,
-      "avg_price": 136.94000244140625,
-      "stop_price": 134.00765497023713,
-      "peak_price": 142.27999877929688,
-      "sector": "Energy",
       "partial_taken": false
     },
     "AAPL": {
@@ -51,18 +35,10 @@
       "sector": "Financials",
       "partial_taken": false
     },
-    "CRWD": {
-      "qty": 1,
-      "avg_price": 217.1999969482422,
-      "stop_price": 213.16443525041853,
-      "peak_price": 243.4600067138672,
-      "sector": "Information Technology",
-      "partial_taken": false
-    },
     "AMCR": {
       "qty": 7,
       "avg_price": 44.869998931884766,
-      "stop_price": 42.25785609654018,
+      "stop_price": 42.28142656598772,
       "peak_price": 45.189998626708984,
       "sector": "Materials",
       "partial_taken": false
@@ -4709,6 +4685,48 @@
         "atr14": 0.91,
         "volume_vs_avg20": 1.02
       }
+    },
+    {
+      "date": "2026-11-24T03:26:08.780597+00:00",
+      "symbol": "APA",
+      "action": "SELL",
+      "qty": 11,
+      "price": 44.06,
+      "pnl": -4.73,
+      "partial": false,
+      "sector": "Energy",
+      "reasoning": "\u0130zleyen stop tetiklendi (44.47), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 44.47
+      }
+    },
+    {
+      "date": "2026-11-24T03:26:09.329456+00:00",
+      "symbol": "COP",
+      "action": "SELL",
+      "qty": 3,
+      "price": 132.19,
+      "pnl": -14.25,
+      "partial": false,
+      "sector": "Energy",
+      "reasoning": "\u0130zleyen stop tetiklendi (134.01), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 134.01
+      }
+    },
+    {
+      "date": "2026-11-24T03:26:09.856406+00:00",
+      "symbol": "CRWD",
+      "action": "SELL",
+      "qty": 1,
+      "price": 208.97,
+      "pnl": -8.23,
+      "partial": false,
+      "sector": "Information Technology",
+      "reasoning": "\u0130zleyen stop tetiklendi (213.16), zirveden geri \u00e7ekilme.",
+      "indicators": {
+        "stop_price": 213.16
+      }
     }
   ],
   "equity_history": [
@@ -5521,6 +5539,11 @@
       "date": "2026-11-21T00:57:37.082562+00:00",
       "equity": 9278.26,
       "cash": 3737.18
+    },
+    {
+      "date": "2026-11-24T03:26:10.368256+00:00",
+      "equity": 9314.98,
+      "cash": 4827.38
     }
   ]
 }

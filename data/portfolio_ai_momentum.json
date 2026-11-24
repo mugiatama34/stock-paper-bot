@@ -30,8 +30,8 @@
     "BIIB": {
       "qty": 1,
       "avg_price": 253.6199951171875,
-      "stop_price": 240.28428431919642,
-      "peak_price": 254.8699951171875,
+      "stop_price": 241.6499960763114,
+      "peak_price": 256.7099914550781,
       "sector": "Health Care",
       "partial_taken": false
     },
@@ -62,7 +62,7 @@
     "ROP": {
       "qty": 1,
       "avg_price": 471.9200134277344,
-      "stop_price": 447.4078674316406,
+      "stop_price": 448.1314392089844,
       "peak_price": 471.9200134277344,
       "sector": "Information Technology",
       "partial_taken": false
@@ -3010,6 +3010,11 @@
     {
       "date": "2026-11-21T00:57:37.044419+00:00",
       "equity": 9439.75,
+      "cash": 4786.8
+    },
+    {
+      "date": "2026-11-24T03:26:07.751751+00:00",
+      "equity": 9460.33,
       "cash": 4786.8
     }
   ]

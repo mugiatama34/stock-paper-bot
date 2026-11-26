@@ -14,7 +14,7 @@
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 168.6585649762835,
+      "stop_price": 169.58142307826452,
       "peak_price": 178.2899932861328,
       "sector": "Health Care",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "XEL": {
       "qty": 3,
       "avg_price": 77.18000030517578,
-      "stop_price": 78.86000170026507,
+      "stop_price": 79.06714521135602,
       "peak_price": 81.61000061035156,
       "sector": "Utilities",
       "partial_taken": false
@@ -38,7 +38,7 @@
     "VRSK": {
       "qty": 3,
       "avg_price": 211.47000122070312,
-      "stop_price": 197.63856724330358,
+      "stop_price": 199.27714102608817,
       "peak_price": 212.75999450683594,
       "sector": "Industrials",
       "partial_taken": false
@@ -46,24 +46,24 @@
     "CMCSA": {
       "qty": 14,
       "avg_price": 24.75,
-      "stop_price": 24.248571940830775,
-      "peak_price": 25.600000381469727,
+      "stop_price": 24.385713577270508,
+      "peak_price": 25.729999542236328,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "MDLZ": {
       "qty": 7,
       "avg_price": 66.55999755859375,
-      "stop_price": 64.7357155936105,
-      "peak_price": 67.54000091552734,
+      "stop_price": 65.1085695539202,
+      "peak_price": 67.80999755859375,
       "sector": "Consumer Staples",
       "partial_taken": false
     },
     "ROP": {
       "qty": 1,
       "avg_price": 471.9200134277344,
-      "stop_price": 453.1314392089844,
-      "peak_price": 476.4800109863281,
+      "stop_price": 460.42142159598217,
+      "peak_price": 483.0899963378906,
       "sector": "Information Technology",
       "partial_taken": false
     }
@@ -3035,6 +3035,11 @@
     {
       "date": "2026-11-26T01:05:33.176616+00:00",
       "equity": NaN,
+      "cash": 4786.8
+    },
+    {
+      "date": "2026-11-26T02:27:18.560587+00:00",
+      "equity": 9562.18,
       "cash": 4786.8
     }
   ]

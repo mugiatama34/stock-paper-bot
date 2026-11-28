@@ -14,7 +14,7 @@
     "GILD": {
       "qty": 5,
       "avg_price": 157.19000244140625,
-      "stop_price": 169.58142307826452,
+      "stop_price": 169.7699955531529,
       "peak_price": 178.2899932861328,
       "sector": "Health Care",
       "partial_taken": false
@@ -22,7 +22,7 @@
     "XEL": {
       "qty": 3,
       "avg_price": 77.18000030517578,
-      "stop_price": 79.06714521135602,
+      "stop_price": 79.30143083844867,
       "peak_price": 81.61000061035156,
       "sector": "Utilities",
       "partial_taken": false
@@ -30,7 +30,7 @@
     "BIIB": {
       "qty": 1,
       "avg_price": 253.6199951171875,
-      "stop_price": 253.43284388950892,
+      "stop_price": 254.0842742919922,
       "peak_price": 269.1099853515625,
       "sector": "Health Care",
       "partial_taken": false
@@ -38,7 +38,7 @@
     "VRSK": {
       "qty": 3,
       "avg_price": 211.47000122070312,
-      "stop_price": 199.27714102608817,
+      "stop_price": 200.03285435267858,
       "peak_price": 212.75999450683594,
       "sector": "Industrials",
       "partial_taken": false
@@ -46,15 +46,15 @@
     "CMCSA": {
       "qty": 14,
       "avg_price": 24.75,
-      "stop_price": 24.385713577270508,
-      "peak_price": 25.729999542236328,
+      "stop_price": 24.792856761387416,
+      "peak_price": 26.079999923706055,
       "sector": "Communication Services",
       "partial_taken": false
     },
     "MDLZ": {
       "qty": 7,
       "avg_price": 66.55999755859375,
-      "stop_price": 65.1085695539202,
+      "stop_price": 65.3114264351981,
       "peak_price": 67.80999755859375,
       "sector": "Consumer Staples",
       "partial_taken": false
@@ -62,8 +62,8 @@
     "ROP": {
       "qty": 1,
       "avg_price": 471.9200134277344,
-      "stop_price": 460.42142159598217,
-      "peak_price": 483.0899963378906,
+      "stop_price": 463.0014386858259,
+      "peak_price": 484.45001220703125,
       "sector": "Information Technology",
       "partial_taken": false
     }
@@ -3050,6 +3050,11 @@
     {
       "date": "2026-11-27T02:24:38.504824+00:00",
       "equity": 9562.18,
+      "cash": 4786.8
+    },
+    {
+      "date": "2026-11-28T00:39:01.136981+00:00",
+      "equity": 9570.3,
       "cash": 4786.8
     }
   ]
